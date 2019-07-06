@@ -1,968 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
+   <title>Adventure</title>
+   <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-   <div class="topline">
-      <div class="wrapper">
-         <div class="topline__items">
-            <button href="#form-quick-order" class="topline__item topline__button popup-with-form"> <img class="topline__img" src="img/topline/1.png">
-               <p class="topline__text">
-                  Сделай быстрый заказ
-               </p>
-            </button>
-            <button href="#form-callback" class="topline__item topline__button  popup-with-form"> <img class="topline__img" src="img/topline/2.png">
-               <p class="topline__text">
-                  Заказать звонок
-               </p>
-            </button>
-            <button href="#" class="topline__item topline__button"> <img class="topline__img" src="img/topline/3.png">
-               <p class="topline__text">
-                  Калькулятор аренды
-               </p>
-            </button>
-            <div class="topline__item topline__contact">
-               <a class="topline__phone" href=”tel:+79998887766”>+7 (495) 784-8303</a>
-               <p class="topline__subtext">заявки принимаются с 7:00 до 24:00</p>
-            </div>
-         </div>
-
-         <form id="form-quick-order" class="f-order f-popup mfp-hide popup-block">
-            <div class="f-popup__line">
-               <label for="f-popup-phone" class="f-popup__label">Телефон:</label>
-               <input type="text" id="f-order-phone" class="f-popup__input">
-            </div>
-            <div class="f-popup__line">
-               <label for="f-popup-date" class="f-popup__label">Дата подачи</label>
-               <input type="text" id="f-order-date" class="f-popup__input">
-            </div>
-            <p class="f-popup__text">
-               При заказе подачи транспорта после 15:00 – <span class="f-popup__text_accent">скидка 20%</span>
-            </p>
-            <input type="submit" value="Оформить заказ" class="f-popup__submit btn-submit">
-            <p class="f-popup__agreement">Нажимая кнопку «Оформить заказ», вы соглашаетесь на обработку ваших персональных данных</p>
-         </form>
-
-         <form id="form-callback" class="f-callback f-popup mfp-hide popup-block">
-            <div class="f-popup__line">
-               <label for="f-popup-phone" class="f-popup__label">Телефон:</label>
-               <input type="text" id="f-callback-phone" class="f-popup__input">
-            </div>
-            <div class="f-popup__line">
-               <label for="f-popup-date" class="f-popup__label">Имя</label>
-               <input type="text" id="f-callback-name" class="f-popup__input">
-            </div>
-            <input type="submit" value="Заказать звонок" class="f-popup__submit btn-submit">
-            <p class="f-popup__agreement">Нажимая кнопку «Заказать звонок», вы соглашаетесь на обработку ваших персональных данных</p>
-         </form>
-
-         <form id="form-callback" class="f-order mfp-hide popup-block">
-            <div class="f-order__line">
-               <label for="f-order-phone" class="f-order__label">Телефон:</label>
-               <input type="text" id="f-callback-phone" class="f-order__input">
-            </div>
-            <div class="f-order__line">
-               <label for="f-order-date" class="f-order__label">Имя</label>
-               <input type="text" id="f-callback-name" class="f-order__input">
-            </div>
-            <input type="submit" value="Заказать звонок" class="f-order__submit btn-submit">
-            <p class="f-order__agreement">Нажимая кнопку «Заказать звонок», вы соглашаетесь на обработку ваших персональных данных</p>
-         </form>
-
-      </div>
-   </div>
-
-   <div class="header">
-      <div class="wrapper">
+   <header class="header">
          <div class="header__top">
-            <img src="img/header/logo.png" alt="" class="header__logo">
-            <nav class="header__menu menu">
-               <span href="" class="menu__item menu__item_select" id="menu-rent">Аренда техники</span>
-               <span href="" class="menu__item menu__item_select" id="menu-service">Услуги</span>
-               <a href="" class="menu__item">Цены</a>
-               <a href="" class="menu__item">Оплата</a>
-               <a href="" class="menu__item">Контакты</a>
-            </nav>
-            <div class="header__contact">
-               <a class="topline__phone header__phone" href=”tel:+79998887766”>+7 (495) 784-8303</a>
-               <p class="topline__subtext header__subtext">заявки принимаются с 7:00 до 24:00</p>
-            </div>
-            <div class="menu__option rent menu__option-hidden" id="rent-popup">
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/1.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора 23324</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/2.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 7470 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/3.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/4.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/5.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/6.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/7.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/8.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/9.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/10.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/11.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-               <div class="rent__item menu__dropdown">
-                  <div class="rent__img"><img src="img/header/menu/12.png" alt=""></div>
-                  <div class="rent__text"><a href="">Аренда манипулятора</a></div>
-                  <div class="rent__price">от 770 руб/час</div>
-               </div>
-            </div>
-            <div class="menu__option service menu__option-hidden" id="service-popup">
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-               <div class="service__item menu__dropdown">
-                  <div class="service__img"><img src="img/header/menu/crane.png" alt=""></div>
-                  <div class="service__text"><a href="">Перевозка техники</a></div>
-               </div>
-            </div>
-
-         </div>
-      </div>
-      <div class="header__main">
-         <div class="slider-wrap">
-            <div class="header-slider">
-               <div class="slider__item">
-                  <img src="img/header/slider/1.png" alt="">
-                  <div class="slider__label slider__label_1">
-                     <p class="slider__text">Собственный автопарк 26 манипуляторов</p>
-                  </div>
-               </div>
-               <div class="slider__item">
-                  <img src="img/header/slider/2.png" alt="">
-                  <div class="slider__label slider__label_2">
-                     <p class="slider__text">При заказе от 30 смен 10% вернем вам обратно</p>
-                  </div>
-               </div>
-               <div class="slider__item">
-                  <img src="img/header/slider/3.png" alt="">
-                  <div class="slider__label slider__label_3">
-                     <p class="slider__text">При заказе манипулятора после 15:00 - скидка 20%</p>
-                  </div>
-               </div>
-               <div class="slider__item">
-                  <img src="img/header/slider/4.png" alt="">
-                  <div class="slider__label slider__label_4">
-                     <p class="slider__text">Мы рядом! Время подачи 1 час</p>
-                  </div>
-               </div>
-               <div class="slider__item">
-                  <img src="img/header/slider/5.png" alt="">
-                  <div class="slider__label slider__label_5">
-                     <p class="slider__text">Каждую неделю среди клиентов розыгрыш IPhone в прямом эфире</p>
-                  </div>
-               </div>
-            </div>
-            <div class="features-block-wrap">
-               <div class="features">
-                  <div class="wrapper">
-                     <div class="features__list">
-                        <div class="features__item">
-                           <img src="img/header/features/1.png" alt="" class="features__img">
-                           <p class="features__text">Подача за 1 час
-                              ИЛИ ЗАКАЗ ЗА НАШ СЧЕТ</p>
-                        </div>
-                        <div class="features__item">
-                           <img src="img/header/features/2.png" alt="" class="features__img">
-                           <p class="features__text">У нас
-                              “не спускает колесо”</p>
-                        </div>
-                        <div class="features__item">
-                           <img src="img/header/features/3.png" alt="" class="features__img">
-                           <p class="features__text">Предоставляем отсрочку платежа</p>
-                        </div>
-                        <div class="features__item">
-                           <img src="img/header/features/4.png" alt="" class="features__img">
-                           <p class="features__text">Пропуск до Кремля</p>
-                        </div>
-                        <div class="features__item">
-                           <img src="img/header/features/5.png" alt="" class="features__img">
-                           <p class="features__text">Отвечаем за груз <br>
-                              По договору</p>
-                        </div>
-                        <div class="features__item">
-                           <img src="img/header/features/6.png" alt="" class="features__img">
-                           <p class="features__text">Только аттестованные водители</p>
-                        </div>
-                     </div>
-                  </div>
+            <div class="container">
+               <div class="header__wrap">
+                  <strong class="logo header__logo">
+                     adventurer
+                  </strong>
+                  <nav class="header__nav">
+                     <a href="" class="header__link">Home</a>
+                     <a href="" class="header__link">About</a>
+                     <a href="" class="header__link">Service</a>
+                     <a href="" class="header__link">Contact</a>
+                     <a href="" class="header__link">Faq</a>
+                     <a href="" class="header__link">Support</a>
+                     <div class="header__search"></div>
+                  </nav>
                </div>
             </div>
          </div>
-      </div>
-   </div>
+         <div class="header__main">
+            <div class="container">
 
-   <div class="info">
-      <div class="wrapper">
-         <div class="info__block">
-            <div class="info__title title-orange">
-               <h3>Аренда манипулятора в Москве и области</h3>
-            </div>
-            <div class="info__text">
-               <p>На рынке аренды манипуляторов и спецтехники с 2000 года. Мы не только оказываем качественные услуги,
-                  но и
-                  регулярно
-                  осуществляем мониторинг потребностей клиентов и предлагаем многофункциональное оборудование с
-                  различными
-                  характеристиками для решения проблем любой сложности.
-                  подписанных актов и путевых листов учета.</p>
-               <p>У нас только высококвалифицированные специалисты с богатым опытом. Все водители прошли
-                  специализированную
-                  подготовку и
-                  являются гражданами Российской Федерации.</p>
-               <p>Для удобства наших постоянных заказчиков, мы заключаем договора и взаимодействуем на условиях отсрочки
-                  платежа и
-                  расчёту
-                  в конце месяца по факту выполненных задач и на основании подписанных актов и путевых листов учета.</p>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <div class="popular">
-      <div class="wrapper">
-         <h2 class="popular-title">Популярные манипуляторы</h2>
-         <div class="popular__items">
-            <div class="popular__item">
-               <h4 class="popular__title">Манипулятор Mitsubishi Canter</h4>
-               <div class="popular__img">
-                  <img src="img/popular/1.png" alt="">
+               <div class="header__content">
+                  <h1 class="header__title">
+                     adventurer
+                  </h1>
+                  <strong class="header__subtitle">muri, a template at the heart of the beauty</strong>
+                  <button class="button header__button">
+                     See More
+                  </button>
                </div>
-               <div class="popular__about">
-                  <div class="popular__props">
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность стрелы, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Вылет стрелы, м:</span>
-                        <span class="popular__value">10</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность кузова, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Размеры кузова, Д*Ш:</span>
-                        <span class="popular__value">6,2*2,5</span>
-                     </div>
-                  </div>
-                  <div class="popular__price">
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">5000</span>
-                        <span class="popular__price-text">руб./час</span>
-                     </div>
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">30 000</span>
-                        <span class="popular__price-text">руб./смена</span>
-                     </div>
-                     <button href="#form-rent" class="popular__button popup-with-form">Арендовать</button>
-                  </div>
-               </div>
-            </div>
-            <div class="popular__item">
-               <h4 class="popular__title">Манипулятор Mitsubishi Canter</h4>
-               <div class="popular__img">
-                  <img src="img/popular/1.png" alt="">
-               </div>
-               <div class="popular__about">
-                  <div class="popular__props">
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность стрелы, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Вылет стрелы, м:</span>
-                        <span class="popular__value">10</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность кузова, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Размеры кузова, Д*Ш:</span>
-                        <span class="popular__value">6,2*2,5</span>
-                     </div>
-                  </div>
-                  <div class="popular__price">
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">5000</span>
-                        <span class="popular__price-text">руб./час</span>
-                     </div>
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">30 000</span>
-                        <span class="popular__price-text">руб./смена</span>
-                     </div>
-                     <button href="#form-rent" class="popular__button popup-with-form">Арендовать</button>
-                  </div>
-               </div>
-            </div>
-            <div class="popular__item">
-               <h4 class="popular__title">Манипулятор Mitsubishi Canter</h4>
-               <div class="popular__img">
-                  <img src="img/popular/1.png" alt="">
-               </div>
-               <div class="popular__about">
-                  <div class="popular__props">
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность стрелы, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Вылет стрелы, м:</span>
-                        <span class="popular__value">10</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность кузова, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Размеры кузова, Д*Ш:</span>
-                        <span class="popular__value">6,2*2,5</span>
-                     </div>
-                  </div>
-                  <div class="popular__price">
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">5000</span>
-                        <span class="popular__price-text">руб./час</span>
-                     </div>
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">30 000</span>
-                        <span class="popular__price-text">руб./смена</span>
-                     </div>
-                     <button href="#form-rent" class="popular__button popup-with-form">Арендовать</button>
-                  </div>
-               </div>
-            </div>
-            <div class="popular__item">
-               <h4 class="popular__title">Манипулятор Mitsubishi Canter</h4>
-               <div class="popular__img">
-                  <img src="img/popular/1.png" alt="">
-               </div>
-               <div class="popular__about">
-                  <div class="popular__props">
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность стрелы, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Вылет стрелы, м:</span>
-                        <span class="popular__value">10</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Грузоподъемность кузова, т.:</span>
-                        <span class="popular__value">3</span>
-                     </div>
-                     <div class="popular__prop">
-                        <span class="popular__name">Размеры кузова, Д*Ш:</span>
-                        <span class="popular__value">6,2*2,5</span>
-                     </div>
-                  </div>
-                  <div class="popular__price">
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">5000</span>
-                        <span class="popular__price-text">руб./час</span>
-                     </div>
-                     <div class="popular__price-block">
-                        <span class="popular__price-number">30 000</span>
-                        <span class="popular__price-text">руб./смена</span>
-                     </div>
-                     <button href="#form-rent" class="popular__button popup-with-form">Арендовать</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <form id="form-rent" class="f-order f-popup mfp-hide popup-block">
-            <div class="f-popup__line">
-               <label for="f-popup-phone" class="f-popup__label">Телефон:</label>
-               <input type="text" id="f-order-phone" class="f-popup__input">
-            </div>
-            <div class="f-popup__line">
-               <label for="f-popup-date" class="f-popup__label">Дата подачи</label>
-               <input type="text" id="f-order-date" class="f-popup__input">
-            </div>
-            <p class="f-popup__text">
-               При заказе подачи транспорта после 15:00 – <span class="f-popup__text_accent">скидка 20%</span>
-            </p>
-            <input type="submit" value="Оформить заказ" class="f-popup__submit btn-submit">
-            <p class="f-popup__agreement">Нажимая кнопку «Оформить заказ», вы соглашаетесь на обработку ваших персональных данных
-            </p>
-         </form>
-
-         <h2 class="choose__title">Выберите вид манипулятора</h2>
-         <div class="choose__list">
-            <div class="choose__item choose__item_weight" data-weight="3т">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/1.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item choose__item_weight" data-weight="3т">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/1.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item choose__item_weight" data-weight="3т">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/1.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item choose__item_weight" data-weight="3т">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/1.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item choose__item_weight" data-weight="3т">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/1.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item choose__item_weight" data-weight="3т">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/1.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/2.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/3.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-            <div class="choose__item">
-               <a href="">
-                  <div class="choose__link-wrap">
-                     <img src="img/choose/4.png" alt="" class="choose__img">
-                     <span class="choose__name">Манипулятор 3 тонны</span>
-                     <span class="choose__price">от 5 000 руб./смена</span>
-                  </div>
-               </a>
-            </div>
-
-         </div>
-      </div>
-   </div>
-
-   <div class="steps">
-      <div class="wrapper">
-         <h2 class="steps__title">Порядок заказа</h2>
-         <div class="steps__list">
-            <div class="steps__item">
-               <img src="img/steps/1.png" alt="" class="steps__img">
-               <p class="steps__text">
-                  Звонок в компанию, письмо через эл. почту, заявка из формы
-               </p>
-            </div>
-            <div class="steps__item">
-               <img src="img/steps/2.png" alt="" class="steps__img">
-               <p class="steps__text">
-                  Обговаривание условий аренды спецтехники
-               </p>
-            </div>
-            <div class="steps__item">
-               <img src="img/steps/3.png" alt="" class="steps__img">
-               <p class="steps__text">
-                  Заключение договора и внесение предоплаты
-               </p>
-            </div>
-            <div class="steps__item">
-               <img src="img/steps/4.png" alt="" class="steps__img">
-               <p class="steps__text">
-                  Подача техники на объект
-               </p>
-            </div>
-            <div class="steps__item">
-               <img src="img/steps/5.png" alt="" class="steps__img">
-               <p class="steps__text">
-                  Выполнение всех работ по договору
-               </p>
-            </div>
-            <div class="steps__item">
-               <img src="img/steps/6.png" alt="" class="steps__img">
-               <p class="steps__text">
-                  Оплата оставшейся части по акту оказанных услуг
-               </p>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <div class="about">
-      <div class="wrapper">
-         <h2 class="about__title">Манипуляторы от компании <span class="about__span">Мульти Рент</span></h2>
-         <div class="about__icon">
-            <img src="img/about/1.png" alt="">
-         </div>
-         <div class="about__text">
-            <p class="about__text-part">
-               Профильное направление деятельности компании «Мульти Рент» – аренда спецтехники и манипуляторов в Москве
-               и Московской
-               области, по которому мы успешно работаем с 2000 года.
-            </p>
-            <p class="about__text-part">
-               Благодаря многолетнему опыту, профессиональным сотрудникам и надежной спецтехнике, наша компания занимает
-               лидирующие
-               позиции на рынке аренды манипуляторов различной грузоподъемности.
-            </p>
-            <p class="about__text-part">
-               Наш автопарк насчитывает более 100 единиц современной и надежной техники для выполнения работ по
-               перевозке грузов,
-               строительных задач, уборки территорий, расчистки снега, вывоза мусора.
-            </p>
-            <p class="about__text-part">
-               Фирма предоставляет в лизинг грузовой транспорт: краны-манипуляторы, бортовые, цельнометаллические,
-               тентованные
-               автомобили, низкорамники, полуприцепы, шаланды, тралы, автокраны, автовышки, грузовые автомобили,
-               гидромолоты, грейфер,
-               мини погрузчики, экскаваторы, самосвалы, поливомойки, краны.
-            </p>
-            <p class="about__text-part">
-               Мы сотрудничаем с проверенными партнерами, автопарк которых насчитывает более 400 единиц техники. Если
-               вся наша техника
-               занята, машина в любом случае будет подана в течение часа с момента получения заявки. Мы ценим не только
-               время, но и
-               гарантируем сохранность вашего груза, выполняя работу качественно и в срок.
-            </p>
-         </div>
-      </div>
-   </div>
-
-   <div class="why-and-photo">
-      <div class="why">
-         <div class="wrapper">
-            <h2 class="why__title">Почему выбирают нас</h2>
-            <div class="why__list">
-               <div class="why__item why__item_odd why__item_first">
-                  <div class="why__img why__img_odd">
-                     <img src="img/why/1.png" alt="">
-                  </div>
-                  <div class="why__text why__text_odd">
-                     <span>Собственный автопарк</span>
-                  </div>
-               </div>
-               <div class="why__item why__item_even">
-                  <div class="why__img why__img_even">
-                     <img src="img/why/2.png" alt="">
-                  </div>
-                  <div class="why__text why__text_even">
-                     <span>Исправная спецтехника</span>
-                  </div>
-               </div>
-               <div class="why__item why__item_odd">
-                  <div class="why__img why__img_odd">
-                     <img src="img/why/3.png" alt="">
-                  </div>
-                  <div class="why__text why__text_odd">
-                     <span>Подача в течении одного часа</span>
-                  </div>
-               </div>
-               <div class="why__item why__item_even why__item_last">
-                  <div class="why__img why__img_even">
-                     <img src="img/why/4.png" alt="">
-                  </div>
-                  <div class="why__text why__text_even">
-                     <span>Профессиональные сотрудники</span>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="photo">
-         <div class="wrapper">
-            <h2 class="photo__title">Фото работ</h2>
-            <div class="photo__list popup-gallery">
-               <a href="img/photo/1.png" class="photo__item">
-                  <img src="img/photo/1.png" alt="">
-                  <i class="icon-search-1"></i>
-               </a>
-               <a href="img/photo/2.png" class="photo__item">
-                  <img src="img/photo/2.png" alt="">
-                  <i class="icon-search-1"></i>
-               </a>
-               <a href="img/photo/3.png" class="photo__item">
-                  <img src="img/photo/3.png" alt="">
-                  <i class="icon-search-1"></i>
-               </a>
-               <a href="img/photo/4.png" class="photo__item">
-                  <img src="img/photo/4.png" alt="">
-                  <i class="icon-search-1"></i>
-               </a>
-               <a href="img/photo/5.png" class="photo__item">
-                  <img src="img/photo/5.png" alt="">
-                  <i class="icon-search-1"></i>
-               </a>
-               <a href="img/photo/6.png" class="photo__item">
-                  <img src="img/photo/6.png" alt="">
-                  <i class="icon-search-1"></i>
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <div class="video">
-      <div class="wrapper">
-         <h2 class="video__title">
-            Видео о наших манипуляторах
-         </h2>
-         <div class="video__wrapper">
-            <video class="video__content" id="video-1" src="video/1.mp4" poster="img/video/1.png"
-               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-               controls></video>
-            <div class="video__playbtn">
-               <img src="img/video/play.png" alt="">
-            </div>
-         </div>
-      </div>
-
-      <div class="form">
-         <div class="wrapper">
-            <div class="form__title">
-               <span>Заказать расчет стоимости аренды</span>
-            </div>
-            <div class="form__wrapper">
-               <div class="form__content">
-                  <div class="form__date date">
-                     <div class="date__title title-block">
-                        <span class="icon-calendar">Выбрать дату и время</span>
-                     </div>
-                     <div class="date__block">
-                        <div class="date__day">
-                           <table id="calendar2" class="calendar">
-                              <thead>
-                                 <tr class="calendar__header">
-                                    <td class="calendar__prev">
-                                    <td class="calendar__month" colspan="5">
-                                    <td class="calendar__next">
-                                 <tr class="calendar__week">
-                                    <td class="calendar__day-of-week">Пн
-                                    <td class="calendar__day-of-week">Вт
-                                    <td class="calendar__day-of-week">Ср
-                                    <td class="calendar__day-of-week">Чт
-                                    <td class="calendar__day-of-week">Пт
-                                    <td class="calendar__day-of-week">Сб
-                                    <td class="calendar__day-of-week">Вс
-                              <tbody class="calendar__body">
-                           </table>
-                        </div>
-                        <div class="date__time time">
-                           <div class="time__hour">
-                              <div class="time__hour-next time__btn time__btn_next"></div>
-                              <div class="time__hour-value">
-                                 <span class="time__value" id="time-hour">12</span>
-                              </div>
-                              <div class="time__hour-prev time__btn time__btn_prev"></div>
-                           </div>
-                           <div class="time__symbol">
-                              :
-                           </div>
-                           <div class="time__min">
-                              <div class="time__min-next time__btn time__btn_next"></div>
-                              <div class="time__min-value">
-                                 <span class="time__value" id="time-min">30</span>
-                              </div>
-                              <div class="time__min-prev time__btn time__btn_prev"></div>
-                           </div>
-                        </div>
-
-                     </div>
-                  </div>
-                  <div class="form__choosing choosing">
-                     <div class="choosing__title title-block">
-                        <span class="icon-truck">Выбрать спецтехнику</span>
-                     </div>
-                     <div class="choosing__form">
-                        <div class="choosing__select">
-                           <select name="truck" id="truck" class="choosing__select_truck">
-                              <option value="1" class="choosing__option">Манипулятор 3 тонны</option>
-                              <option value="2">Манипулятор 5 тонны</option>
-                              <option value="3">Манипулятор 7 тонны</option>
-                              <option value="4">Манипулятор 10 тонны</option>
-                              <option value="5">Манипулятор-вездеход</option>
-                              <option value="6">Автокран</option>
-                           </select>
-                           <div class="choosing__caret"></div>
-                        </div>
-                        <div class="choosing__block-inputs">
-                           <div class="choosing__line">
-                              <input type="text" name="from" placeholder="Откуда" class="choosing__input_way">
-                              <div class="choosing__symbol choosing__symbol_from"><img src="img/form/from.png" alt=""></div>
-                           </div>
-                           <div class="choosing__line">
-                              <input type="text" name="to1" placeholder="Куда" class="choosing__input_way">
-                              <div class="choosing__symbol choosing__symbol_to"><img src="img/form/to.png" alt=""></div>
-                           </div>
-                        </div>
-                        <a href="#" class="choosing__add" id="add__address">
-                           + добавить адрес
-                        </a>
-                        <label for="rent-time" class="choosing__renttime">Срок аренды</label>
-                        <div class="choosing__select">
-                           <select name="rent-time" id="rent-time" class="choosing__select_renttime">
-                              <option value="2">2 часа</option>
-                              <option value="3">3 часа</option>
-                              <option value="4">4 часа</option>
-                              <option value="5">5 часов</option>
-                              <option value="6">6 часов</option>
-                           </select>
-                           <div class="choosing__caret"></div>
-                        </div>
-                        <input type="text" class="choosing__input_phone" name="phone" placeholder="Ваш телефон">
-                        <input type="text" name="day" class="choosing__input_hidden" id="form-day">
-                        <input type="text" name="time" class="choosing__input_hidden" id="form-time">
-                        <input type="submit" value="Заказать расчет" class="choosing__btn btn-submit">
-                     </div>
-                  </div>
-
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="news">
-         <div class="wrapper">
-            <h2 class="news__title">Новости</h2>
-            <div class="news__list">
-               <div class="news__item">
-                  <div class="news__img">
-                     <img src="img/news/1.jpg" alt="">
-                  </div>
-                  <a href="" class="news__link">
-                     Новые модели КАМАЗа будут оснащаться подъемной осью
-                  </a>
-               </div>
-               <div class="news__item">
-                  <div class="news__img">
-                     <img src="img/news/2.jpg" alt="">
-                  </div>
-                  <a href="" class="news__link">
-                     Развитие российского рынка КМУ: тенденции 2019 года
-                  </a>
-               </div>
-               <div class="news__item">
-                  <div class="news__img">
-                     <img src="img/news/3.jpg" alt="">
-                  </div>
-                  <a href="" class="news__link">
-                     Хотите заказать манипулятор на 30% дешевле!
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-
-      <div class="footer">
-         <div class="wrapper">
-           <div class="footer__wrap">
-               <div class="footer__logo">
-                  <img src="img/footer/logo.png" alt="">
-                  <span class="footer__logo-text">
-                     Аренда спецтехники
-                     в Москве и Московской области
-                  </span>
-               </div>
-               <div class="footer__list">
-                  <div class="footer__item">
-                     <h4 class="footer__title">Информация</h4>
-                     <a href="" class="footer__link">О компании</a>
-                     <a href="" class="footer__link">Цены</a>
-                     <a href="" class="footer__link">Доставка и оплата</a>
-                     <a href="" class="footer__link">Карта сайта</a>
-                  </div>
-                  <div class="footer__item">
-                     <h4 class="footer__title">Услуги</h4>
-                     <a href="" class="footer__link">Аренда манипулятора</a>
-                     <a href="" class="footer__link">Аренда спецтехники</a>
-                     <a href="" class="footer__link">Перевозка грузов</a>
-                     <a href="" class="footer__link">Перевозка техники</a>
-                  </div>
-                  <div class="footer__item">
-                     <h4 class="footer__title">Контакты</h4>
-                     <p class="footer__text">
-                        117397 Москва,
-                        ул. Бутлерова, дом 17Б
-                        +7 495 784-83-03,
-                        info@multi-rent.ru
-                     </p>
-                  </div>
-                  <div class="footer__item">
-                     <h4 class="footer__title">Режим работы</h4>
-                     <p class="footer__text">
-                        Подача транспорта осуществляется
-                        <span class="footer__accent">24 часа в сутки,</span> без выходных.
-                        Время работы оператора
-                        Пн - Вс с <span class="footer__accent">7.00 - 24.00</span>
                
+            </div>
+         </div>
+   </header>
+
+   <main>
+      <section class="section about">
+         <div class="container">
+            <h2 class="section-title">Who we are</h2>
+            <p class="section-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <div class="about__content">
+               <div class="about__items about__block">
+                  <div class="about__header">
+                     <span class="about__title">Lorem ipsum dolor sit amet</span>
+                     <div class="about__icon">+</div>
+                  </div>
+                  <div class="about__dropdown">
+                     <p class="about__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend
+                     </p>
+                     <p class="about__text">
+                     Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
+                     </p>
+                  </div>
+
+                  <div class="about__header">
+                     <span class="about__title">Lorem ipsum dolor sit amet</span>
+                     <div class="about__icon">+</div>
+                  </div>
+                  <div class="about__dropdown">
+                     <p class="about__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend
+                     </p>
+                     <p class="about__text">
+                     Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
+                     </p>
+                  </div>
+
+                  <div class="about__header">
+                     <span class="about__title">Lorem ipsum dolor sit amet</span>
+                     <div class="about__icon">+</div>
+                  </div>
+                  <div class="about__dropdown">
+                     <p class="about__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit. Duis lorem nulla, eleifend
+                     </p>
+                     <p class="about__text">
+                     Ut urna dui, interdum non blandit sed, hendrerit ultricies mi. Aliquam at scelerisque ligula. Curabitur id laoreet velit.
                      </p>
                   </div>
                </div>
-           </div>
+               <div class="about__skills about__block">
+                  <div class="about__skill about__skill_1">
+                     <span class="about__skill-text">
+                        Web Design 80%
+                     </span>
+                  </div>
+                  <div class="about__skill about__skill_2">
+                     <span class="about__skill-text">
+                        Html and Css 60%
+                     </span>
+                  </div>
+                  <div class="about__skill about__skill_3">
+                     <span class="about__skill-text">
+                        Graphic Design 75%
+                     </span>
+                  </div>
+                  <div class="about__skill about__skill_4">
+                     <span class="about__skill-text">
+                        Wordpress 90%
+                     </span>
+                  </div>
+                  <div class="about__skill about__skill_5">
+                     <span class="about__skill-text">
+                        Joomla 50%
+                     </span>
+                  </div>
+                  <div class="about__skill about__skill_6">
+                     <span class="about__skill-text">
+                        Php and MysQl 85%
+                     </span> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section service">
+         <div class="container">
+            <h2 class="section-title">Our Service</h2>
+            <div class="service__items">
+               <div class="service__item">
+                  <img src="img/service/service-1.svg" alt="" class="service__image">
+                  <h3 class="service__title">Free support & updates</h3>
+                  <p class="service__text">Lorem ipsum dolor sit amet, conse tetuer adipiscing elit, sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  <button class="button service__button">See more</button>
+               </div>
+               <div class="service__item">
+                  <img src="img/service/service-2.svg" alt="" class="service__image">
+                  <h3 class="service__title">Fully customizable</h3>
+                  <p class="service__text">Lorem ipsum dolor sit amet, conse tetuer adipiscing elit, sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  <button class="button service__button">See more</button>
+               </div>
+               <div class="service__item">
+                  <img src="img/service/service-3.svg" alt="" class="service__image">
+                  <h3 class="service__title">12 themE websites</h3>
+                  <p class="service__text">Lorem ipsum dolor sit amet, conse tetuer adipiscing elit, sed diam nonu my nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                  <button class="button service__button">See more</button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section join">
+         <img src="img/join/join-1.png" alt="" class="join__image">
+         <h2 class="section-title join__title">Join Our Creative company</h2>
+         <p class="join__text">“Hello! Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+         tincidunt ut laoreet dolore magna aliquam erat volutpat.”</p>
+         <button class="button join__button">Join with us</button>
+      </section>
+
+      <section class="section offer">
+         <div class="container">
+            <h2 class="section-title">What we Offer</h2>
+            <div class="offer__items">
+               <div class="offer__item">
+                  <div class="offer__image-wrapper">
+                     <img src="img/offer/offer-1.png" alt="" class="offer__image">
+                  </div>
+                  <h3 class="offer__title">technical analysis</h3>
+                  <p class="offer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               </div>
+               <div class="offer__item">
+                  <div class="offer__image-wrapper">
+                     <img src="img/offer/offer-2.png" alt="" class="offer__image">
+                  </div>
+                  <h3 class="offer__title">General contract</h3>
+                  <p class="offer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               </div>
+               <div class="offer__item">
+                  <div class="offer__image-wrapper">
+                     <img src="img/offer/offer-3.png" alt="" class="offer__image">
+                  </div>
+                  <h3 class="offer__title">Consultation</h3>
+                  <p class="offer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               </div>
+               <div class="offer__item">
+                  <div class="offer__image-wrapper">
+                     <img src="img/offer/offer-4.png" alt="" class="offer__image">
+                  </div>
+                  <h3 class="offer__title">24/7 full support</h3>
+                  <p class="offer__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section reviews">
+         <h2 class="section-title">customer reviews</h2>
+         <div class="slider__wrap">
+            <div class="slider">
+               <div class="slider__item">
+                  <div class="slider__item-part">
+                     <img src="img/reviews/photo-1.png" alt="" class="slider__img">
+                     <h3 class="slider__title">Ejazul islam</h3>
+                     <h4 class="slider__subtitle">Diploma In mati bidda</h4>
+                     <p class="slider__text">“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”.......</p>
+                  </div>
+                  <div class="slider__item-part">
+                     <img src="img/reviews/photo-2.png" alt="" class="slider__img">
+                     <h3 class="slider__title">Iqball Hossain</h3>
+                     <h4 class="slider__subtitle">Psd at koitor bidda</h4>
+                     <p class="slider__text">“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”.......</p>
+                  </div>
+               </div>
+               <div class="slider__item">
+                  <div class="slider__item-part">
+                     <img src="img/reviews/photo-1.png" alt="" class="slider__img">
+                     <h3 class="slider__title">Ejazul islam</h3>
+                     <h4 class="slider__subtitle">Diploma In mati bidda</h4>
+                     <p class="slider__text">“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”.......</p>
+                  </div>
+                  <div class="slider__item-part">
+                     <img src="img/reviews/photo-2.png" alt="" class="slider__img">
+                     <h3 class="slider__title">Iqball Hossain</h3>
+                     <h4 class="slider__subtitle">Psd at koitor bidda</h4>
+                     <p class="slider__text">“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”.......</p>
+                  </div>
+               </div>
+               <div class="slider__item">
+                  <div class="slider__item-part">
+                     <img src="img/reviews/photo-1.png" alt="" class="slider__img">
+                     <h3 class="slider__title">Ejazul islam</h3>
+                     <h4 class="slider__subtitle">Diploma In mati bidda</h4>
+                     <p class="slider__text">“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”.......</p>
+                  </div>
+                  <div class="slider__item-part">
+                     <img src="img/reviews/photo-2.png" alt="" class="slider__img">
+                     <h3 class="slider__title">Iqball Hossain</h3>
+                     <h4 class="slider__subtitle">Psd at koitor bidda</h4>
+                     <p class="slider__text">“ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s”.......</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section achieves">
+         <div class="container">
+            <div class="achieves__wrap">
+               <div class="achieves__items">
+                  <div class="achieves__item">
+                     <img class="img achieves__image" src="img/achieves/achieve-1.svg">
+                     <strong class="achieves__number">10K+</strong>
+                     <span class="achieves__text">Love Our Team</span>
+                  </div>
+                  <div class="achieves__item">
+                     <img class="img achieves__image" src="img/achieves/achieve-2.svg">
+                     <strong class="achieves__number">400+</strong>
+                     <span class="achieves__text">Check Our</span>
+                  </div>
+                  <div class="achieves__item">
+                     <img class="img achieves__image" src="img/achieves/achieve-3.svg">
+                     <strong class="achieves__number">312</strong>
+                     <span class="achieves__text">repeat client</span>
+                  </div>
+                  <div class="achieves__item">
+                     <img class="img achieves__image" src="img/achieves/achieve-4.svg">
+                     <strong class="achieves__number">480</strong>
+                     <span class="achieves__text">Pizzas Ordered</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section team">
+         <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.Lorem ipsum dolor sit amet, consectetur facilisis.</p>
+            <div class="team__items">
+               <div class="team__item team__item_1">
+                  <div class="team__popup">
+                     <span class="team__name">Mahabubul Islam</span>
+                     <span class="team__skill">Html-Coder</span>
+                     <div class="team__social-list">
+                        <div class="team__social"><img src="img/team/social-1.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-2.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-3.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-4.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-5.svg" alt=""></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="team__item team__item_2">
+                  <div class="team__popup">
+                     <span class="team__name">Mahabubul Islam</span>
+                     <span class="team__skill">Html-Coder</span>
+                     <div class="team__social-list">
+                        <div class="team__social"><img src="img/team/social-1.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-2.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-3.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-4.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-5.svg" alt=""></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="team__item team__item_3">
+                  <div class="team__popup">
+                     <span class="team__name">Mahabubul Islam</span>
+                     <span class="team__skill">Html-Coder</span>
+                     <div class="team__social-list">
+                        <div class="team__social"><img src="img/team/social-1.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-2.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-3.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-4.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-5.svg" alt=""></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="team__item team__item_4">
+                  <div class="team__popup">
+                     <span class="team__name">Mahabubul Islam</span>
+                     <span class="team__skill">Html-Coder</span>
+                     <div class="team__social-list">
+                        <div class="team__social"><img src="img/team/social-1.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-2.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-3.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-4.svg" alt=""></div>
+                        <div class="team__social"><img src="img/team/social-5.svg" alt=""></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="section works">
+         <div class="container">
+            <h2 class="section-title">Our Awesome Works</h2>
+            <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec odio ipsum. Suspendisse cursus malesuada facilisis.Lorem ipsum dolor sit amet, consectetur facilisis.</p>
+            <div class="works__categories">
+               <a href="" class="works__category">All</a>
+               <a href="" class="works__category">Photography</a>
+               <a href="" class="works__category">Graphic</a>
+               <a href="" class="works__category">Print</a>
+               <a href="" class="works__category">Web</a>
+            </div>
+            <div class="works__nav">
+               <div class="works__arrow works__arrow_left"></div>
+               <div class="works__arrow works__arrow_right"></div>
+            </div>
+            <div class="works__wrap">
+               <div class="works__items">
+
+               </div>
+            </div>
+            
+         <template id="works">
+            <div class="works__item">
+               <div class="works__image-block">
+                  <img class="works__image" src="" alt="">
+                  <div class="works__cover">
+                     <img class="works__icon works__zoom" src="img/works/find.svg" alt="">
+                     <img src="img/works/connect.svg" alt="">
+                     <img class="works__icon" src="img/works/link.svg" alt="">
+                  </div>
+               </div>
+               <h4 class="works__title"></h4>
+               <span class="works__subtitle"></span>
+               </div>
+            </div>
+         </template>
+      </section>
+
+      <section class="section partners">
+         <div class="container">
+            <h2 class="section-title">Our partners</h2>
+            <div class="partners__list">
+               <div class="partners__item">
+                  <div class="partners__image">
+                     <img class="partners__icon partners__icon_1" src="img/partners/icon-1.png" alt="">
+                  </div>
+                  <span class="partners__text">graphicriver</span>
+               </div>
+               <div class="partners__item">
+                  <div class="partners__image">
+                     <img class="partners__icon partners__icon_2" src="img/partners/icon-2.png" alt="">
+                  </div>
+                  <span class="partners__text">themeforest</span>
+               </div>
+               <div class="partners__item">
+                  <div class="partners__image">
+                     <img class="partners__icon partners__icon_3" src="img/partners/icon-3.png" alt="">
+                  </div>
+                  <span class="partners__text">audiojungle</span>
+               </div>
+               <div class="partners__item">
+                  <div class="partners__image">
+                     <img class="partners__icon partners__icon_4" src="img/partners/icon-4.png" alt="">
+                  </div>
+                  <span class="partners__text">codecanyon</span>
+               </div>
+               <div class="partners__item">
+                  <div class="partners__image">
+                     <img class="partners__icon partners__icon_5" src="img/partners/icon-5.png" alt="">
+                  </div>
+                  <span class="partners__text">activeden</span>
+               </div>
+            </div>
+         </div>
+      </section>
+ 
+      <section class="subscribe">
+         <div class="container">
+            <form action="" class="subscribe__form">
+               <label for="subscribe__email" class="subscribe__label">
+                  Subscribe to our newsletter to get every Notify
+               </label>
+               <div class="subscribe__item">
+                  <input type="text" id="subscribe__email" class="subscribe__email" placeholder="Your email">
+                  <input type="submit" class="subscribe__submit" value=""></input>
+               </div>
+            </form>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__list">
+            <div class="footer__item footer-info">
+               <strong class="footer-info__logo">
+                  adventurer
+               </strong>
+               <p class="footer-info__text">
+                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its
+                  layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less normal.
+               </p>
+               <div class="footer-info__social-list">
+                  <div class="footer-info__social footer-info__social_1"></div>
+                  <div class="footer-info__social footer-info__social_2"></div>
+                  <div class="footer-info__social footer-info__social_3"></div>
+                  <div class="footer-info__social footer-info__social_4"></div>
+                  <div class="footer-info__social footer-info__social_5"></div>
+               </div>
+            </div>
+            <div class="footer__item footer-features">
+               <span class="footer-features__title footer-title">Some features</span>
+               <ul class="footer-features__list">
+                  <li class="footer-features__item">
+                     Lorem ipsum dolor sit amet
+                  </li>
+                  <li class="footer-features__item">
+                     Aliquam tincidunt cons ectetuer
+                  </li>
+                  <li class="footer-features__item">
+                     Vestibulum auctor dapibus con
+                  </li>
+                  <li class="footer-features__item">
+                     Lorem ipsum dolor sit amet
+                     auctor dapibus
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__item footer-tags">
+               <span class="footer-features__title footer-title">Tags</span>
+               <div class="footer-tags__list">
+                  <div class="footer-tags__item">
+                     <span class="footer-tags__text">
+                        corporate
+                     </span>
+                  </div>
+                  <div class="footer-tags__item">
+                     <span class="footer-tags__text">
+                        agency
+                     </span>
+                  </div>
+                  <div class="footer-tags__item">
+                     <span class="footer-tags__text">
+                        portfolio
+                     </span>
+                  </div>
+                  <div class="footer-tags__item">
+                     <span class="footer-tags__text">
+                        blog
+                     </span>
+                  </div>
+                  <div class="footer-tags__item">
+                     <span class="footer-tags__text">
+                        elegant
+                     </span>
+                  </div>
+                  <div class="footer-tags__item">
+                     <span class="footer-tags__text">
+                        professional
+                     </span>
+                  </div>
+                  <div class="footer-tags__item">
+                     <span class="footer-tags__text">
+                        business
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div class="footer__item footer-posts">
+               <span class="footer-features__title footer-title">Flicker Posts</span>
+               <div class="footer-posts__list">
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-1.png" alt="" class="footer-posts__image"></a>
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-2.png" alt="" class="footer-posts__image"></a>
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-3.png" alt="" class="footer-posts__image"></a>
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-4.png" alt="" class="footer-posts__image"></a>
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-5.png" alt="" class="footer-posts__image"></a>
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-6.png" alt="" class="footer-posts__image"></a>
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-7.png" alt="" class="footer-posts__image"></a>
+                  <a href="" class="footer-posts__link"><img src="img/footer/posts-8.png" alt="" class="footer-posts__image"></a>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copy">
+            <div class="footer-copy__text">
+               <span class="footer-copy__text_normal">© 2015 loran Kha. All Rights Reserved. </span>
+               <span class="footer-copy__text_highlight">Ehsanul</span>
+            </div>
+            <div class="footer-copy__social">
+               <img src="img/footer/socials.png" alt="">
+            </div>
          </div>
       </div>
+   </footer>
+
+   <div class="overlay"></div>
+   <div class="modal"></div>
 
 
-
-
-      <script src="js/main.js"></script>
-
+   <script src="js/jquery-3.2.1.slim.min.js"></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+      $('.slider').slick({
+         dots: true,
+         dotsClass: 'slider__dots',
+         arrows: false
+      })
+   </script>
 </body>
-
 </html>
