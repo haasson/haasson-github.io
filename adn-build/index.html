@@ -32,7 +32,7 @@
               <use xlink:href="svg/sprite.svg#menu"> </use>
             </svg><span class="header__menu-text">Москва</span>
           </div>
-          <div class="header__burger"><span class="header__burger-line"></span></div>
+          <div class="header__burger"><a class="header__burger-link header__burger-link_mobile" href="#mfp-menu_mobile"><span class="header__burger-line"></span></a><a class="header__burger-link" href="#mfp-menu"><span class="header__burger-line"></span></a></div>
         </div>
         <div class="header__dropdown header__dropdown_menu"><a class="header__dropdown-link" href="#">Новинки</a><a class="header__dropdown-link" href="#">Завтраки</a><a class="header__dropdown-link" href="#">Основное меню</a><a class="header__dropdown-link" href="#">Домашние обеды</a><a class="header__dropdown-link" href="#">Напитки</a></div>
         <div class="header__dropdown header__dropdown_city"><a class="header__dropdown-link" href="#">Краснодар</a><a class="header__dropdown-link" href="#">Москва</a><a class="header__dropdown-link" href="#">Санкт-Петербург</a></div>
@@ -125,7 +125,7 @@
                     <div class="menu__product-slide"><img src="img/product-2.png"/><span class="menu__product-text">Вкусные домашние обеды номер 2</span></div>
                   </div>
                 </div>
-                <div class="menu__product-item menu__product-item_bg-75">
+                <div class="menu__product-item menu__product-item_bg-45">
                   <h4 class="menu__product-title">блины сытные</h4>
                   <div class="menu__product-slider_desktop">
                     <div class="menu__product-slide"><img src="img/product-0.png"/><span class="menu__product-text">Вкусные блины сытные номер 0</span></div>
@@ -141,7 +141,7 @@
                     <div class="menu__product-slide"><img src="img/product-2.png"/><span class="menu__product-text">Вкусные блины сладкие номер 2</span></div>
                   </div>
                 </div>
-                <div class="menu__product-item menu__product-item_bg-30">
+                <div class="menu__product-item menu__product-item_bg-45">
                   <h4 class="menu__product-title">супы</h4>
                   <div class="menu__product-slider_desktop">
                     <div class="menu__product-slide"><img src="img/product-0.png"/><span class="menu__product-text">Вкусные супы номер 0</span></div>
@@ -157,7 +157,7 @@
                     <div class="menu__product-slide"><img src="img/product-2.png"/><span class="menu__product-text">Вкусные каши и гарниры  номер 2</span></div>
                   </div>
                 </div>
-                <div class="menu__product-item menu__product-item_bg-45">
+                <div class="menu__product-item menu__product-item_bg-60">
                   <h4 class="menu__product-title">салаты</h4>
                   <div class="menu__product-slider_desktop">
                     <div class="menu__product-slide"><img src="img/product-0.png"/><span class="menu__product-text">Вкусные салаты номер 0</span></div>
@@ -395,6 +395,84 @@
         </div>
       </div>
     </footer>
-    <script src="js/main.min.js"></script>
   </body>
 </html>
+<div class="white-popup-block mfp-hide" id="mfp-menu">
+  <div class="p-menu">
+    <div class="p-menu__block p-menu__block_left">
+          <div class="p-menu__square"><img class="p-menu__img" src="img/p-menu-1.jpg"/>
+            <div class="p-menu__symbol">
+              <svg class="icon icon-p-symbol">
+                <use xlink:href="svg/sprite.svg#o_teremke"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="p-menu__square"><img class="p-menu__img" src="img/p-menu-2.jpg"/>
+            <div class="p-menu__symbol">
+              <svg class="icon icon-p-symbol">
+                <use xlink:href="svg/sprite.svg#nashe_menu"></use>
+              </svg>
+            </div>
+          </div>
+    </div>
+    <div class="p-menu__block p-menu__block_mid">
+          <div class="p-menu__square"><img class="p-menu__img" src="img/p-menu-2.jpg"/>
+            <div class="p-menu__symbol">
+              <svg class="icon icon-p-symbol">
+                <use xlink:href="svg/sprite.svg#vashe_mnenie"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="p-menu__square"><img class="p-menu__img" src="img/p-menu-1.jpg"/>
+            <div class="p-menu__symbol">
+              <svg class="icon icon-p-symbol">
+                <use xlink:href="svg/sprite.svg#nashi_akcii"></use>
+              </svg>
+            </div>
+          </div>
+    </div>
+    <div class="p-menu__block p-menu__block_right">
+      <div class="p-menu__close-btn">
+        <svg class="icon icon-p-close">
+          <use xlink:href="svg/sprite.svg#desktop-close"></use>
+        </svg>
+      </div>
+      <div class="p-menu__logo">
+        <svg class="icon icon-p-logo">
+          <use xlink:href="svg/sprite.svg#mobile-red"></use>
+        </svg>
+      </div>
+      <div class="select p-menu__select"><span class="select__value select__text">Москва</span>
+        <svg class="icon icon-select-caret">
+          <use xlink:href="svg/sprite.svg#static-mobile"></use>
+        </svg>
+        <div class="select__dropdown">
+          <div class="select__option select__text">Краснодар</div>
+          <div class="select__option select__option_selected select__text">Москва</div>
+          <div class="select__option select__text">Санкт-Петербург</div>
+        </div>
+      </div>
+      <div class="p-menu__list"><a class="p-menu__link" href="#">События</a><a class="p-menu__link" href="#">Наши заведения</a><a class="p-menu__link" href="#">Работа у нас</a><a class="p-menu__link" href="#">Контакты</a><a class="p-menu__link" href="#">Калькулятор калорий</a></div>
+      <div class="p-menu__social-list">
+        <div class="p-menu__social-item"><a class="p-menu__social-link" href="#">
+            <svg class="icon icon-p-social">
+              <use xlink:href="svg/sprite.svg#instagram"></use>
+            </svg></a></div>
+        <div class="p-menu__social-item"><a class="p-menu__social-link" href="#">
+            <svg class="icon icon-p-social">
+              <use xlink:href="svg/sprite.svg#vk"></use>
+            </svg></a></div>
+        <div class="p-menu__social-item"><a class="p-menu__social-link" href="#">
+            <svg class="icon icon-p-social">
+              <use xlink:href="svg/sprite.svg#fb"></use>
+            </svg></a></div>
+        <div class="p-menu__social-item"><a class="p-menu__social-link" href="#">
+            <svg class="icon icon-p-social">
+              <use xlink:href="svg/sprite.svg#tw"></use>
+            </svg></a></div>
+      </div>
+      <div class="p-menu__delivery"><span class="p-menu__delivery-text">Доставка наших блюд в Москве - FOODFOX</span></div>
+    </div>
+    <script src="js/main.min.js"></script>
+  </div>
+</div>
