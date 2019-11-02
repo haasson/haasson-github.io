@@ -46,9 +46,8 @@
                   Написать
                </button>
                <div class="header__profile">
-                  <img src="../img/avatar.png" alt="profile" class="userpic">
-                  <svg class="icon header__icon-angle">
-                     <use xlink:href="../svg/sprite.svg#angle-down"></use>
+                  <svg class="icon header__icon-user">
+                     <use xlink:href="../svg/sprite.svg#user"></use>
                   </svg>
                </div>
             </div>
@@ -124,9 +123,63 @@
                   </ul>
                </div>
             </div>
-            
+
             <div class="content">
                <div class="posts">
+                  <div class="posts__item post">
+                     <div class="post__header">
+                        <a href="#" class="post__userpic post__userpic_mobile userpic">
+                           <img src="../img/avatar.png" alt="Ксения" >
+                        </a>
+                        <a href="#" class="post__author">
+                           Ксения
+                           Сименизанова
+                        </a>
+                        <span class="post__date">сегодня в 18:30</span>
+                     </div>
+                     <a href="#">
+                        <h2 class="post__title">
+                           Заголовок H2
+                           (максимум
+                           3 строки)
+                        </h2>
+                        <img src="../img/posts/post.jpg" alt="Московская биржа" class="post__image">
+                        <p class="post__text">На этой странице вы выводим лучшие посты за неделю. Текст P (максимум 10
+                           строк = 500 символов). </p>
+                     </a>
+                     <div class="post__feedback">
+                        <div class="post__rating post__feedback-item">
+                           <svg class="icon post__icon post__icon-thumbs-up">
+                              <use xlink:href="../svg/sprite.svg#thumbs-up"></use>
+                           </svg>
+                           <span class="post__feedback-text post__feedback-text_accent">105k</span>
+                           <svg class="icon post__icon post__icon-thumbs-down">
+                              <use xlink:href="../svg/sprite.svg#thumbs-down"></use>
+                           </svg>
+                        </div>
+                        <div class="post__saves post__feedback-item">
+                           <svg class="icon post__icon">
+                              <use xlink:href="../svg/sprite.svg#bookmark"></use>
+                           </svg>
+                           <span class="post__feedback-text">2k</span>
+                        </div>
+                        <div class="post__comments post__feedback-item">
+                           <svg class="icon post__icon">
+                              <use xlink:href="../svg/sprite.svg#comment"></use>
+                           </svg>
+                           <span class="post__feedback-text">999</span>
+                        </div>
+                        <div class="post__views post__feedback-item">
+                           <svg class="icon post__icon">
+                              <use xlink:href="../svg/sprite.svg#eye"></use>
+                           </svg>
+                           <span class="post__feedback-text">200k</span>
+                        </div>
+                     </div>
+                     <a href="#">
+                        <img src="../img/avatar.png" alt="Ксения" class="post__userpic post__userpic_desktop userpic">
+                     </a>
+                  </div>
                   <div class="posts__item post">
                      <div class="post__header">
                         <a href="#" class="post__userpic post__userpic_mobile userpic">
@@ -186,7 +239,7 @@
 
             <div class="userbar">
                <div class="user">
-                  <div class="user__content">
+                  <div class="user__content blur">
                      <div class="user__header">
                         <div class="user__image">
                            <img src="../img/avatar.png" alt="Ксения">
@@ -271,28 +324,12 @@
                         </ul>
                      </div>
                   </div>
-               </div>
-               <div class="portfolio">
-                  <h3 class="portfolio__title">
-                     Ваш портфель
-                  </h3>
-                  <img src="../img/graphic.png" alt="graph" class="portfolio__image">
-                  <div class="portfolio__timeline timeline">
-                     <div class="timeline__month">апр</div>
-                     <div class="timeline__month">июнь</div>
-                     <div class="timeline__month">июль</div>
-                     <div class="timeline__month">сент</div>
-                  </div>
-                  <div class="portfolio__info">
-                     <div class="portfolio__current">
-                        <span class="portfolio__money">123 690,8 ₽</span>
-                        <span class="portfolio__lighttext">Капитал в акциях</span>
-                        <span class="portfolio__lighttext">сегодня | 18:49</span>
-                     </div>
-                     <div class="portfolio__all">
-                        <span class="portfolio__percent">+ 6,02 %</span>
-                        <span class="portfolio__lighttext">Доходность</span>
-                        <span class="portfolio__lighttext">за все время</span>
+                  <div class="user__loginblock">
+                     <div class="button button_accent user__btn">Войти</div>
+                     <div class="user__message">
+                        Нас уже <strong class="accent-color">27 199</strong>
+                        и постоянно становится
+                        больше.
                      </div>
                   </div>
                </div>
