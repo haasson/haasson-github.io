@@ -8,11 +8,11 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
    <!-- Chrome, Firefox OS and Opera -->
-   <meta name="theme-color" content="#000">
+   <meta name="theme-color" content="#377d2a">
    <!-- Windows Mobile -->
-   <meta name="msapplication-navbutton-color" content="#000">
+   <meta name="msapplication-navbutton-color" content="#377d2a">
    <!-- iOS Safari -->
-   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#377d2a">
    <link rel="shortcut icon" href="../img/favicon.png">
    <link rel="stylesheet" href="../css/style.css">
 
@@ -27,7 +27,9 @@
             </svg>
             <div class="header__left">
                <a href="#" class="header__logo logo">
-                  <img src="../svg/logo.svg" alt="Procentos">
+                  <svg class="icon header__icon-logo">
+                     <use xlink:href="../svg/sprite-original.svg#logo"></use>
+                  </svg>
                </a>
             </div>
             <div class="header__center">
@@ -45,7 +47,7 @@
                <button class="button header__write">
                   Написать
                </button>
-               <div class="header__profile">
+               <div class="header__profile header__profile_logged">
                   <img src="../img/avatar.png" alt="profile" class="userpic">
                   <svg class="icon header__icon-angle">
                      <use xlink:href="../svg/sprite.svg#angle-down"></use>
@@ -126,20 +128,211 @@
             </div>
 
             <div class="content">
-               <div class="category-posts category">
-                  <span class="category__name">Компании</span>
-                  <svg class="icon category__icon-angle">
-                     <use xlink:href="../svg/sprite.svg#angle-down"></use>
-                  </svg>
-                  <div class="category__searchblock searchblock">
-                     <svg class="icon icon-search">
-                        <use xlink:href="../svg/sprite.svg#search"></use>
-                     </svg>
-                     <input type="text" class="search-input" placeholder="Поиск">
-                  </div>
-               </div>
+               <!-- //= templates/content/category.html -->
                <div class="companies">
                   <!-- Здесь список компаний -->
+                  <a class="companies__link-item" href="company-1.html">
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/AFKS.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">﻿АФК "Система"</span>
+                              <span class="companies__abbreviation">﻿AFKS</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/AFLT.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">﻿Аэрофлот</span>
+                              <span class="companies__abbreviation">﻿AFLT</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item  companies__item_select">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/ALRS.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">АЛРОСА</span>
+                              <span class="companies__abbreviation">ALRS</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/CBOM.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">МКБ</span>
+                              <span class="companies__abbreviation">CBOM</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/CHMF.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Северсталь</span>
+                              <span class="companies__abbreviation">CHMF</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/DSKY.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Детский мир</span>
+                              <span class="companies__abbreviation">DSKY</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/FEES.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">ФСК ЕЭС</span>
+                              <span class="companies__abbreviation">FEES</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/FIVE.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">X5 Retail Group</span>
+                              <span class="companies__abbreviation">FIVE</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/GAZP.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Газпром</span>
+                              <span class="companies__abbreviation">GAZP</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/GMKN.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Норильский никель</span>
+                              <span class="companies__abbreviation">GMKN</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">16 104,49</span>﻿₽</span>
+
+                     </div>
+                  </a>
                </div>
             </div>
 

@@ -8,11 +8,11 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
    <!-- Chrome, Firefox OS and Opera -->
-   <meta name="theme-color" content="#000">
+   <meta name="theme-color" content="#377d2a">
    <!-- Windows Mobile -->
-   <meta name="msapplication-navbutton-color" content="#000">
+   <meta name="msapplication-navbutton-color" content="#377d2a">
    <!-- iOS Safari -->
-   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#377d2a">
    <link rel="shortcut icon" href="../img/favicon.png">
    <link rel="stylesheet" href="../css/style.css">
 
@@ -27,7 +27,9 @@
             </svg>
             <div class="header__left">
                <a href="#" class="header__logo logo">
-                  <img src="../svg/logo.svg" alt="Procentos">
+                  <svg class="icon header__icon-logo">
+                     <use xlink:href="../svg/sprite-original.svg#logo"></use>
+                  </svg>
                </a>
             </div>
             <div class="header__center">
@@ -45,7 +47,7 @@
                <button class="button header__write">
                   Написать
                </button>
-               <div class="header__profile">
+               <div class="header__profile header__profile_guest">
                   <svg class="icon header__icon-user">
                      <use xlink:href="../svg/sprite.svg#user"></use>
                   </svg>
@@ -147,33 +149,33 @@
                         <p class="post__text">На этой странице вы выводим лучшие посты за неделю. Текст P (максимум 10
                            строк = 500 символов). </p>
                      </a>
-                     <div class="post__feedback">
-                        <div class="post__rating post__feedback-item">
-                           <svg class="icon post__icon post__icon-thumbs-up">
+                     <div class="post__feedback feedback">
+                        <div class="feedback__rating ratingblock">
+                           <svg class="icon ratingblock__icon">
                               <use xlink:href="../svg/sprite.svg#thumbs-up"></use>
                            </svg>
-                           <span class="post__feedback-text post__feedback-text_accent">105k</span>
-                           <svg class="icon post__icon post__icon-thumbs-down">
+                           <span class="ratingblock__text accent-color">105k</span>
+                           <svg class="icon ratingblock__icon post__icon-thumbs-down">
                               <use xlink:href="../svg/sprite.svg#thumbs-down"></use>
                            </svg>
                         </div>
-                        <div class="post__saves post__feedback-item">
-                           <svg class="icon post__icon">
+                        <div class="feedback__saves saveblock">
+                           <svg class="icon saveblock__icon">
                               <use xlink:href="../svg/sprite.svg#bookmark"></use>
                            </svg>
-                           <span class="post__feedback-text">2k</span>
+                           <span class="saveblock__text ">2k</span>
                         </div>
-                        <div class="post__comments post__feedback-item">
-                           <svg class="icon post__icon">
+                        <div class="feedback__commentblock commentblock">
+                           <svg class="icon commentblock__icon">
                               <use xlink:href="../svg/sprite.svg#comment"></use>
                            </svg>
-                           <span class="post__feedback-text">999</span>
+                           <span class="commentblock__text ">999</span>
                         </div>
-                        <div class="post__views post__feedback-item">
-                           <svg class="icon post__icon">
+                        <div class="feedback__views viewblock">
+                           <svg class="icon viewblock__icon">
                               <use xlink:href="../svg/sprite.svg#eye"></use>
                            </svg>
-                           <span class="post__feedback-text">200k</span>
+                           <span class="viewblock__text">200k</span>
                         </div>
                      </div>
                      <a href="#">
@@ -201,33 +203,33 @@
                         <p class="post__text">На этой странице вы выводим лучшие посты за неделю. Текст P (максимум 10
                            строк = 500 символов). </p>
                      </a>
-                     <div class="post__feedback">
-                        <div class="post__rating post__feedback-item">
-                           <svg class="icon post__icon post__icon-thumbs-up">
+                     <div class="post__feedback feedback">
+                        <div class="feedback__rating ratingblock">
+                           <svg class="icon ratingblock__icon">
                               <use xlink:href="../svg/sprite.svg#thumbs-up"></use>
                            </svg>
-                           <span class="post__feedback-text post__feedback-text_accent">105k</span>
-                           <svg class="icon post__icon post__icon-thumbs-down">
+                           <span class="ratingblock__text accent-color">105k</span>
+                           <svg class="icon ratingblock__icon post__icon-thumbs-down">
                               <use xlink:href="../svg/sprite.svg#thumbs-down"></use>
                            </svg>
                         </div>
-                        <div class="post__saves post__feedback-item">
-                           <svg class="icon post__icon">
+                        <div class="feedback__saves saveblock">
+                           <svg class="icon saveblock__icon">
                               <use xlink:href="../svg/sprite.svg#bookmark"></use>
                            </svg>
-                           <span class="post__feedback-text">2k</span>
+                           <span class="saveblock__text ">2k</span>
                         </div>
-                        <div class="post__comments post__feedback-item">
-                           <svg class="icon post__icon">
+                        <div class="feedback__commentblock commentblock">
+                           <svg class="icon commentblock__icon">
                               <use xlink:href="../svg/sprite.svg#comment"></use>
                            </svg>
-                           <span class="post__feedback-text">999</span>
+                           <span class="commentblock__text ">999</span>
                         </div>
-                        <div class="post__views post__feedback-item">
-                           <svg class="icon post__icon">
+                        <div class="feedback__views viewblock">
+                           <svg class="icon viewblock__icon">
                               <use xlink:href="../svg/sprite.svg#eye"></use>
                            </svg>
-                           <span class="post__feedback-text">200k</span>
+                           <span class="viewblock__text">200k</span>
                         </div>
                      </div>
                      <a href="#">
@@ -237,7 +239,7 @@
                </div>
             </div>
 
-            <div class="userbar">
+            <div class="userbar userbar-my">
                <div class="user">
                   <div class="user__content blur">
                      <div class="user__header">
@@ -325,7 +327,7 @@
                      </div>
                   </div>
                   <div class="user__loginblock">
-                     <div class="button button_accent user__btn">Войти</div>
+                     <div class="button button_accent user__btn login-btn">Войти</div>
                      <div class="user__message">
                         Нас уже <strong class="accent-color">27 199</strong>
                         и постоянно становится
@@ -339,6 +341,51 @@
    </main>
 
    <div class="overlay-template"></div>
+   
+   <div class="modal modal-login">
+      <div class="modal__logo">
+         <img src="../img/procentos-mono.png" alt="Procentos" class="modal__image">
+      </div>
+      <div class="modal__content">
+         <h3 class="modal__title">Вход</h3>
+         <div class="modal__social-list">
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite.svg#vk"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_vk">Войти через ВКонтакте</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite.svg#facebook"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_fb">Войти через Facebook</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite.svg#twitter-alt"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_tw">Войти через Twitter</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite-original.svg#yandex-logo"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_yandex">Войти через Яндекс</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite-original.svg#google-logo"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_google">Войти через Google</button>
+            </div>
+         </div>
+         <p class="modal__agreement">
+            Авторизуясь, вы соглашаетесь с <a href="#" class="modal__strong">правилами пользования сайтом</a> и
+            даете согласие на <a href="#" class="modal__strong">обработку персональных данных.</a> 
+         </p>
+      </div>
+   </div>
 
    <script src="../js/main.min.js"></script>
 </body>

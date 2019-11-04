@@ -8,11 +8,11 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
    <!-- Chrome, Firefox OS and Opera -->
-   <meta name="theme-color" content="#000">
+   <meta name="theme-color" content="#377d2a">
    <!-- Windows Mobile -->
-   <meta name="msapplication-navbutton-color" content="#000">
+   <meta name="msapplication-navbutton-color" content="#377d2a">
    <!-- iOS Safari -->
-   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+   <meta name="apple-mobile-web-app-status-bar-style" content="#377d2a">
    <link rel="shortcut icon" href="../img/favicon.png">
    <link rel="stylesheet" href="../css/style.css">
 
@@ -27,7 +27,9 @@
             </svg>
             <div class="header__left">
                <a href="#" class="header__logo logo">
-                  <img src="../svg/logo.svg" alt="Procentos">
+                  <svg class="icon header__icon-logo">
+                     <use xlink:href="../svg/sprite-original.svg#logo"></use>
+                  </svg>
                </a>
             </div>
             <div class="header__center">
@@ -45,7 +47,7 @@
                <button class="button header__write">
                   Написать
                </button>
-               <div class="header__profile">
+               <div class="header__profile header__profile_guest">
                   <svg class="icon header__icon-user">
                      <use xlink:href="../svg/sprite.svg#user"></use>
                   </svg>
@@ -136,6 +138,97 @@
 
                <div class="company__stats">
                   <!-- Здесь широкий блок с графиками -->
+               </div>
+            </div>
+
+            <div class="userbar userbar-my userbar-my_hidden">
+               <div class="user">
+                  <div class="user__content">
+                     <div class="user__header">
+                        <div class="user__image">
+                           <svg class="icon user__icon-user">
+                              <use xlink:href="../svg/sprite.svg#user-circle"></use>
+                           </svg>
+                        </div>
+                        <div class="user__nameblock">
+                           <span class="user__name">Ксения Сименизанова</span>
+                           <span class="user__login user__login_empty">@ Придумайте логин</span>
+                        </div>
+                     </div>
+                     <div class="user__state">
+                        <div class="user__state-line">
+                           <div class="user__state-item user__state-item_wide">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">Подписчиков</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-online">Сейчас Online</span>
+                           </div>
+                        </div>
+                        <div class="user__state-line">
+                           <div class="user__state-item user__state-item_wide">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">публикаций</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">Рейтинг</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">подписки</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="user__about">
+                        <span class="user__about-title">О себе</span>
+                        <span class="user__about-text">Напишите коротко о себе</span>
+                        <div class="user__about-edit">
+                           <svg class="icon user__icon-edit">
+                              <use xlink:href="../svg/sprite.svg#edit"></use>
+                           </svg>
+                        </div>
+                     </div>
+                     <div class="user__listblock">
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="http://procentos.ru" class="list__item-link">Сайт: <span
+                                    class="font-regular">Добавить сайт</span></a>
+                           </li>
+                        </ul>
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Редактировать профиль</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сохранить</a>
+                           </li>
+                        </ul>
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Написать запись</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Черновики</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сообщения</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сохранения</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Портфель</a>
+                           </li>
+                           <li class="user__item user__item_margin list__item">
+                              <a href="#" class="list__item-link">Настройки</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Выход</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
                </div>
             </div>
 
