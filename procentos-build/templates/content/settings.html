@@ -1,0 +1,125 @@
+<form class="settings">
+   <h2 class="settings__title">Общие настройки</h2>
+   <div class="settings__line">
+      <img src="../img/avatar.png" alt="Фото профиля" class="settings__image settings__label">
+      <div class="settings__value-input settings__value-image">
+         <span>Сменить фото профиля</span>
+         <span>Формат: jpg, gif, png</span>
+      </div>
+   </div>
+   <div class="settings__line">
+      <label class="settings__label" for="name">Имя</label>
+      <div class="settings__value-input">
+         <input type="text" name="name" id="name">
+      </div>
+   </div>
+   <div class="settings__line">
+      <label class="settings__label" for="login">Логин</label>
+      <div class="settings__value-input">
+         <input type="text" name="login" id="login">
+      </div>
+   </div>
+   <div class="settings__line">
+      <label class="settings__label" for="email">Эл. адрес</label>
+      <div class="settings__value-input">
+         <input type="text" name="email" id="email">
+      </div>
+   </div>
+   <div class="settings__line">
+      <label class="settings__label" for="phone">Номер телефона</label>
+      <div class="settings__value-input">
+         <input type="text" name="phone" id="phone">
+      </div>
+   </div>
+   <div class="settings__line">
+      <label class="settings__label" for="site">Веб-сайт</label>
+      <div class="settings__value-input">
+         <input type="text" name="site" id="site">
+      </div>
+   </div>
+   <div class="settings__line">
+      <label class="settings__label" for="about">О себе</label>
+      <div class="settings__value-input">
+         <textarea name="about" id="about"></textarea>
+      </div>
+   </div>
+
+   <h2 class="settings__title">Уведомления</h2>
+   <div class="settings__line">
+      <span class="settings__checkbox">На сайте</span>
+      <span class="settings__checkbox">Эл. почта</span>
+   </div>
+   <div class="settings__line">
+      <span class="settings__label">Отметки «Лайк»</span>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="like-site" id="like-site">
+         <label for="like-site" class="pseudo-label"></label>
+      </div>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="like-email" id="like-email">
+         <label for="like-email" class="pseudo-label"></label>
+      </div>
+   </div>
+   <div class="settings__line">
+      <span class="settings__label">Поделились</span>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="share-site" id="share-site">
+         <label for="share-site" class="pseudo-label"></label>
+      </div>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="share-email" id="share-email">
+         <label for="share-email" class="pseudo-label"></label>
+      </div>
+   </div>
+   <div class="settings__line">
+      <span class="settings__label">Комментарии</span>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="comments-site" id="comments-site">
+         <label for="comments-site" class="pseudo-label"></label>
+      </div>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="comments-email" id="comments-email">
+         <label for="comments-email" class="pseudo-label"></label>
+      </div>
+   </div>
+   <div class="settings__line">
+      <span class="settings__label">Ответы на мои комментарии</span>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="comments-reply-site" id="comments-reply-site">
+         <label for="comments-reply-site" class="pseudo-label"></label>
+      </div>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="comments-reply-email" id="comments-reply-email">
+         <label for="comments-reply-email" class="pseudo-label"></label>
+      </div>
+   </div>
+   <div class="settings__line">
+      <span class="settings__label">Уведомления о подписке</span>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="subscribe-site" id="subscribe-site">
+         <label for="subscribe-site" class="pseudo-label"></label>
+      </div>
+      <div class="settings__checkbox">
+         <input type="checkbox" name="subscribe-email" id="subscribe-email">
+         <label for="subscribe-email" class="pseudo-label"></label>
+      </div>
+   </div>
+   <div class="settings__other">
+      <h2 class="settings__title">Прочие настройки</h2>
+      <div class="settings__line">
+         <span class="settings__label">Включить темную тему</span>
+         <div class="settings__checkbox">
+            <input type="checkbox" name="theme" id="theme">
+            <label for="theme" class="pseudo-label"></label>
+         </div>
+      </div>
+      <div class="settings__line">
+         <span class="settings__label">Закрытый аккаунт</span>
+         <div class="settings__checkbox">
+            <input type="checkbox" name="private-mode" id="private-mode">
+            <label for="private-mode" class="pseudo-label"></label>
+         </div>
+      </div>
+   </div>
+   <submit class="button button_accent settings__btn">Сохранить изменения</submit>
+</form>
