@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Procentos</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <!-- Chrome, Firefox OS and Opera -->
+   <meta name="theme-color" content="#377d2a">
+   <!-- Windows Mobile -->
+   <meta name="msapplication-navbutton-color" content="#377d2a">
+   <!-- iOS Safari -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="#377d2a">
+   <link rel="shortcut icon" href="../img/favicon.png">
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+   <header class="header">
+      <div class="wrapper">
+         <div class="header-inner">
+            <svg class="icon header__icon-burger">
+               <use xlink:href="../svg/sprite.svg#menu"></use>
+            </svg>
+            <div class="header__left">
+               <a href="#" class="header__logo logo">
+                  <svg class="icon header__icon-logo">
+                     <use xlink:href="../svg/sprite-original.svg#logo"></use>
+                  </svg>
+               </a>
+            </div>
+            <div class="header__center">
+               <div class="header__searchblock searchblock">
+                  <svg class="icon header__icon-search icon-search">
+                     <use xlink:href="../svg/sprite.svg#search"></use>
+                  </svg>
+                  <input type="text" class="search-input" placeholder="Поиск">
+               </div>
+               <svg class="icon header__icon-bell">
+                  <use xlink:href="../svg/sprite.svg#bell"></use>
+               </svg>
+            </div>
+            <div class="header__right">
+               <button class="button header__write">
+                  Написать
+               </button>
+               <div class="header__profile header__profile_logged">
+                  <img src="../img/avatar.png" alt="profile" class="userpic">
+                  <svg class="icon header__icon-angle">
+                     <use xlink:href="../svg/sprite.svg#angle-down"></use>
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="main">
+      <div class="wrapper">
+         <div class="main-inner">
+
+            <div class="menu">
+               <div class="menu__searchblock">
+                  <svg class="icon menu__icon-search">
+                     <use xlink:href="../svg/sprite.svg#search"></use>
+                  </svg>
+                  <input type="text" class="menu__search" placeholder="Поиск">
+               </div>
+               <div class="menu__listblock">
+                  <ul class="menu__list list">
+                     <li class="menu__list-item list__item list__item_active">
+                        <a href="#" class="list__item-link">Мой профиль</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Сообщения
+                           <span>-</span>
+                           <span class="accent-color">99</span>
+                        </a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Подписки
+                           <span>-</span>
+                           <span class="accent-color">99</span>
+                        </a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Лучшие</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Свежие
+                           <span>-</span>
+                           <span class="accent-color">99</span>
+                        </a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Пользователи</a>
+                     </li>
+                  </ul>
+                  <ul class="menu__list list">
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Новости</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Компании</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Дивиденды</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Сравнение</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Рейтинги</a>
+                     </li>
+                  </ul>
+                  <ul class="menu__list list">
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Книги</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Обзоры книг</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="content">
+               <div class="category-posts category">
+                  <span class="category__name">Компании</span>
+                  <svg class="icon category__icon-angle">
+                     <use xlink:href="../svg/sprite.svg#angle-down"></use>
+                  </svg>
+                  <div class="category__searchblock searchblock">
+                     <svg class="icon icon-search">
+                        <use xlink:href="../svg/sprite.svg#search"></use>
+                     </svg>
+                     <input type="text" class="search-input" placeholder="Поиск">
+                  </div>
+               </div>
+               <div class="companies">
+                  <!-- Здесь список компаний -->
+                  <a class="companies__link-item" href="company-1.html">
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/AFKS.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">﻿АФК "Система"</span>
+                              <span class="companies__abbreviation">﻿AFKS</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphred.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/AFLT.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">﻿Аэрофлот</span>
+                              <span class="companies__abbreviation">﻿AFLT</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphgreen.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item  companies__item_select">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/ALRS.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">АЛРОСА</span>
+                              <span class="companies__abbreviation">ALRS</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphred.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/CBOM.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">МКБ</span>
+                              <span class="companies__abbreviation">CBOM</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphgreen.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/CHMF.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Северсталь</span>
+                              <span class="companies__abbreviation">CHMF</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphred.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/DSKY.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Детский мир</span>
+                              <span class="companies__abbreviation">DSKY</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphgreen.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/FEES.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">ФСК ЕЭС</span>
+                              <span class="companies__abbreviation">FEES</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphred.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/FIVE.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">X5 Retail Group</span>
+                              <span class="companies__abbreviation">FIVE</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphgreen.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/GAZP.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Газпром</span>
+                              <span class="companies__abbreviation">GAZP</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_red"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphred.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">13,49</span>﻿₽</span>
+
+                     </div>
+                     <div class="companies__item">
+                        <div class="companies__designation">
+                           <div class="companies__logo">
+                              <img class="companies__logo-img" src="../img/img_company/GMKN.png" alt="logo">
+                           </div>
+                           <div class="companies__name-block">
+                              <span class="companies__name">Норильский никель</span>
+                              <span class="companies__abbreviation">GMKN</span>
+                           </div>
+                        </div>
+                        <div class="companies__graph">
+                           <div class="companies__wrapper">
+                              <span class="companies__text"><span class="companies__text companies__text_mobile-none">Изменение за </span>год</span>
+                              <span class="companies__change-number companies__change-number_green"><span class="companies__change-value">-22,00</span>%</span>
+                           </div>
+                           <div class="companies__graph-image"><img class="companies__graph-img" src="../img/graphgreen.png" alt="graph" ></div>
+                        </div>
+                        <span class="companies__price"><span class="companies__price-value">16 104,49</span>﻿₽</span>
+
+                     </div>
+                  </a>
+               </div>
+            </div>
+
+            <div class="userbar">
+               <div class="user">
+                  <div class="user__content">
+                     <div class="user__header">
+                        <div class="user__image">
+                           <img src="../img/avatar.png" alt="Ксения">
+                        </div>
+                        <div class="user__nameblock">
+                           <span class="user__name">Ксения</span>
+                           <span class="user__name">Сименизанова</span>
+                           <span class="user__login">@superksu</span>
+                        </div>
+                     </div>
+                     <div class="user__state">
+                        <div class="user__state-line">
+                           <div class="user__state-item user__state-item_wide">
+                              <span class="user__state-number">23</span>
+                              <span class="user__state-text">Подписчиков</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-online">Сейчас Online</span>
+                           </div>
+                        </div>
+                        <div class="user__state-line">
+                           <div class="user__state-item user__state-item_wide">
+                              <span class="user__state-number">1</span>
+                              <span class="user__state-text">публикаций</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">Рейтинг</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">подписки</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="user__about">
+                        <span class="user__about-title">О себе</span>
+                        <span class="user__about-text">Мир ловил меня, но не поймал</span>
+                        <span class="user__about-text">Предложения по интервью,тв,кино: <span
+                              class="nowrap">+7903-722-454556</span></span>
+                        <span class="user__about-text">Коммерческий директор: <span class="nowrap">+7963-781-4919
+                           </span>Кирилл</span>
+                        <span class="user__about-text user__about-text_uppercase">Премьера</span>
+                     </div>
+                     <div class="user__listblock">
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="http://procentos.ru" class="list__item-link">Сайт: <span
+                                    class="accent-color">Procentos.ru</span></a>
+                           </li>
+                        </ul>
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Редактировать профиль</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сохранить</a>
+                           </li>
+                        </ul>
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Написать запись</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Черновики</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сообщения</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сохранения</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Портфель</a>
+                           </li>
+                           <li class="user__item user__item_margin list__item">
+                              <a href="#" class="list__item-link">Настройки</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Выход</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="portfolio">
+                  <h3 class="portfolio__title">
+                     Ваш портфель
+                  </h3>
+                  <img src="../img/graphic.png" alt="graph" class="portfolio__image">
+                  <div class="portfolio__timeline timeline">
+                     <div class="timeline__month">апр</div>
+                     <div class="timeline__month">июнь</div>
+                     <div class="timeline__month">июль</div>
+                     <div class="timeline__month">сент</div>
+                  </div>
+                  <div class="portfolio__info">
+                     <div class="portfolio__current">
+                        <span class="portfolio__money">123 690,8 ₽</span>
+                        <span class="portfolio__lighttext">Капитал в акциях</span>
+                        <span class="portfolio__lighttext">сегодня | 18:49</span>
+                     </div>
+                     <div class="portfolio__all">
+                        <span class="portfolio__percent">+ 6,02 %</span>
+                        <span class="portfolio__lighttext">Доходность</span>
+                        <span class="portfolio__lighttext">за все время</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <div class="overlay-template"></div>
+
+   <script src="../js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Procentos</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <!-- Chrome, Firefox OS and Opera -->
+   <meta name="theme-color" content="#377d2a">
+   <!-- Windows Mobile -->
+   <meta name="msapplication-navbutton-color" content="#377d2a">
+   <!-- iOS Safari -->
+   <meta name="apple-mobile-web-app-status-bar-style" content="#377d2a">
+   <link rel="shortcut icon" href="../img/favicon.png">
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+   <header class="header">
+      <div class="wrapper">
+         <div class="header-inner">
+            <svg class="icon header__icon-burger">
+               <use xlink:href="../svg/sprite.svg#menu"></use>
+            </svg>
+            <div class="header__left">
+               <a href="#" class="header__logo logo">
+                  <svg class="icon header__icon-logo">
+                     <use xlink:href="../svg/sprite-original.svg#logo"></use>
+                  </svg>
+               </a>
+            </div>
+            <div class="header__center">
+               <div class="header__searchblock searchblock">
+                  <svg class="icon header__icon-search icon-search">
+                     <use xlink:href="../svg/sprite.svg#search"></use>
+                  </svg>
+                  <input type="text" class="search-input" placeholder="Поиск">
+               </div>
+               <svg class="icon header__icon-bell">
+                  <use xlink:href="../svg/sprite.svg#bell"></use>
+               </svg>
+            </div>
+            <div class="header__right">
+               <button class="button header__write">
+                  Написать
+               </button>
+               <div class="header__profile header__profile_logged">
+                  <img src="../img/avatar.png" alt="profile" class="userpic">
+                  <svg class="icon header__icon-angle">
+                     <use xlink:href="../svg/sprite.svg#angle-down"></use>
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main class="main">
+      <div class="wrapper">
+         <div class="main-inner">
+
+            <div class="menu">
+               <div class="menu__searchblock">
+                  <svg class="icon menu__icon-search">
+                     <use xlink:href="../svg/sprite.svg#search"></use>
+                  </svg>
+                  <input type="text" class="menu__search" placeholder="Поиск">
+               </div>
+               <div class="menu__listblock">
+                  <ul class="menu__list list">
+                     <li class="menu__list-item list__item list__item_active">
+                        <a href="#" class="list__item-link">Мой профиль</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Сообщения
+                           <span>-</span>
+                           <span class="accent-color">99</span>
+                        </a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Подписки
+                           <span>-</span>
+                           <span class="accent-color">99</span>
+                        </a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Лучшие</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Свежие
+                           <span>-</span>
+                           <span class="accent-color">99</span>
+                        </a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Пользователи</a>
+                     </li>
+                  </ul>
+                  <ul class="menu__list list">
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Новости</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Компании</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Дивиденды</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Сравнение</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Рейтинги</a>
+                     </li>
+                  </ul>
+                  <ul class="menu__list list">
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Книги</a>
+                     </li>
+                     <li class="menu__list-item list__item">
+                        <a href="#" class="list__item-link">Обзоры книг</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="content">
+               <div class="dialogs-category category">
+                  <span class="category__name">Все сообщения</span>
+                  <div class="category__searchblock searchblock">
+                     <svg class="icon icon-search">
+                        <use xlink:href="../svg/sprite.svg#search"></use>
+                     </svg>
+                     <input type="text" class="search-input" placeholder="Поиск">
+                  </div>
+               </div>
+               <div class="dialogs">
+                  <div class="dialogs__userblock contact">
+                     <img src="../img/avatar.png" alt="Артемий" class="contact__image">
+                     <div class="contact__info">
+                        <span class="contact__name">Артем Смирнов</span>
+                        <span class="contact__status">был(а) в сети 37 минут</span>
+                     </div>
+                     <div class="contact__search searchblock">
+                        <svg class="icon icon-search">
+                           <use xlink:href="../svg/sprite.svg#search"></use>
+                        </svg>
+                        <input type="text" class="search-input" placeholder="Поиск">
+                     </div>
+                  </div>
+                  <div class="dialogs__users">
+                     <div class="dialogs__users-inner scrollbar-inner">
+                        <div class="dialogs__user dialogs__user_unread">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text_you">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">Вчера</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">Вчера</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">Вчера</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">Вчера</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">Вчера</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">Вчера</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text_you">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">Вчера</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text_you">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Артемий</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                        <div class="dialogs__user">
+                           <img src="../img/avatar.png" alt="Артемий" class="dialogs__user-image">
+                           <div class="dialogs__user-body">
+                              <span class="dialogs__user-name">Иван</span>
+                              <span class="dialogs__user-name">Константинопольский</span>
+                              <span class="dialogs__user-text">Превью текста сообщения. при наведении мышкой</span>
+                              <span class="dialogs__user-date">18:30</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               
+                  <div class="dialogs__body">
+                     <div class="dialogs__messages scrollbar-inner">
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Ксения">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Ксения Симениазова</span>
+                                 <span class="messageblock__date">24.09</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте, отличный ресурс, продолжайте в том же духе и результат обязательно будет
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                        <div class="dialogs__message messageblock">
+                           <img class="messageblock__image" src="../img/avatar.png" alt="Дмитрий">
+                           <div class="messageblock__content">
+                              <div class="messageblock__info">
+                                 <span class="messageblock__author">Дмитрий Рыков</span>
+                                 <span class="messageblock__date">Сегодня в 21:12</span>
+                              </div>
+                              <p class="messageblock__text">
+                                 Здравствуйте. Пост стоит 567 р. Можем еще предложить разместить вам закрепленную тему в Обсуждениях, 1500 р за месяц
+                                 размещения.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="dialogs__add-comment add-comment">
+                        <form class="add-comment__form">
+                           <div class="add-comment__textareablock">
+                              <svg class="icon add-comment__icon add-comment__icon-comment">
+                                 <use xlink:href="../svg/sprite.svg#comment"></use>
+                              </svg>
+                              <textarea class="add-comment__textarea" placeholder="Написать комментарий"></textarea>
+                              <svg class="icon add-comment__icon add-comment__icon-paperclip">
+                                 <use xlink:href="../svg/sprite.svg#paperclip"></use>
+                              </svg>
+                           </div>
+                           <submit class="button button_accent add-comment__btn">
+                              Отправить
+                           </submit>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+
+            <div class="userbar userbar-my userbar-my_hidden">
+               <div class="user">
+                  <div class="user__content">
+                     <div class="user__header">
+                        <div class="user__image">
+                           <img src="../img/avatar.png" alt="Ксения">
+                        </div>
+                        <div class="user__nameblock">
+                           <span class="user__name">Ксения</span>
+                           <span class="user__name">Сименизанова</span>
+                           <span class="user__login">@superksu</span>
+                        </div>
+                     </div>
+                     <div class="user__state">
+                        <div class="user__state-line">
+                           <div class="user__state-item user__state-item_wide">
+                              <span class="user__state-number">23</span>
+                              <span class="user__state-text">Подписчиков</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-online">Сейчас Online</span>
+                           </div>
+                        </div>
+                        <div class="user__state-line">
+                           <div class="user__state-item user__state-item_wide">
+                              <span class="user__state-number">1</span>
+                              <span class="user__state-text">публикаций</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">Рейтинг</span>
+                           </div>
+                           <div class="user__state-item">
+                              <span class="user__state-number">0</span>
+                              <span class="user__state-text">подписки</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="user__about">
+                        <span class="user__about-title">О себе</span>
+                        <span class="user__about-text">Мир ловил меня, но не поймал</span>
+                        <span class="user__about-text">Предложения по интервью,тв,кино: <span
+                              class="nowrap">+7903-722-454556</span></span>
+                        <span class="user__about-text">Коммерческий директор: <span class="nowrap">+7963-781-4919
+                           </span>Кирилл</span>
+                        <span class="user__about-text user__about-text_uppercase">Премьера</span>
+                     </div>
+                     <div class="user__listblock">
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="http://procentos.ru" class="list__item-link">Сайт: <span
+                                    class="accent-color">Procentos.ru</span></a>
+                           </li>
+                        </ul>
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Редактировать профиль</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сохранить</a>
+                           </li>
+                        </ul>
+                        <ul class="user__list list">
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Написать запись</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Черновики</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сообщения</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Сохранения</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Портфель</a>
+                           </li>
+                           <li class="user__item user__item_margin list__item">
+                              <a href="#" class="list__item-link">Настройки</a>
+                           </li>
+                           <li class="user__item list__item">
+                              <a href="#" class="list__item-link">Выход</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <div class="overlay-template"></div>
+   
+   <div class="modal modal-login">
+      <div class="modal__logo">
+         <img src="../img/procentos-mono.png" alt="Procentos" class="modal__image">
+      </div>
+      <div class="modal__content">
+         <h3 class="modal__title">Вход</h3>
+         <div class="modal__social-list">
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite.svg#vk"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_vk">Войти через ВКонтакте</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite.svg#facebook"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_fb">Войти через Facebook</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite.svg#twitter-alt"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_tw">Войти через Twitter</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite-original.svg#yandex-logo"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_yandex">Войти через Яндекс</button>
+            </div>
+            <div class="modal__social-item">
+               <svg class="icon modal__social-icon">
+                  <use xlink:href="../svg/sprite-original.svg#google-logo"></use>
+               </svg>
+               <button class="button modal__social-button modal__social-button_google">Войти через Google</button>
+            </div>
+         </div>
+         <p class="modal__agreement">
+            Авторизуясь, вы соглашаетесь с <a href="#" class="modal__strong">правилами пользования сайтом</a> и
+            даете согласие на <a href="#" class="modal__strong">обработку персональных данных.</a> 
+         </p>
+      </div>
+   </div>
+
+   <script src="../js/vendors/jquery.js"></script>
+   <script src="../js/vendors/scrollbar.js"></script>
+   <script src="../js/main.min.js"></script>
+</body>
+
+</html>
