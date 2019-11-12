@@ -39,7 +39,7 @@
                   </svg>
                   <input type="text" class="search-input" placeholder="Поиск">
                </div>
-               <div class="header__notification-block">
+               <div class="header__notification-block header__notification-block_logged">
                   <svg class="icon header__icon-bell">
                      <use xlink:href="../svg/sprite.svg#bell"></use>
                   </svg>
@@ -247,10 +247,12 @@
 
             <div class="content">
                <div class="category-posts category">
-                  <span class="category__name">Лучшие</span>
-                  <svg class="icon category__icon-angle">
-                     <use xlink:href="../svg/sprite.svg#angle-down"></use>
-                  </svg>
+                  <div class="category__select">
+                     <span class="category__name">Лучшие</span>
+                     <svg class="icon category__icon-angle">
+                        <use xlink:href="../svg/sprite.svg#angle-down"></use>
+                     </svg>
+                  </div>
                   <div class="category__dropdown">
                      <ul class="category__list list">
                         <li class="category__item list__item">
@@ -303,11 +305,11 @@
                      </a>
                      <div class="post__feedback feedback">
                         <div class="feedback__rating ratingblock">
-                           <svg class="icon ratingblock__icon">
+                           <svg class="icon ratingblock__icon ratingblock__icon-thumbs-up">
                               <use xlink:href="../svg/sprite.svg#thumbs-up"></use>
                            </svg>
                            <span class="ratingblock__text accent-color">105k</span>
-                           <svg class="icon ratingblock__icon post__icon-thumbs-down">
+                           <svg class="icon ratingblock__icon ratingblock__icon-thumbs-down">
                               <use xlink:href="../svg/sprite.svg#thumbs-down"></use>
                            </svg>
                         </div>
@@ -357,11 +359,11 @@
                      </a>
                      <div class="post__feedback feedback">
                         <div class="feedback__rating ratingblock">
-                           <svg class="icon ratingblock__icon">
+                           <svg class="icon ratingblock__icon ratingblock__icon-thumbs-up">
                               <use xlink:href="../svg/sprite.svg#thumbs-up"></use>
                            </svg>
                            <span class="ratingblock__text accent-color">105k</span>
-                           <svg class="icon ratingblock__icon post__icon-thumbs-down">
+                           <svg class="icon ratingblock__icon ratingblock__icon-thumbs-down">
                               <use xlink:href="../svg/sprite.svg#thumbs-down"></use>
                            </svg>
                         </div>
@@ -411,11 +413,11 @@
                      </a>
                      <div class="post__feedback feedback">
                         <div class="feedback__rating ratingblock">
-                           <svg class="icon ratingblock__icon">
+                           <svg class="icon ratingblock__icon ratingblock__icon-thumbs-up">
                               <use xlink:href="../svg/sprite.svg#thumbs-up"></use>
                            </svg>
                            <span class="ratingblock__text accent-color">105k</span>
-                           <svg class="icon ratingblock__icon post__icon-thumbs-down">
+                           <svg class="icon ratingblock__icon ratingblock__icon-thumbs-down">
                               <use xlink:href="../svg/sprite.svg#thumbs-down"></use>
                            </svg>
                         </div>
@@ -449,9 +451,7 @@
                <div class="user">
                   <div class="user__content">
                      <div class="user__header">
-                        <div class="user__image">
-                           <img src="../img/avatar.png" alt="Ксения">
-                        </div>
+                        <img src="../img/avatar.png" class="user__image" alt="Ксения">
                         <div class="user__nameblock">
                            <span class="user__name">Ксения</span>
                            <span class="user__name">Сименизанова</span>
@@ -573,31 +573,31 @@
          <div class="modal__social-list">
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite.svg#vk"></use>
+                  <use xlink:href="../svg/sprite.svg#icon-vk"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_vk">Войти через ВКонтакте</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite.svg#facebook"></use>
+                  <use xlink:href="../svg/sprite.svg#icon-facebook"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_fb">Войти через Facebook</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite.svg#twitter-alt"></use>
+                  <use xlink:href="../svg/sprite.svg#icon-twitter"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_tw">Войти через Twitter</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite-original.svg#yandex-logo"></use>
+                  <use xlink:href="../svg/sprite-original.svg#icon-yandex"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_yandex">Войти через Яндекс</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite-original.svg#google-logo"></use>
+                  <use xlink:href="../svg/sprite-original.svg#icon-google"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_google">Войти через Google</button>
             </div>
@@ -611,6 +611,7 @@
 
    <script src="../js/vendors/jquery.js"></script>
    <script src="../js/vendors/scrollbar.js"></script>
+   <script src="../js/vendors/select2.full.min.js"></script>
    <script src="../js/main.min.js"></script>
 </body>
 

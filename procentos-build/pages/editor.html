@@ -40,7 +40,7 @@
                      </svg>
                      <input type="text" class="search-input" placeholder="Поиск">
                   </div>
-                  <div class="header__notification-block">
+                  <div class="header__notification-block header__notification-block_logged">
                      <svg class="icon header__icon-bell">
                         <use xlink:href="../svg/sprite.svg#bell"></use>
                      </svg>
@@ -248,10 +248,12 @@
 
                <div class="content">
                   <div class="category-posts category">
-                     <span class="category__name">Выберите категорию</span>
-                     <svg class="icon category__icon-angle">
-                        <use xlink:href="../svg/sprite.svg#angle-down"></use>
-                     </svg>
+                     <div class="category__select">
+                        <span class="category__name">Выберите категорию</span>
+                        <svg class="icon category__icon-angle">
+                           <use xlink:href="../svg/sprite.svg#angle-down"></use>
+                        </svg>
+                     </div>
                      <div class="category__buttonblock">
                         <div class="button button_accent category__btn">Опубликовать</div>
                         <svg class="icon category__icon-save">
@@ -301,20 +303,17 @@
                   <div class="user">
                      <div class="user__content">
                         <div class="user__header">
-                           <div class="user__image">
-                              <svg class="icon user__icon-user">
-                                 <use xlink:href="../svg/sprite.svg#user-circle"></use>
-                              </svg>
-                           </div>
+                           <img src="../img/avatar.png" class="user__image" alt="Ксения">
                            <div class="user__nameblock">
-                              <span class="user__name">Ксения Сименизанова</span>
-                              <span class="user__login user__login_empty">@ Придумайте логин</span>
+                              <span class="user__name">Ксения</span>
+                              <span class="user__name">Сименизанова</span>
+                              <span class="user__login">@superksu</span>
                            </div>
                         </div>
                         <div class="user__state">
                            <div class="user__state-line">
                               <div class="user__state-item user__state-item_wide">
-                                 <span class="user__state-number">0</span>
+                                 <span class="user__state-number">23</span>
                                  <span class="user__state-text">Подписчиков</span>
                               </div>
                               <div class="user__state-item">
@@ -323,7 +322,7 @@
                            </div>
                            <div class="user__state-line">
                               <div class="user__state-item user__state-item_wide">
-                                 <span class="user__state-number">0</span>
+                                 <span class="user__state-number">1</span>
                                  <span class="user__state-text">публикаций</span>
                               </div>
                               <div class="user__state-item">
@@ -338,18 +337,18 @@
                         </div>
                         <div class="user__about">
                            <span class="user__about-title">О себе</span>
-                           <span class="user__about-text">Напишите коротко о себе</span>
-                           <div class="user__about-edit">
-                              <svg class="icon user__icon-edit">
-                                 <use xlink:href="../svg/sprite.svg#edit"></use>
-                              </svg>
-                           </div>
+                           <span class="user__about-text">Мир ловил меня, но не поймал</span>
+                           <span class="user__about-text">Предложения по интервью,тв,кино: <span
+                                 class="nowrap">+7903-722-454556</span></span>
+                           <span class="user__about-text">Коммерческий директор: <span class="nowrap">+7963-781-4919
+                              </span>Кирилл</span>
+                           <span class="user__about-text user__about-text_uppercase">Премьера</span>
                         </div>
                         <div class="user__listblock">
                            <ul class="user__list list">
                               <li class="user__item list__item">
                                  <a href="http://procentos.ru" class="list__item-link">Сайт: <span
-                                       class="font-regular">Добавить сайт</span></a>
+                                       class="accent-color">Procentos.ru</span></a>
                               </li>
                            </ul>
                            <ul class="user__list list">
@@ -403,31 +402,31 @@
          <div class="modal__social-list">
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite.svg#vk"></use>
+                  <use xlink:href="../svg/sprite.svg#icon-vk"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_vk">Войти через ВКонтакте</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite.svg#facebook"></use>
+                  <use xlink:href="../svg/sprite.svg#icon-facebook"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_fb">Войти через Facebook</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite.svg#twitter-alt"></use>
+                  <use xlink:href="../svg/sprite.svg#icon-twitter"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_tw">Войти через Twitter</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite-original.svg#yandex-logo"></use>
+                  <use xlink:href="../svg/sprite-original.svg#icon-yandex"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_yandex">Войти через Яндекс</button>
             </div>
             <div class="modal__social-item">
                <svg class="icon modal__social-icon">
-                  <use xlink:href="../svg/sprite-original.svg#google-logo"></use>
+                  <use xlink:href="../svg/sprite-original.svg#icon-google"></use>
                </svg>
                <button class="button modal__social-button modal__social-button_google">Войти через Google</button>
             </div>
@@ -441,6 +440,7 @@
    
    <script src="../js/vendors/jquery.js"></script>
    <script src="../js/vendors/scrollbar.js"></script>
+   <script src="../js/vendors/select2.full.min.js"></script>
    <script src="../js/main.min.js"></script>
 </body>
 
