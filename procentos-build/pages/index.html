@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
 
 <head>
    <meta charset="UTF-8">
@@ -76,7 +76,7 @@
                   <svg class="icon menu__icon-search">
                      <use xlink:href="../svg/sprite.svg#search"></use>
                   </svg>
-                  <input type="text" class="menu__search" placeholder="Поиск">
+                  <input type="text" class="menu__search search-input" placeholder="Поиск">
                </div>
                <div class="menu__listblock">
                   <ul class="menu__list list">
@@ -253,9 +253,7 @@
                <div class="user">
                   <div class="user__content blur">
                      <div class="user__header">
-                        <div class="user__image">
-                           <img src="../img/avatar.png" alt="Ксения">
-                        </div>
+                        <img class="user__image" src="../img/avatar.png" alt="Ксения">
                         <div class="user__nameblock">
                            <span class="user__name">Ксения</span>
                            <span class="user__name">Сименизанова</span>
@@ -352,54 +350,76 @@
 
    <div class="overlay-template"></div>
    
-   <div class="modal modal-login">
+   <div class="modal m-login">
       <div class="modal__logo">
          <img src="../img/procentos-mono.png" alt="Procentos" class="modal__image">
       </div>
-      <div class="modal__content">
-         <h3 class="modal__title">Вход</h3>
-         <div class="modal__social-list">
-            <div class="modal__social-item">
-               <svg class="icon modal__social-icon">
+      <div class="m-login__content modal__content">
+         <h3 class="m-login__title modal__title">Вход</h3>
+         <div class="m-login__social-list">
+            <div class="m-login__social-item">
+               <svg class="icon m-login__social-icon">
                   <use xlink:href="../svg/sprite.svg#icon-vk"></use>
                </svg>
-               <button class="button modal__social-button modal__social-button_vk">Войти через ВКонтакте</button>
+               <button class="button m-login__social-button m-login__social-button_vk">Войти через ВКонтакте</button>
             </div>
-            <div class="modal__social-item">
-               <svg class="icon modal__social-icon">
+            <div class="m-login__social-item">
+               <svg class="icon m-login__social-icon">
                   <use xlink:href="../svg/sprite.svg#icon-facebook"></use>
                </svg>
-               <button class="button modal__social-button modal__social-button_fb">Войти через Facebook</button>
+               <button class="button m-login__social-button m-login__social-button_fb">Войти через Facebook</button>
             </div>
-            <div class="modal__social-item">
-               <svg class="icon modal__social-icon">
+            <div class="m-login__social-item">
+               <svg class="icon m-login__social-icon">
                   <use xlink:href="../svg/sprite.svg#icon-twitter"></use>
                </svg>
-               <button class="button modal__social-button modal__social-button_tw">Войти через Twitter</button>
+               <button class="button m-login__social-button m-login__social-button_tw">Войти через Twitter</button>
             </div>
-            <div class="modal__social-item">
-               <svg class="icon modal__social-icon">
+            <div class="m-login__social-item">
+               <svg class="icon m-login__social-icon">
                   <use xlink:href="../svg/sprite-original.svg#icon-yandex"></use>
                </svg>
-               <button class="button modal__social-button modal__social-button_yandex">Войти через Яндекс</button>
+               <button class="button m-login__social-button m-login__social-button_yandex">Войти через Яндекс</button>
             </div>
-            <div class="modal__social-item">
-               <svg class="icon modal__social-icon">
+            <div class="m-login__social-item">
+               <svg class="icon m-login__social-icon">
                   <use xlink:href="../svg/sprite-original.svg#icon-google"></use>
                </svg>
-               <button class="button modal__social-button modal__social-button_google">Войти через Google</button>
+               <button class="button m-login__social-button m-login__social-button_google">Войти через Google</button>
             </div>
          </div>
-         <p class="modal__agreement">
-            Авторизуясь, вы соглашаетесь с <a href="#" class="modal__strong">правилами пользования сайтом</a> и
-            даете согласие на <a href="#" class="modal__strong">обработку персональных данных.</a> 
+         <p class="m-login__agreement">
+            Авторизуясь, вы соглашаетесь с <a href="#" class="m-login__strong">правилами пользования сайтом</a> и
+            даете согласие на <a href="#" class="m-login__strong">обработку персональных данных.</a> 
          </p>
       </div>
    </div>
    
+   <div class="modal m-profile">
+      <div class="modal__logo">
+         <img src="../img/procentos-mono.png" alt="Procentos" class="modal__image">
+      </div>
+      <div class="m-profile__content modal__content">
+         <h3 class="m-login__title modal__title">Предупреждение</h3>
+         <p class="m-profile__text">Перед тем, как написать свою первую статью или поставить лайк, заполните профиль</p>
+         <p class="m-profile__text">Нужно обязательно указать:</p>
+         <span class="m-profile__strong">Никнейм</span>
+         <span class="m-profile__strong">Телефон</span>
+         <span class="m-profile__strong">Электронную почту</span>
+         <div class="m-profile__buttonblock">
+            <svg class="icon m-profile__icon-user">
+               <use xlink:href="../svg/sprite.svg#user"></use>
+            </svg>
+            <button class="button m-profile__btn">Заполнить профиль</button>
+         </div>
+      </div>
+   </div>
+   
    <script src="../js/vendors/jquery.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
    <script src="../js/vendors/scrollbar.js"></script>
    <script src="../js/vendors/select2.full.min.js"></script>
+   <script src="../js/vendors/svg4everybody.min.js"></script>
    <script src="../js/main.min.js"></script>
 </body>
 
