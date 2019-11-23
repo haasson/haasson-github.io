@@ -259,898 +259,898 @@
          <!-- Блок со статистикой -->
          <div class="stats">
          
-                     <!-- График цены -->
-                     <div class="stats__item">
-                        <div class="stats__header">
-                           <span class="stats__title">График цены</span>
+            <!-- График цены -->
+            <div class="stats__item">
+               <div class="stats__header">
+                  <span class="stats__title">График цены</span>
+               </div>
+               <canvas class="stats__image" id="price_1"></canvas>
+               <div class="stats__selectblock">
+                  <select class="stats__select stats__select_price" name="price">
+                     <option value="1">День</option>
+                     <option value="2">Неделя</option>
+                     <option value="3">Месяц</option>
+                     <option value="4">Год</option>
+                  </select>
+               </div>
+               <div class="stats__buttons">
+                  <div class="stats__button-block stats__button-block_long">
+                     <button class="stats__button button">Год</button>
+                     <span class="stats__percent stats__percent_red">–14,18 %</span>
+                  </div>
+                  <div class="stats__button-block">
+                     <button class="stats__button button button_accent">Месяц</button>
+                  </div>
+                  <div class="stats__button-block">
+                     <button class="stats__button button button_accent">Неделя</button>
+                  </div>
+                  <div class="stats__button-block">
+                     <button class="stats__button button button_accent">День</button>
+                  </div>
+                  <div class="stats__button-block stats__button-block_wide">
+                     <button class="stats__button button button_accent datepicker">Свой период</button>
+                  </div>
+               </div>
+            </div>
+         
+            <!-- Мультипликаторы -->
+            <div class="stats__item">
+               <div class="stats__header">
+                  <span class="stats__title">Мультипликаторы</span>
+                  <svg class="stats__burger">
+                     <use xlink:href="../svg/sprite.svg#list-ul"></use>
+                  </svg>
+               </div>
+         
+               <!-- Мультипликаторы - 1 экран -->
+               <div class="stats__table table table__multipliers_mode-1">
+                  <div class="table__title">Мультипликаторы стоимости компании
+                     <span class="table__subtitle">Оценка на 2кв 2019</span>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">P/E</div>
+                        <div class="table__cell_description">
+                           Рыночная капитализация / Годовая прибыль
                         </div>
-                        <img class="stats__image" src="../img/graphic.png" alt="price">
-                        <div class="stats__selectblock">
-                           <select class="stats__select stats__select_price" name="price">
-                              <option value="1">День</option>
-                              <option value="2">Неделя</option>
-                              <option value="3">Месяц</option>
-                              <option value="4">Год</option>
-                           </select>
-                        </div>
-                        <div class="stats__buttons">
-                           <div class="stats__button-block stats__button-block_long">
-                              <button class="stats__button button">Год</button>
-                              <span class="stats__percent stats__percent_red">–14,18 %</span>
-                           </div>
-                           <div class="stats__button-block">
-                              <button class="stats__button button button_accent">Месяц</button>
-                           </div>
-                           <div class="stats__button-block">
-                              <button class="stats__button button button_accent">Неделя</button>
-                           </div>
-                           <div class="stats__button-block">
-                              <button class="stats__button button button_accent">День</button>
-                           </div>
-                           <div class="stats__button-block stats__button-block_wide">
-                              <button class="stats__button button button_accent datepicker">Свой период</button>
-                           </div>
-                        </div>
+                        <div class="table__cell_value">6,92</div>
                      </div>
-         
-                     <!-- Мультипликаторы -->
-                     <div class="stats__item">
-                        <div class="stats__header">
-                           <span class="stats__title">Мультипликаторы</span>
-                           <svg class="stats__burger">
-                              <use xlink:href="../svg/sprite.svg#list-ul"></use>
-                           </svg>
-                        </div>
-         
-                        <!-- Мультипликаторы - 1 экран -->
-                        <div class="stats__table table table__multipliers_mode-1">
-                           <div class="table__title">Мультипликаторы стоимости компании
-                              <span class="table__subtitle">Оценка на 2кв 2019</span>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">P/E</div>
-                                 <div class="table__cell_description">
-                                    Рыночная капитализация / Годовая прибыль
-                                 </div>
-                                 <div class="table__cell_value">6,92</div>
-                              </div>
-                              <div class="table__row table__row-image">
-                                 <img class="table__image" src="../img/graphic.png" alt="price">
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">E/P</div>
-                                 <div class=" table__cell_description">
-                                    Годовая прибыль / Рыночная капитализация
-                                 </div>
-                                 <div class="table__cell_value">
-                                    14,46 %
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">P/B</div>
-                                 <div class="table__cell_description">
-                                    Рыночная капитализация / Балансовая стоимость
-                                 </div>
-                                 <div class="table__cell_value">
-                                    4,28
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula table-cell">EV/EBITDA</div>
-                                 <div class="table__cell_description table-cell">Стоимость компании /
-                                    Прибыль до вычета процентов, налогов, амортизации и износа
-                                 </div>
-                                 <div class="table__cell_value">
-                                    4,97
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">Debt/EBITDA</div>
-                                 <div class="table__cell_description">
-                                    Чистый долг / Прибыль до вычета процентов, налогов, амортизации и износа
-                                 </div>
-                                 <div class="table__cell_value">
-                                    0,47
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">P/S</div>
-                                 <div class="table__cell_description">
-                                    Рыночная капитализация / Годовая выручка
-                                 </div>
-                                 <div class="table__cell_value">
-                                    1,63
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row table__row_none-border">
-                                 <div class="table__cell_formula">L/A</div>
-                                 <div class="table__cell_description">
-                                    Общая задолженность / Активы
-                                 </div>
-                                 <div class="table__cell_value">
-                                    53,88 %
-                                 </div>
-                              </div>
-                           </div>
-         
-                           <div class="table__title">
-                              Мультипликаторы эффективности компании
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">ROA</div>
-                                 <div class="table__cell_description">
-                                    Рентабельность активов
-                                 </div>
-                                 <div class="table__cell_value">
-                                    29,88 %
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">ROE</div>
-                                 <div class="table__cell_description">
-                                    Рентабельность собственного капитала
-                                 </div>
-                                 <div class="table__cell_value">
-                                    62,67 %
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">ROS</div>
-                                 <div class="table__cell_description">
-                                    Рентабельность продаж
-                                 </div>
-                                 <div class="table__cell_value">
-                                    23,45 %
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="table__group">
-                              <div class="table__row">
-                                 <div class="table__cell_formula">EBITDA/S</div>
-                                 <div class="table__cell_description">
-                                    Рентабельность по EBITDA
-                                 </div>
-                                 <div class="table__cell_value">
-                                    36,25 %
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-         
-                        <!-- Мультипликаторы - 2 экран -->
-                        <div class="stats__table table-wrapper table__multipliers_mode-2 scrollbar-external_wrapper disabled">
-                           <div class="table table__multipliers table_borders">
-                              <div class="table__header">
-                                 <div class="table__cell table__cell_header table__article">Отчетный период</div>
-                                 <div class="table__cell table__cell_header">2014 год</div>
-                                 <div class="table__cell table__cell_header">2015 год </div>
-                                 <div class="table__cell table__cell_header">2016 год</div>
-                                 <div class="table__cell table__cell_header">2017 год</div>
-                                 <div class="table__cell table__cell_header">2018 год</div>
-                                 <div class="table__cell table__cell_header">2кв – 2019</div>
-                              </div>
-                              <div class="table__body table__body_multipliers scrollbar-external">
-                                 <div class="table__title">Активы</div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Капитализация
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article  table__article_bold">
-                                       Капитал
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Капитал акционеров
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Краткосрочные обязательства
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Долгосрочные обязательства
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article table__article_bold">
-                                       Итого обязательства
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Кредиты и займы
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Денежные средства и эквиваленты
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Чистый долг
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Активы
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Количество ао
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Цена ао
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__title">Денежные потоки</div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                              </div>
-         
-                              <div class="table__scroll_multipliers external-scroll_y">
-                                 <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                     <div class="table__row table__row-image">
+                        <canvas class="table__image" id="multipliers_1"></canvas>
                      </div>
-         
-                     <!-- Дивиденды -->
-                     <div class="stats__item">
-                        <div class="stats__header">
-                           <div class="stats__title">Дивиденды</div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">E/P</div>
+                        <div class=" table__cell_description">
+                           Годовая прибыль / Рыночная капитализация
                         </div>
-                        <img class="stats__image" alt="" src="../img/graphic.png">
-                        <div class="stats__table table-wrapper scrollbar-external_wrapper">
-                           <div class="table table__dividends table_borders">
-                              <div class="table__header">
-                                 <div class="table__cell table__cell_header">Закрытие реестра</div>
-                                 <div class="table__cell table__cell_header">Дивиденды</div>
-                                 <div class="table__cell table__cell_header">Доходность </div>
-                                 <div class="table__cell table__cell_header">Цена закрытия</div>
-                              </div>
-                              <div class="table__body table__body_dividends scrollbar-external">
-                                 <div class="table__row table__row_dividends table__row_green ">
-                                    <div class="table__cell"><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell"><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell"><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell"><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends table__row_green ">
-                                    <div class="table__cell"><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell"><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell"><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell"><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends table__row_green">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends table__row_green">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends table__row table__row_green">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                                 <div class="table__row table__row_dividends">
-                                    <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
-                                    <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
-                                    <div class="table__cell "><span class="table__percent">2,32</span> %</div>
-                                    <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
-                                 </div>
-                              </div>
-                              <div class="table__scroll_dividends external-scroll_y">
-                                 <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-         
-                     <!-- Активы и денежные потоки -->
-                     <div class="stats__item">
-                        <div class="stats__header">
-                           <span class="stats__title">Активы и Денежные потоки</span>
-                        </div>
-                        <img class="stats__image" src="../img/graphic.png" alt="price">
-                        <div class="stats__buttons stats__buttons_desktop">
-                           <div class="stats__button-block stats__button-block_long">
-                              <button class="stats__button button">Прибыль</button>
-                              <span class="stats__percent stats__percent_red">–14,18 %</span>
-                           </div>
-                           <div class="stats__button-block">
-                              <button class="stats__button button button_accent">Выручка</button>
-                           </div>
-                           <div class="stats__button-block">
-                              <button class="stats__button button button_accent">Долги</button>
-                           </div>
-                           <div class="stats__button-block">
-                              <button class="stats__button button button_accent">Капитал</button>
-                           </div>
-                           <div class="stats__button-block">
-                              <button class="stats__button button button_accent">EBITDA</button>
-                           </div>
-                        </div>
-                        <div class="stats__selectblock">
-                           <select class="stats__select stats__select_money" name="money">
-                              <option value="1">Прибыль</option>
-                              <option value="2">Выручка</option>
-                              <option value="3">Долги</option>
-                              <option value="4">Капитал</option>
-                              <option value="5">EBITDA</option>
-                           </select>
-                        </div>
-         
-                        <div class="table-wrapper scrollbar-external_wrapper">
-                           <div class="table table__money table_borders">
-                              <div class="table__header">
-                                 <div class="table__cell table__cell_header table__article">Отчетный период</div>
-                                 <div class="table__cell table__cell_header">2014 год</div>
-                                 <div class="table__cell table__cell_header">2015 год </div>
-                                 <div class="table__cell table__cell_header">2016 год</div>
-                                 <div class="table__cell table__cell_header">2017 год</div>
-                                 <div class="table__cell table__cell_header">2018 год</div>
-                                 <div class="table__cell table__cell_header">2кв – 2019</div>
-                              </div>
-                              <div class="table__body table__body_money scrollbar-external">
-                                 <div class="table__title">Активы</div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Капитализация
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article  table__article_bold">
-                                       Капитал
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Капитал акционеров
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Краткосрочные обязательства
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Долгосрочные обязательства
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article table__article_bold">
-                                       Итого обязательства
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Кредиты и займы
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Денежные средства и эквиваленты
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Чистый долг
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Активы
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Количество ао
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Цена ао
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__title">Денежные потоки</div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                                 <div class="table__row">
-                                    <div class="table__cell table__article">
-                                       Выручка
-                                    </div>
-                                    <div class="table__cell">536 726</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">625 734</div>
-                                    <div class="table__cell">675 034</div>
-                                    <div class="table__cell">862 013</div>
-                                    <div class="table__cell">772 879</div>
-                                 </div>
-                              </div>
-         
-                              <div class="table__scroll_money external-scroll_y">
-                                 <div class="scroll-element_outer">
-                                    <div class="scroll-element_size"></div>
-                                    <div class="scroll-element_track"></div>
-                                    <div class="scroll-bar"></div>
-                                 </div>
-                              </div>
-                           </div>
+                        <div class="table__cell_value">
+                           14,46 %
                         </div>
                      </div>
                   </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">P/B</div>
+                        <div class="table__cell_description">
+                           Рыночная капитализация / Балансовая стоимость
+                        </div>
+                        <div class="table__cell_value">
+                           4,28
+                        </div>
+                     </div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula table-cell">EV/EBITDA</div>
+                        <div class="table__cell_description table-cell">Стоимость компании /
+                           Прибыль до вычета процентов, налогов, амортизации и износа
+                        </div>
+                        <div class="table__cell_value">
+                           4,97
+                        </div>
+                     </div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">Debt/EBITDA</div>
+                        <div class="table__cell_description">
+                           Чистый долг / Прибыль до вычета процентов, налогов, амортизации и износа
+                        </div>
+                        <div class="table__cell_value">
+                           0,47
+                        </div>
+                     </div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">P/S</div>
+                        <div class="table__cell_description">
+                           Рыночная капитализация / Годовая выручка
+                        </div>
+                        <div class="table__cell_value">
+                           1,63
+                        </div>
+                     </div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row table__row_none-border">
+                        <div class="table__cell_formula">L/A</div>
+                        <div class="table__cell_description">
+                           Общая задолженность / Активы
+                        </div>
+                        <div class="table__cell_value">
+                           53,88 %
+                        </div>
+                     </div>
+                  </div>
+         
+                  <div class="table__title">
+                     Мультипликаторы эффективности компании
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">ROA</div>
+                        <div class="table__cell_description">
+                           Рентабельность активов
+                        </div>
+                        <div class="table__cell_value">
+                           29,88 %
+                        </div>
+                     </div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">ROE</div>
+                        <div class="table__cell_description">
+                           Рентабельность собственного капитала
+                        </div>
+                        <div class="table__cell_value">
+                           62,67 %
+                        </div>
+                     </div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">ROS</div>
+                        <div class="table__cell_description">
+                           Рентабельность продаж
+                        </div>
+                        <div class="table__cell_value">
+                           23,45 %
+                        </div>
+                     </div>
+                  </div>
+                  <div class="table__group">
+                     <div class="table__row">
+                        <div class="table__cell_formula">EBITDA/S</div>
+                        <div class="table__cell_description">
+                           Рентабельность по EBITDA
+                        </div>
+                        <div class="table__cell_value">
+                           36,25 %
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         
+               <!-- Мультипликаторы - 2 экран -->
+               <div class="stats__table table-wrapper table__multipliers_mode-2 scrollbar-external_wrapper disabled">
+                  <div class="table table__multipliers table_borders">
+                     <div class="table__header">
+                        <div class="table__cell table__cell_header table__article">Отчетный период</div>
+                        <div class="table__cell table__cell_header">2014 год</div>
+                        <div class="table__cell table__cell_header">2015 год </div>
+                        <div class="table__cell table__cell_header">2016 год</div>
+                        <div class="table__cell table__cell_header">2017 год</div>
+                        <div class="table__cell table__cell_header">2018 год</div>
+                        <div class="table__cell table__cell_header">2кв – 2019</div>
+                     </div>
+                     <div class="table__body table__body_multipliers scrollbar-external">
+                        <div class="table__title">Активы</div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Капитализация
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article  table__article_bold">
+                              Капитал
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Капитал акционеров
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Краткосрочные обязательства
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Долгосрочные обязательства
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article table__article_bold">
+                              Итого обязательства
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Кредиты и займы
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Денежные средства и эквиваленты
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Чистый долг
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Активы
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Количество ао
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Цена ао
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__title">Денежные потоки</div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                     </div>
+         
+                     <div class="table__scroll_multipliers external-scroll_y">
+                        <div class="scroll-element_outer">
+                           <div class="scroll-element_size"></div>
+                           <div class="scroll-element_track"></div>
+                           <div class="scroll-bar"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         
+            <!-- Дивиденды -->
+            <div class="stats__item">
+               <div class="stats__header">
+                  <div class="stats__title">Дивиденды</div>
+               </div>
+               <img class="stats__image" alt="" src="../img/graphic.png">
+               <div class="stats__table table-wrapper scrollbar-external_wrapper">
+                  <div class="table table__dividends table_borders">
+                     <div class="table__header">
+                        <div class="table__cell table__cell_header">Закрытие реестра</div>
+                        <div class="table__cell table__cell_header">Дивиденды</div>
+                        <div class="table__cell table__cell_header">Доходность </div>
+                        <div class="table__cell table__cell_header">Цена закрытия</div>
+                     </div>
+                     <div class="table__body table__body_dividends scrollbar-external">
+                        <div class="table__row table__row_dividends table__row_green ">
+                           <div class="table__cell"><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell"><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell"><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell"><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends table__row_green ">
+                           <div class="table__cell"><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell"><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell"><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell"><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends table__row_green">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends table__row_green">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends table__row table__row_green">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                        <div class="table__row table__row_dividends">
+                           <div class="table__cell "><span class="table__data">17 сен 2020</span></div>
+                           <div class="table__cell "><span class="table__value">21,61</span> ₽</div>
+                           <div class="table__cell "><span class="table__percent">2,32</span> %</div>
+                           <div class="table__cell "><span class="table__price">Цена закрытия</span></div>
+                        </div>
+                     </div>
+                     <div class="table__scroll_dividends external-scroll_y">
+                        <div class="scroll-element_outer">
+                           <div class="scroll-element_size"></div>
+                           <div class="scroll-element_track"></div>
+                           <div class="scroll-bar"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         
+            <!-- Активы и денежные потоки -->
+            <div class="stats__item">
+               <div class="stats__header">
+                  <span class="stats__title">Активы и Денежные потоки</span>
+               </div>
+               <canvas class="stats__image" id="money_1"></canvas>
+               <div class="stats__buttons stats__buttons_desktop">
+                  <div class="stats__button-block stats__button-block_long">
+                     <button class="stats__button button">Прибыль</button>
+                     <span class="stats__percent stats__percent_red">–14,18 %</span>
+                  </div>
+                  <div class="stats__button-block">
+                     <button class="stats__button button button_accent">Выручка</button>
+                  </div>
+                  <div class="stats__button-block">
+                     <button class="stats__button button button_accent">Долги</button>
+                  </div>
+                  <div class="stats__button-block">
+                     <button class="stats__button button button_accent">Капитал</button>
+                  </div>
+                  <div class="stats__button-block">
+                     <button class="stats__button button button_accent">EBITDA</button>
+                  </div>
+               </div>
+               <div class="stats__selectblock">
+                  <select class="stats__select stats__select_money" name="money">
+                     <option value="1">Прибыль</option>
+                     <option value="2">Выручка</option>
+                     <option value="3">Долги</option>
+                     <option value="4">Капитал</option>
+                     <option value="5">EBITDA</option>
+                  </select>
+               </div>
+         
+               <div class="table-wrapper scrollbar-external_wrapper">
+                  <div class="table table__money table_borders">
+                     <div class="table__header">
+                        <div class="table__cell table__cell_header table__article">Отчетный период</div>
+                        <div class="table__cell table__cell_header">2014 год</div>
+                        <div class="table__cell table__cell_header">2015 год </div>
+                        <div class="table__cell table__cell_header">2016 год</div>
+                        <div class="table__cell table__cell_header">2017 год</div>
+                        <div class="table__cell table__cell_header">2018 год</div>
+                        <div class="table__cell table__cell_header">2кв – 2019</div>
+                     </div>
+                     <div class="table__body table__body_money scrollbar-external">
+                        <div class="table__title">Активы</div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Капитализация
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article  table__article_bold">
+                              Капитал
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Капитал акционеров
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Краткосрочные обязательства
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Долгосрочные обязательства
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article table__article_bold">
+                              Итого обязательства
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Кредиты и займы
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Денежные средства и эквиваленты
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Чистый долг
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Активы
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Количество ао
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Цена ао
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__title">Денежные потоки</div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                        <div class="table__row">
+                           <div class="table__cell table__article">
+                              Выручка
+                           </div>
+                           <div class="table__cell">536 726</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">625 734</div>
+                           <div class="table__cell">675 034</div>
+                           <div class="table__cell">862 013</div>
+                           <div class="table__cell">772 879</div>
+                        </div>
+                     </div>
+         
+                     <div class="table__scroll_money external-scroll_y">
+                        <div class="scroll-element_outer">
+                           <div class="scroll-element_size"></div>
+                           <div class="scroll-element_track"></div>
+                           <div class="scroll-bar"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
          
          <!-- Блок новостей -->
          <div class="news">
@@ -1303,6 +1303,7 @@
    <script src="../js/vendors/scrollbar.js"></script>
    <script src="../js/vendors/moment.js"></script>
    <script src="../js/vendors/daterangepicker.js"></script>
+   <script src="../js/vendors/chart.js"></script>
    <script src="../js/vendors/select2.full.min.js"></script>
    <script src="../js/vendors/svg4everybody.min.js"></script>
    <script src="../js/main.min.js"></script>
