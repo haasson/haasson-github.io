@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="15.346mm" height="17mm" version="1.1" viewBox="0 0 15.346 17" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter0_d" x=".2334" y="0" width="196.18" height="90" style="color-interpolation-filters:sRGB" filterUnits="userSpaceOnUse">
+   <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+   <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+   <feOffset dy="2"/>
+   <feGaussianBlur stdDeviation="12.5"/>
+   <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+   <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+   <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+  </filter>
+  <style>.cls-1{fill:#f36639;}.cls-2{fill:#fff;}</style>
+  <filter id="filter0_d-1" x="0" y="0" width="58" height="58" style="color-interpolation-filters:sRGB" filterUnits="userSpaceOnUse">
+   <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+   <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+   <feOffset dy="4"/>
+   <feGaussianBlur stdDeviation="3.5"/>
+   <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+   <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+   <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+  </filter>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(152.75 -106.97)">
+  <g transform="matrix(.26458 0 0 .26458 -90.506 129.65)" style="fill:none">
+   <path d="m421.04-617.63c-0.6649-1.3298 0.3021-2.8944 1.7889-2.8944h131.67c1.894 0 3.625 1.07 4.472 2.7639l7.5 15c0.704 1.4077 0.704 3.0645 0 4.4722l-7.5 15c-0.847 1.6939-2.578 2.7639-4.472 2.7639h-131.67c-1.4868 0-2.4538-1.5646-1.7889-2.8944l7.4348-14.87c0.7038-1.4077 0.7038-3.0645 0-4.4722z" style="fill:#fff;filter:url(#filter0_d)"/>
+   <g transform="translate(-235.26 -79.454)" style="fill:none">
+    <g style="filter:url(#filter0_d-1)">
+     <circle cx="29" cy="25" r="19" style="fill:#fff"/>
+     <circle cx="29" cy="25" r="20.5" style="stroke-width:3;stroke:#f36639"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
