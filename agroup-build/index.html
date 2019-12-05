@@ -216,8 +216,9 @@
               </ul>
               <form>
                 <div class="consultation__block-link">
-                  <input class="phone consultation__input link link_orange" placeholder="Номер телефона"><a class="consultation__btn link link_orange popup-with-form" href="#registry">Записаться на консультацию <span class="link-arrow-animated">→</span></a>
-                </div><a class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></a>
+                  <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel">
+                  <button class="submit-btn consultation__btn link link_orange popup-with-form" href="#registry">Записаться на консультацию<span class="link-arrow-animated">→</span></button>
+                </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
               </form>
             </div>
           </div>
@@ -738,8 +739,8 @@
             </div>
             <div class="price__result"><span class="price__minute price__again">← начать заново</span>
               <h3 class="price__header">Спасибо за ответы, мы уже приступили к расчету!</h3><span class="price__caption">Укажите свои контакты, и в течение суток мы пришлем вам индивидуальное предложение с результатами расчета</span><span class="price__caption price__caption_plus free-label free-label_white">+ разработанная программа исследований вашего объекта</span>
-              <input class="phone price__input link link_white" type="text" placeholder="Номер телефона" name="buttons">
-              <button class="price__link link link_white popup-with-form" href="#registry">Получить КП и программу →</button><span class="price__personal">Нажимая, даю согласие на обработку своих <a href="#"> персональных данных </a></span>
+              <input class="phone price__input link link_white" type="tel" placeholder="Номер телефона" name="buttons">
+              <button class="submit-btn price__link link link_white popup-with-form" href="#registry">Получить КП и программу →</button><span class="price__personal">Нажимая, даю согласие на обработку своих <a href="#"> персональных данных </a></span>
             </div>
           </div>
         </div>
@@ -1085,8 +1086,9 @@
               </ul>
               <form>
                 <div class="consultation__block-link">
-                  <input class="phone consultation__input link link_orange" placeholder="Номер телефона"><a class="consultation__btn link link_orange popup-with-form" href="#registry">Записаться на консультацию <span class="link-arrow-animated">→</span></a>
-                </div><a class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></a>
+                  <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel">
+                  <button class="submit-btn consultation__btn link link_orange popup-with-form" href="#registry">Записаться на консультацию<span class="link-arrow-animated">→</span></button>
+                </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
               </form>
             </div>
           </div>
@@ -1108,17 +1110,6 @@
           </div>
         </div>
       </div>
-      <div class="check-list mfp-hide white-popup-block" id="exit">
-        <div class="close close_white check-list__close"></div>
-        <div class="check-list__left"><img class="check-list__img" alt="img" src="img/popup-img.jpg"></div>
-        <div class="check-list__right"><span class="check-list__title">Выбираете компанию, <br>которая проведет для вас строительную экспертизу?</span><span class="check-list__text">Получите бесплатно чек-лист</span><span class="check-list__caption">«Как проверить реальную компетентность экспертной компании: 7 признаков некомпетентности»</span>
-          <form class="check-list__form">
-            <input class="check-list__input link link_gray" placeholder="Как вас зовут">
-            <input class="check-list__input link link_gray" placeholder="Эл. почта">
-            <button class="check-list__link link link_orange" type="submit">Получить чек-лист →</button>
-          </form><span class="check-list__personal">Нажимая, даю согласие на обработку своих персональных данных</span>
-        </div>
-      </div>
       <div class="call mfp-hide white-popup-block" id="callback">
         <div class="close close_gray"></div>
         <div class="call__wrapper-header">
@@ -1127,13 +1118,13 @@
         <div class="call__wrapper-main">
           <div class="call__main"><span class="call__caption">Укажите контактные данные и удобное время для звонка</span><span class="call__text">Я позвоню вам и отвечу на все вопросы. Мы работаем ежедневно с 06:00 до 22:00 по Тюменскому времени (МСК+2)</span>
             <form class="call__form">
-              <input class="call__input link link_gray" placeholder="Как вас зовут">
+              <input class="name call__input link link_gray" placeholder="Как вас зовут">
               <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона">
               <div class="call__time">
                 <button class="call__time-now link link_gray">Сейчас</button>
-                <input class="call__input link link_gray" placeholder="Позвоните в ">
+                <input class="input-time call__input link link_gray" placeholder="Позвоните в ">
               </div>
-              <button class="call__link link link_orange" type="submit">Записаться на консультацию →</button>
+              <button class="submit-btn call__link link link_orange" type="submit">Записаться на консультацию →</button>
             </form><span class="call__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
           </div>
         </div>
@@ -1167,9 +1158,9 @@
               </div>
             </div>
             <form class="registry__form">
-              <input class="registry__input registry__input_email link link_gray" placeholder="Эл. почта">
-              <input class="registry__input registry__input_phone link link_gray" placeholder="Номер телефона">
-              <button class="registry__link link link_orange" type="submit">Получить реестр →</button>
+              <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта">
+              <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel">
+              <button class="submit-btn registry__link link link_orange" type="submit">Получить реестр →</button>
             </form><span class="registry__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
           </div>
         </div>
