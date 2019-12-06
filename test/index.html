@@ -17,7 +17,7 @@
             <div class="header__hamburger"><span class="header__hamburger-line"></span></div><img class="header__logo" alt="logo" src="img/logo.png">
             <div class="header__block">
               <div class="header__block-phone"><a class="header__phone" href="tel:+79199455985">8 919 945-59-85</a><a class="header__phone" href="tel:+73452529791">8 (3452) 52-97-91</a></div>
-              <div class="header__button-block"><a class="header__button button popup-with-form" href="#callback">Заказать звонок</a><a class="header__mobile-block button popup-with-form" href="#callback">
+              <div class="header__button-block"><a class="header__button button popup-with-form" href="#end">Заказать звонок3</a><a class="header__mobile-block button popup-with-form" href="#callback">
                   <svg class="icon header__mobile">
                     <use xlink:href="svg/sprite.svg#mob"></use>
                   </svg></a><span class="header__time">пн—вс 6 :00—22:00 (МСК+2)</span></div>
@@ -214,10 +214,12 @@
                 <li class="consultation__item">Узнаете ответы на все свои вопросы по строительной экспертизе</li>
                 <li class="consultation__item">В течение суток после консультации вы получите индивидуальное предложение и программу исследований</li>
               </ul>
-              <form>
+              <form data-route="thanks">
                 <div class="consultation__block-link">
-                  <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel">
-                  <button class="submit-btn consultation__btn link link_orange popup-with-form" href="#registry">Записаться на консультацию<span class="link-arrow-animated">→</span></button>
+                  <div class="label">
+                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16">
+                    <button class="submit-btn consultation__btn link link_orange" type="submit">Записаться на консультацию <span class="link-arrow-animated">→</span></button>
+                  </div>
                 </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
               </form>
             </div>
@@ -739,11 +741,11 @@
             </div>
             <div class="price__result"><span class="price__minute price__again">← начать заново</span>
               <h3 class="price__header">Спасибо за ответы, мы уже приступили к расчету!</h3><span class="price__caption">Укажите свои контакты, и в течение суток мы пришлем вам индивидуальное предложение с результатами расчета</span><span class="price__caption price__caption_plus free-label free-label_white">+ разработанная программа исследований вашего объекта</span>
-              <form>
+              <form data-route="registry">
                 <div class="label">
                   <input class="phone price__input link link_white phone" type="tel" placeholder="Номер телефона" name="buttons">
                 </div>
-                <button class="submit-btn price__link link link_white popup-with-form" type="submit">Получить КП и программу →</button>
+                <button class="submit-btn price__link link link_white" type="submit">Получить КП и программу →</button>
               </form><span class="price__personal">Нажимая, даю согласие на обработку своих <a href="#"> персональных данных </a></span>
             </div>
           </div>
@@ -813,11 +815,11 @@
                         <li class="expert__item consultation__item">Получите пошаговый план действий</li>
                         <li class="expert__item consultation__item">В течение суток после консультации вы получите индивидуальное предложение и программу исследований</li>
                       </ul>
-                      <form>
-                        <div class="label">
-                          <input class="phone expert__input consultation__input link link_white" placeholder="Номер телефона">
+                      <form data-route="thanks">
+                        <div class="label label-white">
+                          <input class="phone expert__input consultation__input link link_white" placeholder="Номер телефона" type="tel">
                         </div>
-                        <button class="submit-btn consultation__btn link link_white popup-with-form" type="submit">Записаться<span class="link-arrow-animated">→</span></button><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
+                        <button class="submit-btn consultation__btn link link_white" type="submit">Записаться <span class="link-arrow-animated">→</span></button><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
                       </form>
                     </div>
                   </div>
@@ -1090,10 +1092,12 @@
                 <li class="consultation__item">Узнаете ответы на все свои вопросы по строительной экспертизе</li>
                 <li class="consultation__item">В течение суток после консультации вы получите индивидуальное предложение и программу исследований</li>
               </ul>
-              <form>
+              <form data-route="thanks">
                 <div class="consultation__block-link">
-                  <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel">
-                  <button class="submit-btn consultation__btn link link_orange popup-with-form" href="#registry">Записаться на консультацию<span class="link-arrow-animated">→</span></button>
+                  <div class="label">
+                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16">
+                    <button class="submit-btn consultation__btn link link_orange" type="submit">Записаться на консультацию <span class="link-arrow-animated">→</span></button>
+                  </div>
                 </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
               </form>
             </div>
@@ -1103,7 +1107,7 @@
       <div class="footer section" id="footer">
         <div class="wrapper">
           <div class="footer__inner block-right">
-            <div class="footer__contacts"><span class="footer__title">Приезжайте <br> к нам в офис</span><span class="footer__title-mini">обсудим проведение экспертизы,<br> наш главный инженер вас</span><a class="footer__link link link_orange popup-with-form" href="#registry">лично проконсультирует <span class="link-arrow-animated">→</span></a>
+            <div class="footer__contacts"><span class="footer__title">Приезжайте <br> к нам в офис</span><span class="footer__title-mini">обсудим проведение экспертизы,<br> наш главный инженер вас</span><a class="footer__link link link_orange popup-with-form" href="#callback">лично проконсультирует <span class="link-arrow-animated">→</span></a>
               <div class="footer__group"><span class="footer__name">Научно-производственный <br> экспертный центр<br> «А Группа»</span><span class="footer__adress">Тюмень, ул. Ленина, 2а,<br> 4 вход, оф. 302/3</span><span class="footer__time">пн—вс 6:00—22:00 (МСК +2)</span><a class="footer__phone" href="tel:+79199455985">+7 (3452) 52-97-91</a><a class="footer__phone" href="tel:+73452529791">+7 (919) 945-59-85</a><span class="footer__email">expert@agruppa72.ru</span></div>
               <div class="footer__confidentiality"><span>Политика конфиденциальности</span><span>Lampa, 2019</span></div>
             </div>
@@ -1116,20 +1120,29 @@
           </div>
         </div>
       </div>
-      <div class="call mfp-hide white-popup-block" id="callback">
-        <div class="close close_gray"></div>
+      <div class="check-list mfp-hide" id="check-list">
+        <div class="close close_white check-list__close"></div>
+        <div class="check-list__left"><img class="check-list__img" alt="img" src="img/popup-img.png"></div>
+        <div class="check-list__right"><span class="check-list__title">Выбираете компанию, <br>которая проведет для вас строительную экспертизу?</span><span class="check-list__text">Получите бесплатно чек-лист</span><span class="check-list__caption">«Как проверить реальную компетентность экспертной компании: 7 признаков некомпетентности»</span>
+          <form class="check-list__form">
+            <input class="name check-list__input link link_gray" placeholder="Как вас зовут">
+            <input class="email check-list__input link link_gray" placeholder="Эл. почта">
+            <button class="submit-btn check-list__link link link_orange" type="submit">Получить чек-лист →</button>
+          </form><span class="check-list__personal">Нажимая, даю согласие на обработку своих персональных данных</span>
+        </div>
+      </div>
+      <div class="call mfp-hide" id="callback">
         <div class="call__wrapper-header">
           <div class="call__header"><img class="call__img" alt="photo" src="img/People/Ivanov_popup.jpg"><span class="call__title">Хотите обсудить проведение строительной экспертизы или получить консультацию эксперта?</span></div>
         </div>
         <div class="call__wrapper-main">
           <div class="call__main"><span class="call__caption">Укажите контактные данные и удобное время для звонка</span><span class="call__text">Я позвоню вам и отвечу на все вопросы. Мы работаем ежедневно с 06:00 до 22:00 по Тюменскому времени (МСК+2)</span>
-            <form class="call__form">
+            <form class="call__form" data-route="thanks">
               <input class="name call__input link link_gray" placeholder="Как вас зовут">
               <div class="label">
                 <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона">
               </div>
-              <div class="call__time">
-                <button class="call__time-now link link_gray">Сейчас</button>
+              <div class="call__time"><span class="call__time-now link link_gray">Сейчас</span>
                 <input class="input-time call__input link link_gray" placeholder="Позвоните в ">
               </div>
               <button class="submit-btn call__link link link_orange" type="submit">Записаться на консультацию →</button>
@@ -1137,8 +1150,18 @@
           </div>
         </div>
       </div>
-      <div class="registry mfp-hide white-popup-block" id="registry">
-        <div class="close close_gray"></div>
+      <div class="thanks mfp-hide" id="thanks">
+        <div class="thanks__left"><img class="thanks__img" alt="photo" src="img/popup-img2.jpg"></div>
+        <div class="thanks__right-wrapper">
+          <div class="thanks__right"><span class="thanks__name client-name"></span><span class="thanks__promise">Мы перезвоним вам в ближайшее время</span><span class="thanks__text">А пока вы ждете звонка, посмотрите</span><span class="thanks__text thanks__text_desktop thanks__text_bold free-label free-label_gray">презентацию о нашей компании</span><span class="thanks__text thanks__text_mobile thanks__text_bold free-label free-label_gray-short">презентацию о нашей компании</span><span class="thanks__text">и узнайте, как строительная экспертиза помогает решать споры и экономить деньги</span>
+            <form class="thanks__form" data-route="end">
+              <input class="email thanks__input link link_gray" placeholder="Эл. почта">
+              <button class="submit-btn thanks__link link link_orange end-step" type="submit">Получить презентацию →</button>
+            </form><span class="thanks__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="registry mfp-hide" id="registry">
         <div class="registry__left"><img class="registry__img" alt="photo" src="img/popup-img2.jpg"></div>
         <div class="registry__right-wrapper">
           <div class="registry__right"><span class="registry__title free-label free-label_gray">Получите реестр объектов экспертного центра<br> «А Группа»</span><span class="registry__text">Реестр регулярно обновляется и включает в себя выполненные нашими специалистами судебные и внесудебные экспертизы:</span>
@@ -1165,14 +1188,25 @@
                 </div>
               </div>
             </div>
-            <form class="registry__form">
+            <form class="registry__form" data-route="end">
               <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта">
               <div class="label">
                 <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel">
               </div>
-              <button class="submit-btn registry__link link link_orange" type="submit">Получить реестр →</button>
+              <button class="submit-btn registry__link link link_orange end-step" type="submit">Получить реестр →</button>
             </form><span class="registry__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
           </div>
+        </div>
+      </div>
+      <div class="end mfp-hide" id="end">
+        <div class="end__main"><span class="end__name client-name"></span><span class="end__title">мы отправили реестр наших экспертных заключений на указанную почту</span><span class="end__text">Если письма нет во входящих, проверьте папку «Промоакции» или «Спам»: письмо могло попасть туда по ошибке</span><span class="end__text-light">Если у вас есть вопросы к строительному эксперту или судебному юристу, вы можете их задать прямо сейчас по телефону<br> <a class="end__text-bold" href="tel:+73452529791">8 (3452) 52-97-91 </a>или в мессенджерах</span>
+          <div class="end__round-block"><a class="end__round end__round_green" href="#">
+              <svg class="icon end__icon">
+                <use xlink:href="svg/sprite.svg#whatsapp"></use>
+              </svg></a><a class="end__round end__round_purple" href="#">
+              <svg class="icon end__icon">
+                <use xlink:href="svg/sprite.svg#viber"></use>
+              </svg></a></div>
         </div>
       </div>
     </div>
