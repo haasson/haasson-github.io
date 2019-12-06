@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="11.14mm" height="12.372mm" version="1.1" viewBox="0 0 11.14 12.372" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter0_d" x=".2334" y="0" width="196.18" height="90" style="color-interpolation-filters:sRGB" filterUnits="userSpaceOnUse">
+   <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+   <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+   <feOffset dy="2"/>
+   <feGaussianBlur stdDeviation="12.5"/>
+   <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+   <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+   <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+  </filter>
+  <style>.cls-1{fill:#f36639;}.cls-2{fill:#fff;}</style>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(133.39 -112.25)">
+  <g transform="matrix(.26458 0 0 .26458 -90.506 129.65)" style="fill:none">
+   <path d="m421.04-617.63c-0.6649-1.3298 0.3021-2.8944 1.7889-2.8944h131.67c1.894 0 3.625 1.07 4.472 2.7639l7.5 15c0.704 1.4077 0.704 3.0645 0 4.4722l-7.5 15c-0.847 1.6939-2.578 2.7639-4.472 2.7639h-131.67c-1.4868 0-2.4538-1.5646-1.7889-2.8944l7.4348-14.87c0.7038-1.4077 0.7038-3.0645 0-4.4722z" style="fill:#fff;filter:url(#filter0_d)"/>
+   <g transform="translate(-170.01 -69.75)">
+    <path class="cls-1" d="m29 49.77a2 2 0 0 1-1.79-1.11l-2-4a20 20 0 1 1 7.6 0l-2 4a2 2 0 0 1-1.81 1.11z" style="fill:#f36639"/>
+    <path class="cls-2" d="m29 6a19 19 0 0 1 3.13 37.75l-2.24 4.46a1 1 0 0 1-1.78 0l-2.24-4.46a19 19 0 0 1 3.13-37.75m0-2a21 21 0 0 0-4.47 41.53l1.79 3.58a3 3 0 0 0 5.36 0l1.79-3.58a21 21 0 0 0-4.47-41.53z" style="fill:#fff"/>
+   </g>
+   <g transform="translate(-147.51 -54.16)" style="fill:#fff">
+    <path d="m10.692 15.536c0.6553 2.22-0.5341 3.2575-0.5341 3.2575l-1.0912-3.3713c-0.66528 0.2535-1.4512 0.404-2.3747 0.404-1.1047 0-2.0468-0.1975-2.8357-0.5221l-1.0532 3.5861s-1.1894-1.617-0.63126-3.3784c0.07992-0.2523 0.18648-0.5978 0.30996-1.0046-1.0469-0.8242-1.6267-1.9045-1.7888-2.8481l1.098-0.529c0.20682 0.7135 0.58842 1.3625 1.1394 1.8868 0.5355-1.7918 1.1637-3.9264 1.4652-4.9534-1.5257-1.4527-1.0215-4.4477 1.3005-5.0193l-0.48996-1.987 1.966-0.14477 0.07884 2.1143c2.4323 0.54096 2.817 3.7597 1.2073 5.1685 0.24084 0.78253 0.70398 2.2907 1.1657 3.8034l-1.3329 1.0264-1.3556-4.1883c-0.11448 0.01181-0.23274 0.01826-0.35496 0.01826-0.2898 0-0.55854-0.02899-0.80622-0.08232l-1.5021 5.1148c0.6678 0.2828 1.4585 0.4435 2.369 0.4435 2.5103 0 4.0816-1.4676 4.55-3.3345l1.116 0.5006c-0.1949 1.0022-0.7479 2.2544-1.879 3.154 0.0995 0.3312 0.1888 0.6306 0.2639 0.8849zm-4.1706-8.3502c1.6515 0 1.6619-2.5686-0.02898-2.5686-1.6976 0-1.7795 2.5686 0.02898 2.5686z" style="clip-rule:evenodd;fill-rule:evenodd;fill:#fff"/>
+   </g>
+  </g>
+ </g>
+</svg>
