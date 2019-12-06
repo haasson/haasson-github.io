@@ -739,8 +739,12 @@
             </div>
             <div class="price__result"><span class="price__minute price__again">← начать заново</span>
               <h3 class="price__header">Спасибо за ответы, мы уже приступили к расчету!</h3><span class="price__caption">Укажите свои контакты, и в течение суток мы пришлем вам индивидуальное предложение с результатами расчета</span><span class="price__caption price__caption_plus free-label free-label_white">+ разработанная программа исследований вашего объекта</span>
-              <input class="phone price__input link link_white" type="tel" placeholder="Номер телефона" name="buttons">
-              <button class="submit-btn price__link link link_white popup-with-form" href="#registry">Получить КП и программу →</button><span class="price__personal">Нажимая, даю согласие на обработку своих <a href="#"> персональных данных </a></span>
+              <form>
+                <div class="label">
+                  <input class="phone price__input link link_white phone" type="tel" placeholder="Номер телефона" name="buttons">
+                </div>
+                <button class="submit-btn price__link link link_white popup-with-form" type="submit">Получить КП и программу →</button>
+              </form><span class="price__personal">Нажимая, даю согласие на обработку своих <a href="#"> персональных данных </a></span>
             </div>
           </div>
         </div>
@@ -810,8 +814,10 @@
                         <li class="expert__item consultation__item">В течение суток после консультации вы получите индивидуальное предложение и программу исследований</li>
                       </ul>
                       <form>
-                        <input class="phone expert__input consultation__input link link_white" placeholder="Номер телефона">
-                        <button class="consultation__btn link link_white popup-with-form" href="#registry">Записаться <span class="link-arrow-animated">→</span></button><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
+                        <div class="label">
+                          <input class="phone expert__input consultation__input link link_white" placeholder="Номер телефона">
+                        </div>
+                        <button class="submit-btn consultation__btn link link_white popup-with-form" type="submit">Записаться<span class="link-arrow-animated">→</span></button><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
                       </form>
                     </div>
                   </div>
@@ -1119,7 +1125,9 @@
           <div class="call__main"><span class="call__caption">Укажите контактные данные и удобное время для звонка</span><span class="call__text">Я позвоню вам и отвечу на все вопросы. Мы работаем ежедневно с 06:00 до 22:00 по Тюменскому времени (МСК+2)</span>
             <form class="call__form">
               <input class="name call__input link link_gray" placeholder="Как вас зовут">
-              <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона">
+              <div class="label">
+                <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона">
+              </div>
               <div class="call__time">
                 <button class="call__time-now link link_gray">Сейчас</button>
                 <input class="input-time call__input link link_gray" placeholder="Позвоните в ">
@@ -1159,7 +1167,9 @@
             </div>
             <form class="registry__form">
               <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта">
-              <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel">
+              <div class="label">
+                <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel">
+              </div>
               <button class="submit-btn registry__link link link_orange" type="submit">Получить реестр →</button>
             </form><span class="registry__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
           </div>
