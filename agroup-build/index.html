@@ -200,10 +200,10 @@
               <form class="call__form" data-route="thanks">
                 <div class="consultation__block-link">
                   <div class="label">
-                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16">
+                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16" name="Записаться на консультацию">
                   </div>
                   <button class="submit-btn consultation__btn link link_orange" type="submit">Записаться на консультацию <span class="link-arrow-animated"> →</span></button>
-                </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <br> <a href="#personal" class=" popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></span>
+                </div><a class="consultation__text-form">Нажимая, даю согласие на обработку своих <br> <a href="#personal" class=" popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
               </form>
             </div>
           </div>
@@ -500,8 +500,10 @@
                   <div class="expert-modal__face"><img alt="expert" src="img/People/ivanov_expert_small.jpg"><span class="expert-modal__title">Сергей Иванов,</span><span>Ведущий эксперт</span></div>
                 </div>
                 <div class="expert-modal__text">Укажите причину обращения, чтобы мы бесплатно разработали программу исследований</div>
-              </div><span class="price__minute">вам понадобится 1 минута</span>
-              <h3 class="price__header">Рассчитайте стоимость экспертизы</h3><span class="price__text">Без дополнительных платежей — цена закрепляется в договоре.</span><span class="price__text">По итогам расчета вы получите бесплатно программу исследований</span>
+              </div>
+              <div class="price__head"><span class="price__minute">вам понадобится 1 минута</span>
+                <h3 class="price__header">Рассчитайте стоимость экспертизы</h3><span class="price__text">Без дополнительных платежей — цена закрепляется в договоре.</span><span class="price__text">По итогам расчета вы получите бесплатно программу исследований</span>
+              </div>
               <div class="price__quiz quiz">
                 <div class="quiz__progress-bar progress">
                   <div class="progress__point progress__point_first progress__point_current" data-slide="1">
@@ -545,7 +547,7 @@
                   </div>
                 </div>
                 <div class="quiz__slider">
-                  <form class="quiz__form" id="quiz__form">
+                  <form class="quiz__form call__form" id="quiz__form" data-route="thanks">
                     <div class="quiz__slide quiz__slide_1"><span class="quiz__question">Где расположен ваш объект?
                         <div class="quiz__radio">
                           <div class="quiz__column">
@@ -564,7 +566,7 @@
                           </div>
                         </div>
                         <div class="input">
-                          <input class="quiz__input-more link" type="text" placeholder="Другое: укажите город и регион" name="Где расположен ваш объект?">
+                          <input class="quiz__input-more link" type="text" placeholder="Другое: укажите город и регион" name="Другое Где расположен ваш объект?">
                         </div></span></div>
                     <div class="quiz__slide quiz__slide_2"><span class="quiz__question">Укажите тип объекта</span>
                       <div class="quiz__radio">
@@ -595,7 +597,7 @@
                         </div>
                       </div>
                       <div class="input">
-                        <input class="quiz__input-more link" type="text" placeholder="Другое: укажите тип объекта" name="Укажите тип объекта">
+                        <input class="quiz__input-more link" type="text" placeholder="Другое: укажите тип объекта" name="Другое Укажите тип объекта">
                       </div>
                     </div>
                     <div class="quiz__slide quiz__slide_3"><span class="quiz__question">Укажите площадь объекта
@@ -630,7 +632,7 @@
                           </div>
                         </div>
                         <div class="input">
-                          <input class="quiz__input-more link" type="text" placeholder="Другое: укажите реальную площадь" name="Укажите площадь объекта">
+                          <input class="quiz__input-more link" type="text" placeholder="Другое: укажите реальную площадь" name="Другое Укажите площадь объекта">
                         </div></span></div>
                     <div class="quiz__slide quiz__slide_4"><span class="quiz__question">Укажите высоту объекта
                         <div class="quiz__radio">
@@ -672,7 +674,7 @@
                           </div>
                         </div>
                         <div class="input">
-                          <input class="quiz__input-more link" type="text" placeholder="Другое: высота в метрах или количество этажей" name="Укажите высоту объекта">
+                          <input class="quiz__input-more link" type="text" placeholder="Другое: высота в метрах или количество этажей" name="Другое Укажите высоту объекта">
                         </div></span></div>
                     <div class="quiz__slide quiz__slide_5"><span class="quiz__question">Укажите цель экспертизы
                         <div class="quiz__radio quiz__radio_font">
@@ -706,26 +708,24 @@
                           </div>
                         </div>
                         <div class="input">
-                          <input class="quiz__input-more link" placeholder="Другое: кратко опишите ситуацию" name="Укажите цель экспертизы">
+                          <input class="quiz__input-more link" placeholder="Другое: кратко опишите ситуацию" name="Другое Укажите цель экспертизы">
                         </div></span></div>
+                    <div class="price__result">
+                      <div class="price__left"><span class="price__minute price__again link-arrow-animated-left">← <span class="price__minute price__again">начать заново</span></span>
+                        <h3 class="price__header">Спасибо за ответы, мы уже приступили к расчету!</h3><span class="price__caption">Укажите свои контакты, и в течение суток мы пришлем вам индивидуальное предложение с результатами расчета</span><span class="price__caption price__caption_plus free-label free-label_white">+ разработанная программа исследований вашего объекта</span>
+                        <div class="label">
+                          <input class="phone price__input link link_white phone" type="tel" placeholder="Номер телефона" name="Получить КП и программу">
+                        </div>
+                        <button class="price__link link link_white" type="submit">Получить КП и программу <span class="link-arrow-animated">→</span></button><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих<a class="popup-standart consultation__text-form consultation__text-form_underline-white" href="#personal">персональных данных</a></a>
+                      </div>
+                      <div class="price__right"><img class="price__img" src="img/kviz-img.png" alt="img"></div>
+                    </div>
                   </form>
                 </div>
                 <div class="quiz__controls">
                   <button class="quiz__button link link_white">Далее <span class="link-arrow-animated">→</span></button>
                 </div>
               </div>
-            </div>
-            <div class="price__result">
-              <div class="price__left"><span class="price__minute price__again link-arrow-animated-left">← <span class="price__minute price__again">начать заново</span></span>
-                <h3 class="price__header">Спасибо за ответы, мы уже приступили к расчету!</h3><span class="price__caption">Укажите свои контакты, и в течение суток мы пришлем вам индивидуальное предложение с результатами расчета</span><span class="price__caption price__caption_plus free-label free-label_white">+ разработанная программа исследований вашего объекта</span>
-                <form class="call__form" data-route="thanks">
-                  <div class="label">
-                    <input class="phone price__input link link_white phone" type="tel" placeholder="Номер телефона" name="buttons">
-                  </div>
-                  <button class="price__link link link_white" type="submit">Получить КП и программу <span class="link-arrow-animated">→</span></button>
-                </form><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих <br> <a href="#personal" class="popup-standart consultation__text-form consultation__text-form_underline-white">персональных данных</a></a>
-              </div>
-              <div class="price__right"><img class="price__img" src="img/kviz-img.png" alt="img"></div>
             </div>
           </div>
         </div>
@@ -787,7 +787,7 @@
                       <div class="expert__gallery popup-gallery"><a class="expert__diplom" href="img/People/Diplomas/Ivanov_diplom1.jpg">Посмотреть дипломы и сертификаты</a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Ivanov_diplom2.jpg">Посмотреть дипломы и сертификаты</a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Ivanov_diplom3.jpg">Посмотреть дипломы и сертификаты</a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Ivanov_diplom4.jpg">Посмотреть дипломы и сертификаты</a>
                       </div><a class="expert__link link link_white">Бесплатная консультация <span class="link-arrow-animated">→</span></a>
                     </div>
-                    <div class="expert__consultation consultation__description"><span class="expert__caption consultation__link">консультация по телефону<br> или в <a href="#" class="consultation__link consultation__link_underline"> офисе в Тюмени</a></span>
+                    <div class="expert__consultation consultation__description"><span class="expert__caption consultation__link">консультация по телефону<br> или в <a href="#footer" class="consultation__link consultation__link_underline"> офисе в Тюмени</a></span>
                       <ul class="expert__list consultation__list">
                         <li class="expert__item consultation__item">Узнаете ответы на все свои вопросы по строительной экспертизе</li>
                         <li class="expert__item consultation__item">Определитесь, какие виды строительной экспертизы вам необходимы</li>
@@ -796,7 +796,7 @@
                       </ul>
                       <form class="call__form" data-route="thanks">
                         <div class="label label-white">
-                          <input class="phone expert__input consultation__input link link_white" placeholder="Номер телефона" type="tel">
+                          <input class="phone expert__input consultation__input link link_white" placeholder="Номер телефона" type="tel" name="Записаться к эксперту">
                         </div>
                         <button class="submit-btn consultation__btn link link_white" type="submit">Записаться <span class="link-arrow-animated">→</span></button><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих <a href="#personal" class="popup-standart consultation__text-form consultation__text-form_underline-white">персональных данных</a></a>
                       </form>
@@ -963,7 +963,7 @@
                 <svg class="icon progress__icon progress__icon_before">
                   <use xlink:href="svg/sprite.svg#2"></use>
                 </svg>
-                <div class="progress__text">пробы</div>
+                <div class="progress__text">обследование</div>
                 <svg class="icon progress__icon progress__icon_after">
                   <use xlink:href="svg/sprite.svg#1"></use>
                 </svg>
@@ -1074,10 +1074,10 @@
               <form class="call__form" data-route="thanks">
                 <div class="consultation__block-link">
                   <div class="label">
-                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16">
+                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16" name="Записаться на консультацию">
                   </div>
                   <button class="submit-btn consultation__btn link link_orange" type="submit">Записаться на консультацию <span class="link-arrow-animated"> →</span></button>
-                </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <br> <a href="#personal" class=" popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></span>
+                </div><a class="consultation__text-form">Нажимая, даю согласие на обработку своих <br> <a href="#personal" class=" popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
               </form>
             </div>
           </div>
@@ -1105,9 +1105,9 @@
         <div class="check-list__left"><img class="check-list__img" alt="img" src="img/popup-img.jpg"></div>
         <div class="check-list__right"><span class="check-list__title">Выбираете компанию, <br>которая проведет для вас строительную экспертизу?</span><span class="check-list__text">Получите бесплатно чек-лист</span><span class="check-list__caption">«Как проверить реальную компетентность экспертной компании: 7 признаков некомпетентности»</span>
           <form class="check-list__form" data-route="thanks" data-doc="чек-лист">
-            <input class="name check-list__input link link_gray" placeholder="Как вас зовут">
-            <input class="email check-list__input link link_gray" placeholder="Эл. почта">
-            <button class="submit-btn check-list__link link link_orange enabled" type="submit">Получить чек-лист <span class="link-arrow-animated">→</span></button>
+            <input class="name check-list__input link link_gray" placeholder="Как вас зовут" name="name" type="text">
+            <input class="email check-list__input link link_gray" placeholder="Эл. почта" name="Получить чек-лист" type="email">
+            <button class="submit-btn check-list__link link link_orange enabled" type="submit">Получить чек-лист<span class="link-arrow-animated">→</span></button>
           </form><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих<br> <a href="#personal" class="popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
         </div>
       </div>
@@ -1119,12 +1119,12 @@
         <div class="call__wrapper-main">
           <div class="call__main"><span class="call__caption call__caption_desktop">Укажите контактные данные и удобное время для звонка</span><span class="call__text call__text_desktop">Я позвоню вам и отвечу на все вопросы. Мы работаем ежедневно с 06:00 до 22:00 по Тюменскому времени (МСК+2)</span><span class="call__caption call__caption_mobile">Мы перезвоним вам в ближайшее время</span>
             <form class="call__form" data-route="thanks">
-              <input class="name call__input link link_gray" placeholder="Как вас зовут">
+              <input class="name call__input link link_gray" placeholder="Как вас зовут" name="name" type="text">
               <div class="label">
-                <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона">
+                <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона" name="Записаться">
               </div>
               <div class="call__time"><span class="call__time-now link link_gray">Сейчас</span>
-                <input class="input-time call__input link link_gray" placeholder="Позвоните в ">
+                <input class="input-time call__input link link_gray" placeholder="Позвоните в " name="Позвоните в" type="text">
               </div>
               <button class="submit-btn call__link link link_orange" type="submit">Записаться на консультацию <span class="link-arrow-animated">→</span></button>
             </form><a class="consultation__text-form call__personal" href="#">Нажимая, даю согласие на обработку своих <br><a href="#personal" class=" popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
@@ -1139,7 +1139,7 @@
         <div class="call__wrapper-main">
           <div class="call__main"><span class="call__caption">Получите индивидуальное предложение о сотрудничестве</span><span class="call__text call2__text">с квалифицированными строительными экспертами с бонусами для юридических компаний</span>
             <form class="call__form" data-route="end" data-doc="индивидуальное предложение для вашей компании">
-              <input class="call__input link link_gray" type="text" placeholder="Эл. почта">
+              <input class="call__input link link_gray" type="email" name="Получить предложение" placeholder="Эл. почта">
               <button class="submit-btn call__link link link_orange enabled" type="submit">Получить предложение<span class="link-arrow-animated">→</span></button>
             </form><a class="consultation__text-form call__personal" href="#">Нажимая, даю согласие на обработку своих <br><a href="#personal" class=" popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
           </div>
@@ -1153,12 +1153,12 @@
         <div class="call__wrapper-main">
           <div class="call__main"><span class="call__caption call__caption_desktop">Укажите контактные данные и удобное время для звонка</span><span class="call__text call__text_desktop">Я позвоню вам и отвечу на все вопросы. Мы работаем ежедневно с 06:00 до 22:00 по Тюменскому времени (МСК+2)</span><span class="call__caption call__caption_mobile">Мы перезвоним вам в ближайшее время</span>
             <form class="call__form" data-route="thanks">
-              <input class="name call__input link link_gray" placeholder="Как вас зовут">
+              <input class="name call__input link link_gray" placeholder="Как вас зовут" type="text" name="name">
               <div class="label">
-                <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона">
+                <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона" name="Записаться на консультацию">
               </div>
               <div class="call__time"><span class="call__time-now link link_gray">Сейчас</span>
-                <input class="input-time call__input link link_gray" placeholder="Позвоните в ">
+                <input class="input-time call__input link link_gray" placeholder="Позвоните в " type="text" name="Позвоните в">
               </div>
               <button class="submit-btn call__link link link_orange" type="submit">Записаться на консультацию<span class="link-arrow-animated">→</span></button>
             </form><a class="consultation__text-form call__personal" href="#">Нажимая, даю согласие на обработку своих <br><a href="#personal" class=" popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
@@ -1171,7 +1171,7 @@
         <div class="thanks__right-wrapper">
           <div class="thanks__right"><span class="thanks__name client-name"></span><span class="thanks__promise">Мы перезвоним вам в ближайшее время</span><span class="thanks__text">А пока вы ждете звонка, посмотрите</span><span class="thanks__text thanks__text_desktop thanks__text_bold free-label free-label_gray">презентацию о нашей компании</span><span class="thanks__text thanks__text_mobile thanks__text_bold free-label free-label_gray-short">презентацию о нашей компании</span><span class="thanks__text">и узнайте, как строительная экспертиза помогает решать споры и экономить деньги</span>
             <form class="thanks__form" data-route="end" data-doc="презентацию">
-              <input class="email thanks__input link link_gray" placeholder="Эл. почта">
+              <input class="email thanks__input link link_gray" placeholder="Эл. почта" type="email" name="Получить презентацию">
               <button class="submit-btn thanks__link link link_orange enabled" type="submit">Получить презентацию <span class="link-arrow-animated">→</span></button>
             </form><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих <br><a href="#personal" class="popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
           </div>
@@ -1206,11 +1206,11 @@
               </div>
             </div>
             <form class="registry__form" data-route="end" data-doc="реестр наших экспертных заключений">
-              <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта">
+              <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта" type="email" name="email Получить реестр">
               <div class="label disabled">
-                <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel">
+                <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel" name="Получить реестр">
               </div>
-              <button class="submit-btn registry__link link link_orange enabled" type="submit">Получить реестр <span class="link-arrow-animated">→</span></button>
+              <button class="submit-btn registry__link link link_orange enabled" type="submit">Получить реестр<span class="link-arrow-animated">→</span></button>
             </form><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих <br><a href="#personal" class="popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
           </div>
         </div>
@@ -1240,11 +1240,11 @@
               </div>
             </div>
             <form class="registry__form" data-route="end" data-doc="пример экспертного заключения">
-              <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта">
+              <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта" type="email" name="Получить пример заключения">
               <div class="label disabled">
-                <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel">
+                <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel" name="Получить пример заключения">
               </div>
-              <button class="submit-btn registry__link link link_orange enabled" type="submit">Получить пример заключения <span class="link-arrow-animated">→</span></button>
+              <button class="submit-btn registry__link link link_orange enabled" type="submit">Получить пример заключения<span class="link-arrow-animated">→</span></button>
             </form><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих <br><a href="#personal" class="popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
           </div>
         </div>
@@ -1267,19 +1267,19 @@
         <div class="programm__right-wrapper">
           <div class="programm__right"><span class="programm__name">Получите бесплатно программу исследований и индивидуальное коммерческое предложение в течение суток</span>
             <form class="programm__form" data-route="end" data-doc="индивидуальное предложение для вашей компании" enctype="multipart/form-data">
-              <input class="name programm__input link link_gray" placeholder="Как вас зовут">
+              <input class="name programm__input link link_gray" placeholder="Как вас зовут" type="text" name="name">
               <div class="label">
-                <input class="phone programm__input link link_gray" placeholder="Номер телефона" type="tel">
+                <input class="phone programm__input link link_gray" placeholder="Номер телефона" type="tel" name="Получить КП">
               </div>
-              <input class="email programm__input link link_gray" placeholder="Эл. почта">
+              <input class="email programm__input link link_gray" placeholder="Эл. почта" type="email" name="email Получить КП">
               <label class="programm__block-file">Прикрепить файл
-                <input class="programm__file" type="file" placeholder="">
+                <input class="programm__file" type="file" placeholder="" name="userfile[]" multiple>
                 <svg class="icon programm__svg">
                   <use xlink:href="svg/sprite.svg#file"></use>
                 </svg>
                 <div class="file-name"></div>
               </label>
-              <button class="submit-btn programm__link link link_orange end-step" type="submit">Получить реестр <span class="link-arrow-animated">→</span></button>
+              <button class="submit-btn programm__link link link_orange end-step" type="submit">Получить КП<br> и программу исследований<span class="link-arrow-animated">→</span></button>
             </form><a class="consultation__text-form" href="#">Нажимая, даю согласие на обработку своих <br><a href="#personal" class="popup-standart consultation__text-form consultation__text-form_underline">персональных данных</a></a>
           </div>
         </div>
