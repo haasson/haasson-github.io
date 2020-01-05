@@ -2,1218 +2,807 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AGroup</title>
+    <title>Aquarel</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=0ba7b3a8-0421-492e-905e-5de49186d28e" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
   </head>
   <body>
-    <div id="pinContainer">
-      <header class="header">
-        <div class="wrapper">
-          <div class="header__inner"><span class="header__text">Проводим строительную экспертизу с 2012 года</span>
-            <div class="header__hamburger"><span class="header__hamburger-line"></span></div><img class="header__logo" alt="logo" src="img/logo.png">
-            <div class="header__block">
-              <div class="header__block-phone"><a class="header__phone" href="tel:+79199455985">8 919 945-59-85</a><a class="header__phone" href="tel:+73452529791">8 (3452) 52-97-91</a></div>
-              <div class="header__button-block"><a class="header__button button popup-with-form" href="#end">Заказать звонок3</a><a class="header__mobile-block button popup-with-form" href="#callback">
-                  <svg class="icon header__mobile">
-                    <use xlink:href="svg/sprite.svg#mob"></use>
-                  </svg></a><span class="header__time">пн—вс 6 :00—22:00 (МСК+2)</span></div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <nav class="menu menu-desktop">
-        <div class="menu__inner">
-          <ul class="menu__list">
-            <li class="menu__item menu__item_active"><span>Услуги</span></li>
-            <li class="menu__item menu__item_active"><span>Объекты</span></li>
-            <li class="menu__item menu__item_active"><span>Стоимость</span></li>
-            <li class="menu__item menu__item_active"><span>Допуски</span></li>
-            <li class="menu__item menu__item_active"><span>Наши эксперты</span></li>
-            <li class="menu__item menu__item_active"><span>Оборудование</span></li>
-            <li class="menu__item menu__item_active"><span>Сроки</span></li>
-            <li class="menu__item menu__item_active"><span>Контакты</span></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="menu menu-mobile">
-        <nav class="menu-mobile__nav">
-          <div class="menu__inner">
-            <div class="menu__inner-content"><span class="menu-mobile__link">← Закрыть</span>
-              <ul class="menu__list menu-mobile__list">
-                <li class="menu__item menu__item_active"><a href="#service"><span>Услуги</span></a></li>
-                <li class="menu__item menu__item_active"><a href="#object"><span>Объекты</span></a></li>
-                <li class="menu__item menu__item_active"><a href="#price"><span>Стоимость</span></a></li>
-                <li class="menu__item menu__item_active"><a href="#certificate"><span>Допуски</span></a></li>
-                <li class="menu__item menu__item_active"><a href="#expert"><span>Наши эксперты</span></a></li>
-                <li class="menu__item menu__item_active"><a href="#equipment"><span>Оборудование</span></a></li>
-                <li class="menu__item menu__item_active"><a href="#timing"><span>Сроки</span></a></li>
-                <li class="menu__item menu__item_active"><a href="#footer"><span>Контакты</span></a></li>
-              </ul><a class="header__phone menu-mobile__phone" href="tel:+79199455985">8 919 945-59-85</a><a class="header__phone menu-mobile__phone" href="tel:+73452529791">8 (3452) 52-97-91</a><span class="header__time menu-mobile__time">пн—вс 6 :00—22:00 (МСК+2)</span>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div class="home">
-        <div class="wrapper">
-          <div class="home__inner block-right">
-            <h1 class="home__title">Независимая <br> строительная экспертиза <br> и обследование объектов</h1><span class="home__subtitle">Поможем сэкономить до 50% за счет сокращения <br> необоснованных и непредвиденных затрат</span><a class="home__link link link_orange popup-with-form" href="#registry">Получить КП и программу исследований →</a><span class="home__promise free-label free-label_orange">Разработаем программу в течение суток</span>
-            <div class="home__accreditation accreditation">
-              <div class="accreditation__list">
-                <div class="accreditation__item"><img src="img/header/list-icon-1.png">
-                  <div class="accreditation__text-block"><span class="accreditation__text">Допуски СРО</span><span class="accreditation__text">СРО-П-182-02042013</span><span class="accreditation__text">СРО-П-182-02042013</span></div>
-                </div>
-                <div class="accreditation__item"><img src="img/header/list-icon-2.png">
-                  <div class="accreditation__text-block"><span class="accreditation__text">Росаккредитация</span><span class="accreditation__text">Свидетельство №</span><span class="accreditation__text">182-02042013</span></div>
-                </div>
-                <div class="accreditation__item"><img src="img/header/list-icon-3.png">
-                  <div class="accreditation__text-block"><span class="accreditation__text">Аккредитация МЧС</span><span class="accreditation__text">Свидетельство №</span><span class="accreditation__text">182-02042013</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header-popap-mini-wrap side-popup">
-        <div class="header-popap-mini">
-          <div class="close-mini">
-            <svg class="close-mini__img">
-              <use xlink:href="svg/sprite.svg#close"></use>
-            </svg>
-          </div><span class="header-popap-mini__title">Вы частный клиент?</span><span class="header-popap-mini__text header-popap-mini__text_desktop">Узнайте бесплатно, <br> нужна ли вам <br> строительная экспертиза</span><span class="header-popap-mini__text header-popap-mini__text_mobile"> <a class="popup-with-form" href="#registry">Узнайте бесплатно</a><span>, нужна ли вам строительная экспертиза</span></span><a class="header-popap-mini__link popup-with-form" href="#registry">Узнать →</a>
-        </div>
-      </div>
-      <div class="service section" id="service">
-        <div class="wrapper">
-          <div class="service__inner block-right">
-            <h3 class="service__title">Проводим комплексную экспертизу <br> и отдельные виды исследований в области проектирования, строительства и изысканий</h3>
-            <div class="service__toggle toggle">
-              <div class="service__toggle-item toggle__item" data-service-slide="service__slide_1">
-                <svg class="icon toggle__icon">
-                  <use xlink:href="svg/sprite.svg#icon-circul"></use>
-                </svg><span>Строительная экспертиза</span>
-              </div>
-              <div class="service__toggle-item toggle__item" data-service-slide="service__slide_2">
-                <svg class="icon toggle__icon">
-                  <use xlink:href="svg/sprite.svg#icon-plant"></use>
-                </svg><span>Лабораторное сопровождение</span>
-              </div>
-              <div class="service__toggle-item toggle__item" data-service-slide="service__slide_3">
-                <svg class="icon toggle__icon toggle__icon_flask">
-                  <use xlink:href="svg/sprite.svg#icon-flask"></use>
-                </svg><span>Обследование зданий и сооружений</span>
-              </div>
-            </div>
-            <div class="service__slider">
-              <div class="service__slide service__slide_1">
-                <div class="service__slide-inner"><img class="service__slider-img" src="img/service-slide1.png">
-                  <ul class="service__list">
-                    <li class="service__list-item">Экспертиза качества и объемов выполненных работ</li>
-                    <li class="service__list-item">Независимая судебная экспертиза</li>
-                    <li class="service__list-item">Экспертиза инженерных систем и коммуникаций</li>
-                    <li class="service__list-item">Экспертиза в целях выявления дефектов и несоответствия проекту</li>
-                    <li class="service__list-item">Землеустроительная экспертиза и раздел домовладений</li>
-                    <li class="service__list-item">Строительный аудит и контроль качества</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="service__slide service__slide_2">
-                <div class="service__slide-inner"><img class="service__slider-img" src="img/service-slide2.png">
-                  <ul class="service__list">
-                    <li class="service__list-item">Проверка прочности и марки бетона и кирпича</li>
-                    <li class="service__list-item">Лабораторные испытания строительных конструкций и дорожных покрытий</li>
-                    <li class="service__list-item">Лабораторная проверка качества строительных и отделочных материалов</li>
-                    <li class="service__list-item">Определение уровня влаги в стройматериалах и конструкциях</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="service__slide service__slide_3">
-                <div class="service__slide-inner"><img class="service__slider-img" src="img/service-slide3.png">
-                  <ul class="service__list">
-                    <li class="service__list-item">На предмет соответствия проекту или договору</li>
-                    <li class="service__list-item">При расконсервации объекта Плановое для жилых зданий</li>
-                    <li class="service__list-item">Для определения приемлемых эксплуатационных нагрузок</li>
-                    <li class="service__list-item">Для определения работоспособности, степени износа, аварийности, скрытых дефектов</li>
-                    <li class="service__list-item">Для выяснения причин аварий, протечек, заливов, пожаров, обрушений</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about">
-        <div class="wrapper">
-          <div class="about__inner block-right">
-            <h2 class="about__title">Помогаем экономить деньги <br> и защищать интересы</h2>
-            <div class="about__main">
-              <div class="about__column">
-                <div class="about__item about__item_brown">
-                  <svg class="icon about__icon_95">
-                    <use xlink:href="svg/sprite-original.svg#95procent"></use>
-                  </svg><span class="about__item_brown-text">клиентов <br> приходят к нам <br> по рекомендации</span>
-                </div>
-                <div class="about__item"><span class="about__item-title">Генподрядчикам</span>
-                  <ul class="about__list">
-                    <li class="about__list-item">Не платить лишнего,<span class="about__list-item_gray">Если подрядчик завышает объемы</span></li>
-                    <li class="about__list-item">Соблюсти регламент<span class="about__list-item_gray">и защититься от штрафов</span></li>
-                    <li class="about__list-item">Получить компенсацию<span class="about__list-item_gray">за некачественную работу</span></li>
-                    <li class="about__list-item">Убедиться в качестве<span class="about__list-item_gray">стройматериалов и их соответствию проекту и смете</span></li>
-                  </ul>
-                </div>
-                <div class="about__item"><span class="about__item-title">Юридическим компаниям</span>
-                  <ul class="about__list">
-                    <li class="about__list-item">Получить доказательства<span class="about__list-item_gray">для защиты интересов истца или ответчика в суде</span></li>
-                    <li class="about__list-item">Точно сформулировать<span class="about__list-item_gray">вопросы к эксперту</span></li>
-                    <li class="about__list-item">Аргументированно защитить<span class="about__list-item_gray">экспертное заключение в судебном заседании</span></li>
-                  </ul><a class="about__link link link_orange popup-with-form" href="#registry">Получить предложение <span class="link-arrow-animated">→</span></a>
-                </div>
-              </div>
-              <div class="about__column">
-                <div class="about__item"><span class="about__item-title">Субподрядчикам</span>
-                  <ul class="about__list">
-                    <li class="about__list-item">Получить оплату<span class="about__list-item_gray">за фактически выполненные работы</span></li>
-                    <li class="about__list-item">Доказать качество<span class="about__list-item_gray">и объем выполненных работ в спорной ситуации</span></li>
-                    <li class="about__list-item">Решить спор<span class="about__list-item_gray">другим субподрядчиком</span></li>
-                  </ul>
-                </div>
-                <div class="about__item"><span class="about__item-title">Владельцам недвижимости</span>
-                  <ul class="about__list">
-                    <li class="about__list-item">Решить спор в суде,<span class="about__list-item_gray">получить компенсацию и добиться устранения дефектов</span></li>
-                    <li class="about__list-item">Определить эксплуатационное состояние<span class="about__list-item_gray">здания или сооружения</span></li>
-                    <li class="about__list-item">Установить соответствие объекта ГОСТам,<span class="about__list-item_gray">нормативным требованиям и проекту</span></li>
-                  </ul>
-                </div>
-                <div class="about__item"><span class="about__item-title">Госорганам</span>
-                  <ul class="about__list">
-                    <li class="about__list-item">Установить факт аварийности<span class="about__list-item_gray">зданий и строительных конструкций</span></li>
-                    <li class="about__list-item">Определить объем и качество<span class="about__list-item_gray">выполненных работ</span></li>
-                    <li class="about__list-item">Определить соответствие<span class="about__list-item_gray">коммерческому предложению при покупке</span></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="consultation">
-        <div class="wrapper">
-          <div class="consultation__inner block-right">
-            <div class="consultation__photo"><img class="consultation__img" alt="sergej" src="img/People/Ivanov_cons.jpg">
-              <div class="consultation__block"><span class="consultation__text">Сергей Иванов  ·  <span class="consultation__text consultation__text_light"> ведущий инженер-эксперт компании «А Группа» </span></span></div>
-            </div>
-            <div class="consultation__description">
-              <h3 class="consultation__title">Получите бесплатно</h3>
-              <h3 class="consultation__title">подробную консультацию</h3><span class="consultation__link">по телефону или в <a href="#" class="consultation__link consultation__link_underline"> офисе в Тюмени</a></span>
-              <ul class="consultation__list">
-                <li class="consultation__item">Определитесь, какие виды строительной экспертизы вам необходимы</li>
-                <li class="consultation__item">Получите пошаговый план действий по проведению экспертизы на вашем объекте</li>
-                <li class="consultation__item">Узнаете ответы на все свои вопросы по строительной экспертизе</li>
-                <li class="consultation__item">В течение суток после консультации вы получите индивидуальное предложение и программу исследований</li>
-              </ul>
-              <form data-route="thanks">
-                <div class="consultation__block-link">
-                  <div class="label">
-                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16">
-                    <button class="submit-btn consultation__btn link link_orange" type="submit">Записаться на консультацию <span class="link-arrow-animated">→</span></button>
-                  </div>
-                </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="object section" id="object">
-        <div class="wrapper">
-          <div class="object__inner block-right">
-            <div class="object__block-title">
-              <h2 class="object__title">Офис в Тюмени, <br> Экспертизы — по всей России</h2><span class="object__text">с 2012 года мы помогли 225 клиентам, <br>367 объектов обследовано</span>
-              <button class="object__btn-map toggle__item popup-with-form" href="#registry">Получить реестр объектов экспертного центра «А Группа»</button>
-            </div>
-          </div>
-        </div>
-        <div id="map"></div>
-      </div>
-      <div class="projects">
-        <div class="wrapper">
-          <div class="projects__inner block-right">
-            <div class="projects__header"><span class="projects__title projects__left-bar">Проекты</span>
-              <div class="toggle projects__toggle">
-                <button class="toggle__item projects__toggle-item active-btn"><span>Все направления</span></button>
-                <button class="toggle__item projects__toggle-item" data-project-btn="expert">
-                  <svg class="icon toggle__icon">
-                    <use xlink:href="svg/sprite.svg#icon-circul"></use>
-                  </svg><span>Строительная экспертиза</span>
-                </button>
-                <button class="toggle__item projects__toggle-item_mobile projects__toggle-item projects__toggle-item" data-project-btn="inspect">
-                  <svg class="icon toggle__icon toggle__icon_flask">
-                    <use xlink:href="svg/sprite.svg#icon-flask"></use>
-                  </svg><span>Обследование зданий и сооружений</span>
-                </button>
-                <button class="toggle__item projects__toggle-item" data-project-btn="lab">
-                  <svg class="icon toggle__icon">
-                    <use xlink:href="svg/sprite.svg#icon-plant"></use>
-                  </svg><span>Лабораторное сопровождение</span>
-                </button>
-              </div>
-            </div>
-            <div class="projects__slider-block">
-              <div class="projects__counter projects__counter_decktop projects__left-bar"><span class="projects__count">1</span><span class="projects__quantity">из <span class="projects__total">15</span></span></div>
-              <div class="projects__slider">
-                <div class="projects__slide projects__slide_0" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_1"><a class="projects__image " href="img/Cases/1case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/1case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/1case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/1case2.JPG"></a><a class="projects__image projects__image_bottom" href="img/Cases/1case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/1case1.JPG"></a><a class="projects__image projects__image_hidden" href="img/Cases/1case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/1case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Газопровод-отвод к Сургутской ГРЭС-1</span><span class="projects__location">ХМАО, Сургутский район, автодорога Сургут-Нижневартовск, п. Локосово</span><span class="projects__paragraph">Задача</span><span class="projects__text">Дать ответы на поставленные судом вопросы (судебная экспертиза)</span><span class="projects__paragraph">Результат</span><span class="projects__text">С помощью экспертного заключения Заказчику (истцу) удалось снизить стоимость выполненных подрядчиком работ, исключив некачественно выполненные, на 4,185 млн. руб.</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_1" data-project-type="inspect">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_2"><a class="projects__image " href="img/Cases/2case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/2case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/2case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/2case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Жилой дом в Ханты-Мансийске</span><span class="projects__location">ХМАО, г. Ханты-Мансийск, Квартал №77, дом 3</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определить качество и объем выполненных работ. Определить прочность бетона в монолитных ж/б конструкциях</span><span class="projects__paragraph">Результат</span><span class="projects__text">Оценка технического состояния выполненных конструкций (фундамент и стены тех.этажа) позволила Заказчику принять решение о дальнейшем строительстве жилого дома без дополнительных затрат, связанных с  увеличением срока строительства на усиление конструкций</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_2" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_3"><a class="projects__image " href="img/Cases/3case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/3case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/3case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/3case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Губернская типография в Тобольске</span><span class="projects__location">Тюменская обл., г. Тобольск</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определить объем и качество выполненных работ по установке пожарной сигнализации</span><span class="projects__paragraph">Результат</span><span class="projects__text">Разрешение споров между заказчиком и подрядчиком во внесудебном порядке, что позволило исключить судебные издержки в размере 120 тыс. руб.</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_3" data-project-type="lab">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_4"><a class="projects__image " href="img/Cases/4case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/4case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/4case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/4case2.JPG"></a><a class="projects__image projects__image_bottom" href="img/Cases/4case3.JPG"><img class="projects__img" alt="photo" src="img/Cases/4case3.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Завод ООО «КНАУФ Инсулейшн Тюмень»</span><span class="projects__location">г. Тюмень</span><span class="projects__paragraph">Задача</span><span class="projects__text">Геодезическое сопровождение реконструкции завода ООО «КНАУФ Инсулейшн Тюмень»</span><span class="projects__paragraph">Результат</span><span class="projects__text">Наша компания предложила самую выгодную стоимость и выиграла конкурс на проведение работ по геодезическому сопровождению</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_4" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_5"><a class="projects__image " href="img/Cases/5case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/5case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/5case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/5case2.JPG"></a><a class="projects__image projects__image_bottom" href="img/Cases/5case3.JPG"><img class="projects__img" alt="photo" src="img/Cases/5case3.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Наружные (подземные) сети водопровода завода ООО «Тобольск-Полимер»</span><span class="projects__location">Тюменская обл., г. Тобольск, промзона</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определить причину неработоспособности сетей</span><span class="projects__paragraph">Результат</span><span class="projects__text">Благодаря экспертизе удалось избежать аварии трубопровода, ликвидация которой обошлась бы в 15 млн. руб.</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_5" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_6"><a class="projects__image " href="img/Cases/6case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/6case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/6case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/6case2.JPG"></a><a class="projects__image projects__image_bottom" href="img/Cases/6case3.JPG"><img class="projects__img" alt="photo" src="img/Cases/6case3.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Квартира в Новом Уренгое</span><span class="projects__location">ЯНАО, г. Новый Уренгой, ул. Сибирская, д. 17Б, кв. 15</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определить видимые и скрытые дефекты в квартире, допущенные Застройщиком при строительстве многоквартирного дома</span><span class="projects__paragraph">Результат</span><span class="projects__text">Благодаря экспертному заключению суд удовлетворил иск жильцов квартиры. Застройщик обменял некачественно выполненную квартиру на квартиру без дефектов, большей площади и расположенную ближе к центру</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_6" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_7"><a class="projects__image " href="img/Cases/7case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/7case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/7case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/7case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Ресторан «Мафиози» в Тюмени</span><span class="projects__location">г. Тюмень</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определение соответствия системы вентиляции в обеденных залах и санузлах 1-го этажа ресторана требованиям СанПиН</span><span class="projects__paragraph">Результат</span><span class="projects__text">Благодаря экспертному заключению ресторан возобновил деятельность, удалось минимизировать затраты, связанные с простоем</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_7" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_8"><a class="projects__image " href="img/Cases/8case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/8case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/8case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/8case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Центр духовно–нравственного развития молодежи в Ноябрьске</span><span class="projects__location">ЯНАО, г. Ноябрьск</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определение объема и качества фактически выполненных работ, а также стоимости некачественно выполненных работ</span><span class="projects__paragraph">Результат</span><span class="projects__text">Благодаря экспертному заключению заказчику удалось вернуть средства за некачественно выполненные работы в размере 5,426 млн.руб</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_8" data-project-type="inspect">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_9"><a class="projects__image " href="img/Cases/9case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/9case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/9case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/9case2.JPG"></a><a class="projects__image projects__image_bottom" href="img/Cases/9case3.JPG"><img class="projects__img" alt="photo" src="img/Cases/9case3.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Система внутриплощадочных сетей ливневой канализации на территории ТЦ «О.Кей» в Тюмени</span><span class="projects__location">г. Тюмень</span><span class="projects__paragraph">Задача</span><span class="projects__text">Выполнить комплексное обследование внутриплощадочных сетей ливневой канализации на предмет выявления повреждений, в том числе скрытых</span><span class="projects__paragraph">Результат</span><span class="projects__text">В результате экспертного обследования выявлены причины повреждений системы, составлен план мероприятий по восстановлению работоспособности и предотвращению последующих повреждений сетей. Благодаря экспертизе удалось избежать аварии системы ливневой канализации, ликвидация которой обошлась бы в 7,3 млн. руб.</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_9" data-project-type="inspect">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_10"><a class="projects__image " href="img/Cases/10case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/10case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/10case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/10case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Факельная установка АО «СГ-транс»</span><span class="projects__location">ХМАО, г. Сургут</span><span class="projects__paragraph">Задача</span><span class="projects__text">оценка технического состояния инженерных систем и строительных конструкций. установление объективных показателей функционирования отдельных систем и конструкций. обоснование остаточного ресурса работоспособности систем и конструкций</span><span class="projects__paragraph">Результат</span><span class="projects__text">В результате экспертного обследования факельной установки выявлены нарушения и отклонения от норм. Эксперты выдали рекомендации о  полной технической модернизации факельной установки для исключения аварии, ликвидация которой обойдется в 28 млн. руб.</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_10" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_11"><a class="projects__image " href="img/Cases/11case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/11case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/11case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/11case2.JPG"></a><a class="projects__image projects__image_bottom" href="img/Cases/11case3.JPG"><img class="projects__img" alt="photo" src="img/Cases/11case3.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Многоквартирные жилые дома в Тюмени</span><span class="projects__location">г. Тюмень</span><span class="projects__paragraph">Задача</span><span class="projects__text">Оценка фактического технического состояния зданий</span><span class="projects__paragraph">Результат</span><span class="projects__text">Благодаря экспертной оценке многоквартирные дома признаны аварийными, жильцы расселены в новые квартиры по программе переселения из ветхого и аварийного жилья</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_11" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_12"><a class="projects__image " href="img/Cases/12case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/12case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/12case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/12case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Газификация производственной базы МБ-3 «Халлибуртон Интернешнл Инк.»</span><span class="projects__location">ХМАО, г. Нижневартовск</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определение соответствия построенного объекта проектной документации, требованиям строительных норм и правил, технических регламентов</span><span class="projects__paragraph">Результат</span><span class="projects__text">По результатам экспертизы установлено, что работы по устройству объекта выполнены с надлежащим качеством. Это позволило запустить объект в работу и избежать незапланированных затрат по простою</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_12" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_13"><a class="projects__image " href="img/Cases/13case1.JPG"><img class="projects__img" alt="photo" src="img/Cases/13case1.JPG"></a><a class="projects__image projects__image_middle" href="img/Cases/13case2.JPG"><img class="projects__img" alt="photo" src="img/Cases/13case2.JPG"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Детский сад в селе Новоалександровка</span><span class="projects__location">Тюменская обл., Ярковский район, с. Новоалександровка, ул. Центральная, д. 44</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определить причины повреждения и разрушения деревянных полов</span><span class="projects__paragraph">Результат</span><span class="projects__text">Благодаря экспертному обследованию выявлены причины разрушения деревянных полов в детском саду. Стоимость работ по устранению дефектов в размере 116 617 рублей взыскали с подрядчика, выполнившего некачественные работы.</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_13" data-project-type="lab">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_14"><a class="projects__image " href="img/Cases/14case.jpeg"><img class="projects__img" alt="photo" src="img/Cases/14case.jpeg"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Камера УТ ООО «Запсибгазпром-Газификация»</span><span class="projects__location">какое-то</span><span class="projects__paragraph">Задача</span><span class="projects__text">Лабораторное сопровождение строительства</span><span class="projects__paragraph">Результат</span><span class="projects__text">Благодаря лабораторному сопровождению строительства своевременно подготовлены протоколы испытаний, что позволило избежать штрафов от надзорного органа ГАСН до 50 тыс. руб. в месяц на протяжении 6 месяцев</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="projects__slide projects__slide_14" data-project-type="expert">
-                  <div class="projects__slide-inner">
-                    <div class="projects__photo popup-gallery popup-gallery_15"><a class="projects__image " href="img/Cases/15case.jpg"><img class="projects__img" alt="photo" src="img/Cases/15case.jpg"></a>
-                    </div>
-                    <div class="projects__description scrollbar-outer"><span class="projects__title">Строительство мостового перехода через реку Зея</span><span class="projects__location">Забайкальская железная дорога, 7817 км участка Сковородино-Белогорск</span><span class="projects__paragraph">Задача</span><span class="projects__text">Определить объем фактически выполненных истцом работ (судебная экспертиза)</span><span class="projects__paragraph">Результат</span><span class="projects__text">В результате экспертизы было доказано, что основные работы выполнены истцом. Требования истца равнялись 389 млн.руб., по результатам экспертизы требования удалось сократить на 330 млн. руб.</span>
-                      <button class="projects__btn projects__btn_desktop link link_orange">Посмотреть рекомендательное письмо <span class="link-arrow-animated">→</span></button>
-                      <button class="projects__btn projects__btn_mobile link link_orange">Рекомендательное письмо →</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="projects__arrow arrow-block">
-                <div class="arrow arrow_white arrow-left">
-                  <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.57129L2 9.57129L10 17.5713" stroke="black" stroke-width="2"/></svg>
-                </div>
-                <div class="arrow arrow_white arrow-right">
-                  <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.57129L2 9.57129L10 17.5713" stroke="black" stroke-width="2"/></svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="conclusion">
-        <div class="wrapper">
-          <div class="conclusion__inner block-right">
-            <div class="conclusion__block">
-              <h2 class="conclusion__title">Экспертное заключение <br> грамотно обоснованно <br> и понятно даже неспециалисту</h2>
-              <div class="conclusion__description"><img alt="img" src="img/object-folder.png">
-                <div class="conclusion__list">
-                  <div class="conclusion__popup standart"><span class="standart__caption">Составлены и оформлены с учетом нормативных требований</span>
-                    <ul>
-                      <li class="standart__item">Градостроительный кодекс РФ</li>
-                      <li class="standart__item">ФЗ «О государственной судебно-экспертной деятельности в Российской Федерации» от 31.05.2001 г. № 73-ФЗ</li>
-                      <li class="standart__item">ФЗ «Технический регламент о безопасности зданий и сооружений» от 30.12.2009 № 384-ФЗ</li>
-                      <li class="standart__item">ГОСТ 31937-2011<span>«Здания и сооружения. Правила обследования и мониторинга технического состояния»</span></li>
-                      <li class="standart__item">СП 13-102-2003<span>«Правила обследования несущих строительных конструкций зданий и сооружений» и других нормативных документов</span></li>
-                    </ul>
-                  </div><span class="conclusion__caption">Вы получите</span>
-                  <ul>
-                    <li class="conclusion__item"><span class="conclusion__item_border"> оригинал заключения</span> с печатями</li>
-                    <li class="conclusion__item free-label free-label_gray">электронную версию</li>
-                    <li class="conclusion__item">бесплатные рекомендации, как исправить ситуацию</li>
-                  </ul>
-                  <button class="conclusion__btn link link_orange" href="#">Пример заключения <span class="link-arrow-animated">→</span></button>
-                </div>
-              </div>
-            </div>
-            <div class="conclusion__note">
-              <div class="conclusion__check">
-                <svg class="icon conclusion__icon_check-round">
-                  <use xlink:href="svg/sprite-original.svg#check-round"></use>
+    <div class="header">
+      <div class="header__topline topline"><a class="location hover topline__location" data-value="Посмотреть на карте" href="https://goo.gl/maps/ZSAZGMk4VEw7mzpS7" target="_blank">
+              <div class="location__round">
+                <svg class="location__mark">
+                  <use xlink:href="svg/sprite.svg#location-header"></use>
                 </svg>
-              </div>
-              <div class="conclusion__text"><span class="conclusion__text-bold">Экспертное заключение универсально</span><span class="conclusion__text-norm">Вы можете использовать его для решения вопроса во внесудебном порядке или для защиты своих интересов в суде</span></div>
-            </div>
-          </div>
+              </div><span class="location__city">Москва, <span class="location__metro">Беговая, Хорошёвская, Полежаевская</span></span></a>
+            <div class="work-time topline__work-time"><span class="work-time__text">10:00</span><span class="work-time__text">21:00 ежедневно</span></div>
+        <div class="topline__phone-block"><span class="phone topline__phone">+7 (495) 941-00-71</span><span class="phone topline__phone">+7 (916) 557-77-28</span>
         </div>
-      </div>
-      <div class="price section" id="price">
-        <div class="wrapper">
-          <div class="price__inner block-right">
-            <div class="price__block">
-              <div class="expert-modal side-popup popup-active expert-modal_1">
-                <div class="expert-modal__wrapper">
-                  <div class="close-mini">
-                    <svg class="close-mini__img">
-                      <use xlink:href="svg/sprite.svg#close"></use>
-                    </svg>
-                  </div>
-                  <div class="expert-modal__face"><img alt="expert" src="img/People/ivanov_expert_small.jpg"><span class="expert-modal__title">Сергей Иванов,</span><span>Ведущий эксперт</span></div>
-                </div>
-                <div class="expert-modal__text">У вас несколько объектов?</div>
-                <button class="expert-modal__link link link_orange">Узнать о скидках →</button>
-              </div>
-              <div class="expert-modal side-popup  expert-modal_2">
-                <div class="expert-modal__wrapper">
-                  <div class="close-mini">
-                    <svg class="close-mini__img">
-                      <use xlink:href="svg/sprite.svg#close"></use>
-                    </svg>
-                  </div>
-                  <div class="expert-modal__face"><img alt="expert" src="img/People/ivanov_expert_small.jpg"><span class="expert-modal__title">Сергей Иванов,</span><span>Ведущий эксперт</span></div>
-                </div>
-                <div class="expert-modal__text">Для расчета стоимости используем</div>
-                <button class="expert-modal__link link link_orange">СБЦП 81-2001-25</button>
-              </div>
-              <div class="expert-modal side-popup  expert-modal_3">
-                <div class="expert-modal__wrapper">
-                  <div class="close-mini">
-                    <svg class="close-mini__img">
-                      <use xlink:href="svg/sprite.svg#close"></use>
-                    </svg>
-                  </div>
-                  <div class="expert-modal__face"><img alt="expert" src="img/People/ivanov_expert_small.jpg"><span class="expert-modal__title">Сергей Иванов,</span><span>Ведущий эксперт</span></div>
-                </div>
-                <div class="expert-modal__text">Для более точного расчета стоимости укажите реальную площадь здания</div>
-                <button class="expert-modal__link link link_orange">Получить консультацию →</button>
-              </div>
-              <div class="expert-modal side-popup  expert-modal_4">
-                <div class="expert-modal__wrapper">
-                  <div class="close-mini">
-                    <svg class="close-mini__img">
-                      <use xlink:href="svg/sprite.svg#close"></use>
-                    </svg>
-                  </div>
-                  <div class="expert-modal__face"><img alt="expert" src="img/People/ivanov_expert_small.jpg"><span class="expert-modal__title">Сергей Иванов,</span><span>Ведущий эксперт</span></div>
-                </div>
-                <div class="expert-modal__text">Для более точного расчета стоимости укажите реальную высоту здания</div>
-                <button class="expert-modal__link link link_orange">Получить консультацию →</button>
-              </div>
-              <div class="expert-modal side-popup  expert-modal_5">
-                <div class="expert-modal__wrapper">
-                  <div class="close-mini">
-                    <svg class="close-mini__img">
-                      <use xlink:href="svg/sprite.svg#close"></use>
-                    </svg>
-                  </div>
-                  <div class="expert-modal__face"><img alt="expert" src="img/People/ivanov_expert_small.jpg"><span class="expert-modal__title">Сергей Иванов,</span><span>Ведущий эксперт</span></div>
-                </div>
-                <div class="expert-modal__text">Укажите причину обращения, чтобы мы бесплатно разработали программу исследований</div>
-              </div><span class="price__minute">вам понадобится 1 минута</span>
-              <h3 class="price__header">Рассчитайте стоимость экспертизы</h3><span class="price__text">Без дополнительных платежей — цена закрепляется в договоре.</span><span class="price__text">По итогам расчета вы получите бесплатно программу исследований</span>
-              <div class="price__quiz quiz">
-                <div class="quiz__progress-bar progress">
-                  <div class="progress__point progress__point_first progress__point_current" data-slide="1">
-                    <div class="progress__text">расположение</div>
-                    <svg class="icon progress__icon progress__icon_after">
-                      <use xlink:href="svg/sprite.svg#1"></use>
-                    </svg>
-                  </div>
-                  <div class="progress__point" data-slide="2">
-                    <svg class="icon progress__icon progress__icon_before">
-                      <use xlink:href="svg/sprite.svg#2"></use>
-                    </svg>
-                    <div class="progress__text">тип объекта</div>
-                    <svg class="icon progress__icon progress__icon_after">
-                      <use xlink:href="svg/sprite.svg#1"></use>
-                    </svg>
-                  </div>
-                  <div class="progress__point" data-slide="3">
-                    <svg class="icon progress__icon progress__icon_before">
-                      <use xlink:href="svg/sprite.svg#2"></use>
-                    </svg>
-                    <div class="progress__text">площадь</div>
-                    <svg class="icon progress__icon progress__icon_after">
-                      <use xlink:href="svg/sprite.svg#1"></use>
-                    </svg>
-                  </div>
-                  <div class="progress__point" data-slide="4">
-                    <svg class="icon progress__icon progress__icon_before">
-                      <use xlink:href="svg/sprite.svg#2"></use>
-                    </svg>
-                    <div class="progress__text">высота</div>
-                    <svg class="icon progress__icon progress__icon_after">
-                      <use xlink:href="svg/sprite.svg#1"></use>
-                    </svg>
-                  </div>
-                  <div class="progress__point progress__point_last" data-slide="5">
-                    <svg class="icon progress__icon progress__icon_before">
-                      <use xlink:href="svg/sprite.svg#2"></use>
-                    </svg>
-                    <div class="progress__text">цель экспертизы</div>
-                  </div>
-                </div>
-                <div class="quiz__slider">
-                  <form class="quiz__form" id="quiz__form">
-                    <div class="quiz__slide quiz__slide_1"><span class="quiz__question">Укажите тип объекта</span>
-                      <div class="quiz__radio">
-                        <div class="quiz__column">
-                          <label class="quiz__label">
-                            <input class="quiz__input" type="radio" name="Укажите тип объекта" value="Промышленное здание"><span class="quiz__item">Промышленное здание</span>
-                          </label>
-                          <label class="quiz__label">
-                            <input class="quiz__input" type="radio" name="Укажите тип объекта" value="Торговое здание"><span class="quiz__item">Торговое здание</span>
-                          </label>
-                          <label class="quiz__label">
-                            <input class="quiz__input" type="radio" name="Укажите тип объекта" value="Административное здание"><span class="quiz__item">Административное здание</span>
-                          </label>
-                          <label class="quiz__label">
-                            <input class="quiz__input" type="radio" name="Укажите тип объекта" value="Жилое здание"><span class="quiz__item">Жилое здание</span>
-                          </label>
-                        </div>
-                        <div class="quiz__column">
-                          <label class="quiz__label">
-                            <input class="quiz__input" type="radio" name="Укажите тип объекта" value="Вспомогательное здание"><span class="quiz__item">Вспомогательное здание</span>
-                          </label>
-                          <label class="quiz__label">
-                            <input class="quiz__input" type="radio" name="Укажите тип объекта" value="Сооружение (мост, вышка и т.п.)"><span class="quiz__item">Сооружение (мост, вышка и т.п.)</span>
-                          </label>
-                          <label class="quiz__label">
-                            <input class="quiz__input" type="radio" name="Укажите тип объекта" value="Инженерные коммуникации"><span class="quiz__item">Инженерные коммуникации</span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="input">
-                        <input class="quiz__input-more link" type="text" placeholder="Другое: укажите тип объекта" name="Укажите тип объекта">
-                      </div>
-                    </div>
-                    <div class="quiz__slide quiz__slide_2"><span class="quiz__question">Где расположен ваш объект?
-                        <div class="quiz__radio">
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Где расположен ваш объект?" value="Тюмень"><span class="quiz__item">Тюмень</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Где расположен ваш объект?" value="Тюменская область"><span class="quiz__item">Тюменская область</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Где расположен ваш объект?" value="Уральский федеральный округ"><span class="quiz__item">Уральский федеральный округ</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Где расположен ваш объект?" value="Москва или МО"><span class="quiz__item">Москва или МО]</span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="input">
-                          <input class="quiz__input-more link" type="text" placeholder="Другое: укажите город и регион" name="Где расположен ваш объект?">
-                        </div></span></div>
-                    <div class="quiz__slide quiz__slide_3"><span class="quiz__question">Укажите площадь объекта
-                        <div class="quiz__radio">
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="до 500 м2"><span class="quiz__item">до 500 м2</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="500–1000 м2"><span class="quiz__item">500–1000 м2</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="1000–2000 м2"><span class="quiz__item">1000–2000 м2</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="2000–3000 м2"><span class="quiz__item">2000–3000 м2</span>
-                            </label>
-                          </div>
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="3000–4000 м2"><span class="quiz__item">3000–4000 м2</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="4000–5000 м2"><span class="quiz__item">4000–5000 м2</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="более 5000 м2"><span class="quiz__item">более 5000 м2</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите площадь объекта" value="Не знаю"><span class="quiz__item">Не знаю</span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="input">
-                          <input class="quiz__input-more link" type="text" placeholder="Другое: укажите реальную площадь" name="Укажите площадь объекта">
-                        </div></span></div>
-                    <div class="quiz__slide quiz__slide_4"><span class="quiz__question">Укажите высоту объекта
-                        <div class="quiz__radio">
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="до 6 м"><span class="quiz__item">до 6 м</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="8 м"><span class="quiz__item">8 м</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="10 м"><span class="quiz__item">10 м</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="12 м"><span class="quiz__item">12 м</span>
-                            </label>
-                          </div>
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="14 м"><span class="quiz__item">14 м</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="16 м"><span class="quiz__item">16 м</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="18 м"><span class="quiz__item">18 м</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="20 м"><span class="quiz__item">20 м</span>
-                            </label>
-                          </div>
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="более 20 м"><span class="quiz__item">более 20 м</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите высоту объекта" value="не измеряли"><span class="quiz__item">не измеряли</span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="input">
-                          <input class="quiz__input-more link" type="text" placeholder="Другое: высота в метрах или количество этажей" name="Укажите высоту объекта">
-                        </div></span></div>
-                    <div class="quiz__slide quiz__slide_5"><span class="quiz__question">Укажите цель экспертизы
-                        <div class="quiz__radio quiz__radio_font">
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="дефекты конструкций (трещины, прогибы, промерзание и т.п.)"><span class="quiz__item">дефекты конструкций (трещины, прогибы, промерзание и т.п.)</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="некачественное или неполное выполнение работ"><span class="quiz__item">некачественное или неполное выполнение работ</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="увеличение нагрузки на конструкции"><span class="quiz__item">увеличение нагрузки на конструкции</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="протечка кровли или фундамента"><span class="quiz__item">протечка кровли или фундамента</span>
-                            </label>
-                          </div>
-                          <div class="quiz__column">
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="реконструкция объекта"><span class="quiz__item">реконструкция объекта</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="плановое обследование"><span class="quiz__item">плановое обследование</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="капитальный ремонт"><span class="quiz__item">капитальный ремонт</span>
-                            </label>
-                            <label class="quiz__label">
-                              <input class="quiz__input" type="radio" name="Укажите цель экспертизы" value="обследование перед покупкой"><span class="quiz__item">обследование перед покупкой</span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="input">
-                          <input class="quiz__input-more link" placeholder="Другое: кратко опишите ситуацию" name="Укажите цель экспертизы">
-                        </div></span></div>
-                  </form>
-                </div>
-                <div class="quiz__controls">
-                  <button class="quiz__button link link_white">Далее <span class="link-arrow-animated">→</span></button>
-                </div>
-              </div>
-            </div>
-            <div class="price__result"><span class="price__minute price__again">← начать заново</span>
-              <h3 class="price__header">Спасибо за ответы, мы уже приступили к расчету!</h3><span class="price__caption">Укажите свои контакты, и в течение суток мы пришлем вам индивидуальное предложение с результатами расчета</span><span class="price__caption price__caption_plus free-label free-label_white">+ разработанная программа исследований вашего объекта</span>
-              <form data-route="registry">
-                <div class="label">
-                  <input class="phone price__input link link_white phone" type="tel" placeholder="Номер телефона" name="buttons">
-                </div>
-                <button class="submit-btn price__link link link_white" type="submit">Получить КП и программу →</button>
-              </form><span class="price__personal">Нажимая, даю согласие на обработку своих <a href="#"> персональных данных </a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section sertificate" id="certificate">
-        <div class="wrapper">
-          <div class="sertificate__inner block-right">
-            <h2 class="sertificate__title">Полный комплект допусков СРО</h2><span class="sertificate__subtitle">проектировщиков, строителей и изыскателей</span>
-            <div class="sertificate__block">
-              <div class="sertificate__items popup-gallery">
-                <div class="sertificate__item"><a class="sertificate__image" href="img/sertificate/01.jpg"><img class="sertificate__img" alt="sertificate" src="img/sertificate/01.jpg"></a><span class="sertificate__text">Страховой полис</span><a class="sertificate__link" href="#" target="_blank">Проверить в реестре</a></div>
-                <div class="sertificate__item"><a class="sertificate__image" href="img/sertificate/02.jpg"><img class="sertificate__img" alt="sertificate" src="img/sertificate/02.jpg"></a><span class="sertificate__text">Допуск строителей</span><a class="sertificate__link" href="http://sro72.ru/reestr2/view?id=783" target="_blank">Проверить в реестре</a></div>
-                <div class="sertificate__item"><a class="sertificate__image" href="img/sertificate/04.jpg"><img class="sertificate__img" alt="sertificate" src="img/sertificate/04.jpg"></a><span class="sertificate__text">Допуск проектировщиков</span><a class="sertificate__link" href="https://sroapp.ru/files/files/reestr_chlenov_sro_ap_app_ot_28_11_2019.pdf" target="_blank">Проверить в реестре</a></div>
-              </div>
-              <div class="sertificate__arrow arrow-block">
-                <div class="arrow arrow_gray sertificate__arrow-left">
-                  <svg class="icon slider__arrow slider__arrow_left">
-                    <use xlink:href="svg/sprite.svg#arrow-slider"></use>
-                  </svg>
-                </div>
-                <div class="arrow arrow_gray sertificate__arrow-right">
-                  <svg class="icon slider__arrow slider__arrow_right">
-                    <use xlink:href="svg/sprite.svg#arrow-slider"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="expert section" id="expert">
-        <div class="wrapper">
-          <div class="expert__inner block-right">
-            <h2 class="expert__title">Наши эксперты</h2><span class="expert__title-mini">внесены в Национальный Реестр Специалистов<br> в области проектирования и строительства</span>
-            <div class="expert__worker">
-              <div class="expert__face"><img class="expert__img" alt="expert" src="img/People/ivanov_expert_small.jpg"><span class="expert__position-short">Главный инженер</span></div>
-              <div class="expert__face"><img class="expert__img" alt="expert" src="img/People/novicov_expert_small.jpg"><span class="expert__position-short">Инженер-эксперт</span></div>
-              <div class="expert__face"><img class="expert__img" alt="expert" src="img/People/scachilova_expert_small.jpg"><span class="expert__position-short">Инженер</span></div>
-            </div>
-            <div class="expert__slider-block">
-              <div class="expert__slider">   
-                <div class="expert__slide expert__slide_0"><img class="expert__photo" alt="photo" src="img/People/ivanov_expert_big.jpg">
-                  <div class="expert__resume">
-                    <div class="expert__resume-inner"><span class="expert__name">Сергей Владимирович Иванов</span><span class="expert__position">Главный инженер и ведущий эксперт</span>
-                      <div class="expert__number">
-                        <div class="expert__block-number">
-                          <svg class="icon expert__svg-number">
-                            <use xlink:href="svg/sprite-original.svg#9"></use>
-                          </svg><span class="expert__text-number">лет опыта проведения экспертиз</span>
-                        </div>
-                        <div class="expert__block-number">
-                          <svg class="icon expert__svg-number expert__svg-number_width">
-                            <use xlink:href="svg/sprite-original.svg#17"></use>
-                          </svg><span class="expert__text-number">лет опыта в строительной сфере</span>
-                        </div>
-                      </div>
-                      <div class="expert__registry"><span class="expert__text">С-72-159890<span class="expert__text-light nowrap"> в НРС по организации строительства</span><span class="expert__text-light-mobile"> в НРС строителей</span></span><span class="expert__text">П-079815<span class="expert__text-light nowrap"> в НРС НОПРИЗ</span><span class="expert__text-light-mobile"> в НРС НОПРИЗ</span></span>
-                      </div>
-                      <div class="expert__gallery popup-gallery"><a class="expert__diplom" href="img/People/Diplomas/Ivanov_diplom1.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Ivanov_diplom1.jpg" alt="diplom"></a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Ivanov_diplom2.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Ivanov_diplom2.jpg" alt="diplom"></a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Ivanov_diplom3.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Ivanov_diplom3.jpg" alt="diplom"></a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Ivanov_diplom4.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Ivanov_diplom4.jpg" alt="diplom"></a>
-                      </div><a class="expert__link link link_white">Бесплатная консультация <span class="link-arrow-animated">→</span></a>
-                    </div>
-                    <div class="expert__consultation consultation__description"><span class="expert__caption consultation__link">консультация по телефону<br> или в <a href="#" class="consultation__link consultation__link_underline"> офисе в Тюмени</a></span>
-                      <ul class="expert__list consultation__list">
-                        <li class="expert__item consultation__item">Узнаете ответы на все свои вопросы по строительной экспертизе</li>
-                        <li class="expert__item consultation__item">Определитесь, какие виды строительной экспертизы вам необходимы</li>
-                        <li class="expert__item consultation__item">Получите пошаговый план действий</li>
-                        <li class="expert__item consultation__item">В течение суток после консультации вы получите индивидуальное предложение и программу исследований</li>
-                      </ul>
-                      <form data-route="thanks">
-                        <div class="label label-white">
-                          <input class="phone expert__input consultation__input link link_white" placeholder="Номер телефона" type="tel">
-                        </div>
-                        <button class="submit-btn consultation__btn link link_white" type="submit">Записаться <span class="link-arrow-animated">→</span></button><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-                <div class="expert__slide expert__slide_1"><img class="expert__photo" alt="photo" src="img/People/novicov_expert_big.jpg">
-                  <div class="expert__resume">
-                    <div class="expert__resume-inner"><span class="expert__name">Александр Владимирович Новиков</span><span class="expert__position">Инженер-эксперт</span>
-                      <div class="expert__number">
-                        <div class="expert__block-number">
-                          <svg class="icon expert__svg-number">
-                            <use xlink:href="svg/sprite-original.svg#8"></use>
-                          </svg><span class="expert__text-number">лет опыта проведения экспертиз</span>
-                        </div>
-                        <div class="expert__block-number">
-                          <svg class="icon expert__svg-number expert__svg-number_width">
-                            <use xlink:href="svg/sprite-original.svg#17"></use>
-                          </svg><span class="expert__text-number">лет опыта в строительной сфере</span>
-                        </div>
-                      </div>
-                      <div class="expert__registry"><span class="expert__text">С-72-159332<span class="expert__text-light nowrap"> в НРС по организации строительства</span><span class="expert__text-light-mobile"> в НРС строителей</span></span><span class="expert__text">П-079814<span class="expert__text-light nowrap"> в НРС НОПРИЗ</span><span class="expert__text-light-mobile"> в НРС НОПРИЗ</span></span>
-                      </div>
-                      <div class="expert__gallery popup-gallery"><a class="expert__diplom" href="img/People/Diplomas/Novicov_diplom1.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Novicov_diplom1.jpg" alt="diplom"></a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Novicov_diplom2.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Novicov_diplom2.jpg" alt="diplom"></a><a class="expert__diplom expert__diplom_hidden" href="img/People/Diplomas/Novicov_diplom3.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Novicov_diplom3.jpg" alt="diplom"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="expert__slide expert__slide_2"><img class="expert__photo" alt="photo" src="img/People/scachilova_expert_big.jpg">
-                  <div class="expert__resume">
-                    <div class="expert__resume-inner"><span class="expert__name">Мария Михайловна Скачилова </span><span class="expert__position">Инженер</span>
-                      <div class="expert__number">
-                        <div class="expert__block-number">
-                          <svg class="icon expert__svg-number">
-                            <use xlink:href="svg/sprite-original.svg#5"></use>
-                          </svg><span class="expert__text-number">лет опыта проведения экспертиз</span>
-                        </div>
-                        <div class="expert__block-number">
-                          <svg class="icon expert__svg-number expert__svg-number_width">
-                            <use xlink:href="svg/sprite-original.svg#8"></use>
-                          </svg><span class="expert__text-number">лет опыта в строительной сфере</span>
-                        </div>
-                      </div>
-                      <div class="expert__gallery popup-gallery"><a class="expert__diplom" href="img/People/Diplomas/Scachilova_diplom.jpg">Посмотреть дипломы и сертификаты<img class="expert__diplom-img" src="img/People/Diplomas/Scachilova_diplom.jpg" alt="diplom"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="expert__arrow arrow-block">
-                <div class="arrow arrow_white expert__arrow-left">
-                  <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.57129L2 9.57129L10 17.5713" stroke="black" stroke-width="2"/></svg>
-                </div>
-                <div class="arrow arrow_white expert__arrow-right">
-                  <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.57129L2 9.57129L10 17.5713" stroke="black" stroke-width="2"/></svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="equipment section" id="equipment">
-        <div class="wrapper">
-          <div class="equipment__inner block-right">
-            <h2 class="equipment__title">На 30% быстрее</h2><span class="equipment__title-mini">проводим исследования благодаря <br>современному оборудованию</span>
-            <div class="equipment__line"><img class="equipment__img-line" alt="img" src="img/Devices_white/DrBender.jpg"><img class="equipment__img-line" alt="img" src="img/Devices_white/leica.jpg"><img class="equipment__img-line" alt="img" src="img/Devices_white/pulsar-2.2.png"><img class="equipment__img-line" alt="img" src="img/Devices_white/press.png"><img class="equipment__img-line" alt="img" src="img/Devices_white/zoom.jpg"><img class="equipment__img-line" alt="img" src="img/Devices_white/onix.jpg"><img class="equipment__img-line" alt="img" src="img/Devices_white/poisk.jpg">
-            </div>
-            <div class="equipment__slider-block">
-              <div class="equipment__slider">
-                <div class="equipment__slide equipment__slide_0"><img class="equipment__photo" alt="photo" src="img/Devices_big/equipment-slide1.png">
-                  <div class="equipment__description">
-                    <div class="equipment__image"><img class="equipment__img" alt="img" src="img/Devices_white/DrBender.jpg"></div>
-                    <div class="equipment__description-block"><span class="equipment__name">Dr. Bender<span class="equipment__fullname">Установка для алмазного бурения</span></span><span class="equipment__paragraph">Применяется для выбуривания образцов (кернов) из тела бетонной конструкции для последующих испытаний на сжатие</span></div>
-                  </div>
-                </div>
-                <div class="equipment__slide equipment__slide_1"><img class="equipment__photo" alt="photo" src="img/Devices_big/leica.jpg">
-                  <div class="equipment__description">
-                    <div class="equipment__image"><img class="equipment__img" alt="img" src="img/Devices_white/leica.jpg"></div>
-                    <div class="equipment__description-block"><span class="equipment__name">Leica GS07<span class="equipment__fullname">Комплект ровера с контроллером Leica CS20 3.75G Captivate</span></span><span class="equipment__paragraph">Используется для топографической и исполнительной геодезической съемки с целью контроля качества строительно-монтажных работ и выявления отклонений от проекта</span></div>
-                  </div>
-                </div>
-                <div class="equipment__slide equipment__slide_2"><img class="equipment__photo" alt="photo" src="img/Devices_big/pulsar.jpg">
-                  <div class="equipment__description">
-                    <div class="equipment__image"><img class="equipment__img" alt="img" src="img/Devices_white/pulsar-2.2.png"></div>
-                    <div class="equipment__description-block"><span class="equipment__name">Пульсар-2.1<span class="equipment__fullname">Ультразвуковой определитель прочности бетона</span></span><span class="equipment__paragraph">Определяет прочность, однородность и класс бетона, кирпича и других материалов ультразвуковым методом. Выявляет трещины, пустоты и другие дефекты при обследовании объектов, измеряет глубину поверхностных трещин</span></div>
-                  </div>
-                </div>
-                <div class="equipment__slide equipment__slide_3"><img class="equipment__photo" alt="photo" src="img/Devices_big/leica.jpg">
-                  <div class="equipment__description">
-                    <div class="equipment__image"><img class="equipment__img" alt="img" src="img/Devices_white/press.png"></div>
-                    <div class="equipment__description-block"><span class="equipment__name">П-50<span class="equipment__fullname">Гидравлический пресс</span></span><span class="equipment__paragraph">Предназначен для испытания на сжатие образцов бетона, кирпича, природных и искусственных строительных камней в соответствии с ГОСТ 10180, 12801 и др.</span></div>
-                  </div>
-                </div>
-                <div class="equipment__slide equipment__slide_4"><img class="equipment__photo" alt="photo" src="img/Devices_big/zoom.jpg">
-                  <div class="equipment__description">
-                    <div class="equipment__image"><img class="equipment__img" alt="img" src="img/Devices_white/zoom.jpg"></div>
-                    <div class="equipment__description-block"><span class="equipment__name">SPS ZOOM 300<span class="equipment__fullname">Лазерный 3D сканер</span></span><span class="equipment__paragraph">Предназначен для быстрого и точного обследования зданий и сооружений с построением цифровой трехмерной модели</span></div>
-                  </div>
-                </div>
-                <div class="equipment__slide equipment__slide_5"><img class="equipment__photo" alt="photo" src="img/Devices_big/onix.jpg">
-                  <div class="equipment__description">
-                    <div class="equipment__image"><img class="equipment__img" alt="img" src="img/Devices_white/onix.jpg"></div>
-                    <div class="equipment__description-block"><span class="equipment__name">Оникс-1.ОС<span class="equipment__fullname">Определитель прочности бетона</span></span><span class="equipment__paragraph">Определяет прочность бетона на объектах строительства и при обследовании зданий, сооружений и конструкций, используя метод отрыва со скалыванием и метод отрыва стальных дисков по ГОСТ 22690</span></div>
-                  </div>
-                </div>
-                <div class="equipment__slide equipment__slide_6"><img class="equipment__photo" alt="photo" src="img/Devices_big/poisk.jpg">
-                  <div class="equipment__description">
-                    <div class="equipment__image"><img class="equipment__img" alt="img" src="img/Devices_white/poisk.jpg"></div>
-                    <div class="equipment__description-block"><span class="equipment__name">Поиск 2.5<span class="equipment__fullname">Измеритель толщины защитного слоя бетона</span></span><span class="equipment__paragraph">Контролирует качество армирования железобетонных изделий и конструкций магнитным методом по ГОСТ 22904. Выявляет тонкостенность защитного слоя, недолив бетона при строительстве, расположение арматуры в теле бетона</span></div>
-                  </div>
-                </div>
-              </div>
-              <div class="equipment__arrow arrow-block">
-                <div class="arrow arrow_gray equipment__arrow-left">
-                  <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.57129L2 9.57129L10 17.5713" stroke="white" stroke-width="2"/></svg>
-                </div>
-                <div class="arrow arrow_gray equipment__arrow-right">
-                  <svg width="11" height="19" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.57129L2 9.57129L10 17.5713" stroke="white" stroke-width="2"/></svg>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="timing section" id="timing">
-        <div class="wrapper">
-          <div class="timing__inner block-right">
-            <h2 class="timing__title">Сроки и этапы <br> строительной экспертизы</h2>
-            <div class="timing__progress progress progress_dark">
-              <div class="progress__point progress__point_timing-1 progress__point_first progress__point_filled">
-                <div class="progress__text">консультация</div>
-                <svg class="icon progress__icon progress__icon_after">
-                  <use xlink:href="svg/sprite.svg#1"></use>
-                </svg>
-              </div>
-              <div class="progress__point progress__point_timing-2">
-                <svg class="icon progress__icon progress__icon_before">
-                  <use xlink:href="svg/sprite.svg#2"></use>
-                </svg>
-                <div class="progress__text">выезд на место</div>
-                <svg class="icon progress__icon progress__icon_after">
-                  <use xlink:href="svg/sprite.svg#1"></use>
-                </svg>
-              </div>
-              <div class="progress__point progress__point_timing-3">
-                <svg class="icon progress__icon progress__icon_before">
-                  <use xlink:href="svg/sprite.svg#2"></use>
-                </svg>
-                <div class="progress__text">кп</div>
-                <svg class="icon progress__icon progress__icon_after">
-                  <use xlink:href="svg/sprite.svg#1"></use>
-                </svg>
-              </div>
-              <div class="progress__point progress__point_timing-4">
-                <svg class="icon progress__icon progress__icon_before">
-                  <use xlink:href="svg/sprite.svg#2"></use>
-                </svg>
-                <div class="progress__text">договор</div>
-                <svg class="icon progress__icon progress__icon_after">
-                  <use xlink:href="svg/sprite.svg#1"></use>
-                </svg>
-              </div>
-              <div class="progress__point progress__point_timing-5">
-                <svg class="icon progress__icon progress__icon_before">
-                  <use xlink:href="svg/sprite.svg#2"></use>
-                </svg>
-                <div class="progress__text">пробы</div>
-                <svg class="icon progress__icon progress__icon_after">
-                  <use xlink:href="svg/sprite.svg#1"></use>
-                </svg>
-              </div>
-              <div class="progress__point progress__point_timing-6">
-                <svg class="icon progress__icon progress__icon_before">
-                  <use xlink:href="svg/sprite.svg#2"></use>
-                </svg>
-                <div class="progress__text">анализ данных</div>
-                <svg class="icon progress__icon progress__icon_after">
-                  <use xlink:href="svg/sprite.svg#1"></use>
-                </svg>
-              </div>
-              <div class="progress__point progress__point_timing-7 progress__point_last">
-                <svg class="icon progress__icon progress__icon_before">
-                  <use xlink:href="svg/sprite.svg#2"></use>
-                </svg>
-                <div class="progress__text">готово</div>
-              </div>
-            </div>
-            <div class="timing__progress-bar">
-              <div class="timing__range"></div>
-            </div>
-            <div class="timing__slider-wrap">
-              <div class="timing__slider scrollbar-outer">
-                <div class="timing__slider-inner">
-                  <div class="timing__item">
-                    <svg class="icon timing__number timing__number_1">
-                      <use xlink:href="svg/sprite-original.svg#1_orange"></use>
-                    </svg><span class="timing__text">Вы описываете ситуацию и получаете бесплатную консультацию эксперта</span>
-                    <div class="timing__time">
-                      <div class="timing__alarm">
-                        <div class="timing__display"></div>
-                      </div><span class="timing__light-text">Немедленно по телефону / в течение часа после заявки</span>
-                    </div>
-                  </div>
-                  <div class="timing__item">
-                    <svg class="icon timing__number timing__number_2">
-                      <use xlink:href="svg/sprite-original.svg#2_orange"></use>
-                    </svg><span class="timing__text">При необходимости выезжаем на объект (в Тюменской области)</span>
-                    <div class="timing__time">
-                      <div class="timing__alarm">
-                        <div class="timing__display"></div>
-                      </div><span class="timing__light-text">В тот же день или на следующий</span>
-                    </div>
-                  </div>
-                  <div class="timing__item">
-                    <svg class="icon timing__number timing__number_3">
-                      <use xlink:href="svg/sprite-original.svg#3_orange"></use>
-                    </svg><span class="timing__text">Бесплатно разрабатываем программу исследований и готовим КП с ценами</span>
-                    <div class="timing__time">
-                      <div class="timing__alarm">
-                        <div class="timing__display"></div>
-                      </div><span class="timing__light-text">В течение суток после заявки</span>
-                    </div>
-                  </div>
-                  <div class="timing__item">
-                    <svg class="icon timing__number timing__number_4">
-                      <use xlink:href="svg/sprite-original.svg#4_orange"></use>
-                    </svg><span class="timing__text">Вы подписываете договор, утверждаете программу исследований и перечисляете аванс 50%</span>
-                  </div>
-                  <div class="timing__item">
-                    <svg class="icon timing__number timing__number_5">
-                      <use xlink:href="svg/sprite-original.svg#5_orange"></use>
-                    </svg><span class="timing__text">Группа инженеров проводит осмотр, собирает пробы и данные на объекте</span>
-                    <div class="timing__time">
-                      <div class="timing__alarm">
-                        <div class="timing__display"></div>
-                      </div><span class="timing__light-text">От 1 до 5 дней</span>
-                    </div>
-                  </div>
-                  <div class="timing__item">
-                    <svg class="icon timing__number timing__number_6">
-                      <use xlink:href="svg/sprite-original.svg#6_orange"></use>
-                    </svg><span class="timing__text">Обрабатываем собранные данные, готовим экспертное заключение</span>
-                    <div class="timing__time">
-                      <div class="timing__alarm">
-                        <div class="timing__display"></div>
-                      </div><span class="timing__light-text">В среднем 10–15 рабочих дней</span>
-                    </div>
-                  </div>
-                  <div class="timing__item">
-                    <svg class="icon timing__number timing__number_7">
-                      <use xlink:href="svg/sprite-original.svg#7_orange"></use>
-                    </svg><span class="timing__text">Вы получаете экспертное заключение и оплачиваете остаток суммы</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="consultation">
-        <div class="wrapper">
-          <div class="consultation__inner block-right">
-            <div class="consultation__photo"><img class="consultation__img" alt="sergej" src="img/People/Ivanov_cons.jpg">
-              <div class="consultation__block"><span class="consultation__text">Сергей Иванов  ·  <span class="consultation__text consultation__text_light"> ведущий инженер-эксперт компании «А Группа» </span></span></div>
-            </div>
-            <div class="consultation__description">
-              <h3 class="consultation__title">Получите бесплатно</h3>
-              <h3 class="consultation__title">подробную консультацию</h3><span class="consultation__link">по телефону или в <a href="#" class="consultation__link consultation__link_underline"> офисе в Тюмени</a></span>
-              <ul class="consultation__list">
-                <li class="consultation__item">Определитесь, какие виды строительной экспертизы вам необходимы</li>
-                <li class="consultation__item">Получите пошаговый план действий по проведению экспертизы на вашем объекте</li>
-                <li class="consultation__item">Узнаете ответы на все свои вопросы по строительной экспертизе</li>
-                <li class="consultation__item">В течение суток после консультации вы получите индивидуальное предложение и программу исследований</li>
-              </ul>
-              <form data-route="thanks">
-                <div class="consultation__block-link">
-                  <div class="label">
-                    <input class="phone consultation__input link link_orange" placeholder="Номер телефона" type="tel" maxlength="16">
-                    <button class="submit-btn consultation__btn link link_orange" type="submit">Записаться на консультацию <span class="link-arrow-animated">→</span></button>
-                  </div>
-                </div><span class="consultation__text-form">Нажимая, даю согласие на обработку своих <span class="consultation__text-form_underline ">персональных данных</span></span>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer section" id="footer">
-        <div class="wrapper">
-          <div class="footer__inner block-right">
-            <div class="footer__contacts"><span class="footer__title">Приезжайте <br> к нам в офис</span><span class="footer__title-mini">обсудим проведение экспертизы,<br> наш главный инженер вас</span><a class="footer__link link link_orange popup-with-form" href="#callback">лично проконсультирует <span class="link-arrow-animated">→</span></a>
-              <div class="footer__group"><span class="footer__name">Научно-производственный <br> экспертный центр<br> «А Группа»</span><span class="footer__adress">Тюмень, ул. Ленина, 2а,<br> 4 вход, оф. 302/3</span><span class="footer__time">пн—вс 6:00—22:00 (МСК +2)</span><a class="footer__phone" href="tel:+79199455985">+7 (3452) 52-97-91</a><a class="footer__phone" href="tel:+73452529791">+7 (919) 945-59-85</a><span class="footer__email">expert@agruppa72.ru</span></div>
-              <div class="footer__confidentiality"><span>Политика конфиденциальности</span><span>Lampa, 2019</span></div>
-            </div>
-            <div class="footer__block-map">
-              <div class="footer__map">
-                <div id="footer-map"></div>
-              </div>
-              <div class="footer__image"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="check-list mfp-hide" id="check-list">
-        <div class="close close_white check-list__close"></div>
-        <div class="check-list__left"><img class="check-list__img" alt="img" src="img/popup-img.png"></div>
-        <div class="check-list__right"><span class="check-list__title">Выбираете компанию, <br>которая проведет для вас строительную экспертизу?</span><span class="check-list__text">Получите бесплатно чек-лист</span><span class="check-list__caption">«Как проверить реальную компетентность экспертной компании: 7 признаков некомпетентности»</span>
-          <form class="check-list__form">
-            <input class="name check-list__input link link_gray" placeholder="Как вас зовут">
-            <input class="email check-list__input link link_gray" placeholder="Эл. почта">
-            <button class="submit-btn check-list__link link link_orange" type="submit">Получить чек-лист →</button>
-          </form><span class="check-list__personal">Нажимая, даю согласие на обработку своих персональных данных</span>
-        </div>
-      </div>
-      <div class="call mfp-hide" id="callback">
-        <div class="call__wrapper-header">
-          <div class="call__header"><img class="call__img" alt="photo" src="img/People/Ivanov_popup.jpg"><span class="call__title">Хотите обсудить проведение строительной экспертизы или получить консультацию эксперта?</span></div>
-        </div>
-        <div class="call__wrapper-main">
-          <div class="call__main"><span class="call__caption">Укажите контактные данные и удобное время для звонка</span><span class="call__text">Я позвоню вам и отвечу на все вопросы. Мы работаем ежедневно с 06:00 до 22:00 по Тюменскому времени (МСК+2)</span>
-            <form class="call__form" data-route="thanks">
-              <input class="name call__input link link_gray" placeholder="Как вас зовут">
-              <div class="label">
-                <input class="call__input link link_gray phone" type="tel" placeholder="Номер телефона">
-              </div>
-              <div class="call__time"><span class="call__time-now link link_gray">Сейчас</span>
-                <input class="input-time call__input link link_gray" placeholder="Позвоните в ">
-              </div>
-              <button class="submit-btn call__link link link_orange" type="submit">Записаться на консультацию →</button>
-            </form><span class="call__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="thanks mfp-hide" id="thanks">
-        <div class="thanks__left"><img class="thanks__img" alt="photo" src="img/popup-img2.jpg"></div>
-        <div class="thanks__right-wrapper">
-          <div class="thanks__right"><span class="thanks__name client-name"></span><span class="thanks__promise">Мы перезвоним вам в ближайшее время</span><span class="thanks__text">А пока вы ждете звонка, посмотрите</span><span class="thanks__text thanks__text_desktop thanks__text_bold free-label free-label_gray">презентацию о нашей компании</span><span class="thanks__text thanks__text_mobile thanks__text_bold free-label free-label_gray-short">презентацию о нашей компании</span><span class="thanks__text">и узнайте, как строительная экспертиза помогает решать споры и экономить деньги</span>
-            <form class="thanks__form" data-route="end">
-              <input class="email thanks__input link link_gray" placeholder="Эл. почта">
-              <button class="submit-btn thanks__link link link_orange end-step" type="submit">Получить презентацию →</button>
-            </form><span class="thanks__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="registry mfp-hide" id="registry">
-        <div class="registry__left"><img class="registry__img" alt="photo" src="img/popup-img2.jpg"></div>
-        <div class="registry__right-wrapper">
-          <div class="registry__right"><span class="registry__title free-label free-label_gray">Получите реестр объектов экспертного центра<br> «А Группа»</span><span class="registry__text">Реестр регулярно обновляется и включает в себя выполненные нашими специалистами судебные и внесудебные экспертизы:</span>
-            <ul class="registry__list">
-              <li class="registry__item">Наименования и адреса объектов</li>
-              <li class="registry__item">Цели и результаты экспертизы</li>
-            </ul>
-            <div class="registry__adress"><span class="registry__where">Куда прислать файл?</span>
-              <div class="registry__round-block">
-                <div class="registry__round registry__round_gray">
-                  <svg class="icon registry__icon">
-                    <use xlink:href="svg/sprite.svg#letter"></use>
-                  </svg>
-                </div>
-                <div class="registry__round registry__round_green">
-                  <svg class="icon registry__icon">
-                    <use xlink:href="svg/sprite.svg#whatsapp"></use>
-                  </svg>
-                </div>
-                <div class="registry__round registry__round_purple">
-                  <svg class="icon registry__icon">
-                    <use xlink:href="svg/sprite.svg#viber"></use>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <form class="registry__form" data-route="end">
-              <input class="email registry__input registry__input_email link link_gray" placeholder="Эл. почта">
-              <div class="label">
-                <input class="phone registry__input registry__input_phone link link_gray" placeholder="Номер телефона" type="tel">
-              </div>
-              <button class="submit-btn registry__link link link_orange end-step" type="submit">Получить реестр →</button>
-            </form><span class="registry__personal">Нажимая, даю согласие на обработку своих <a href="#">персональных данных</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="end mfp-hide" id="end">
-        <div class="end__main"><span class="end__name client-name"></span><span class="end__title">мы отправили реестр наших экспертных заключений на указанную почту</span><span class="end__text">Если письма нет во входящих, проверьте папку «Промоакции» или «Спам»: письмо могло попасть туда по ошибке</span><span class="end__text-light">Если у вас есть вопросы к строительному эксперту или судебному юристу, вы можете их задать прямо сейчас по телефону<br> <a class="end__text-bold" href="tel:+73452529791">8 (3452) 52-97-91 </a>или в мессенджерах</span>
-          <div class="end__round-block"><a class="end__round end__round_green" href="#">
-              <svg class="icon end__icon">
-                <use xlink:href="svg/sprite.svg#whatsapp"></use>
-              </svg></a><a class="end__round end__round_purple" href="#">
-              <svg class="icon end__icon">
-                <use xlink:href="svg/sprite.svg#viber"></use>
-              </svg></a></div>
+      </div><a class="go-down hover header__go-down" data-value="Скролл" href="#service">Листайте вниз</a>
+      <div class="wrapper">
+        <div class="header__inner">
+              <div class="hero"> <a class="popup-link hover" data-value="Записаться" href="#popup-form"><img class="hero__lettering" src="img/slogan.png" alt="name"><span class="hero__text">Все виды окрашивания волос профессиональной косметикой Goldwell </span></a></div>
+              <button class="btn btn_hidden btn_hidden-header" type="button">Записаться</button>
         </div>
       </div>
     </div>
-    <script src="js/vendors/vendors.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <div class="service" id="service">
+      <div class="wrapper">
+        <div class="service__inner">
+              <div class="section-title service__title">Наши услуги</div>
+              <div class="section-subtitle service__subtitle">Подчеркните свою индивидуальность с помощью парикмахера-стилиста</div>
+          <div class="service__list"><a class="popup-link service-item service-item_big service__item hover" data-option="Окрашивание" data-value="Записаться" href="#popup-form" style="background: #DAF4FA url(img/service.png) no-repeat;
+            background-size: contain">
+                  <div class="service-item__content"><span class="service-item__title service-item__title_big">Окрашивание</span><span class="service-item__subtitle">Однотонное, шатуш, омбре, балаяж, тонирование, мелирование, блики</span>
+                    <div class="service-item__timeblock">
+                      <svg class="icon service-item__icon_time">
+                        <use xlink:href="svg/sprite.svg#time"></use>
+                      </svg><span class="service-item__time">1,5-2 ч</span>
+                    </div><span class="service-item__price">от 2500 ₽</span>
+                  </div></a><a class="popup-link service-item service-item_small service__item hover" data-option="Укладка и прически" data-value="Записаться" href="#popup-form" style="background: #F9F0E8 url(img/service.png) no-repeat;
+            background-size: contain">
+                  <div class="service-item__content"><span class="service-item__title undefined">Укладка и прически</span><span class="service-item__subtitle">Повседневная укладка, плетение кос, вечерние прически</span>
+                    <div class="service-item__timeblock">
+                      <svg class="icon service-item__icon_time">
+                        <use xlink:href="svg/sprite.svg#time"></use>
+                      </svg><span class="service-item__time">30–60 мин</span>
+                    </div><span class="service-item__price">от 1500 ₽</span>
+                  </div></a><a class="popup-link service-item service-item_small service__item hover" data-option="Женская стрижка" data-value="Записаться" href="#popup-form" style="background: #E7F1F0 url(img/service.png) no-repeat;
+            background-size: contain">
+                  <div class="service-item__content"><span class="service-item__title undefined">Женские стрижки</span><span class="service-item__subtitle">Любые стрижки с учетом типа внешности и ваших желаний</span>
+                    <div class="service-item__timeblock">
+                      <svg class="icon service-item__icon_time">
+                        <use xlink:href="svg/sprite.svg#time"></use>
+                      </svg><span class="service-item__time">30–60 мин</span>
+                    </div><span class="service-item__price">от 1000 ₽</span>
+                  </div></a><a class="popup-link service-item service-item_small service__item hover" data-option="Уход за волосами" data-value="Записаться" href="#popup-form" style="background: #E7D8E5 url(img/service.png) no-repeat;
+            background-size: contain">
+                  <div class="service-item__content"><span class="service-item__title undefined">Уход для волос</span><span class="service-item__subtitle">Лечение, восстановление и поддержание здоровья волос</span>
+                    <div class="service-item__timeblock">
+                      <svg class="icon service-item__icon_time">
+                        <use xlink:href="svg/sprite.svg#time"></use>
+                      </svg><span class="service-item__time">20 - 60 мин</span>
+                    </div><span class="service-item__price">от 500 ₽</span>
+                  </div></a><a class="popup-link service-item service-item_small service__item hover" data-option="Завивка" data-value="Записаться" href="#popup-form" style="background: #F9F0E8 url(img/service.png) no-repeat;
+            background-size: contain">
+                  <div class="service-item__content"><span class="service-item__title undefined">Завивка</span><span class="service-item__subtitle">Долговременная химическая и биозавивка</span>
+                    <div class="service-item__timeblock">
+                      <svg class="icon service-item__icon_time">
+                        <use xlink:href="svg/sprite.svg#time"></use>
+                      </svg><span class="service-item__time">1-1,5 ч</span>
+                    </div><span class="service-item__price">от 1700 ₽</span>
+                  </div></a><a class="popup-link service-item service-item_small service__item hover" data-option="Уход за волосами" data-value="Записаться" href="#popup-form" style="background: #E7F1F0 url(img/service.png) no-repeat;
+            background-size: contain">
+                  <div class="service-item__content"><span class="service-item__title undefined">Уход для волос</span><span class="service-item__subtitle">Лечение, восстановление и поддержание здоровья волос</span>
+                    <div class="service-item__timeblock">
+                      <svg class="icon service-item__icon_time">
+                        <use xlink:href="svg/sprite.svg#time"></use>
+                      </svg><span class="service-item__time">20 - 60 мин</span>
+                    </div><span class="service-item__price">от 500 ₽</span>
+                  </div></a><a class="popup-link service-item service-item_small service__item hover" data-option="Завивка" data-value="Записаться" href="#popup-form" style="background: #FEE9E8 url(img/service.png) no-repeat;
+            background-size: contain">
+                  <div class="service-item__content"><span class="service-item__title undefined">Завивка</span><span class="service-item__subtitle">Долговременная химическая и биозавивка</span>
+                    <div class="service-item__timeblock">
+                      <svg class="icon service-item__icon_time">
+                        <use xlink:href="svg/sprite.svg#time"></use>
+                      </svg><span class="service-item__time">1-1,5 ч</span>
+                    </div><span class="service-item__price">от 1700 ₽</span>
+                  </div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="complex">
+      <div class="wrapper">
+        <div class="complex__inner">
+              <div class="section-subtitle complex__subtitle">Помогаем вам выглядеть еще лучше за меньшие деньги</div>
+          <div class="complex__list slider__main">
+            <div class="swiper-wrapper"><a class="popup-link complex-item swiper-slide hover complex__item" data-value="Записаться" data-option="Шикарный образ" href="#popup-form"><span class="complex-item__type">Комплекс</span><span class="complex-item__title">Шикарный образ</span>
+                    <div class="complex-item__list"><span class="complex-item__item">окрашивание</span>
+                      <svg class="icon complex-item__connector">
+                        <use xlink:href="svg/sprite.svg#connector"></use>
+                      </svg><span class="complex-item__item">укладка</span>
+                      <svg class="icon complex-item__connector">
+                        <use xlink:href="svg/sprite.svg#connector"></use>
+                      </svg><span class="complex-item__item">маникюр</span>
+                    </div>
+                    <div class="complex-item__discount" style="background: #DAF4FA"></div></a><a class="popup-link complex-item swiper-slide hover complex__item" data-value="Записаться" data-option="Семейный визит" href="#popup-form"><span class="complex-item__type">Комплекс</span><span class="complex-item__title">Семейный визит</span>
+                    <div class="complex-item__list"><span class="complex-item__item">Женская <br> стрижка · окрашивание</span>
+                      <svg class="icon complex-item__connector">
+                        <use xlink:href="svg/sprite.svg#connector"></use>
+                      </svg><span class="complex-item__item">детская · мужская <br> стрижка</span>
+                    </div>
+                    <div class="complex-item__discount" style="background: #FFD76F"></div></a><a class="popup-link complex-item swiper-slide hover complex__item" data-value="Записаться" data-option="Волшебные волосы" href="#popup-form"><span class="complex-item__type">Комплекс</span><span class="complex-item__title">Волшебные волосы</span>
+                    <div class="complex-item__list"><span class="complex-item__item">Женская стрижка</span>
+                      <svg class="icon complex-item__connector">
+                        <use xlink:href="svg/sprite.svg#connector"></use>
+                      </svg><span class="complex-item__item">окрашивание</span>
+                      <svg class="icon complex-item__connector">
+                        <use xlink:href="svg/sprite.svg#connector"></use>
+                      </svg><span class="complex-item__item">уход для волос Biosthetique</span>
+                    </div>
+                    <div class="complex-item__discount" style="background: #D5B5F3"></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="wrapper">
+        <div class="about__inner">
+              <div class="section-subtitle about__subtitle">Уделяем внимание каждой детали вашего образа</div>
+          <div class="complex__list slider__main">
+            <div class="swiper-wrapper">
+                  <div class="about-item swiper-slide hover about__item" data-value="Записаться" data-href="j-popup-form" style="background: #E7D8E5"><span class="about-item__title">Ухоженные ногти</span>
+                    <ul class="about-item__list">
+                      <li class="about-item__item about-item__item_purple">Классический, аппаратный и SPA-маникюр и педикюр</li>
+                      <li class="about-item__item about-item__item_purple">Наращивание, моделирование и укрепление ногтей</li>
+                    </ul><a class="about-item__price popup-link" data-value="Посмотреть прайс" href="#nails">Прайс</a>
+                  </div>
+                  <div class="about-item swiper-slide hover about__item" data-value="Записаться" data-href="j-popup-form" style="background: #FEE9E8"><span class="about-item__title">Безупречная кожа</span>
+                    <ul class="about-item__list">
+                      <li class="about-item__item about-item__item_orange">Пилинги, чистки, лифтинг и маски для лица</li>
+                      <li class="about-item__item about-item__item_orange">Омолаживающие программы для кожи</li>
+                      <li class="about-item__item about-item__item_orange">Эпиляция лица и тела (воск, сахар)</li>
+                    </ul><a class="about-item__price popup-link" data-value="Посмотреть прайс" href="#skin">Прайс</a>
+                  </div>
+                  <div class="about-item swiper-slide hover about__item" data-value="Записаться" data-href="j-popup-form" style="background: #DAF4FA"><span class="about-item__title">Красивые брови и ресницы</span>
+                    <ul class="about-item__list">
+                      <li class="about-item__item about-item__item_blue">Коррекция формы и окрашивание бровей</li>
+                      <li class="about-item__item about-item__item_blue">Окрашивание и наращивание ресниц</li>
+                      <li class="about-item__item about-item__item_blue">Ламинирование ресниц</li>
+                    </ul><a class="about-item__price popup-link" data-value="Посмотреть прайс" href="#eyebrows">Прайс</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="wrapper">
+        <div class="review__inner">
+          <div class="review__block">
+            <div class="review__rating"></div>
+                <div class="text-round review__text">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="240px" height="240px" viewBox="0 0 240 240">
+                    <defs>
+                      <path id="subheading-arc" d="M 12 120 a 108 108 0 0 0 216 0"></path>
+                    </defs>
+                    <use xlink:href="#subheading-arc" fill="none"></use>
+                    <text class="text-round__text" fill="#394937" text-anchor="middle">
+                      <textPath startOffset="50%" xlink:href="#subheading-arc">Рейтинг салона в гугле</textPath>
+                    </text>
+                  </svg>
+                </div>
+          </div>
+          <div class="review__list slider__main">  
+            <div class="swiper-wrapper">
+                  <div class="review-item swiper-slide review__item">
+                    <div class="review-item__rating">
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                    </div><span class="review-item__author">Ирина Пяткина</span>
+                    <p class="review-item__text">Мастера в салоне фееричные! Катя так стрижет, что на голове вдруг откуда-то появляется шапка волос</p>
+                  </div>
+                  <div class="review-item swiper-slide review__item">
+                    <div class="review-item__rating">
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star-empty">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                    </div><span class="review-item__author">Ирина Пяткина</span>
+                    <p class="review-item__text">Мастера в салоне фееричные! Катя так стрижет, что на голове вдруг откуда-то появляется шапка волос</p>
+                  </div>
+                  <div class="review-item swiper-slide review__item">
+                    <div class="review-item__rating">
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star-empty">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                    </div><span class="review-item__author">Ирина Пяткина</span>
+                    <p class="review-item__text">Мастера в салоне фееричные! Катя так стрижет, что на голове вдруг откуда-то появляется шапка волос</p>
+                  </div>
+                  <div class="review-item swiper-slide review__item">
+                    <div class="review-item__rating">
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon review-item__icon_star-empty">
+                        <use xlink:href="svg/sprite.svg#star"></use>
+                      </svg>
+                    </div><span class="review-item__author">Ирина Пяткина</span>
+                    <p class="review-item__text">Мастера в салоне фееричные! Катя так стрижет, что на голове вдруг откуда-то появляется шапка волос</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="wrapper">
+        <div class="gallery__inner">
+              <div class="quote gallery__quote">
+                <svg class="icon quote__icon">
+                  <use xlink:href="svg/sprite.svg#quotation"></use>
+                </svg><span class="quote__title">Свои волосы доверяю только вам!</span>
+                <svg class="icon quote__icon quote__icon_reverse">
+                  <use xlink:href="svg/sprite.svg#quotation"></use>
+                </svg>
+              </div>
+              <div class="slider gallery__slider">
+                <div class="slider__body">
+                  <div class="slider__wrapper swiper-wrapper">
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/slider.png)">
+                      </div><span class="slider__service">Окрашивание в технике омбре</span>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/slider.png)">
+                      </div><span class="slider__service">Окрашивание в технике омбре</span>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/slider.png)">
+                      </div><span class="slider__service">Окрашивание в технике омбре</span>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/slider.png)">
+                      </div><span class="slider__service">Окрашивание в технике омбре</span>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/slider.png)">
+                      </div><span class="slider__service">Окрашивание в технике омбре</span>
+                    </div>
+                  </div>
+                  <div class="slider__progress progress"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="team">
+      <div class="wrapper">
+        <div class="team__inner">
+              <div class="section-subtitle team__subtitle">Над вашим образом колдуют <strong>вежливые и внимательные</strong> парикмахеры-стилисты, косметологи и мастера маникюра</div>
+          <div class="team__list">
+                <div class="team-item team__item team__item_hidden"> <img class="team-item__image" src="img/worker.png">
+                  <div class="team-item__info"><span class="team-item__experience">опыт 18 лет</span><span class="team-item__name">Юлия Михневич</span>
+                    <p class="team-item__text">Все виды окрашиваний и колористики, химические завивки, стрижки, прически, уход</p><span class="team-item__spec">парикмахер-стилист</span>
+                  </div>
+                </div>
+                <div class="team-item team__item team__item_hidden"> <img class="team-item__image" src="img/worker.png">
+                  <div class="team-item__info"><span class="team-item__experience">опыт 18 лет</span><span class="team-item__name">Юлия Михневич</span>
+                    <p class="team-item__text">Мастер-универсал. Ее конек — наращивание волос и эксперименты с цветом</p><span class="team-item__spec">парикмахер-стилист</span>
+                  </div>
+                </div>
+                <div class="team-item team__item team__item_hidden"> <img class="team-item__image" src="img/worker.png">
+                  <div class="team-item__info"><span class="team-item__experience">опыт 18 лет</span><span class="team-item__name">Юлия Михневич</span>
+                    <p class="team-item__text">Все виды окрашиваний и колористики, химические завивки, стрижки, прически, уход</p><span class="team-item__spec">парикмахер-стилист</span>
+                  </div>
+                </div>
+                <div class="team-item team__item team__item_hidden"> <img class="team-item__image" src="img/worker.png">
+                  <div class="team-item__info"><span class="team-item__experience">опыт 18 лет</span><span class="team-item__name">Юлия Михневич</span>
+                    <p class="team-item__text">Все виды окрашиваний и колористики, химические завивки, стрижки, прически, уход</p><span class="team-item__spec">парикмахер-стилист</span>
+                  </div>
+                </div>
+                <div class="team-item team__item team__item_hidden"> <img class="team-item__image" src="img/worker.png">
+                  <div class="team-item__info"><span class="team-item__experience">опыт 18 лет</span><span class="team-item__name">Юлия Михневич</span>
+                    <p class="team-item__text">Все виды окрашиваний и колористики, химические завивки, стрижки, прически, уход</p><span class="team-item__spec">парикмахер-стилист</span>
+                  </div>
+                </div>
+                <div class="team-item team__item team__item_hidden"> <img class="team-item__image" src="img/worker.png">
+                  <div class="team-item__info"><span class="team-item__experience">опыт 18 лет</span><span class="team-item__name">Юлия Михневич</span>
+                    <p class="team-item__text">Все виды окрашиваний и колористики, химические завивки, стрижки, прически, уход</p><span class="team-item__spec">парикмахер-стилист</span>
+                  </div>
+                </div>
+          </div>
+              <button class="btn team__btn btn_team" type="button">Все мастера</button>
+        </div>
+      </div>
+    </div>
+    <div class="form-section">
+      <div class="wrapper">
+        <div class="form-section__inner">
+              <div class="section-title form-section__title">Предпочитаете постоянного мастера?</div>
+              <div class="section-subtitle form-section__subtitle">Наши специалисты работают в салоне с 2004 года и по сей день — вы всегда можете на нас рассчитывать</div>
+              <form class="form" id="form" data-route="thanks"><span class="form__title">Запишитесь в салон на любую процедуру</span>
+                <div class="form__body">
+                  <div class="form__line">
+                    <select class="select input select_service" name="select" data-placeholder="выберите услугу">
+                      <option></option>
+                      <option name="service" value="Окрашивание" data-price="от 1500₽">Окрашивание</option>
+                      <option name="service" value="Женская стрижка" data-price="от 2500₽">Женская стрижка</option>
+                      <option name="service" value="Мужская стрижка" data-price="от 3500₽">Мужская стрижка</option>
+                      <option name="service" value="Детская стрижка" data-price="от 3500₽">Детская стрижка</option>
+                      <option name="service" value="Укладка и прически" data-price="от 3500₽">Укладка и прически</option>
+                      <option name="service" value="Уход за волосами" data-price="от 3500₽">Уход за волосами</option>
+                      <option name="service" value="Завивка" data-price="от 3500₽">Завивка</option>
+                      <option name="service" value="Маникюр" data-price="от 3500₽">Маникюр</option>
+                      <option name="service" value="Уход за ногтями" data-price="от 3500₽">Уход за ногтями</option>
+                      <option name="service" value="Покрытие (лак, гель)" data-price="от 3500₽">Покрытие (лак, гель)</option>
+                      <option name="service" value="Дизайн ногтей" data-price="от 3500₽">Дизайн ногтей</option>
+                      <option name="service" value="Педикюр" data-price="от 3500₽">Педикюр</option>
+                      <option name="service" value="Эпиляция" data-price="от 3500₽">Эпиляция</option>
+                      <option name="service" value="Шикарный образ" data-price="от 3500₽">Шикарный образ</option>
+                      <option name="service" value="Семейный визит" data-price="от 3500₽">Семейный визит</option>
+                      <option name="service" value="Волшебные волосы" data-price="от 3500₽">Волшебные волосы</option>
+                    </select>
+                    <svg class="icon form__icon_arrow">
+                      <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="form__line">
+                    <select class="select input" name="select" data-placeholder="выберите мастера">
+                      <option></option>
+                      <option name="worker" value="Иван" data-price="от 500₽">Иван</option>
+                      <option name="worker" value="Олег" data-price="от 400₽">Олег</option>
+                      <option name="worker" value="Марина" data-price="от 000₽">Марина</option>
+                    </select>
+                    <svg class="icon form__icon_arrow">
+                      <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div>
+                  <div class="form__line">
+                    <select class="select input select_date" name="select" data-placeholder="выберите дату">
+                      <option></option>
+                    </select>
+                    <svg class="icon form__icon_arrow">
+                      <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                    </svg>
+                  </div><span class="form__time">Удобное время согласует администратор</span>
+                  <div class="form__line inp-validate">
+                    <input class="input" name="phone" placeholder="укажите телефон" type="tel">
+                    <div class="form__valid form__valid_ok">
+                      <svg class="icon form__valid-icon form__icon_ok">
+                        <use xlink:href="svg/sprite.svg#ok"></use>
+                      </svg>
+                    </div>
+                    <div class="form__valid form__valid_error">
+                      <svg class="icon form__valid-icon form__icon_error">
+                        <use xlink:href="svg/sprite.svg#error"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form__line inp-validate">
+                    <input class="input" name="name" placeholder="как вас зовут?" type="text">
+                    <div class="form__valid form__valid_ok">
+                      <svg class="icon form__valid-icon form__icon_ok">
+                        <use xlink:href="svg/sprite.svg#ok"></use>
+                      </svg>
+                    </div>
+                    <div class="form__valid form__valid_error">
+                      <svg class="icon form__valid-icon form__icon_error">
+                        <use xlink:href="svg/sprite.svg#error"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                    <button class="btn form__btn btn_form" type="submit">Записаться</button>
+              </form>
+        </div>
+      </div>
+    </div>
+    <div class="advantage">
+      <div class="wrapper">
+        <div class="advantage__inner">
+              <div class="section-subtitle advantage__subtitle">Выполняем пожелания <br> и рекомендуем без навязывания</div>
+          <div class="advantage__list-item">
+                <div class="advantage-item advantage__item">
+                  <svg class="advantage__icon">
+                    <use xlink:href="svg/sprite-original.svg#icon_01"></use>
+                  </svg><span class="advantage-item__title">Знаете, чего хотите?</span><span class="advantage-item__text">Сделаем точь-в-точь <br> по вашему желанию</span>
+                </div>
+                <div class="advantage-item advantage__item">
+                  <svg class="advantage__icon">
+                    <use xlink:href="svg/sprite-original.svg#icon_02"></use>
+                  </svg><span class="advantage-item__title">Сомневаетесь в выборе?</span><span class="advantage-item__text">Посоветуем подходящие цвета и стрижки с учетом вашего типа внешности <br> и структуры волос</span>
+                </div>
+                <div class="advantage-item advantage__item">
+                  <svg class="advantage__icon">
+                    <use xlink:href="svg/sprite-original.svg#icon_03"></use>
+                  </svg><span class="advantage-item__title">Мечтаете стать лучше?</span><span class="advantage-item__text">Подскажем, как прической <br> подчеркнуть достоинства <br> и скорректировать недостатки</span>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper wrapper-warranty">
+        <div class="advantage__inner">
+              <div class="warranty advantage__warranty">
+                    <button class="btn warranty__button btn_warrantly popup-link" type="button">записаться на стрижку</button>
+                <div class="warranty__left">
+                  <div class="warranty__left-wrapper">
+                    <svg class="warranty__number">
+                      <use xlink:href="svg/sprite.svg#7"></use>
+                    </svg><span class="warranty__text">дней гарантии на стрижку     </span>
+                  </div>
+                </div>
+                <div class="warranty__right">
+                  <div class="warranty__right-wrapper"><span class="warranty__title">В течение недели вы можете вернуться в салон, если вас не устроит новая стрижка</span>
+                    <ul class="warranty__list">
+                      <li class="warranty__list-item">бесплатно скорректируем стрижку</li>
+                      <li class="warranty__list-item">ответим на вопросы по укладке</li>
+                      <li class="warranty__list-item">проконсультируем по домашнему уходу</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="advantage__inner">
+          <div class="advantage__save-block"> 
+                <div class="section-title advantage__title">Бережем ваше здоровье </div>
+            <div class="advantage__save-list">
+                  <div class="advantage-save advantage-save__item">Стерилизуем инструменты и вовремя затачиваем ножницы</div>
+                  <div class="advantage-save advantage-save__item">Лечим и восстанавливаем ломкие, тусклые, поврежденные и выпадающие волосы</div>
+                  <div class="advantage-save advantage-save__item">Регулярно повышаем квалификацию и совершенствуем техники работы</div>
+                  <div class="advantage-save advantage-save__item">Даем рекомендации по домашнему уходу, чтобы дольше сохранить насыщенный цвет</div>
+            </div>
+          </div>
+          <div class="advantage__brands-block"> 
+                <div class="section-subtitle advantage__subtitle">Используем проверенную профессиональную косметику </div>
+            <div class="advantage__brands-list">      
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/goldwell.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/wella.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/schwarzkopf.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/lebel.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/klapp.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/joico.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/shellac.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/gehwol.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/essie.png" alt="brand"></div>
+                  <div class="brand"><img class="brand__img advantage__brand" src="img/brends/johannes.png" alt="brand"></div>
+            </div>
+          </div>
+              <div class="section-title advantage__title-time">Бережем ваше время</div>
+          <div class="advantage__list-item">
+                <div class="advantage-item advantage__item">
+                  <svg class="advantage__icon">
+                    <use xlink:href="svg/sprite-original.svg#icon_04"></use>
+                  </svg><span class="advantage-item__title">Удобное расположение</span><span class="advantage-item__text">Рядом с вашим домом. <br> 7 минут от метро. Есть парковка</span>
+                </div>
+                <div class="advantage-item advantage__item">
+                  <svg class="advantage__icon">
+                    <use xlink:href="svg/sprite-original.svg#icon_05"></use>
+                  </svg><span class="advantage-item__title">Запись по времени</span><span class="advantage-item__text">Не придется ждать, <br>пока мастер освободится</span>
+                </div>
+                <div class="advantage-item advantage__item">
+                  <svg class="advantage__icon">
+                    <use xlink:href="svg/sprite-original.svg#icon_06"></use>
+                  </svg><span class="advantage-item__title">Параллельные процедуры</span><span class="advantage-item__text">Приведем в порядок брови и ресницы, <br>пока красятся волосы</span>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="salon">
+      <div class="wrapper">
+        <div class="salon__inner">
+              <div class="section-title salon__title">Создаем уютную атмосферу для вашего преображения</div>
+              <div class="slider salon__slider">
+                <div class="slider__body">
+                  <div class="slider__wrapper swiper-wrapper">
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/salon.png)">
+                        <div class="slider__info" style="background-color: #FEE9E8"><span class="slider__title">Отдыхайте, общайтесь, расслабляйтесь</span><span class="slider__text">Чашечка кофе или чая и приятная музыка — время в салоне пролетит незаметно</span></div>
+                      </div>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/salon.png)">
+                        <div class="slider__info" style="background-color: #DAF4FA"><span class="slider__title">Отдыхайте, общайтесь, расслабляйтесь</span><span class="slider__text">Чашечка кофе или чая и приятная музыка — время в салоне пролетит незаметно</span></div>
+                      </div>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/salon.png)">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__progress progress"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="instagram">
+      <div class="wrapper">
+        <div class="instagram__inner">
+              <div class="section-title instagram__title section-title_big">Уделите время своей внешности и отдохните от рутины — запишитесь в салон красоты</div>
+              <button class="btn btn_instagram instagram__btn popup-link" type="button">Записаться</button>
+              <div class="section-subtitle instagram__subtitle">Работы наших мастеров, новые услуги и акции в инстаграм <a class="instagram__link" href="https://www.instagram.com/salonaquarel/" target="_blank">@salonaquarel</a></div>
+              <div class="slider instagram__slider">
+                <div class="slider__body">
+                  <div class="slider__wrapper swiper-wrapper">
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/insta.png)">
+                      </div>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/insta.png)">
+                      </div>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/insta.png)">
+                      </div>
+                    </div>
+                    <div class="slider__item swiper-slide hover">
+                      <div class="slider__image" style="background-image: url(img/insta.png)">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider__progress progress"></div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div id="map"></div>
+      <div class="footer__inner">
+        <div class="wrapper">
+          <div class="footer__map-info">
+                <div class="map-info hover footer__info" id="map-info" data-value="Записаться" data-href="j-popup-form">
+                  <div class="map-info__wrapper"><img class="map-info__img" src="img/slogan.png" alt="салон"><span class="map-info__title">Ждем вас ежедневно с 10:00 до 21:00 </span><span class="map-info__text">Москва, Хорошёвское шоссе, 50 к1</span>
+                    <div class="map-info__block">
+                      <div class="map-info__round">
+                        <svg class="map-info__icon-metro">
+                          <use xlink:href="svg/sprite.svg#metro"></use>
+                        </svg>
+                      </div><span class="map-info__text">7 минут пешком от метро: <br> Беговая, Хорошёвская, Полежаевская  </span>
+                    </div>
+                    <div class="map-info__block">
+                      <div class="map-info__round">
+                        <svg class="map-info__icon-parking">
+                          <use xlink:href="svg/sprite.svg#parking"></use>
+                        </svg>
+                      </div><span class="map-info__text">Бесплатная парковка  </span>
+                    </div><span class="map-info__phone">    <span class="map-info__text">+7 (495) 941-00-71</span><span class="map-info__text">+7 (916) 557-77-28</span></span>
+                        <object>
+                          <div class="social-list map-info__social"><a class="social-list__round" data-value="Группа вконтакте" href="http://vk.com" target="_blank">
+                              <svg class="icon social-list__svg">
+                                <use xlink:href="svg/sprite.svg#vk"></use>
+                              </svg></a><a class="social-list__round" data-value="Наш инстаграм" href="https://www.instagram.com/salonaquarel/" target="_blank"> 
+                              <svg class="icon social-list__svg">
+                                <use xlink:href="svg/sprite.svg#instagram"></use>
+                              </svg></a></div>
+                        </object>
+                  </div>
+                </div>
+                <button class="btn btn_hidden btn_hidden-footer" type="button">Записаться</button>
+          </div>
+          <div class="footer__line"><span class="footer__text">Данный сайт носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) Гражданского кодекса РФ</span><a class="footer__text footer__text_policy footer__text_policy-desktop" href="#">Политика конфиденциальности</a>
+            <div class="footer__copyright"><a class="footer__text footer__text_policy footer__text_policy-mobile" href="#">Политика конфиденциальности</a><span class="footer__text">© ООО «Салон красоты Акварель», 2012–2019</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="popup mfp-hide popup-nails" id="nails">
+          <div class="popup__outer hover" data-value="Закрыть"></div>
+          <div class="popup__inner scrollbar-outer">
+            <div class="price price__nail" style="background: #E7D8E5"><span class="price__title">Всё для ухоженных <br> и здоровых ногтей</span>
+              <div class="price__advantage">
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #FFD76F"></div><span class="price__text">Любой<br> дизайн и цвет, равномерное покрытие</span>
+                </div>
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #FEE9E8"></div><span class="price__text">Держится <br>до 30 дней, <br>без сколов</span>
+                </div>
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #6C8FEB"></div><span class="price__text">Стерильно <br>и бережно, <br>без порезов</span>
+                </div>
+              </div>
+              <ul class="price__list">
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Классический, европейский, аппаратный, комбинированный и SPA-маникюр</span></span><span class="price__number">от 900 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Наращивание, моделирование и коррекция ногтей</span></span><span class="price__number">от 600 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Аппаратный, классический и SPA-педикюр</span></span><span class="price__number">от 1000 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Акриловое и гелевое покрытие</span></span><span class="price__number">от 900 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Питание и укрепление ногтей</span></span><span class="price__number">от 600 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Дизайн ногтей</span></span><span class="price__number">от 300 ₽</span></li>
+              </ul>
+                  <button class="btn price__btn btn_service-form" type="button">Записаться</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup mfp-hide popup-skin" id="skin">
+          <div class="popup__outer hover" data-value="Закрыть"></div>
+          <div class="popup__inner scrollbar-outer">
+            <div class="price price__skin" style="background: #FEE9E8"><span class="price__title">Всё для безупречной кожи</span>
+              <div class="price__advantage">
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #FFD76F"></div><span class="price__text">Косметологи <br>с опытом больше 15 лет</span>
+                </div>
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #D5B5F3"></div><span class="price__text">Безопасно, стерильно, <br>без боли</span>
+                </div>
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #6C8FEB"></div><span class="price__text">Рекомендации <br>по уходу с учетом вашего бюджета</span>
+                </div>
+              </div>
+              <ul class="price__list">
+                <li class="price__item"><span class="price__fatname">Эпиляция <span class="price__name"> лица и тела (воск, сахар)</span></span><span class="price__number">от 900 ₽</span></li>
+                <li class="price__item"><span class="price__fatname">Пилинг: <span class="price__name">гликолевый, коралловый, растительный</span></span><span class="price__number">от 600 ₽</span></li>
+                <li class="price__item"><span class="price__fatname">Маски для лица: <span class="price__name">противовоспалительные, очищающие, успокаивающие, коллагеновые</span></span><span class="price__number">от 1000 ₽</span></li>
+                <li class="price__item"><span class="price__fatname">Чистка лица: <span class="price__name">механическая, аппаратная, Holy Land, дарсонваль</span></span><span class="price__number">от 1000 ₽</span></li>
+                <li class="price__item"><span class="price__fatname">Микротоковый лифтинг: <span class="price__name">для лица и шеи</span></span><span class="price__number">от 600 ₽</span></li>
+                <li class="price__item"><span class="price__fatname">Омолаживающая программа<span class="price__name">«Шелковые нити»</span></span><span class="price__number">от 5000 ₽</span></li>
+              </ul>
+                  <button class="btn price__btn btn_service-form" type="button">Записаться</button>
+            </div>
+          </div>
+        </div>
+        <div class="popup mfp-hide popup-eyebrows" id="eyebrows">
+          <div class="popup__outer hover" data-value="Закрыть"></div>
+          <div class="popup__inner scrollbar-outer">
+            <div class="price price__eyebrows" style="background: #DAF4FA"><span class="price__title">Всё для красивых <br>бровей и ресниц</span>
+              <div class="price__advantage">
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #FFD76F"></div><span class="price__text">Подбор формы <br>и оттенка <br>с учетом внешности</span>
+                </div>
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #FEE9E8"></div><span class="price__text">Долговременный эффект: <br>до 4 недель</span>
+                </div>
+                <div class="price__advantage-item">
+                  <div class="price__round" style="background: #D5B5F3"></div><span class="price__text">Безопасные материалы и нежные руки мастеров</span>
+                </div>
+              </div>
+              <ul class="price__list">
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Коррекция формы и моделирование бровей</span></span><span class="price__number">от 900 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Окрашивание и тонирование бровей</span></span><span class="price__number">от 600 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Наращивание ресниц 2D, 3D</span></span><span class="price__number">от 1000 ₽</span></li>
+                <li class="price__item"><span class="price__fatname"><span class="price__name">Окрашивание ресниц</span></span><span class="price__number">от 6000 ₽</span></li>
+              </ul>
+                  <button class="btn price__btn btn_service-form" type="button">Записаться</button>
+            </div>
+          </div>
+        </div>
+    <div class="popup popup-form mfp-hide" id="popup-form">
+      <div class="popup__outer hover" data-value="Закрыть"></div>
+      <div class="popup__inner">
+            <form class="form" id="form-popup" data-route="thanks">
+              <div class="form__body form__body_visible">
+                <div class="form__line">
+                  <select class="select input select_service" name="select" data-placeholder="выберите услугу">
+                    <option></option>
+                    <option name="service" value="Окрашивание" data-price="от 1500₽">Окрашивание</option>
+                    <option name="service" value="Женская стрижка" data-price="от 2500₽">Женская стрижка</option>
+                    <option name="service" value="Мужская стрижка" data-price="от 3500₽">Мужская стрижка</option>
+                    <option name="service" value="Детская стрижка" data-price="от 3500₽">Детская стрижка</option>
+                    <option name="service" value="Укладка и прически" data-price="от 3500₽">Укладка и прически</option>
+                    <option name="service" value="Уход за волосами" data-price="от 3500₽">Уход за волосами</option>
+                    <option name="service" value="Завивка" data-price="от 3500₽">Завивка</option>
+                    <option name="service" value="Маникюр" data-price="от 3500₽">Маникюр</option>
+                    <option name="service" value="Уход за ногтями" data-price="от 3500₽">Уход за ногтями</option>
+                    <option name="service" value="Покрытие (лак, гель)" data-price="от 3500₽">Покрытие (лак, гель)</option>
+                    <option name="service" value="Дизайн ногтей" data-price="от 3500₽">Дизайн ногтей</option>
+                    <option name="service" value="Педикюр" data-price="от 3500₽">Педикюр</option>
+                    <option name="service" value="Эпиляция" data-price="от 3500₽">Эпиляция</option>
+                    <option name="service" value="Шикарный образ" data-price="от 3500₽">Шикарный образ</option>
+                    <option name="service" value="Семейный визит" data-price="от 3500₽">Семейный визит</option>
+                    <option name="service" value="Волшебные волосы" data-price="от 3500₽">Волшебные волосы</option>
+                  </select>
+                  <svg class="icon form__icon_arrow">
+                    <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+                <div class="form__line">
+                  <select class="select input" name="select" data-placeholder="выберите мастера">
+                    <option></option>
+                    <option name="worker" value="Иван" data-price="от 500₽">Иван</option>
+                    <option name="worker" value="Олег" data-price="от 400₽">Олег</option>
+                    <option name="worker" value="Марина" data-price="от 000₽">Марина</option>
+                  </select>
+                  <svg class="icon form__icon_arrow">
+                    <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
+                <div class="form__line">
+                  <select class="select input select_date" name="select" data-placeholder="выберите дату">
+                    <option></option>
+                  </select>
+                  <svg class="icon form__icon_arrow">
+                    <use xlink:href="svg/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div><span class="form__time">Удобное время согласует администратор</span>
+                <div class="form__line inp-validate">
+                  <input class="input" name="phone" placeholder="укажите телефон" type="tel">
+                  <div class="form__valid form__valid_ok">
+                    <svg class="icon form__valid-icon form__icon_ok">
+                      <use xlink:href="svg/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  <div class="form__valid form__valid_error">
+                    <svg class="icon form__valid-icon form__icon_error">
+                      <use xlink:href="svg/sprite.svg#error"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="form__line inp-validate">
+                  <input class="input" name="name" placeholder="как вас зовут?" type="text">
+                  <div class="form__valid form__valid_ok">
+                    <svg class="icon form__valid-icon form__icon_ok">
+                      <use xlink:href="svg/sprite.svg#ok"></use>
+                    </svg>
+                  </div>
+                  <div class="form__valid form__valid_error">
+                    <svg class="icon form__valid-icon form__icon_error">
+                      <use xlink:href="svg/sprite.svg#error"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+                  <button class="btn form__btn btn_service-form" type="submit">Записаться</button>
+            </form>
+      </div>
+    </div>
+    <div class="popup mfp-hide" id="thanks">
+      <div class="popup__outer hover" data-value="Закрыть"></div>
+      <div class="popup__inner">
+            <div class="thanks"><span class="thanks__name client-name"></span><span class="thanks__title">спасибо за заявку!</span><span class="thanks__text">Я перезвоню Вам в ближайшее время, чтобы согласовать дату, время и другие детали вашего визита в салон красоты «Акварель»</span><span class="thanks__light-text">А пока вы ждете звонка, подпишитесь на наш инстаграм, чтобы подбирать для себя интересные цвета и стрижки, ориентируясь на работы наших мастеров</span><span class="thanks__subscription">Подписаться на инстаграм </span><a class="thanks__link" href="https://www.instagram.com/salonaquarel/" target="_blank">@salonaquarel</a></div>
+      </div>
+    </div>
+        <div class="link-wrapper"><a class="link " href="undefined" rel="stylesheet"><span class="link__inner"></span></a></div><div class="degub-grid">
+<div>
+<div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+    <script src="js/vendors/vendors.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
