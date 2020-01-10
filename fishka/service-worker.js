@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.278e0c011bd1b0c7aa3a344f47c0d56e.js"
+  "/fishka/precache-manifest.ba21e60a755cb987f1a2a87245cf24a1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-test"});
