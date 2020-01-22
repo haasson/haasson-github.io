@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/libertex/precache-manifest.7e0ca6193c0aa80cf16c3d90b5a2f78e.js"
+  "/libertex/precache-manifest.b473a5880f4c6637f909b047e1e224f8.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "libertex"});

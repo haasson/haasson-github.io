@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c93f5ff9460f404b3de",
-    "url": "/libertex/css/app.ff685c6b.css"
+    "revision": "d47ae0157783d79fa343",
+    "url": "/libertex/css/app.d2e09b35.css"
   },
   {
     "revision": "12c6e4302f2c8d61c5e425e8626f324e",
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/libertex/img/arrow.b4d019ac.svg"
   },
   {
-    "revision": "4c6c9c5d512a61dac65bcc7bfb18240c",
+    "revision": "1706707a85cbab26e5a64978124c15a2",
     "url": "/libertex/index.html"
   },
   {
-    "revision": "1c93f5ff9460f404b3de",
-    "url": "/libertex/js/app.48c7fb8d.js"
+    "revision": "d47ae0157783d79fa343",
+    "url": "/libertex/js/app.288220c4.js"
   },
   {
     "revision": "5f221339fcf4051febc1",
