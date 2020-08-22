@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="166.719" height="51.44" viewBox="0 0 166.719 51.44">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #c6c6c6;
-        stroke-width: 1px;
-        stroke-dasharray: 4 2;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Фигура_3" data-name="Фигура 3" class="cls-1" d="M690.7,3240.58a40.723,40.723,0,0,0,9.861,13.04c7.312,7.18,21.835,10.68,40.691,10.46a79.508,79.508,0,0,1,53.337,17.33c8.646,5.67,17.849,10.15,28.721,8.07,10.646-1.75,22.3-9.84,33.059-18.78" transform="translate(-689.375 -3240.06)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="166.719" height="51.44"><path data-name="Фигура 3" d="M1.325.52a40.723 40.723 0 009.861 13.04c7.312 7.18 21.835 10.68 40.691 10.46a79.508 79.508 0 0153.337 17.33c8.646 5.67 17.849 10.15 28.721 8.07 10.646-1.75 22.3-9.84 33.059-18.78" fill="none" stroke="#c6c6c6" stroke-dasharray="4 2"/></svg>
