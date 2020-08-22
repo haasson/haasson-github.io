@@ -48,7 +48,7 @@
                </div>
                <div class="topline__contacts">
                   <a href="tel:+79268740900" class="topline__phone">+7(926) 874-09-00</a>
-                  <a href="#" class="orange-link">Заказать звонок</a>
+                  <a href="#consult" class="orange-link popup-with-form">Заказать звонок</a>
                </div>
             </div>
 
@@ -64,7 +64,7 @@
                      Ответьте на 6 вопросов и <span class="span hero__text_bold">узнайте стоимость
                         лицензии</span> для вашей компании прямо сейчас
                   </p>
-                  <button class="btn hero__btn">Рассчитать стоимость <span class="nowrap">за 2 минуты</span></button>
+                  <button class="popup-with-form btn hero__btn" href="#quiz-block">Рассчитать стоимость <span class="nowrap">за 2 минуты</span></button>
                   <span class="hero__note">Телефон не требуется, <span class="nowrap">расчет бесплатный</span></span>
                </div>
             </div>
@@ -116,7 +116,7 @@
                </div>
             </div>
          </div>
-         <button class="btn what-you-get__btn">Пройти тест и получить <span class="nowrap">материалы+бонус</span></button>
+         <button class="btn what-you-get__btn popup-with-form" href="#quiz-block">Пройти тест и получить <span class="nowrap">материалы+бонус</span></button>
       </div>
    </div>
 
@@ -134,7 +134,7 @@
          <div class="license__slider slider">
             <div class="swiper-wrapper slider__wrapper popup-gallery">
                <div class="swiper-slide slider__item">
-                  <a class="license__image" href="img/sertificate.jpg">
+                  <a class="license__image" href="img/phone.png">
                      <img class="license__img" alt="sertificate" src="img/sertificate.jpg">
                   </a>
                   <div class="license__info">
@@ -233,7 +233,7 @@
                      Неполный пакет ведет
                      к автоматическому отказу
                   </p>
-                  <a href="#" class="nuance__link orange-link">Получить полный список документов и расчет стоимости</a>
+                  <a href="#quiz-block" class="nuance__link orange-link popup-with-form">Получить полный список документов и расчет стоимости</a>
                </div>
             </li>
             <li class="nuance__item">
@@ -247,7 +247,7 @@
                   <p class="nuance__text bold">
                      Пройти их самостоятельно практически нереально.
                   </p>
-                  <a href="#" class="nuance__link orange-link">Да, уже пробовали</a>
+                  <a href="#check" class="nuance__link orange-link popup-with-form">Да, уже пробовали</a>
                </div>
             </li>
             <li class="nuance__item">
@@ -344,7 +344,8 @@
    
    <div class="quiz">
       <div class="wrapper">
-         <div class="quiz__content">
+         <div id="quiz-block" class="quiz__content popup">
+            <div class="p-close"></div>
             <h2 class="quiz__title">
                <span class="bold">Рассчитайте стоимость</span> вашей
                лицензии на отходы за 2 минуты
@@ -399,7 +400,7 @@
 
             <div class="quiz__block quiz__step_1" id="quiz">
 
-               <form class="quiz__questions questions" data-route="license-calc">
+               <form id="quiz-form" class="quiz__questions questions" data-route="license-calc">
                   <div class="questions__progress progress">
                      <div class="progress__full">
                         <div class="progress__active"></div>
@@ -416,15 +417,15 @@
                         </p>
                         <div class="questions__answers">
                            <div class="questions__input">
-                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" checked type="radio" id="quiz-s1-1">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Только подготовить пакет документов" checked type="radio" id="quiz-s1-1">
                               <label class="questions__label" for="quiz-s1-1">Только подготовить пакет документов</label>
                            </div>
                            <div class="questions__input">
-                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" type="radio" id="quiz-s1-2">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Лицензия «под ключ», в том числе помощь при прохождении лицензионных проверок Роспотребнадзора и Росприроднадзора" type="radio" id="quiz-s1-2">
                               <label class="questions__label" for="quiz-s1-2">Лицензия «под ключ», в том числе помощь при прохождении лицензионных проверок Роспотребнадзора и Росприроднадзора</label>
                            </div>
                            <div class="questions__input">
-                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" type="radio" id="quiz-s1-3">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Еще не решили" type="radio" id="quiz-s1-3">
                               <label class="questions__label" for="quiz-s1-3">Еще не решили</label>
                            </div>
                         </div>
@@ -439,29 +440,29 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" checked type="checkbox" id="quiz-s2-1">
+                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Сбор отходов" checked type="checkbox" id="quiz-s2-1">
                                  <label class="questions__label" for="quiz-s2-1">Сбор отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" type="checkbox" id="quiz-s2-2">
+                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Транспортирование отходов" type="checkbox" id="quiz-s2-2">
                                  <label class="questions__label" for="quiz-s2-2">Транспортирование отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" type="checkbox" id="quiz-s2-3">
+                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Обработка отходов" type="checkbox" id="quiz-s2-3">
                                  <label class="questions__label" for="quiz-s2-3">Обработка отходов</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" type="checkbox" id="quiz-s2-4">
+                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Утилизация отходов" type="checkbox" id="quiz-s2-4">
                                  <label class="questions__label" for="quiz-s2-4">Утилизация отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" type="checkbox" id="quiz-s2-5">
+                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Обезвреживание отходов" type="checkbox" id="quiz-s2-5">
                                  <label class="questions__label" for="quiz-s2-5">Обезвреживание отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" type="checkbox" id="quiz-s2-6">
+                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Размещение отходов" type="checkbox" id="quiz-s2-6">
                                  <label class="questions__label" for="quiz-s2-6">Размещение отходов</label>
                               </div>
                            </div>
@@ -478,41 +479,41 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" checked type="checkbox" id="quiz-s3-1">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Бытовые отходы, ТБО" checked type="checkbox" id="quiz-s3-1">
                                  <label class="questions__label" for="quiz-s3-1">Бытовые отходы, ТБО</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-2">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Строительный мусор" type="checkbox" id="quiz-s3-2">
                                  <label class="questions__label" for="quiz-s3-2">Строительный мусор</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-3">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Пластик" type="checkbox" id="quiz-s3-3">
                                  <label class="questions__label" for="quiz-s3-3">Пластик</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-4">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Бумага" type="checkbox" id="quiz-s3-4">
                                  <label class="questions__label" for="quiz-s3-4">Бумага</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-5">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Медицинские отходы" type="checkbox" id="quiz-s3-5">
                                  <label class="questions__label" for="quiz-s3-5">Медицинские отходы</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-6">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Асфальтная крошка" type="checkbox" id="quiz-s3-6">
                                  <label class="questions__label" for="quiz-s3-6">Асфальтная крошка</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-7">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Отходы деревообработки" type="checkbox" id="quiz-s3-7">
                                  <label class="questions__label" for="quiz-s3-7">Отходы деревообработки</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-8">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Пищевые отходы, просроченные продукты" type="checkbox" id="quiz-s3-8">
                                  <label class="questions__label" for="quiz-s3-8">Пищевые отходы, просроченные продукты</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-9">
+                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Ртутные лампы, другие отходы с ртутью" type="checkbox" id="quiz-s3-9">
                                  <label class="questions__label" for="quiz-s3-9">Ртутные лампы, другие отходы с ртутью</label>
                               </div>
                            </div>
@@ -531,21 +532,21 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" checked type="radio" id="quiz-s4-1">
+                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Да, в собственности" checked type="radio" id="quiz-s4-1">
                                  <label class="questions__label" for="quiz-s4-1">Да, в собственности</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" type="radio" id="quiz-s4-2">
+                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Да, арендуем" type="radio" id="quiz-s4-2">
                                  <label class="questions__label" for="quiz-s4-2">Да, арендуем</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" type="radio" id="quiz-s4-3">
+                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Нет транспорта" type="radio" id="quiz-s4-3">
                                  <label class="questions__label" for="quiz-s4-3">Нет транспорта</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" type="radio" id="quiz-s4-4">
+                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Транспорт не понадобится, сами ничего не транспортируем" type="radio" id="quiz-s4-4">
                                  <label class="questions__label" for="quiz-s4-4">Транспорт не понадобится, сами ничего не транспортируем</label>
                               </div>
                            </div>
@@ -559,15 +560,15 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" checked type="radio" id="quiz-s5-1">
+                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Да, в собственности" checked type="radio" id="quiz-s5-1">
                                  <label class="questions__label" for="quiz-s5-1">Да, в собственности</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" type="radio" id="quiz-s5-2">
+                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Да, арендуем" type="radio" id="quiz-s5-2">
                                  <label class="questions__label" for="quiz-s5-2">Да, арендуем</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" type="radio" id="quiz-s5-3">
+                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Нет оборудования" type="radio" id="quiz-s5-3">
                                  <label class="questions__label" for="quiz-s5-3">Нет оборудования</label>
                               </div>
                            </div>
@@ -580,21 +581,21 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" checked type="radio" id="quiz-s6-1">
+                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Да, в собственности" checked type="radio" id="quiz-s6-1">
                                  <label class="questions__label" for="quiz-s6-1">Да, в собственности</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" type="radio" id="quiz-s6-2">
+                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Да, арендуем" type="radio" id="quiz-s6-2">
                                  <label class="questions__label" for="quiz-s6-2">Да, арендуем</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" type="radio" id="quiz-s6-3">
+                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Нет территории/помещения" type="radio" id="quiz-s6-3">
                                  <label class="questions__label" for="quiz-s6-3">Нет территории/помещения</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" type="radio" id="quiz-s6-4">
+                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Не потребуется, только транспортируем отходы на чужой полигон (на другое предприятие)" type="radio" id="quiz-s6-4">
                                  <label class="questions__label" for="quiz-s6-4">Не потребуется, только транспортируем отходы на чужой полигон (на другое предприятие)</label>
                               </div>
                            </div>
@@ -636,25 +637,25 @@
                         Смотрите подробнее о том, 
                         что входит в каждый вид деятельности и какой вариант лицензии выгоднее получить
                      </p>
-                     <div class="advice__video">
+                     <a href="#consult" class="advice__video popup-with-form">
                         <img src="img/video.jpg" alt="">
                         <img class="advice__play-btn" src="img/play-btn.png" alt="">
                         <svg class="icon icon-line-4 advice__icon_line-4">
                            <use xlink:href="svg/sprite-original.svg#line-4"></use>
                         </svg>
-                     </div>
+                     </a>
                   </div>
                   <div class="advice__item advice__item_3 hide">
                      <p class="advice__tip">
                         Узнайте, к каким классам относятся разные виды отходов и в каких случаях выгоднее расширить лицензию
                      </p>
-                     <div class="advice__video">
+                     <a href="#consult" class="advice__video popup-with-form">
                         <img src="img/video.jpg" alt="">
                         <img class="advice__play-btn" src="img/play-btn.png" alt="">
                         <svg class="icon icon-line-4 advice__icon_line-4">
                            <use xlink:href="svg/sprite-original.svg#line-4"></use>
                         </svg>
-                     </div>
+                     </a>
                      <div class="advice__gray-block">
                         <p class="advice__text bold">
                            Не знаете, с каким отходами придется работать?
@@ -663,7 +664,7 @@
                            Давайте я вас бесплатно проконсультирую — 
                            за 15 лет лицензирования мы изучили все нюансы.
                         </p>
-                        <a href="#" class="orange-link advice__link">Проконсультироваться</a>
+                        <a href="#consult" class="orange-link advice__link popup-with-form">Проконсультироваться</a>
                         <div class="advice__expert">
                            <div class="advice__img-block">
                               <img src="img/expert_icon.jpg" alt="" class="advice__img">
@@ -680,26 +681,26 @@
                         Узнайте, какой транспорт и в каких случаях вам понадобится 
                         для транспортирования отходов
                      </p>
-                     <div class="advice__video">
+                     <a href="#consult" class="advice__video popup-with-form">
                         <img src="img/video.jpg" alt="">
                         <img class="advice__play-btn" src="img/play-btn.png" alt="">
                         <svg class="icon icon-line-4 advice__icon_line-4">
                            <use xlink:href="svg/sprite-original.svg#line-4"></use>
                         </svg>
-                     </div>
+                     </a>
                   </div>
                   <div class="advice__item advice__item_5 hide">
                      <p class="advice__tip">
                         Узнайте, какое оборудование и в каких случаях вам понадобится 
                         для работы с отходами
                      </p>
-                     <div class="advice__video">
+                     <a href="#consult" class="advice__video popup-with-form">
                         <img src="img/video.jpg" alt="">
                         <img class="advice__play-btn" src="img/play-btn.png" alt="">
                         <svg class="icon icon-line-4 advice__icon_line-4">
                            <use xlink:href="svg/sprite-original.svg#line-4"></use>
                         </svg>
-                     </div>
+                     </a>
                   </div>
                   <div class="advice__item advice__item_6 hide">
                      <div class="advice__gray-block">
@@ -712,7 +713,7 @@
                         <p class="advice__text">
                            Давайте я вас бесплатно проконсультирую — за 15 лет мы изучили все нюансы лицензирования.
                         </p>
-                        <a href="#" class="orange-link advice__link">Проконсультироваться</a>
+                        <a href="#consult" class="orange-link advice__link popup-with-form">Проконсультироваться</a>
                         <div class="advice__expert">
                            <div class="advice__img-block">
                               <img src="img/expert_icon.jpg" alt="" class="advice__img">
@@ -820,10 +821,10 @@
                <p class="video__text">
                   видео-ликбез по экологической отчетности и ведению деятельности
                </p>
-               <div class="video__wrapper">
+               <a href="" class="video__wrapper">
                   <img src="img/video.jpg" alt="">
                   <img src="img/play-btn.png" alt="" class="video__play" data-play="video-1">
-               </div>
+               </a>
                <svg class="icon icon-line-4 video__icon_line-4">
                   <use xlink:href="svg/sprite-original.svg#line-4"></use>
                </svg>
@@ -854,7 +855,7 @@
                </ul>
              </div>
          </div>
-         <button class="btn maintenance__btn">Рассчитать стоимость лицензии <span class="nowrap">за 2 минуты</span></button>
+         <button href="#quiz-block" class="btn maintenance__btn popup-with-form">Рассчитать стоимость лицензии <span class="nowrap">за 2 минуты</span></button>
       </div>
    </div>
 
@@ -908,13 +909,398 @@
             
             <div class="bottomline__contacts">
                <a href="tel:+79268740900" class="bottomline__phone">+7(926) 874-09-00</a>
-               <a href="#" class="orange-link">Заказать звонок</a>
+               <a href="#consult" class="orange-link popup-with-form">Заказать звонок</a>
             </div>
          </div>
       </div>
    </div>
 
    <div class="popups">
+      <!-- <div id="quiz-block-popup" class="quiz__content popup">
+         <h2 class="quiz__title">
+            <div class="p-close"></div>
+            <span class="bold">Рассчитайте стоимость</span> вашей
+            лицензии на отходы за 2 минуты
+         </h2>
+         <p class="quiz__subtitle">
+            Ответьте на 6 простых вопросов и получите по итогам теста:
+         </p>
+
+         <div class="quiz__receive receive">
+            <ul class="receive__list">
+               <li class="receive__item receive__item_1">
+                  <img src="img/calc.png" alt="" class="receive__img">
+                  <p class="receive__name">
+                     <span class="span bold">Расчет стоимости </span>
+                     лицензии на отходы
+                  </p>
+               </li>
+               <li class="receive__item receive__item_2">
+                  <img src="img/stamp.png" alt="" class="receive__img">
+                  <p class="receive__name">
+                     <span class="span bold">Действительно
+                        полный список
+                        документов </span>
+                        для
+                        получения лицензии
+                  </p>
+               </li>
+               <li class="receive__item receive__item_3">
+                  <img src="img/plan.png" alt="" class="receive__img">
+                  <p class="receive__name">
+                     <span class="span bold">Пошаговый план
+                        действий </span>
+                        по
+                        получению лицензии
+                  </p>
+               </li>
+            </ul>
+            <div class="receive__bonus">
+               <svg class="icon icon-gift receive__icon_gift">
+                  <use xlink:href="svg/sprite.svg#gift"></use>
+               </svg>
+               <p class="receive__text bold">
+                  + бонус при заключении договора:
+               </p>
+               <p class="receive__text">
+                  <span class="bold purple">обучение 5 ваших сотрудников</span>
+                  обращению с отходами 
+                  <span class="bold purple">бесплатно!</span>
+               </p>
+            </div>
+         </div>
+
+         <div class="quiz__block quiz__step_1" id="quiz">
+
+            <form id="quiz-form-popup" class="quiz__questions questions" data-route="license-calc">
+               <div class="questions__progress progress">
+                  <div class="progress__full">
+                     <div class="progress__active"></div>
+                  </div>
+                  <span class="progress__text">
+                     <span class="progress__count"></span>
+                        вопрос из <span class="progress__total"></span>
+                  </span>
+               </div>
+               <ul class="questions__list">
+                  <li class="questions__item questions__item_1">
+                     <p class="questions__title">
+                        Какая помощь в получении лицензии нужна?
+                     </p>
+                     <div class="questions__answers">
+                        <div class="questions__input">
+                           <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Только подготовить пакет документов" checked type="radio" id="quiz-s1-1">
+                           <label class="questions__label" for="quiz-s1-1">Только подготовить пакет документов</label>
+                        </div>
+                        <div class="questions__input">
+                           <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Лицензия «под ключ», в том числе помощь при прохождении лицензионных проверок Роспотребнадзора и Росприроднадзора" type="radio" id="quiz-s1-2">
+                           <label class="questions__label" for="quiz-s1-2">Лицензия «под ключ», в том числе помощь при прохождении лицензионных проверок Роспотребнадзора и Росприроднадзора</label>
+                        </div>
+                        <div class="questions__input">
+                           <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Еще не решили" type="radio" id="quiz-s1-3">
+                           <label class="questions__label" for="quiz-s1-3">Еще не решили</label>
+                        </div>
+                     </div>
+                  </li> 
+                  <li class="questions__item questions__item_2 hide">
+                     <p class="questions__title">
+                        На какие виды работ нужна лицензия?
+                     </p>
+                     <span class="questions__subtitle">
+                        Вы можете выбрать один или несколько вариантов
+                     </span>
+                     <div class="questions__answers">
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Сбор отходов" checked type="checkbox" id="quiz-s2-1">
+                              <label class="questions__label" for="quiz-s2-1">Сбор отходов</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Транспортирование отходов" type="checkbox" id="quiz-s2-2">
+                              <label class="questions__label" for="quiz-s2-2">Транспортирование отходов</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Обработка отходов" type="checkbox" id="quiz-s2-3">
+                              <label class="questions__label" for="quiz-s2-3">Обработка отходов</label>
+                           </div>
+                        </div>
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Утилизация отходов" type="checkbox" id="quiz-s2-4">
+                              <label class="questions__label" for="quiz-s2-4">Утилизация отходов</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Обезвреживание отходов" type="checkbox" id="quiz-s2-5">
+                              <label class="questions__label" for="quiz-s2-5">Обезвреживание отходов</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Размещение отходов" type="checkbox" id="quiz-s2-6">
+                              <label class="questions__label" for="quiz-s2-6">Размещение отходов</label>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  
+                  <li class="questions__item questions__item_3 hide">
+                     <p class="questions__title">
+                        С какими видами отходов планируете работать?
+                     </p>
+                     <span class="questions__subtitle">
+                        Вы можете выбрать один или несколько вариантов
+                     </span>
+                     <div class="questions__answers">
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Бытовые отходы, ТБО" checked type="checkbox" id="quiz-s3-1">
+                              <label class="questions__label" for="quiz-s3-1">Бытовые отходы, ТБО</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Строительный мусор" type="checkbox" id="quiz-s3-2">
+                              <label class="questions__label" for="quiz-s3-2">Строительный мусор</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Пластик" type="checkbox" id="quiz-s3-3">
+                              <label class="questions__label" for="quiz-s3-3">Пластик</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Бумага" type="checkbox" id="quiz-s3-4">
+                              <label class="questions__label" for="quiz-s3-4">Бумага</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Медицинские отходы" type="checkbox" id="quiz-s3-5">
+                              <label class="questions__label" for="quiz-s3-5">Медицинские отходы</label>
+                           </div>
+                        </div>
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Асфальтная крошка" type="checkbox" id="quiz-s3-6">
+                              <label class="questions__label" for="quiz-s3-6">Асфальтная крошка</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Отходы деревообработки" type="checkbox" id="quiz-s3-7">
+                              <label class="questions__label" for="quiz-s3-7">Отходы деревообработки</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Пищевые отходы, просроченные продукты" type="checkbox" id="quiz-s3-8">
+                              <label class="questions__label" for="quiz-s3-8">Пищевые отходы, просроченные продукты</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Ртутные лампы, другие отходы с ртутью" type="checkbox" id="quiz-s3-9">
+                              <label class="questions__label" for="quiz-s3-9">Ртутные лампы, другие отходы с ртутью</label>
+                           </div>
+                        </div>
+                        <div class="questions__input questions__input_text">
+                           <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-10" value="Другое">
+                           <label class="questions__label" for="quiz-s3-10"></label>
+                           <input class="questions__text-input" name="С какими видами отходов планируете работать?" type="text" placeholder="Другое: перечислите">
+                        </div>
+                     </div>
+                  </li>
+                  
+                  <li class="questions__item questions__item_4 hide">
+                     <p class="questions__title">
+                        Есть специализированный транспорт для перевозки отходов?
+                     </p>
+                     <div class="questions__answers">
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Да, в собственности" checked type="radio" id="quiz-s4-1">
+                              <label class="questions__label" for="quiz-s4-1">Да, в собственности</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Да, арендуем" type="radio" id="quiz-s4-2">
+                              <label class="questions__label" for="quiz-s4-2">Да, арендуем</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Нет транспорта" type="radio" id="quiz-s4-3">
+                              <label class="questions__label" for="quiz-s4-3">Нет транспорта</label>
+                           </div>
+                        </div>
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Транспорт не понадобится, сами ничего не транспортируем" type="radio" id="quiz-s4-4">
+                              <label class="questions__label" for="quiz-s4-4">Транспорт не понадобится, сами ничего не транспортируем</label>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  
+                  <li class="questions__item questions__item_5 hide">
+                     <p class="questions__title">
+                        Есть оборудование для работы с отходами?
+                     </p>
+                     <div class="questions__answers">
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Да, в собственности" checked type="radio" id="quiz-s5-1">
+                              <label class="questions__label" for="quiz-s5-1">Да, в собственности</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Да, арендуем" type="radio" id="quiz-s5-2">
+                              <label class="questions__label" for="quiz-s5-2">Да, арендуем</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Нет оборудования" type="radio" id="quiz-s5-3">
+                              <label class="questions__label" for="quiz-s5-3">Нет оборудования</label>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="questions__item questions__item_6 hide">
+                     <p class="questions__title">
+                        Есть территория/помещение для работы с отходами?
+                     </p>
+                     <div class="questions__answers">
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Да, в собственности" checked type="radio" id="quiz-s6-1">
+                              <label class="questions__label" for="quiz-s6-1">Да, в собственности</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Да, арендуем" type="radio" id="quiz-s6-2">
+                              <label class="questions__label" for="quiz-s6-2">Да, арендуем</label>
+                           </div>
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Нет территории/помещения" type="radio" id="quiz-s6-3">
+                              <label class="questions__label" for="quiz-s6-3">Нет территории/помещения</label>
+                           </div>
+                        </div>
+                        <div class="questions__answers-block">
+                           <div class="questions__input">
+                              <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Не потребуется, только транспортируем отходы на чужой полигон (на другое предприятие)" type="radio" id="quiz-s6-4">
+                              <label class="questions__label" for="quiz-s6-4">Не потребуется, только транспортируем отходы на чужой полигон (на другое предприятие)</label>
+                           </div>
+                        </div>
+                     </div>
+                  </li>
+
+               </ul>
+               <div class="questions__controls">
+                  <button type="button" class="btn questions__btn questions__btn_prev hide">Назад</button>
+                  <button type="button" class="btn questions__btn questions__btn_next">Далее</button>
+               </div>
+            </form>
+
+            <div class="quiz__advice advice">
+               <div class="advice__item advice__item_1 hide">
+                  <div class="advice__gray-block">
+                     <p class="advice__text">
+                        Учтите, что получить лицензию даже с полным пакетом документов сложно — еще предстоит пройти 2 проверки на месте вашей деятельности.
+                     </p>
+                     <p class="advice__text">
+                        И сделать это нужно с первого раза: после неудачной проверки и отказа Роспотребнадзора <span class="bold">повторно обращаться бесполезно:</span> замучают отписками, но положительного заключения все равно не дадут.
+                     </p>
+                     <p class="advice__text">
+                        <span class="bold">Наши клиенты проходят проверки и получают лицензии в 100% случаев</span> — за 15 лет не было ни одного отказа.
+                     </p>
+                     <div class="advice__expert">
+                        <div class="advice__img-block">
+                           <img src="img/expert_icon.jpg" alt="" class="advice__img">
+                        </div>
+                        <p class="advice__sign">
+                           <span class="bold">Алсу Османова, юрист,</span><br>
+                              эксперт по лицензированию
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="advice__item advice__item_2 hide">
+                  <p class="advice__tip">
+                     Смотрите подробнее о том, 
+                     что входит в каждый вид деятельности и какой вариант лицензии выгоднее получить
+                  </p>
+                  <a href="#consult" class="advice__video popup-with-form">
+                     <img src="img/video.jpg" alt="">
+                     <img class="advice__play-btn" src="img/play-btn.png" alt="">
+                     <svg class="icon icon-line-4 advice__icon_line-4">
+                        <use xlink:href="svg/sprite-original.svg#line-4"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="advice__item advice__item_3 hide">
+                  <p class="advice__tip">
+                     Узнайте, к каким классам относятся разные виды отходов и в каких случаях выгоднее расширить лицензию
+                  </p>
+                  <a href="#consult" class="advice__video popup-with-form">
+                     <img src="img/video.jpg" alt="">
+                     <img class="advice__play-btn" src="img/play-btn.png" alt="">
+                     <svg class="icon icon-line-4 advice__icon_line-4">
+                        <use xlink:href="svg/sprite-original.svg#line-4"></use>
+                     </svg>
+                  </a>
+                  <div class="advice__gray-block">
+                     <p class="advice__text bold">
+                        Не знаете, с каким отходами придется работать?
+                     </p>
+                     <p class="advice__text">
+                        Давайте я вас бесплатно проконсультирую — 
+                        за 15 лет лицензирования мы изучили все нюансы.
+                     </p>
+                     <a href="#" class="orange-link advice__link">Проконсультироваться</a>
+                     <div class="advice__expert">
+                        <div class="advice__img-block">
+                           <img src="img/expert_icon.jpg" alt="" class="advice__img">
+                        </div>
+                        <p class="advice__sign">
+                           <span class="bold">Алсу Османова, юрист,</span><br>
+                              эксперт по лицензированию
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="advice__item advice__item_4 hide">
+                  <p class="advice__tip">
+                     Узнайте, какой транспорт и в каких случаях вам понадобится 
+                     для транспортирования отходов
+                  </p>
+                  <a href="#consult" class="advice__video popup-with-form">
+                     <img src="img/video.jpg" alt="">
+                     <img class="advice__play-btn" src="img/play-btn.png" alt="">
+                     <svg class="icon icon-line-4 advice__icon_line-4">
+                        <use xlink:href="svg/sprite-original.svg#line-4"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="advice__item advice__item_5 hide">
+                  <p class="advice__tip">
+                     Узнайте, какое оборудование и в каких случаях вам понадобится 
+                     для работы с отходами
+                  </p>
+                  <a href="#consult" class="advice__video popup-with-form">
+                     <img src="img/video.jpg" alt="">
+                     <img class="advice__play-btn" src="img/play-btn.png" alt="">
+                     <svg class="icon icon-line-4 advice__icon_line-4">
+                        <use xlink:href="svg/sprite-original.svg#line-4"></use>
+                     </svg>
+                  </a>
+               </div>
+               <div class="advice__item advice__item_6 hide">
+                  <div class="advice__gray-block">
+                     <p class="advice__text">
+                        <span class="bold">Важно!</span> Даже если вы только транспортируете отходы, у вас должна быть оборудованная территория для размещения специализированного автопарка.
+                     </p>
+                     <p class="advice__text bold">
+                        Есть вопросы по территории или помещению для работы с отходами?
+                     </p>
+                     <p class="advice__text">
+                        Давайте я вас бесплатно проконсультирую — за 15 лет мы изучили все нюансы лицензирования.
+                     </p>
+                     <a href="#" class="orange-link advice__link">Проконсультироваться</a>
+                     <div class="advice__expert">
+                        <div class="advice__img-block">
+                           <img src="img/expert_icon.jpg" alt="" class="advice__img">
+                        </div>
+                        <p class="advice__sign">
+                           <span class="bold">Алсу Османова, юрист,</span><br>
+                              эксперт по лицензированию
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div> -->
       <div id="after-quiz" class="popup after-quiz">
          <div class="p-close"></div>
          <div class="after-quiz__content">
@@ -927,58 +1313,58 @@
             
          </div>
          <img class="after-quiz__image" src="img/phone.png" alt="">
-         <form class="after-quiz__form" data-route="license-calc">
-            <p class="after-quiz__title-form">
+         <form id="quiz-form-final" class="popup__form after-quiz__form" data-route="license-calc">
+            <p class="popup__title-form">
                Как удобнее получить расчёт?
             </p>
-            <div class="after-quiz__provider">
-               <div class="after-quiz__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" checked id="after-quiz-whatsapp">
-                  <label for="after-quiz-whatsapp" class="after-quiz__radio">
-                     <svg class="icon icon-whatsapp after-quiz__icon after-quiz__icon_whatsapp">
+            <div class="popup__provider">
+               <div class="popup__input">
+                  <input type="radio" name="Как удобнее получить расчёт?" checked id="after-quiz-whatsapp" value="Whatsapp">
+                  <label for="after-quiz-whatsapp" class="popup__radio">
+                     <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#whatsapp"></use>
                      </svg>
                      <span>whats app</span>
                   </label>
                </div>
-               <div class="after-quiz__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" checked id="after-quiz-viber">
-                  <label for="after-quiz-viber" class="after-quiz__radio">
-                     <svg class="icon icon-whatsapp after-quiz__icon after-quiz__icon_whatsapp">
-                        <use xlink:href="svg/sprite.svg#whatsapp"></use>
+               <div class="popup__input">
+                  <input type="radio" name="Как удобнее получить расчёт?" id="after-quiz-viber" value="viber">
+                  <label for="after-quiz-viber" class="popup__radio">
+                     <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
+                        <use xlink:href="svg/sprite.svg#viber"></use>
                      </svg>
                      viber
                   </label>
                </div>
-               <div class="after-quiz__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" checked id="after-quiz-telegram">
-                  <label for="after-quiz-telegram" class="after-quiz__radio">
-                     <svg class="icon icon-whatsapp after-quiz__icon after-quiz__icon_whatsapp">
-                        <use xlink:href="svg/sprite.svg#whatsapp"></use>
+               <div class="popup__input">
+                  <input type="radio" name="Как удобнее получить расчёт?" id="after-quiz-telegram" value="telegram">
+                  <label for="after-quiz-telegram" class="popup__radio">
+                     <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
+                        <use xlink:href="svg/sprite.svg#telegram"></use>
                      </svg>
                      telegram
                   </label>
                </div>
-               <div class="after-quiz__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" checked id="after-quiz-phone">
-                  <label for="after-quiz-phone" class="after-quiz__radio">
-                     <svg class="icon icon-whatsapp after-quiz__icon after-quiz__icon_whatsapp">
-                        <use xlink:href="svg/sprite.svg#whatsapp"></use>
+               <div class="popup__input">
+                  <input type="radio" name="Как удобнее получить расчёт?" id="after-quiz-phone" value="phone">
+                  <label for="after-quiz-phone" class="popup__radio">
+                     <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
+                        <use xlink:href="svg/sprite.svg#phone"></use>
                      </svg>
                      телефон
                   </label>
                </div>
             </div>
 
-            <div class="after-quiz__contacts">
-               <label for="after-quiz-number" class="after-quiz__number">
+            <div class="popup__contacts">
+               <label for="after-quiz-number" class="popup__number">
                   Введите номер в <span class="provider-text">Whats app</span>
                </label>
-               <input type="text" class="popup__input-text after-quiz__input-text phone" placeholder="Введите номер">
+               <input type="text" class="popup__input-text after-quiz__input-text phone" placeholder="Введите номер" name="Номер телефона">
                <input type="submit" class="btn popup__btn after-quiz__btn" value="Получить расчёт">
             </div>
-            <p class="after-quiz__privacy">
-               Нажимая на кнопку, вы даете согласие на обработку своих <a href="#" class="orange-link">персональных данных</a>
+            <p class="popup__privacy">
+               Нажимая на кнопку, вы даете согласие на обработку своих <a href="#policy" class="orange-link popup-with-form">персональных данных</a>
             </p>
          </form>
       </div>
@@ -1023,6 +1409,245 @@
                </div>
                <img src="img/license-calc.jpg" alt="" class="license-calc__img">
             </div>
+         </div>
+      </div>
+      <div id="take-bonus" class="popup take-bonus">
+         <div class="p-close"></div>
+         <div class="take-bonus__content">
+            <h2 class="take-bonus__title bold">
+               Заберите бонус!
+            </h2>
+            <p class="popup__subtitle take-bonus__subtitle">
+               Пока ждете расчет стоимости лицензии, вы можете скачать важные материалы:
+            </p>
+            <ul class="take-bonus__list">
+               <li class="take-bonus__item">
+                  1. <span class="bold">Полный список документов</span> для получения лицензии (его нет в законах и инструкциях!)
+               </li>
+               <li class="take-bonus__item">
+                  2. <span class="bold">Пошаговый план действий</span> по получению лицензии
+               </li>
+            </ul>
+            <form id="take-bonus-form" class="popup__form" data-route="quiz-ty">
+               <p class="popup__title-form">
+                  Скачайте материалы
+               </p>
+   
+               <div class="popup__contacts take-bonus__contacts">
+                  <label for="take-bonus-number" class="popup__number">
+                     Ваше имя
+                  </label>
+                  <input type="text" class="popup__input-text take-bonus__input-text name" placeholder="Введите имя" name="Имя">
+                  <label for="take-bonus-number" class="popup__number">
+                     Email
+                  </label>
+                  <input type="text" class="popup__input-text take-bonus__input-text email" placeholder="Введите email" name="Email">
+                  <input type="submit" class="btn popup__btn take-bonus__btn" value="Скачать материалы">
+               </div>
+               <p class="popup__privacy">
+                  Нажимая на кнопку, вы даете согласие на обработку своих <a href="#policy" class="orange-link popup-with-form">персональных данных</a>
+               </p>
+            </form>
+         </div>
+      </div>
+      <div id="quiz-ty" class="popup quiz-ty">
+         <div class="p-close"></div>
+         <div class="popup__content quiz-ty_content">
+            <span class="orange-link quiz-ty__back close-popup">Вернуться на сайт</span>
+            <h2 class="popup__title quiz-ty__title bold">
+               Спасибо,<span class="quiz-ty__client"></span> мы уже отправили полный список документов на указанную почту
+            </h2>
+            <p class="quiz-ty__small-text">
+               Если письма нет во входящих, проверьте папку «Промоакции» или «Спам»: письмо могло попасть туда по ошибке.
+            </p>
+            <p class="popup__subtitle quiz-ty__subtitle">
+               Если у вас есть вопросы по оформлению лицензии на работу с отходами, 
+вы можете задать их в будни с 10 до 18 ч по телефону <span class="bold"><span class="nowrap">+7 (926) 874-09-00 </span>
+   или в любое время в мессенджерах</span>
+            </p>
+            <div class="quiz-ty__contacts">
+               <div class="quiz-ty__provider quiz-ty__provider_viber">
+                  <svg class="icon icon-whatsapp popup__icon quiz-ty__icon quiz-ty__icon_viber">
+                     <use xlink:href="svg/sprite.svg#viber"></use>
+                  </svg>
+                  <span>Viber</span>
+               </div>
+               <div class="quiz-ty__provider quiz-ty__provider_whatsapp">
+                  <svg class="icon icon-whatsapp popup__icon quiz-ty__icon quiz-ty__icon_whatsapp">
+                     <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                  </svg>
+                  <span>Whatsapp</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="exit" class="popup exit">
+         <div class="p-close"></div>
+         <div class="popup__content exit__content">
+            <h2 class="exit__title bold">
+               <span class="bold">Получите бесплатно полный
+                  список документов</span> для оформления
+               лицензии на отходы
+            </h2>
+            <p class="popup__text exit__text">
+               В законе и инструкциях указаны <span class="bold">не все документы</span>, которые требуют Роспотребнадзор и Росприроднадзор. Неполный пакет документов автоматически приводит к отказу в рассмотрении
+            </p>
+            <img src="img/phone.png" alt="" class="exit__img-big">
+            <form id="form-exit" class="popup__form exit__form" data-route="quiz-ty">
+               <p class="popup__title-form exit__title-form">
+                  Как удобнее получить материалы?
+               </p>
+               <div class="popup__provider">
+                  <div class="popup__input">
+                     <input type="radio" name="Как удобнее получить материалы?" checked id="exit-whatsapp" value="Whatsapp">
+                     <label for="exit-whatsapp" class="popup__radio">
+                        <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
+                           <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                        </svg>
+                        <span>whats app</span>
+                     </label>
+                  </div>
+                  <div class="popup__input">
+                     <input type="radio" name="Как удобнее получить материалы?" id="exit-viber" value="viber">
+                     <label for="exit-viber" class="popup__radio">
+                        <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
+                           <use xlink:href="svg/sprite.svg#viber"></use>
+                        </svg>
+                        viber
+                     </label>
+                  </div>
+                  <div class="popup__input">
+                     <input type="radio" name="Как удобнее получить материалы?" id="exit-telegram" value="telegram">
+                     <label for="exit-telegram" class="popup__radio">
+                        <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
+                           <use xlink:href="svg/sprite.svg#telegram"></use>
+                        </svg>
+                        telegram
+                     </label>
+                  </div>
+                  <div class="popup__input">
+                     <input type="radio" name="Как удобнее получить материалы?" id="exit-phone" value="phone">
+                     <label for="exit-phone" class="popup__radio">
+                        <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
+                           <use xlink:href="svg/sprite.svg#phone"></use>
+                        </svg>
+                        телефон
+                     </label>
+                  </div>
+               </div>
+   
+               <div class="popup__contacts exit__contacts">
+                  <label for="exit-number" class="popup__number">
+                     Введите номер
+                  </label>
+                  <input type="text" class="popup__input-text exit__input-text phone" placeholder="Введите номер" name="Телефон">
+                  <input type="submit" class="btn popup__btn exit__btn" value="Получить материалы">
+               </div>
+               <p class="popup__privacy">
+                  Нажимая на кнопку, вы даете согласие на обработку своих <a href="#policy" class="orange-link popup-with-form">персональных данных</a>
+               </p>
+            </form>
+         </div>
+      </div>
+      <div id="check" class="popup check">
+         <div class="p-close"></div>
+         <div class="popup__content check__content">
+            <div class="check__description">
+               <h2 class="check__title bold">Получить лицензию на отходы
+                  сложно, а сделать это надо
+                  с первого раза
+               </h2>
+               <p class="popup__text check__text">
+                  К нам периодически приходят клиенты, которые <span class="bold">пытались получить лицензию самостоятельно</span> или с помощью менее опытных компаний. Не получили.
+               </p>
+               <p class="popup__text check__text">
+                  Самое печальное, что в этом случае мы практически не можем помочь — после неудачной проверки и отказа Роспотребнадзора <span class="bold">повторно обращаться бесполезно:</span> замучают отписками, но положительного заключения не дадут. 
+               </p>
+               <p class="popup__text check__text">
+                  Единственный выход — поменять место проведения деятельности. 
+               </p>
+            </div>
+            <div class="check__expert">
+               <div class="check__img">
+                  <img src="img/avatar-big.png" alt="">
+               </div>
+               <p class="check__small-text">
+                  <span class="bold">Алсу Османова, юрист,</span><br>
+                  эксперт по лицензированию
+               </p>
+            </div>
+         </div>
+         <div class="check__consult consult-block">
+            <div class="consult-block__description">
+               <p class="consult-block__title">Хотите гарантированно получить лицензию?</p>
+               <p class="consult-block__subtitle">Давайте начнем с бесплатной консультации</p>
+            </div>
+            <button class="btn consult-block__btn popup-with-form" href="#consult">Проконсультироваться</button>
+         </div>
+      </div>
+      <div id="consult" class="consult popup">
+         <div class="p-close"></div>
+         <form id="form-consult" class="popup__form">
+            <h2 class="popup__title-form">Получите бесплатную консультацию </h2>
+            <p class="popup__subtitle-form">от эксперта с 15-летним опытом 
+               в лицензировании работы с отходами
+            </p>
+            <div class="popup__contacts consult__contacts">
+               <label for="consult-number" class="popup__number">
+                  Ваше имя
+               </label>
+               <input type="text" class="popup__input-text consult__input-text name inp-validate" placeholder="Введите имя" name="Имя">
+               <label for="consult-number" class="popup__number">
+                  Ваш телефон
+               </label>
+               <div class="form__line inp-validate inp-error">
+                  <input type="tel" class="popup__input-text consult__input-text phone" placeholder="Введите телефон" name="Телефон">
+                  <input type="submit" class="btn popup__btn consult__btn" value="Получить консультацию">
+               </div>
+            </div>
+            <p class="popup__privacy">
+               Нажимая на кнопку, вы даете согласие на обработку своих <a href="#policy" class="orange-link popup-with-form">персональных данных</a>
+            </p>   
+         </form>
+      </div>
+      <div id="consult-ty" class="popup consult-ty">
+         <div class="p-close"></div>
+         <div class="consult-ty__content">
+            <div class="consult-ty__description">
+               <h2 class="popup__title consult-ty__title bold">
+                  <span class="client-name"></span>, спасибо за заявку!
+               </h2>
+               <p class="popup__subtitle consult-ty__subtitle">
+                  Я свяжусь с вами в течение 15 минут 
+                  в рабочее время и подробно проконсультирую.
+               </p>
+               <p class="popup__subtitle consult-ty__subtitle">
+                  Мы работаем пн-пт с 10 до 18 ч.
+               </p>
+               <p class="popup__subtitle consult-ty__subtitle">
+                  Если вы оставили заявку вечером или в выходные, я позвоню вам в ближайший рабочий день.
+               </p>  
+               <span class="orange-link close-popup consult-ty__link">Вернуться к тесту,</span>
+               <p class="consult-ty__text">
+                  чтобы получить расчет стоимости лицензии и ценные материалы
+               </p>
+            </div>
+            <div class="consult-ty__expert">
+               <div class="consult-ty__img">
+                  <img src="img/avatar-big.png" alt="">
+               </div>
+               <p class="consult-ty__small-text">
+                  <span class="bold">Алсу Османова, юрист,</span><br>
+                  эксперт по лицензированию
+               </p>
+            </div>
+            
+         </div>
+      </div>
+      <div id="policy" class="popup policy">
+         <div class="p-close"></div>
+         <div class="policy__content">
+            Здесь будет политика о персональных данных
          </div>
       </div>
    </div>
