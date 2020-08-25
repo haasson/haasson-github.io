@@ -13,7 +13,7 @@
    <!-- iOS Safari -->
    <meta name="apple-mobile-web-app-status-bar-style" content="#2a166c">
    <link rel="stylesheet" href="./css/style.css">
-   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0ba7b3a8-0421-492e-905e-5de49186d28e"></script>
+   <script class="y-map" data-src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0ba7b3a8-0421-492e-905e-5de49186d28e"></script>
 
 
 </head>
@@ -135,7 +135,7 @@
             <div class="swiper-wrapper slider__wrapper popup-gallery">
                <div class="swiper-slide slider__item">
                   <a class="license__image" href="img/license-1.jpg">
-                     <img class="license__img" alt="sertificate" src="img/license-1.jpg">
+                     <img class="license__img" alt="sertificate" data-src="img/license-1.jpg">
                   </a>
                   <div class="license__info">
                      <svg class="icon icon-agreement license__icon_agreement">
@@ -147,7 +147,7 @@
 
                <div class="swiper-slide slider__item">
                   <a class="license__image" href="img/license-2.jpeg">
-                     <img class="license__img" alt="sertificate" src="img/license-2.jpeg">
+                     <img class="license__img" alt="sertificate" data-src="img/license-2.jpeg">
                   </a>
                   <div class="license__info">
                      <svg class="icon icon-agreement license__icon_agreement">
@@ -159,7 +159,7 @@
                
                <div class="swiper-slide slider__item">
                   <a class="license__image" href="img/license-4.jpg">
-                     <img class="license__img" alt="sertificate" src="img/license-4.jpg">
+                     <img class="license__img" alt="sertificate" data-src="img/license-4.jpg">
                   </a>
                   <div class="license__info">
                      <svg class="icon icon-agreement license__icon_agreement">
@@ -171,7 +171,7 @@
 
                <div class="swiper-slide slider__item">
                   <a class="license__image" href="img/license-3.jpg">
-                     <img class="license__img" alt="sertificate" src="img/license-3.jpg">
+                     <img class="license__img" alt="sertificate" data-src="img/license-3.jpg">
                   </a>
                   <div class="license__info">
                   </div>
@@ -309,7 +309,7 @@
    
    <div class="quiz">
       <div class="wrapper">
-         <div id="quiz-block" class="quiz__content">
+         <div id="quiz-block" class="quiz__content popup">
             <div class="p-close"></div>
             <h2 class="quiz__title">
                <span class="bold">Рассчитайте стоимость</span> вашей
@@ -603,7 +603,7 @@
                         что входит в каждый вид деятельности и какой вариант лицензии выгоднее получить
                      </p>
                      <div class="advice__video">
-                        <video src="video/video-1.mp4" poster="img/video.jpg"
+                        <video data-src="video/video-1.mp4" poster="img/video.jpg"
                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                            ></video>
                         <div class="advice__play-btn">
@@ -619,7 +619,7 @@
                         Узнайте, к каким классам относятся разные виды отходов и в каких случаях выгоднее расширить лицензию
                      </p>
                      <div class="advice__video">
-                        <video src="video/video-2.mp4" poster="img/video.jpg"
+                        <video data-src="video/video-2.mp4" poster="img/video.jpg"
                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                            ></video>
                         <div class="advice__play-btn">
@@ -655,7 +655,7 @@
                         для транспортирования отходов
                      </p>
                      <div class="advice__video">
-                        <video src="video/video-3.mp4" poster="img/video.jpg"
+                        <video data-src="video/video-3.mp4" poster="img/video.jpg"
                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                            ></video>
                         <div class="advice__play-btn">
@@ -672,7 +672,7 @@
                         для работы с отходами
                      </p>
                      <div class="advice__video">
-                        <video src="video/video-4.mp4" poster="img/video.jpg"
+                        <video data-src="video/video-4.mp4" poster="img/video.jpg"
                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
                            ></video>
                         <div class="advice__play-btn">
@@ -886,7 +886,6 @@
             <div class="bottomline__copyright">
                <span> Copyright © <span class="bottomline__year">2020</span> Все права защищены</span>
             </div>
-            
             
             <div class="bottomline__contacts">
                <a href="tel:+79268740900" class="bottomline__phone">+7(926) 874-09-00</a>
