@@ -12,6 +12,7 @@
    <meta name="msapplication-navbutton-color" content="#2a166c">
    <!-- iOS Safari -->
    <meta name="apple-mobile-web-app-status-bar-style" content="#2a166c">
+   <link rel="icon" href="img/favicon.png" type="image/png">
    <link rel="stylesheet" href="./css/style.css">
    <script class="y-map" data-src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0ba7b3a8-0421-492e-905e-5de49186d28e"></script>
 
@@ -382,15 +383,15 @@
                         </p>
                         <div class="questions__answers">
                            <div class="questions__input">
-                              <input class="questions__radio" name="Какая помощь в получении лицензии нужна?" value="Только подготовить пакет документов" checked type="radio" id="quiz-s1-1">
+                              <input class="questions__radio" name="license-help" value="Только подготовить пакет документов" checked type="radio" id="quiz-s1-1">
                               <label class="questions__label" for="quiz-s1-1">Только подготовить пакет документов</label>
                            </div>
                            <div class="questions__input">
-                              <input class="questions__radio" name="Какая помощь в получении лицензии нужна?" value="Лицензия «под ключ», в том числе помощь при прохождении лицензионных проверок Роспотребнадзора и Росприроднадзора" type="radio" id="quiz-s1-2">
+                              <input class="questions__radio" name="license-help" value="Лицензия «под ключ», в том числе помощь при прохождении лицензионных проверок Роспотребнадзора и Росприроднадзора" type="radio" id="quiz-s1-2">
                               <label class="questions__label" for="quiz-s1-2">Лицензия «под ключ», в том числе помощь при прохождении лицензионных проверок Роспотребнадзора и Росприроднадзора</label>
                            </div>
                            <div class="questions__input">
-                              <input class="questions__radio" name="Какая помощь в получении лицензии нужна?" value="Еще не решили" type="radio" id="quiz-s1-3">
+                              <input class="questions__radio" name="license-help" value="Еще не решили" type="radio" id="quiz-s1-3">
                               <label class="questions__label" for="quiz-s1-3">Еще не решили</label>
                            </div>
                         </div>
@@ -405,29 +406,29 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Сбор отходов" checked type="checkbox" id="quiz-s2-1">
+                                 <input class="questions__radio" name="license-type-1" value="Сбор отходов" checked type="checkbox" id="quiz-s2-1">
                                  <label class="questions__label" for="quiz-s2-1">Сбор отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Транспортирование отходов" type="checkbox" id="quiz-s2-2">
+                                 <input class="questions__radio" name="license-type-2" value="Транспортирование отходов" type="checkbox" id="quiz-s2-2">
                                  <label class="questions__label" for="quiz-s2-2">Транспортирование отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Обработка отходов" type="checkbox" id="quiz-s2-3">
+                                 <input class="questions__radio" name="license-type-3" value="Обработка отходов" type="checkbox" id="quiz-s2-3">
                                  <label class="questions__label" for="quiz-s2-3">Обработка отходов</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Утилизация отходов" type="checkbox" id="quiz-s2-4">
+                                 <input class="questions__radio" name="license-type-4" value="Утилизация отходов" type="checkbox" id="quiz-s2-4">
                                  <label class="questions__label" for="quiz-s2-4">Утилизация отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Обезвреживание отходов" type="checkbox" id="quiz-s2-5">
+                                 <input class="questions__radio" name="license-type-5" value="Обезвреживание отходов" type="checkbox" id="quiz-s2-5">
                                  <label class="questions__label" for="quiz-s2-5">Обезвреживание отходов</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="На какие виды работ нужна лицензия?" value="Размещение отходов" type="checkbox" id="quiz-s2-6">
+                                 <input class="questions__radio" name="license-type-6" value="Размещение отходов" type="checkbox" id="quiz-s2-6">
                                  <label class="questions__label" for="quiz-s2-6">Размещение отходов</label>
                               </div>
                            </div>
@@ -444,48 +445,48 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Бытовые отходы, ТБО" checked type="checkbox" id="quiz-s3-1">
+                                 <input class="questions__radio" name="refuse-type-1" value="Бытовые отходы, ТБО" checked type="checkbox" id="quiz-s3-1">
                                  <label class="questions__label" for="quiz-s3-1">Бытовые отходы, ТБО</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Строительный мусор" type="checkbox" id="quiz-s3-2">
+                                 <input class="questions__radio" name="refuse-type-2" value="Строительный мусор" type="checkbox" id="quiz-s3-2">
                                  <label class="questions__label" for="quiz-s3-2">Строительный мусор</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Пластик" type="checkbox" id="quiz-s3-3">
+                                 <input class="questions__radio" name="refuse-type-3" value="Пластик" type="checkbox" id="quiz-s3-3">
                                  <label class="questions__label" for="quiz-s3-3">Пластик</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Бумага" type="checkbox" id="quiz-s3-4">
+                                 <input class="questions__radio" name="refuse-type-4" value="Бумага" type="checkbox" id="quiz-s3-4">
                                  <label class="questions__label" for="quiz-s3-4">Бумага</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Медицинские отходы" type="checkbox" id="quiz-s3-5">
+                                 <input class="questions__radio" name="refuse-type-5" value="Медицинские отходы" type="checkbox" id="quiz-s3-5">
                                  <label class="questions__label" for="quiz-s3-5">Медицинские отходы</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Асфальтная крошка" type="checkbox" id="quiz-s3-6">
+                                 <input class="questions__radio" name="refuse-type-6" value="Асфальтная крошка" type="checkbox" id="quiz-s3-6">
                                  <label class="questions__label" for="quiz-s3-6">Асфальтная крошка</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Отходы деревообработки" type="checkbox" id="quiz-s3-7">
+                                 <input class="questions__radio" name="refuse-type-7" value="Отходы деревообработки" type="checkbox" id="quiz-s3-7">
                                  <label class="questions__label" for="quiz-s3-7">Отходы деревообработки</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Пищевые отходы, просроченные продукты" type="checkbox" id="quiz-s3-8">
+                                 <input class="questions__radio" name="refuse-type-8" value="Пищевые отходы, просроченные продукты" type="checkbox" id="quiz-s3-8">
                                  <label class="questions__label" for="quiz-s3-8">Пищевые отходы, просроченные продукты</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="С какими видами отходов планируете работать?" value="Ртутные лампы, другие отходы с ртутью" type="checkbox" id="quiz-s3-9">
+                                 <input class="questions__radio" name="refuse-type-9" value="Ртутные лампы, другие отходы с ртутью" type="checkbox" id="quiz-s3-9">
                                  <label class="questions__label" for="quiz-s3-9">Ртутные лампы, другие отходы с ртутью</label>
                               </div>
                            </div>
                            <div class="questions__input questions__input_text">
-                              <input class="questions__radio" name="С какими видами отходов планируете работать?" type="checkbox" id="quiz-s3-10" value="Другое">
+                              <input class="questions__radio" name="refuse-type-10" type="checkbox" id="quiz-s3-10" value="Другое">
                               <label class="questions__label" for="quiz-s3-10"></label>
-                              <input class="questions__text-input" name="С какими видами отходов планируете работать?" type="text" placeholder="Другое: перечислите">
+                              <input class="questions__text-input" name="refuse-type-11" type="text" placeholder="Другое: перечислите">
                            </div>
                         </div>
                      </li>
@@ -497,21 +498,21 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Да, в собственности" checked type="radio" id="quiz-s4-1">
+                                 <input class="questions__radio" name="has-transport" value="Да, в собственности" checked type="radio" id="quiz-s4-1">
                                  <label class="questions__label" for="quiz-s4-1">Да, в собственности</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Да, арендуем" type="radio" id="quiz-s4-2">
+                                 <input class="questions__radio" name="has-transport" value="Да, арендуем" type="radio" id="quiz-s4-2">
                                  <label class="questions__label" for="quiz-s4-2">Да, арендуем</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Нет транспорта" type="radio" id="quiz-s4-3">
+                                 <input class="questions__radio" name="has-transport" value="Нет транспорта" type="radio" id="quiz-s4-3">
                                  <label class="questions__label" for="quiz-s4-3">Нет транспорта</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть специализированный транспорт для перевозки отходов?" value="Транспорт не понадобится, сами ничего не транспортируем" type="radio" id="quiz-s4-4">
+                                 <input class="questions__radio" name="has-transport" value="Транспорт не понадобится, сами ничего не транспортируем" type="radio" id="quiz-s4-4">
                                  <label class="questions__label" for="quiz-s4-4">Транспорт не понадобится, сами ничего не транспортируем</label>
                               </div>
                            </div>
@@ -525,15 +526,15 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Да, в собственности" checked type="radio" id="quiz-s5-1">
+                                 <input class="questions__radio" name="has-equipment" value="Да, в собственности" checked type="radio" id="quiz-s5-1">
                                  <label class="questions__label" for="quiz-s5-1">Да, в собственности</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Да, арендуем" type="radio" id="quiz-s5-2">
+                                 <input class="questions__radio" name="has-equipment" value="Да, арендуем" type="radio" id="quiz-s5-2">
                                  <label class="questions__label" for="quiz-s5-2">Да, арендуем</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть оборудование для работы с отходами?" value="Нет оборудования" type="radio" id="quiz-s5-3">
+                                 <input class="questions__radio" name="has-equipment" value="Нет оборудования" type="radio" id="quiz-s5-3">
                                  <label class="questions__label" for="quiz-s5-3">Нет оборудования</label>
                               </div>
                            </div>
@@ -546,21 +547,21 @@
                         <div class="questions__answers">
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Да, в собственности" checked type="radio" id="quiz-s6-1">
+                                 <input class="questions__radio" name="has-place" value="Да, в собственности" checked type="radio" id="quiz-s6-1">
                                  <label class="questions__label" for="quiz-s6-1">Да, в собственности</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Да, арендуем" type="radio" id="quiz-s6-2">
+                                 <input class="questions__radio" name="has-place" value="Да, арендуем" type="radio" id="quiz-s6-2">
                                  <label class="questions__label" for="quiz-s6-2">Да, арендуем</label>
                               </div>
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Нет территории/помещения" type="radio" id="quiz-s6-3">
+                                 <input class="questions__radio" name="has-place" value="Нет территории/помещения" type="radio" id="quiz-s6-3">
                                  <label class="questions__label" for="quiz-s6-3">Нет территории/помещения</label>
                               </div>
                            </div>
                            <div class="questions__answers-block">
                               <div class="questions__input">
-                                 <input class="questions__radio" name="Есть территория/помещение для работы с отходами?" value="Не потребуется, только транспортируем отходы на чужой полигон (на другое предприятие)" type="radio" id="quiz-s6-4">
+                                 <input class="questions__radio" name="has-place" value="Не потребуется, только транспортируем отходы на чужой полигон (на другое предприятие)" type="radio" id="quiz-s6-4">
                                  <label class="questions__label" for="quiz-s6-4">Не потребуется, только транспортируем отходы на чужой полигон (на другое предприятие)</label>
                               </div>
                            </div>
@@ -884,7 +885,10 @@
             </div>
    
             <div class="bottomline__copyright">
-               <span> Copyright © <span class="bottomline__year">2020</span> Все права защищены</span>
+               <span>Вся представленная на сайте информация носит информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ. <br>
+                  Copyright © <span class="current-year">2020</span>
+                  <a class="bottomline__link orange-link" href="http://lampa.family/" target="_blank">Сделано в LAMPA</a>
+               </span>
             </div>
             
             <div class="bottomline__contacts">
@@ -909,12 +913,13 @@
          </div>
          <img class="after-quiz__image" src="img/phone.png" alt="">
          <form id="quiz-form-final" class="popup__form after-quiz__form" data-route="take-bonus">
+            <input type="hidden" name="reason" value="Запрос стоимости лицензии">
             <p class="popup__title-form">
                Как удобнее получить расчёт?
             </p>
             <div class="popup__provider">
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" checked id="after-quiz-whatsapp" value="Whatsapp">
+                  <input type="radio" name="provider" checked id="after-quiz-whatsapp" value="Whatsapp">
                   <label for="after-quiz-whatsapp" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#whatsapp"></use>
@@ -923,7 +928,7 @@
                   </label>
                </div>
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" id="after-quiz-viber" value="Viber">
+                  <input type="radio" name="provider" id="after-quiz-viber" value="Viber">
                   <label for="after-quiz-viber" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#viber"></use>
@@ -932,7 +937,7 @@
                   </label>
                </div>
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" id="after-quiz-telegram" value="Telegram">
+                  <input type="radio" name="provider" id="after-quiz-telegram" value="Telegram">
                   <label for="after-quiz-telegram" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#telegram"></use>
@@ -941,7 +946,7 @@
                   </label>
                </div>
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" id="after-quiz-phone" value="Phone">
+                  <input type="radio" name="provider" id="after-quiz-phone" value="Phone">
                   <label for="after-quiz-phone" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#phone"></use>
@@ -956,7 +961,7 @@
                   <label for="after-quiz-number" class="popup__number">
                      Введите номер <span class="provider-text">в Wats app</span>
                   </label>
-                  <input type="tel" class="popup__input-text after-quiz__input-text phone" placeholder="Введите номер" name="Номер телефона">
+                  <input type="tel" class="popup__input-text after-quiz__input-text phone" placeholder="Введите номер" name="phone">
                   <span class="error-text">Некорректный номер телефона</span>
                </div>
                <input type="submit" class="btn popup__btn after-quiz__btn" value="Получить расчёт">
@@ -1027,6 +1032,7 @@
                </li>
             </ul>
             <form id="take-bonus-form" class="popup__form" data-route="quiz-ty" novalidate>
+               <input type="hidden" name="reason" value="Запрос доп материалов">
                <p class="popup__title-form">
                   Скачайте материалы
                </p>
@@ -1036,14 +1042,14 @@
                      <label for="take-bonus-number" class="popup__number">
                         Ваше имя
                      </label>
-                     <input type="text" class="popup__input-text take-bonus__input-text name" placeholder="Введите имя" name="Имя">
+                     <input type="text" class="popup__input-text take-bonus__input-text name" placeholder="Введите имя" name="name">
                      <span class="error-text">Некорректное имя</span>
                   </div>
                   <div class="popup__form-line form__line inp-validate">
                      <label for="take-bonus-number" class="popup__number">
                         Email
                      </label>
-                     <input type="email" class="popup__input-text take-bonus__input-text email" placeholder="Введите email" name="Email">
+                     <input type="email" class="popup__input-text take-bonus__input-text email" placeholder="Введите email" name="email">
                      <span class="error-text">Некорректный адрес почты</span>
                   </div>
                   <input type="submit" class="btn popup__btn take-bonus__btn" value="Скачать материалы">
@@ -1098,12 +1104,13 @@
             </p>
             <img src="img/phone.png" alt="" class="exit__img-big">
             <form id="form-exit" class="popup__form exit__form" data-route="quiz-ty">
+               <input type="hidden" name="reason" value="Запрос списка документов с формы выхода">
                <p class="popup__title-form exit__title-form">
                   Как удобнее получить материалы?
                </p>
                <div class="popup__provider">
                   <div class="popup__input">
-                     <input type="radio" name="Как удобнее получить материалы?" checked id="exit-whatsapp" value="Whatsapp">
+                     <input type="radio" name="provider" checked id="exit-whatsapp" value="Whatsapp">
                      <label for="exit-whatsapp" class="popup__radio">
                         <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                            <use xlink:href="svg/sprite.svg#whatsapp"></use>
@@ -1112,7 +1119,7 @@
                      </label>
                   </div>
                   <div class="popup__input">
-                     <input type="radio" name="Как удобнее получить материалы?" id="exit-viber" value="Viber">
+                     <input type="radio" name="provider" id="exit-viber" value="Viber">
                      <label for="exit-viber" class="popup__radio">
                         <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                            <use xlink:href="svg/sprite.svg#viber"></use>
@@ -1121,7 +1128,7 @@
                      </label>
                   </div>
                   <div class="popup__input">
-                     <input type="radio" name="Как удобнее получить материалы?" id="exit-telegram" value="Telegram">
+                     <input type="radio" name="provider" id="exit-telegram" value="Telegram">
                      <label for="exit-telegram" class="popup__radio">
                         <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                            <use xlink:href="svg/sprite.svg#telegram"></use>
@@ -1130,7 +1137,7 @@
                      </label>
                   </div>
                   <div class="popup__input">
-                     <input type="radio" name="Как удобнее получить материалы?" id="exit-phone" value="Phone">
+                     <input type="radio" name="provider" id="exit-phone" value="Phone">
                      <label for="exit-phone" class="popup__radio">
                         <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                            <use xlink:href="svg/sprite.svg#phone"></use>
@@ -1145,7 +1152,7 @@
                      <label for="exit-number" class="popup__number">
                         Введите номер <span class="provider-text">в Wats app</span>
                      </label>
-                     <input type="tel" class="popup__input-text exit__input-text phone" placeholder="Введите номер" name="Телефон">
+                     <input type="tel" class="popup__input-text exit__input-text phone" placeholder="Введите номер" name="phone">
                      <span class="error-text">Некорректный номер</span>
                   </div>
                   <input type="submit" class="btn popup__btn exit__btn" value="Получить материалы">
@@ -1195,6 +1202,7 @@
       <div id="consult" class="consult popup">
          <div class="p-close"></div>
          <form id="form-consult" class="popup__form" data-route="consult-ty">
+            <input type="hidden" name="reason" value="Заявка на консультацию">
             <h2 class="popup__title-form">Получите бесплатную консультацию </h2>
             <p class="popup__subtitle-form">от эксперта с 15-летним опытом 
                в лицензировании работы с отходами
@@ -1204,14 +1212,14 @@
                   <label for="consult-number" class="popup__number">
                      Ваше имя
                   </label>
-                  <input type="text" class="popup__input-text consult__input-text name" placeholder="Введите имя" name="Имя">
+                  <input type="text" class="popup__input-text consult__input-text name" placeholder="Введите имя" name="name">
                   <span class="error-text">Некорректное имя</span>
                </div>
                <div class="popup__form-line form__line inp-validate">
                   <label for="consult-number" class="popup__number">
                      Ваш телефон
                   </label>
-                  <input type="tel" class="popup__input-text consult__input-text phone" placeholder="Введите телефон" name="Телефон">
+                  <input type="tel" class="popup__input-text consult__input-text phone" placeholder="Введите телефон" name="phone">
                   <span class="error-text">Некорректный номер телефона</span>
                </div>
                   <input type="submit" class="btn popup__btn consult__btn" value="Получить консультацию">
@@ -1287,6 +1295,7 @@
       <div id="get-video" class="popup get-video">
          <div class="p-close"></div>
          <form id="get-video-form" class="popup__form get-video__form" data-route="video-ty">
+            <input type="hidden" name="reason" value="Запрос видео">
             <p class="popup__title-form">
                Получите доступ к закрытому видео
             </p>
@@ -1295,7 +1304,7 @@
             </p>
             <div class="popup__provider">
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" checked id="get-video-whatsapp" value="Whats app">
+                  <input type="radio" name="provider" checked id="get-video-whatsapp" value="Whats app">
                   <label for="get-video-whatsapp" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#whatsapp"></use>
@@ -1304,7 +1313,7 @@
                   </label>
                </div>
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" id="get-video-viber" value="Viber">
+                  <input type="radio" name="provider" id="get-video-viber" value="Viber">
                   <label for="get-video-viber" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#viber"></use>
@@ -1313,7 +1322,7 @@
                   </label>
                </div>
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" id="get-video-telegram" value="Telegram">
+                  <input type="radio" name="provider" id="get-video-telegram" value="Telegram">
                   <label for="get-video-telegram" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#telegram"></use>
@@ -1322,7 +1331,7 @@
                   </label>
                </div>
                <div class="popup__input">
-                  <input type="radio" name="Как удобнее получить расчёт?" id="get-video-phone" value="Phone">
+                  <input type="radio" name="provider" id="get-video-phone" value="Phone">
                   <label for="get-video-phone" class="popup__radio">
                      <svg class="icon icon-whatsapp popup__icon popup__icon_whatsapp">
                         <use xlink:href="svg/sprite.svg#phone"></use>
@@ -1337,7 +1346,7 @@
                   <label for="get-video-number" class="popup__number">
                      Введите номер <span class="provider-text">в Whats app</span>
                   </label>
-                  <input type="tel" class="popup__input-text get-video__input-text phone" placeholder="Введите номер" name="Номер телефона">
+                  <input type="tel" class="popup__input-text get-video__input-text phone" placeholder="Введите номер" name="phone">
                   <span class="error-text">Некорректный номер телефона</span>
                </div>
                <input type="submit" class="btn popup__btn get-video__btn" value="Получить доступ">
