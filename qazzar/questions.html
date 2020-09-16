@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Страница вопроса</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner"><a class="logo header__logo" href="index.html"><span class="logo__name">Qazzar</span><span class="logo__slogan">Эксперты отвечают!</span></a>
+          <div class="input-search header__search">
+            <input class="input-search__input" type="text" placeholder="Ищете что-то на сайте?"/>
+            <svg class="icon icon-search input-search__icon">
+              <use xlink:href="svg/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <button class="button header__button"> <span>Задать вопрос</span>
+          </button>
+          <div class="guest header__user"><span class="guest__text guest__login">
+              <svg class="icon icon-login guest__icon">
+                <use xlink:href="svg/sprite.svg#login"></use>
+              </svg><span>Войти</span></span><span class="guest__text guest__register">Регистрация</span></div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-top">
+      <div class="wrapper">   
+        <div class="navbar-top__inner">
+          <ul class="navbar navbar-top__navbar">
+            <li class="navbar__item "><a href="#">Темы</a>
+            </li>
+            <li class="navbar__item navbar__item_hot"><a href="#">Горячее</a>
+              <svg class="icon icon-hot navbar__icon">
+                <use xlink:href="svg/sprite.svg#hot"></use>
+              </svg>
+            </li>
+            <li class="navbar__item "><a href="#">Новое</a>
+            </li>
+            <li class="navbar__item "><a href="#">Лента</a>
+            </li>
+            <li class="navbar__item "><a href="#">База знаний</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main main_2-col">
+      <div class="wrapper">
+        <div class="main__inner">
+          <div class="main__content content">
+            <div class="question">
+              <div class="userbar question__userbar">
+                <div class="userbar__avatar"><img src="img/avatars/ivanov.jpg" alt=""/></div>
+                <div class="userbar__info">
+                  <div class="userbar__top"> <span class="userbar__name">Иван Иванов</span><span class="userbar__login">@ivanivanov88</span></div>
+                  <div class="userbar__bottom"><span class="userbar__group">Пользователь,</span><span class="userbar__status">%статус пользователя%</span></div>
+                </div>
+                <div class="userbar__metrics">
+                  <div class="userbar__time">Сегодня в 22:40</div>
+                  <div class="userbar__views">
+                    <svg class="icon icon-eye userbar__icon">
+                      <use xlink:href="svg/sprite.svg#eye"></use>
+                    </svg><span class="userbar__views-count">109к</span>
+                  </div>
+                  <div class="userbar__more"><span></span>
+                    <div class="userbar__dropdown dropdown"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tags question__tags">
+                <button class="button tags__button button_tag button_small"> <span>Инструмент</span>
+                </button>
+                <button class="button tags__button button_tag button_small"> <span>Ремонт</span>
+                </button>
+              </div>
+              <div class="question-header question__question-header">
+                <h2 class="question-header__title">Какой шуруповерт выбрать?</h2>
+                <p class="question-header__text">Какой шуруповерт выбрать для дома, т.е. подразумевается относительно редкое использование: повесить/прикрутить что-нибудь, мелкий ремонт. Бюджет не важен.</p>
+              </div>
+              <div class="reaction question__reaction">
+                <button class="button reaction__button button_trans button_with-icon"> 
+                  <svg class="icon icon-bell undefined">
+                    <use xlink:href="svg/sprite.svg#bell"></use>
+                  </svg><span>Подписаться</span>
+                </button>
+                <button class="button reaction__button button_with-icon"> 
+                  <svg class="icon icon-bell undefined">
+                    <use xlink:href="svg/sprite.svg#bell"></use>
+                  </svg><span>Ответить</span>
+                </button>
+              </div>
+            </div>
+            <div class="answers"></div>
+            <div class="banner"></div>
+          </div>
+          <aside></aside>
+        </div>
+      </div>
+    </main>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
