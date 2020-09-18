@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Страница пользователя - Информация</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner"><a class="logo header__logo" href="index.html"><span class="logo__name">Qazzar</span><span class="logo__slogan">Эксперты отвечают!</span></a>
+          <div class="input-search header__search">
+            <input class="input-search__input" type="text" placeholder="Ищете что-то на сайте?"/>
+            <svg class="icon icon-search input-search__icon">
+              <use xlink:href="svg/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <button class="button header__button"> <span>Задать вопрос</span>
+          </button>
+          <div class="auth header__auth">
+            <div class="auth__notification" data-count="2">
+              <svg class="icon icon-bell auth__icon_bell">
+                <use xlink:href="svg/sprite.svg#bell"></use>
+              </svg>
+            </div>
+            <div class="auth__name auth__text"><span>Константин К.</span>
+              <svg class="icon icon-exit auth__icon_exit">
+                <use xlink:href="svg/sprite.svg#exit"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-top">
+      <div class="wrapper">   
+        <div class="navbar-top__inner">
+          <ul class="navbar navbar-top__navbar">
+            <li class="navbar__item "><a href="#">Темы</a>
+            </li>
+            <li class="navbar__item navbar__item_hot"><a href="#">Горячее</a>
+              <svg class="icon icon-hot navbar__icon">
+                <use xlink:href="svg/sprite.svg#hot"></use>
+              </svg>
+            </li>
+            <li class="navbar__item "><a href="#">Новое</a>
+            </li>
+            <li class="navbar__item "><a href="#">Лента</a>
+            </li>
+            <li class="navbar__item "><a href="#">База знаний</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main main_2-col">
+      <div class="wrapper">
+        <div class="main__inner">
+          <div class="main__content content">
+            <div class="user">
+              <div class="userbar user__userbar userbar_big">
+                <div class="userbar__avatar"><img src="img/avatars/user.jpg" alt=""/></div>
+                <div class="userbar__info">
+                  <div class="userbar__top"> <span class="userbar__name">Константин Константинопольский</span><span class="userbar__login"></span></div>
+                  <div class="userbar__bottom"><span class="userbar__group">Пользователь</span><span class="userbar__status">, undefined</span></div>
+                </div>
+                <div class="userbar__stats">
+                  <div class="userbar__stat"><span class="userbar__number">120</span><span class="userbar__sign">Вопросов</span></div>
+                  <div class="userbar__stat"><span class="userbar__number">320</span><span class="userbar__sign">Ответов</span></div>
+                  <div class="userbar__stat"><span class="userbar__number">9210</span><span class="userbar__sign">Рейтинг</span></div>
+                </div>
+              </div>
+              <div class="user__main">
+                <ul class="sidebar user__sidebar">
+                  <li class="sidebar__item sidebar__item_active"><a href="#">Информация</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Вопросы</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Ответы</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Комментарии</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Подписки</a>
+                  </li>
+                  <div class="sidebar__separator"></div>
+                  <li class="sidebar__item"><a href="#">Настройки</a>
+                    <svg class="icon icon-settings sidebar__icon_settings">
+                      <use xlink:href="svg/sprite.svg#settings"></use>
+                    </svg>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Помощь</a>
+                    <svg class="icon icon-question sidebar__icon_question">
+                      <use xlink:href="svg/sprite.svg#question"></use>
+                    </svg>
+                  </li>
+                </ul>
+                <div class="user__content">
+                  <div class="user__questions">
+                    <div class="article-link user__link">
+                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
+                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
+                        <div class="article-link__views">
+                          <svg class="icon icon-eye article-link__icon_eye">
+                            <use xlink:href="svg/sprite.svg#eye"></use>
+                          </svg><span>19 K</span>
+                        </div>
+                        <div class="article-link__comments">
+                          <svg class="icon icon-comment article-link__icon_comment">
+                            <use xlink:href="svg/sprite.svg#comment"></use>
+                          </svg><span>75 ответов</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="article-link user__link">
+                      <p class="article-link__title">Длинное название вопроса состоящие из двух и более строк и большого количества букв. вопрос обрезается...</p>
+                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
+                        <div class="article-link__views">
+                          <svg class="icon icon-eye article-link__icon_eye">
+                            <use xlink:href="svg/sprite.svg#eye"></use>
+                          </svg><span>19 K</span>
+                        </div>
+                        <div class="article-link__comments">
+                          <svg class="icon icon-comment article-link__icon_comment">
+                            <use xlink:href="svg/sprite.svg#comment"></use>
+                          </svg><span>75 ответов</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="article-link user__link">
+                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
+                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
+                        <div class="article-link__views">
+                          <svg class="icon icon-eye article-link__icon_eye">
+                            <use xlink:href="svg/sprite.svg#eye"></use>
+                          </svg><span>19 K</span>
+                        </div>
+                        <div class="article-link__comments">
+                          <svg class="icon icon-comment article-link__icon_comment">
+                            <use xlink:href="svg/sprite.svg#comment"></use>
+                          </svg><span>75 ответов</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside> 
+            <div class="banner banner__vertical"></div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__logo">Qazzar</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">О проекте</a></li>
+            <li class="footer__item"><a href="#">Правила сервиса</a></li>
+            <li class="footer__item"><a href="#">Конфиденциальность</a></li>
+            <li class="footer__item"><a href="#">Горячее</a></li>
+            <li class="footer__item"><a href="#">Лента</a></li>
+            <li class="footer__item"><a href="#">База знаний</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Страница вопроса</title>
+    <title>Страница пользователя - Информация</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
@@ -21,10 +21,11 @@
           </div>
           <button class="button header__button"> <span>Задать вопрос</span>
           </button>
-          <div class="guest header__user"><span class="guest__text guest__login">
-              <svg class="icon icon-login guest__icon">
+          <div class="auth header__auth"><span class="auth__text auth__login">
+              <svg class="icon icon-login auth__icon">
                 <use xlink:href="svg/sprite.svg#login"></use>
-              </svg><span>Войти</span></span><span class="guest__text guest__register">Регистрация</span></div>
+              </svg><span>Войти</span></span><span class="auth__text auth__register">Регистрация</span>
+          </div>
         </div>
       </div>
     </header>
@@ -58,7 +59,7 @@
                 <div class="userbar__avatar"><img src="img/avatars/ivanov.jpg" alt=""/></div>
                 <div class="userbar__info">
                   <div class="userbar__top"> <span class="userbar__name">Иван Иванов</span><span class="userbar__login">@ivanivanov88</span></div>
-                  <div class="userbar__bottom"><span class="userbar__group">Пользователь,</span><span class="userbar__status">%статус пользователя%</span></div>
+                  <div class="userbar__bottom"><span class="userbar__group">Пользователь</span><span class="userbar__status">, %статус пользователя%</span></div>
                 </div>
                 <div class="userbar__metrics">
                   <div class="userbar__time">Сегодня в 22:40</div>
@@ -103,7 +104,7 @@
                   <div class="userbar__avatar"><img src="img/avatars/maxidom.jpg" alt=""/></div>
                   <div class="userbar__info">
                     <div class="userbar__top"> <span class="userbar__name">Константин Константинопольский</span><span class="userbar__login">@konstantinkonst</span></div>
-                    <div class="userbar__bottom"><span class="userbar__group">Максидом,</span><span class="userbar__status">эксперт по строительной технике</span></div>
+                    <div class="userbar__bottom"><span class="userbar__group">Максидом</span><span class="userbar__status">, эксперт по строительной технике</span></div>
                   </div>
                   <div class="userbar__metrics">
                     <div class="userbar__time">15 минут назад</div>
@@ -133,7 +134,7 @@
                       <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <span class="userbar__name">Аркадий Николаев</span><span class="userbar__login">@arkkdiynik</span></div>
-                        <div class="userbar__bottom"><span class="userbar__group">undefined,</span><span class="userbar__status"></span></div>
+                        <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
                       </div>
                       <div class="userbar__metrics">
                         <div class="userbar__time">День назад</div>
@@ -158,7 +159,7 @@
                       <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <span class="userbar__name">Аркадий Николаев</span><span class="userbar__login">@arkkdiynik</span></div>
-                        <div class="userbar__bottom"><span class="userbar__group">undefined,</span><span class="userbar__status"></span></div>
+                        <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
                       </div>
                       <div class="userbar__metrics">
                         <div class="userbar__time">5 минут назад</div>
@@ -183,7 +184,7 @@
                       <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <span class="userbar__name">Аркадий Николаев</span><span class="userbar__login">@arkkdiynik</span></div>
-                        <div class="userbar__bottom"><span class="userbar__group">undefined,</span><span class="userbar__status"></span></div>
+                        <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
                       </div>
                       <div class="userbar__metrics">
                         <div class="userbar__time">23 июня 2020</div>
@@ -210,7 +211,7 @@
                   <div class="userbar__avatar"><img src="img/avatars/220.jpg" alt=""/></div>
                   <div class="userbar__info">
                     <div class="userbar__top"> <span class="userbar__name">Аркадий Николаев</span><span class="userbar__login">@arkadu99</span></div>
-                    <div class="userbar__bottom"><span class="userbar__group">220 Вольт,</span><span class="userbar__status">менеджер по продажам</span></div>
+                    <div class="userbar__bottom"><span class="userbar__group">220 Вольт</span><span class="userbar__status">, менеджер по продажам</span></div>
                   </div>
                   <div class="userbar__metrics">
                     <div class="userbar__time">15 минут назад</div>
@@ -244,7 +245,7 @@
                 <div class="separator suggestion__separator separator_text"><span class="separator__text">Похожие вопросы</span>
                 </div>
                 <div class="suggestion__list">
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Есть ли смысл покупать дешевый инструмент?</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -259,7 +260,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Длинный вопрос, в котором текста на две с половиной страницы, текст обрезается так...</p>
                     <div class="article-link__info"><span class="article-link__time">Вчера в 15:20</span>
                       <div class="article-link__views">
@@ -274,7 +275,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
                     <div class="article-link__info"><span class="article-link__time">15 минут назад</span>
                       <div class="article-link__views">
@@ -289,7 +290,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Посоветуйте ресурсы по DIY тематике</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -304,7 +305,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Выбор бензопилы для дачи</p>
                     <div class="article-link__info"><span class="article-link__time">26 Октября 2020</span>
                       <div class="article-link__views">
@@ -325,7 +326,7 @@
                 <div class="separator suggestion__separator separator_text"><span class="separator__text">Самое читаемое</span>
                 </div>
                 <div class="suggestion__list">
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Есть ли смысл покупать дешевый инструмент?</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -340,7 +341,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Длинный вопрос, в котором текста на две с половиной страницы, текст обрезается так...</p>
                     <div class="article-link__info"><span class="article-link__time">Вчера в 15:20</span>
                       <div class="article-link__views">
@@ -355,7 +356,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
                     <div class="article-link__info"><span class="article-link__time">15 минут назад</span>
                       <div class="article-link__views">
@@ -370,7 +371,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Посоветуйте ресурсы по DIY тематике</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -385,7 +386,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link">
+                  <div class="article-link suggestion__link article-link_small">
                     <p class="article-link__title">Выбор бензопилы для дачи</p>
                     <div class="article-link__info"><span class="article-link__time">26 Октября 2020</span>
                       <div class="article-link__views">
@@ -415,12 +416,12 @@
         <div class="footer__inner">
           <div class="footer__logo">Qazzar</div>
           <ul class="footer__list">
-            <li class="footer__item">О проекте</li>
-            <li class="footer__item">Правила сервиса</li>
-            <li class="footer__item">Конфиденциальность</li>
-            <li class="footer__item">Горячее</li>
-            <li class="footer__item">Лента</li>
-            <li class="footer__item">База знаний</li>
+            <li class="footer__item"><a href="#">О проекте</a></li>
+            <li class="footer__item"><a href="#">Правила сервиса</a></li>
+            <li class="footer__item"><a href="#">Конфиденциальность</a></li>
+            <li class="footer__item"><a href="#">Горячее</a></li>
+            <li class="footer__item"><a href="#">Лента</a></li>
+            <li class="footer__item"><a href="#">База знаний</a></li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Страница пользователя - Информация</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner"><a class="logo header__logo" href="index.html"><span class="logo__name">Qazzar</span><span class="logo__slogan">Эксперты отвечают!</span></a>
+          <div class="input-search header__search">
+            <input class="input-search__input" type="text" placeholder="Ищете что-то на сайте?"/>
+            <svg class="icon icon-search input-search__icon">
+              <use xlink:href="svg/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <button class="button header__button"> <span>Задать вопрос</span>
+          </button>
+          <div class="auth header__auth">
+            <div class="auth__notification" data-count="2">
+              <svg class="icon icon-bell auth__icon_bell">
+                <use xlink:href="svg/sprite.svg#bell"></use>
+              </svg>
+            </div>
+            <div class="auth__name auth__text"><span>Константин К.</span>
+              <svg class="icon icon-exit auth__icon_exit">
+                <use xlink:href="svg/sprite.svg#exit"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-top">
+      <div class="wrapper">   
+        <div class="navbar-top__inner">
+          <ul class="navbar navbar-top__navbar">
+            <li class="navbar__item "><a href="#">Темы</a>
+            </li>
+            <li class="navbar__item navbar__item_hot"><a href="#">Горячее</a>
+              <svg class="icon icon-hot navbar__icon">
+                <use xlink:href="svg/sprite.svg#hot"></use>
+              </svg>
+            </li>
+            <li class="navbar__item "><a href="#">Новое</a>
+            </li>
+            <li class="navbar__item "><a href="#">Лента</a>
+            </li>
+            <li class="navbar__item "><a href="#">База знаний</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="hero"> 
+      <div class="wrapper">
+        <div class="hero__inner"><img class="hero__img" src="img/hero/company.png" alt=""/>
+          <div class="hero__info"><span class="hero__name">Максидом</span>
+            <p class="hero__slogan">Слоган компании</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main main_2-col">
+      <div class="wrapper">
+        <div class="main__inner">
+          <div class="main__content content">
+            <div class="business">
+              <div class="business__main">
+                <ul class="sidebar business__sidebar">
+                  <li class="sidebar__item sidebar__item_active"><a href="#">Информация</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Услуги</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Товары</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Статьи</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Вопросы</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Ответы</a>
+                  </li>
+                  <li class="sidebar__item"><a href="#">Комментарии</a>
+                  </li>
+                </ul>
+                <div class="business__content">
+                  <h4 class="business__title">Услуги</h4>
+                  <ul class="pricelist business__pricelist">
+                    <li class="pricelist__item"><span class="pricelist__name">Ремонт стиральных машин</span>
+                      <div class="pricelist__space"></div><span class="pricelist__price">500 руб</span>
+                    </li>
+                    <li class="pricelist__item"><span class="pricelist__name">Ремонт бытовой техники </span>
+                      <div class="pricelist__space"></div><span class="pricelist__price">500 руб</span>
+                    </li>
+                  </ul>
+                  <div class="business__catalog catalog">
+                    <h4 class="business__title">Товары</h4>
+                    <ul class="catalog__list">
+                      <li class="good catalog__good"><img class="good__img" src="img/catalog/washing.jpg" alt=""/>
+                        <p class="good__text">Поливочный телескопический ороситель cellfast ideal...</p>
+                        <div class="good__price"><span>9900</span>
+                          <svg class="icon icon-rub good__icon_rub">
+                            <use xlink:href="svg/sprite.svg#rub"></use>
+                          </svg>
+                        </div>
+                        <button class="button good__button button_small"> <span>Подробнее</span>
+                        </button>
+                      </li>
+                      <li class="good catalog__good"><img class="good__img" src="img/catalog/washing.jpg" alt=""/>
+                        <p class="good__text">Сушильная машина Beko DH7312GAW</p>
+                        <div class="good__price"><span>49900</span>
+                          <svg class="icon icon-rub good__icon_rub">
+                            <use xlink:href="svg/sprite.svg#rub"></use>
+                          </svg>
+                        </div>
+                        <button class="button good__button button_small"> <span>Подробнее</span>
+                        </button>
+                      </li>
+                      <li class="good catalog__good"><img class="good__img" src="img/catalog/iron.jpg" alt=""/>
+                        <p class="good__text">Утюг Philips EasySpeed Plus GC2148/30 Purple</p>
+                        <div class="good__price"><span>34900</span>
+                          <svg class="icon icon-rub good__icon_rub">
+                            <use xlink:href="svg/sprite.svg#rub"></use>
+                          </svg>
+                        </div>
+                        <button class="button good__button button_small"> <span>Подробнее</span>
+                        </button>
+                      </li>
+                      <li class="good catalog__good"><img class="good__img" src="img/catalog/owen.jpg" alt=""/>
+                        <p class="good__text">Встраиваемый электрический духовой шкаф Electrolux EZB524HDHX</p>
+                        <div class="good__price"><span>19579</span>
+                          <svg class="icon icon-rub good__icon_rub">
+                            <use xlink:href="svg/sprite.svg#rub"></use>
+                          </svg>
+                        </div>
+                        <button class="button good__button button_small"> <span>Подробнее</span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="business__articles">
+                    <h4 class="business__title">Статьи</h4>
+                    <li class="bis-article business__article">
+                      <div class="bis-article__side"><img class="bis-article__img" src="img/article/1.jpg" alt=""/><span class="bis-article__date">20 июля 2020</span></div>
+                      <div class="bis-article__content"><a class="bis-article__title" href="#">Рейтинг лучших шуруповертов по версии экспертов интернет магазина в 2020 году</a>
+                        <p class="bis-article__text">Подшефный Huawei бренд Honor объявил о начале продаж лимитированной серии смартфонов Honor 30 Pro+ (обзор) с «эксклюзивными дизайнерскими»  аксессуарами в подарок...</p>
+                      </div>
+                    </li>
+                    <li class="bis-article business__article">
+                      <div class="bis-article__side"><img class="bis-article__img" src="img/article/1.jpg" alt=""/><span class="bis-article__date">20 июля 2020</span></div>
+                      <div class="bis-article__content"><a class="bis-article__title" href="#">Рейтинг лучших шуруповертов по версии экспертов интернет магазина в 2020 году</a>
+                        <p class="bis-article__text">Подшефный Huawei бренд Honor объявил о начале продаж лимитированной серии смартфонов Honor 30 Pro+ (обзор) с «эксклюзивными дизайнерскими»  аксессуарами в подарок...</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="business__questions">
+                    <h4 class="business__title">Вопросы</h4>
+                    <div class="article-link business__link">
+                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
+                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
+                        <div class="article-link__views">
+                          <svg class="icon icon-eye article-link__icon_eye">
+                            <use xlink:href="svg/sprite.svg#eye"></use>
+                          </svg><span>19 K</span>
+                        </div>
+                        <div class="article-link__comments">
+                          <svg class="icon icon-comment article-link__icon_comment">
+                            <use xlink:href="svg/sprite.svg#comment"></use>
+                          </svg><span>75 ответов</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="article-link business__link">
+                      <p class="article-link__title">Длинное название вопроса состоящие из двух и более строк и большого количества букв. вопрос обрезается...</p>
+                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
+                        <div class="article-link__views">
+                          <svg class="icon icon-eye article-link__icon_eye">
+                            <use xlink:href="svg/sprite.svg#eye"></use>
+                          </svg><span>19 K</span>
+                        </div>
+                        <div class="article-link__comments">
+                          <svg class="icon icon-comment article-link__icon_comment">
+                            <use xlink:href="svg/sprite.svg#comment"></use>
+                          </svg><span>75 ответов</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="article-link business__link">
+                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
+                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
+                        <div class="article-link__views">
+                          <svg class="icon icon-eye article-link__icon_eye">
+                            <use xlink:href="svg/sprite.svg#eye"></use>
+                          </svg><span>19 K</span>
+                        </div>
+                        <div class="article-link__comments">
+                          <svg class="icon icon-comment article-link__icon_comment">
+                            <use xlink:href="svg/sprite.svg#comment"></use>
+                          </svg><span>75 ответов</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside> 
+            <div class="contacts">
+              <div class="contacts__stats">
+                <div class="contacts__stat"><span class="contacts__number">120</span><span class="contacts__sign">Вопросов</span></div>
+                <div class="contacts__stat"><span class="contacts__number">320</span><span class="contacts__sign">Ответов</span></div>
+                <div class="contacts__stat"><span class="contacts__number">9210</span><span class="contacts__sign">Рейтинг</span></div>
+              </div>
+              <div class="contacts__info">
+                <div class="contacts__site">
+                  <svg class="icon icon-link contacts__icon_link">
+                    <use xlink:href="svg/sprite.svg#link"></use>
+                  </svg><a class="contacts__link" href="http://maxidom.ru" target="_blank">www.maxidom.ru</a>
+                </div>
+                <div class="contacts__phone">
+                  <svg class="icon icon-phone contacts__icon_phone">
+                    <use xlink:href="svg/sprite.svg#phone"></use>
+                  </svg><span class="contacts__phone-number">8 800 999 11 22</span>
+                </div>
+              </div>
+              <div class="contacts__experts">
+                <h4 class="contacts__title">Эксперты компании</h4>
+                <div class="contacts__expert"><img class="contacts__img" src="img/avatars/ivanov.jpg" alt="">
+                  <div class="contacts__info"><span class="contacts__name">Константин Константинопольский</span><span class="contacts__status">Эксперт по строительным материалам</span></div>
+                </div>
+                <div class="contacts__add">
+                  <div class="contacts__plus"> <span>+</span></div><a class="contacts__add-link" href="#">Добавить эксперта</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__logo">Qazzar</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">О проекте</a></li>
+            <li class="footer__item"><a href="#">Правила сервиса</a></li>
+            <li class="footer__item"><a href="#">Конфиденциальность</a></li>
+            <li class="footer__item"><a href="#">Горячее</a></li>
+            <li class="footer__item"><a href="#">Лента</a></li>
+            <li class="footer__item"><a href="#">База знаний</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
