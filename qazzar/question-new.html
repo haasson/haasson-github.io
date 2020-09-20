@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Новый вопрос</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner"><a class="logo header__logo" href="index.html"><span class="logo__name">Qazzar</span><span class="logo__slogan">Эксперты отвечают!</span></a>
+          <div class="input-search header__search">
+            <input class="input-search__input" type="text" placeholder="Ищете что-то на сайте?"/>
+            <svg class="icon icon-search input-search__icon">
+              <use xlink:href="svg/sprite.svg#search"></use>
+            </svg>
+          </div>
+          <button class="button header__button"> <span>Задать вопрос</span>
+          </button>
+          <div class="auth header__auth"><span class="auth__text auth__login">
+              <svg class="icon icon-login auth__icon">
+                <use xlink:href="svg/sprite.svg#login"></use>
+              </svg><span>Войти</span></span><span class="auth__text auth__register">Регистрация</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="navbar-top">
+      <div class="wrapper">   
+        <div class="navbar-top__inner">
+          <ul class="navbar navbar-top__navbar">
+            <li class="navbar__item "><a href="#">Темы</a>
+            </li>
+            <li class="navbar__item navbar__item_hot"><a href="#">Горячее</a>
+              <svg class="icon icon-hot navbar__icon">
+                <use xlink:href="svg/sprite.svg#hot"></use>
+              </svg>
+            </li>
+            <li class="navbar__item "><a href="#">Новое</a>
+            </li>
+            <li class="navbar__item "><a href="#">Лента</a>
+            </li>
+            <li class="navbar__item "><a href="#">База знаний</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main class="main main_2-col">
+      <div class="wrapper">
+        <div class="main__inner">
+          <div class="main__content content">
+            <form class="new">
+              <h2 class="new__title">Новый вопрос</h2>
+              <div class="new__question"><span class="new__subtitle">Вопрос</span>
+                <p class="new__text">Сформулируйте вопрос в одном предложении </p>
+                <input class="input new__input" type="text"/>
+              </div>
+              <div class="new__details"><span class="new__subtitle">Детали вопроса</span>
+                <p class="new__text">Опишите подробно свой вопрос</p>
+                <textarea class="input new__textarea"></textarea>
+              </div>
+              <div class="new__theme"><span class="new__subtitle">Тема</span>
+                <p class="new__text">Укажите тему вопроса. Выберите из выпадающего списка наиболее подходящие темы </p>
+                <input class="input new__input" type="text"/>
+              </div>
+              <div class="new__tags">
+                <div class="tags">
+                  <button class="button tags__button button_tag button_small"> <span>Ремонт</span>
+                    <div class="button__close"></div>
+                  </button>
+                  <button class="button tags__button button_tag button_small"> <span>Инструмент</span>
+                    <div class="button__close"></div>
+                  </button>
+                </div>
+              </div>
+              <div class="new__button">
+                <button class="button "> <span>Опубликовать вопрос</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <aside> 
+            <div class="banner banner__vertical"></div>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__logo">Qazzar</div>
+          <ul class="footer__list">
+            <li class="footer__item"><a href="#">О проекте</a></li>
+            <li class="footer__item"><a href="#">Правила сервиса</a></li>
+            <li class="footer__item"><a href="#">Конфиденциальность</a></li>
+            <li class="footer__item"><a href="#">Горячее</a></li>
+            <li class="footer__item"><a href="#">Лента</a></li>
+            <li class="footer__item"><a href="#">База знаний</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
