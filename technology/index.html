@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technology</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+  </head>
+  <body class="loading">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__inner">
+          <div class="header__topline topline">
+            <div class="topline__logo"><a href="#" alt="Технология">
+                <picture>
+                  <source type="image/webp" srcset="img/header/logo.webp"/>
+                  <source type="image/png" srcset="img/header/logo.png"/><img src="img/header/logo.png"/>
+                </picture></a></div>
+            <div class="topline__slogan">Поставляем оборудование для шиномонтажа по всей России с 2016 года</div>
+            <div class="topline__contacts">  
+              <svg class="icon icon-whatsapp topline__icon topline__icon_whatsapp">
+                <use xlink:href="svg/sprite.svg#whatsapp"></use>
+              </svg>
+              <svg class="icon icon-telegram topline__icon topline__icon_telegram">
+                <use xlink:href="svg/sprite.svg#telegram"></use>
+              </svg><a class="topline__phone" href="tel:+78005007498">8 800 500-74-98</a>
+            </div>
+            <button class="button topline__button button_yellow button_rounded" type="button">Заказать звонок
+            </button>
+          </div>
+          <div class="header__hero hero">
+            <div class="hero__content">
+              <h1 class="hero__title">Шиномонтажное <span class="yellow">оборудование</span></h1>
+              <p class="hero__subtitle">с бесплатной доставкой по России за 3&nbspдня с гарантией до 36&nbspмесяцев</p>
+              <ul class="hero__equipment equipment">
+                <li class="equipment__item">
+                  <div class="equipment__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/small/machine-1.webp"/>
+                      <source type="image/png" srcset="img/equipment/small/machine-1.png"/><img src="img/equipment/small/machine-1.png"/>
+                    </picture>
+                  </div>
+                  <p class="equipment__text">Шиномонтажные станки</p>
+                </li>
+                <li class="equipment__item">
+                  <div class="equipment__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/small/machine-2.webp"/>
+                      <source type="image/png" srcset="img/equipment/small/machine-2.png"/><img src="img/equipment/small/machine-2.png"/>
+                    </picture>
+                  </div>
+                  <p class="equipment__text">Балансировочные стенды</p>
+                </li>
+                <li class="equipment__item">
+                  <div class="equipment__image">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/small/machine-3.webp"/>
+                      <source type="image/png" srcset="img/equipment/small/machine-3.png"/><img src="img/equipment/small/machine-3.png"/>
+                    </picture>
+                  </div>
+                  <p class="equipment__text">Автоматические мойки колес &quot;Торнадо&quot;</p>
+                </li>
+              </ul>
+            </div>
+            <form class="hero__form form"> 
+              <p class="form__title">Скачайте каталог оборудования с&nbspценами на август 2020</p>
+              <p class="form__subtitle">+ индивидуальную скидку 5-15% на&nbspвсе&nbspмодели</p>
+              <div class="contacts form__contacts">
+                <p class="contacts__title">Куда прислать ссылку на каталог?</p>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-header-viber" value="Viber" checked="checked"/>
+                    <label for="provider-header-viber">
+                      <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                        <use xlink:href="svg/sprite.svg#viber"></use>
+                      </svg><span class="contacts__text">Viber</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-header-telegram" value="Telegram"/>
+                    <label for="provider-header-telegram">
+                      <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                        <use xlink:href="svg/sprite.svg#telegram"></use>
+                      </svg><span class="contacts__text">Telegram</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-header-whatsapp" value="WhatsApp"/>
+                    <label for="provider-header-whatsapp">
+                      <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                        <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                      </svg><span class="contacts__text">WhatsApp</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-header-phone" value="По телефону"/>
+                    <label for="provider-header-phone">
+                      <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                        <use xlink:href="svg/sprite.svg#phone"></use>
+                      </svg><span class="contacts__text">По телефону</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="phone form__phone">
+                <p class="phone__title">За каким номером закрепить скидку?</p>
+                <div class="phone__content">
+                  <div class="input phone__input ">
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                  </div>
+                  <button class="button phone__button button_blue" type="submit">Скачать каталог оборудования
+                    <picture class="button__image">
+                      <source type="image/webp" srcset="img/magazine.webp"/>
+                      <source type="image/png" srcset="img/magazine.png"/><img src="img/magazine.png"/>
+                    </picture>
+                  </button>
+                </div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="quiz">
+      <div class="wrapper">
+        <div class="quiz__inner">
+          <div class="quiz__content content">
+            <h2 class="content__title"> <b class="blue">Подберите комплект оборудования </b><span>для вашего объекта с точным расчетом окупаемости</span></h2>
+            <ul class="advantages content__advantages">
+              <li class="advantages__item">
+                <div class="advantages__icons">
+                  <svg class="icon icon-circles-1 advantages__icon_big">
+                    <use xlink:href="svg/sprite-original.svg#circles-1"></use>
+                  </svg>
+                  <svg class="icon icon-rub advantages__icon_small">
+                    <use xlink:href="svg/sprite.svg#rub"></use>
+                  </svg>
+                </div>
+                <div class="advantages__description"><span class="advantages__text">3 ценовых варианта</span><span class="advantages__subtext">по вашим параметрам</span></div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icons">
+                  <svg class="icon icon-circles-2 advantages__icon_big">
+                    <use xlink:href="svg/sprite-original.svg#circles-2"></use>
+                  </svg>
+                  <svg class="icon icon-sale advantages__icon_small">
+                    <use xlink:href="svg/sprite.svg#sale"></use>
+                  </svg>
+                </div>
+                <div class="advantages__description"><span class="advantages__text">10% скидка</span><span class="advantages__subtext">на все модели</span></div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icons">
+                  <svg class="icon icon-circles-1 advantages__icon_big">
+                    <use xlink:href="svg/sprite-original.svg#circles-1"></use>
+                  </svg>
+                  <svg class="icon icon-gift advantages__icon_small">
+                    <use xlink:href="svg/sprite.svg#gift"></use>
+                  </svg>
+                </div>
+                <div class="advantages__description"><span class="advantages__text">Подарок ценой до 5000 ₽</span><span class="advantages__subtext">за ваши ответы</span></div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__icons">
+                  <svg class="icon icon-circles-2 advantages__icon_big">
+                    <use xlink:href="svg/sprite-original.svg#circles-2"></use>
+                  </svg>
+                  <svg class="icon icon-book advantages__icon_small">
+                    <use xlink:href="svg/sprite.svg#book"></use>
+                  </svg>
+                </div>
+                <div class="advantages__description"><span class="advantages__text">Полный каталог</span><span class="advantages__subtext">нашего оборудования</span></div>
+              </li>
+            </ul>
+            <div class="content__images images">
+              <picture class="images__laptop">
+                <source type="image/png" srcset="img/decorative/laptop.webp" media=""/>
+                <source type="image/png" srcset="img/decorative/laptop.png" media=""/><img src="img/decorative/laptop.png"/>
+              </picture>
+              <picture class="images__money">
+                <source type="image/webp" srcset="img/decorative/money.webp"/>
+                <source type="image/png" srcset="img/decorative/money.png"/><img src="img/decorative/money.png"/>
+              </picture>
+            </div><span class="content__word">Технология</span>
+          </div>
+          <form class="quiz__form form" id="form-quiz">
+            <div class="form__item form__item_checkbox" data-count="1">
+              <div class="form__title">Какие услуги Вы планируете оказывать?</div>
+              <div class="form__list form__list_service">
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-1" value="Шиномонтаж" id="quiz-b1-e1">
+                  <label for="quiz-b1-e1">Шиномонтаж</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-2" value="Мойка колес" id="quiz-b1-e2">
+                  <label for="quiz-b1-e2">Мойка колес</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-3" value="Правка дисков" id="quiz-b1-e3">
+                  <label for="quiz-b1-e3">Правка дисков</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-4" value="Ремонт штампованых дисков" id="quiz-b1-e4">
+                  <label for="quiz-b1-e4">Ремонт штампованых дисков</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-5" value="Шипование" id="quiz-b1-e5">
+                  <label for="quiz-b1-e5">Шипование</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-6" value="Ремонт шин" id="quiz-b1-e6">
+                  <label for="quiz-b1-e6">Ремонт шин</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-7" value="Покраска дисков" id="quiz-b1-e7">
+                  <label for="quiz-b1-e7">Покраска дисков</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-8" value="Ремонт литых дисков" id="quiz-b1-e8">
+                  <label for="quiz-b1-e8">Ремонт литых дисков</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-9" value="Вулканизация" id="quiz-b1-e9">
+                  <label for="quiz-b1-e9">Вулканизация</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="service-10" value="Нарезка протектора" id="quiz-b1-e10">
+                  <label for="quiz-b1-e10">Нарезка протектора</label>
+                </div>
+              </div>
+            </div>
+            <div class="form__item form__item_checkbox" data-count="2">
+              <div class="form__title">Какой транспорт планируете обслуживать?</div>
+              <div class="form__list form__list_transport">
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="transport-1" value="Легковые" id="quiz-b2-e1">
+                  <label for="quiz-b2-e1">Легковые</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="transport-2" value="Низкопрофильные и Runflat" id="quiz-b2-e2">
+                  <label for="quiz-b2-e2">Низкопрофильные и Runflat</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="transport-3" value="Грузовые" id="quiz-b2-e3">
+                  <label for="quiz-b2-e3">Грузовые</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="transport-4" value="Мотоциклы" id="quiz-b2-e4">
+                  <label for="quiz-b2-e4">Мотоциклы</label>
+                </div>
+              </div>
+            </div>
+            <div class="form__item form__item_text" data-count="3">
+              <div class="form__title">В каком городе находитесь?</div>
+              <div class="input form__input">
+                <input class="input__item input__item_gray" type="text" name="city" placeholder="Москва"/>
+              </div>
+              <ul class="form__cities">
+                <li class="form__city">Москва</li>
+                <li class="form__city">Санкт-Петербург</li>
+                <li class="form__city">Казань</li>
+                <li class="form__city">Екатеринбург</li>
+              </ul>
+            </div>
+            <div class="form__item form__item_range" data-count="4">
+              <div class="form__title">Планируемый поток автомобилей в сезон (в день)?</div>
+              <div class="form__input form__input_range">
+                <div class="form__input-endpoint start"></div>
+                <input class="form__range" type="range" name="amount" min="1" max="100" value="25" step="1">
+                <div class="form__input-endpoint end"></div>
+              </div>
+            </div>
+            <div class="form__item form__item_range" data-count="5">
+              <div class="form__title">Укажите зарплату мастера (в рублях)</div>
+              <div class="form__input form__input_range">
+                <div class="form__input-endpoint start"></div>
+                <input class="form__range" type="range" name="salary" min="20000" max="100000" value="50000" step="1000">
+                <div class="form__input-endpoint end"></div>
+              </div>
+            </div>
+            <div class="form__item form__item_checkbox" data-count="6">
+              <div class="form__title">Шиномонтаж находится при автосервисе или&nbspотдельно?</div>
+              <div class="form__list form__list_place">
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="place-1" value="При автосервисе" id="quiz-b6-e1">
+                  <label for="quiz-b6-e1">При автосервисе</label>
+                </div>
+                <div class="form__checkbox-field">
+                  <input type="checkbox" name="place-2" value="Отдельно" id="quiz-b6-e2">
+                  <label for="quiz-b6-e2">Отдельно</label>
+                </div>
+              </div>
+            </div>
+            <button class="button form__submit button_blue" type="submit">Подобрать комплект и рассчитать стоимость
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="equipment">
+      <div class="wrapper">
+        <div class="equipment__inner">
+          <h2 class="equipment__title"> <span>Какое оборудование выбирают </span><span>для своих автосервисов </span><b class="blue">8 из 10 заказчиков</b></h2>
+          <div class="equipment__list">
+            <div class="machine equipment__item equipment__item_1">
+              <div class="machine__content">
+                <div class="machine__about">
+                  <h3 class="machine__title">Шиномонтажные станки серии ТМ</h3>
+                  <p class="machine__subtitle">для работы со стальными дисками диаметром до 26&quot;</p>
+                  <picture class="machine__magazine">
+                    <source type="image/webp" srcset="img/equipment/1/magazine.webp"/>
+                    <source type="image/png" srcset="img/equipment/1/magazine.png"/><img src="img/equipment/1/magazine.png"/>
+                  </picture>
+                  <button class="button machine__button button_blue button_rounded" type="button">Скачать каталог оборудования
+                  </button><span class="machine__note"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
+                  <div class="machine__label">
+                    <svg class="icon icon-label machine__icon_label">
+                      <use xlink:href="svg/sprite-original.svg#label"></use>
+                    </svg><span>2</span>
+                    <p>года гарантии</p>
+                  </div>
+                </div>
+                <div class="machine__image">
+                  <picture class="machine__main">
+                    <source type="image/webp" srcset="img/equipment/1/main.webp"/>
+                    <source type="image/png" srcset="img/equipment/1/main.png"/><img src="img/equipment/1/main.png"/>
+                  </picture>
+                </div>
+                <div class="machine__video-block video-block">
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-1.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-1.jpg"/><img src="img/equipment/1/video-1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-2.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-2.jpg"/><img src="img/equipment/1/video-2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-3.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-3.jpg"/><img src="img/equipment/1/video-3.jpg"/>
+                    </picture>
+                  </div>
+                </div>
+                <div class="machine__symbol">тм</div>
+              </div>
+              <div class="machine__advantages advantages">
+                <h3 class="advantages__title">Преимущества модельного ряда:</h3>
+                <div class="advantages__list">
+                  <div class="advantages__left">
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">3 рука помогает быстрее работать</span> с&nbspнизкопрофильными, широкими и жесткими шинами</p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Обод защищен от повреждений</span> благодаря пластиковым протекторам на всех инструментах, которые соприкасаются с ободом во время работы</p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description">Манометр контроля давления воздуха смонтирован на монтажной стойке. <span class="highlight">Накачка нажатием ногой на педаль</span></p>
+                    </div>
+                  </div>
+                  <div class="advantages__right">
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Поворотная консоль экономит место в цеху</span> — станок можно поставить вплотную к стене</p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Устройство взрывной накачки в комплекте</span></p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Двухскоростное вращение рабочего стола</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="machine equipment__item equipment__item_2">
+              <div class="machine__content">
+                <div class="machine__about">
+                  <h3 class="machine__title">Балансировочные стенды серии IPRO</h3>
+                  <p class="machine__subtitle">В комплекте цветной монитор 21,5 дюймов</p>
+                  <picture class="machine__magazine">
+                    <source type="image/webp" srcset="img/equipment/1/magazine.webp"/>
+                    <source type="image/png" srcset="img/equipment/1/magazine.png"/><img src="img/equipment/1/magazine.png"/>
+                  </picture>
+                  <button class="button machine__button button_blue button_rounded" type="button">Скачать каталог оборудования
+                  </button><span class="machine__note"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
+                  <div class="machine__label">
+                    <svg class="icon icon-label machine__icon_label">
+                      <use xlink:href="svg/sprite-original.svg#label"></use>
+                    </svg><span>2</span>
+                    <p>года гарантии</p>
+                  </div>
+                </div>
+                <div class="machine__image">
+                  <picture class="machine__main">
+                    <source type="image/webp" srcset="img/equipment/1/main.webp"/>
+                    <source type="image/png" srcset="img/equipment/1/main.png"/><img src="img/equipment/1/main.png"/>
+                  </picture>
+                </div>
+                <div class="machine__video-block video-block">
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-1.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-1.jpg"/><img src="img/equipment/1/video-1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-2.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-2.jpg"/><img src="img/equipment/1/video-2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-3.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-3.jpg"/><img src="img/equipment/1/video-3.jpg"/>
+                    </picture>
+                  </div>
+                </div>
+                <div class="machine__symbol">ipro</div>
+              </div>
+              <div class="machine__advantages advantages">
+                <h3 class="advantages__title">Преимущества модельного ряда:</h3>
+                <div class="advantages__list">
+                  <div class="advantages__left">
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Точность измерений 99,9%</span> благодаря одноплатному микрокомпьютеру с мощным 4-ядерным 64-битным процессором</p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description">Выбор программы и ввод параметров — автоматические. <span class="highlight">Сотрудник работает в 2 раза быстрее обычного</span></p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description">Благодаря электромагнитному тормозу <span class="highlight">колесо быстрее останавливается — Вы экономите время</span></p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Встроенный стабилизатор напряжения</span></p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description">Быстросъемная гайка в комплекте <span class="highlight">ускоряет процесс монтажа колес</span></p>
+                    </div>
+                  </div>
+                  <div class="advantages__right">
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Благодаря набору для самостоятельной калибровки оборудования</span> Вы экономите на сервисном обслуживании</p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Функция визуальной проверки диска</span> позволяет в 6 из 10 случаев продавать клиенту правку дисков. Вы повысите средний чек на 15%</p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Автоматический поворот колеса в место установки груза</span></p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description"><span class="highlight">Подсветка внутреннего пространства</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="machine equipment__item equipment__item_3">
+              <div class="machine__content">
+                <div class="machine__about">
+                  <h3 class="machine__title">Автоматические мойки колес «Торнадо»</h3>
+                  <picture class="machine__magazine">
+                    <source type="image/webp" srcset="img/equipment/1/magazine.webp"/>
+                    <source type="image/png" srcset="img/equipment/1/magazine.png"/><img src="img/equipment/1/magazine.png"/>
+                  </picture>
+                  <button class="button machine__button button_blue button_rounded" type="button">Скачать каталог оборудования
+                  </button><span class="machine__note"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
+                  <div class="machine__label">
+                    <svg class="icon icon-label machine__icon_label">
+                      <use xlink:href="svg/sprite-original.svg#label"></use>
+                    </svg><span>2</span>
+                    <p>года гарантии</p>
+                  </div>
+                </div>
+                <div class="machine__image">
+                  <picture class="machine__main">
+                    <source type="image/webp" srcset="img/equipment/1/main.webp"/>
+                    <source type="image/png" srcset="img/equipment/1/main.png"/><img src="img/equipment/1/main.png"/>
+                  </picture>
+                </div>
+                <div class="machine__video-block video-block">
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-1.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-1.jpg"/><img src="img/equipment/1/video-1.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-2.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-2.jpg"/><img src="img/equipment/1/video-2.jpg"/>
+                    </picture>
+                  </div>
+                  <div class="video-block__item">   
+                    <picture class="video-block__image">
+                      <source type="image/webp" srcset="img/equipment/1/video-3.webp"/>
+                      <source type="image/jpeg" srcset="img/equipment/1/video-3.jpg"/><img src="img/equipment/1/video-3.jpg"/>
+                    </picture>
+                  </div>
+                </div>
+                <div class="machine__symbol">торнадо</div>
+              </div>
+              <div class="machine__advantages advantages">
+                <h3 class="advantages__title">Преимущества модельного ряда:</h3>
+                <div class="advantages__list">
+                  <div class="advantages__left">
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description">Автоматическая стабилизация колеса позволяет за 2-3 секунды выставить колесо в правильное положение, что <span class="highlight">предотвращает порчу покрышки, диска или оборудования</span></p>
+                    </div>
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description">Услуга очистки шин позволяет увеличить средний чек <span class="highlight">на 30%</span></p>
+                    </div>
+                  </div>
+                  <div class="advantages__right">
+                    <div class="advantages__item">
+                      <div class="advantages__logo">
+                        <svg class="icon icon-logo advantages__icon_logo">
+                          <use xlink:href="svg/sprite.svg#logo"></use>
+                        </svg>
+                      </div>
+                      <p class="advantages__description">Для подключения нужны лишь сжатый воздух и электричество. <span class="highlight">Вы экономите на воде и гарантируете чистоту рабочего помещения</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="table">
+      <div class="wrapper">
+        <div class="table__inner">
+          <div class="table__content">
+            <h2 class="table__title"> <span class="yellow">Скачайте сравнительную таблицу </span><span>оборудования разных брендов</span></h2>
+            <p class="table__subtitle"> <span>Вы узнаете, чем отличаются станки и стенды разных производителей, помимо цены. </span><b>Благодаря таблице Вы сможете самостоятельно подобрать оборудования для вашего автосервиса</b></p>
+            <form class="table__form form-line" id="form-table">
+              <div class="contacts table__contacts">
+                <p class="contacts__title">Куда прислать таблицу?</p>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-table-viber" value="Viber" checked="checked"/>
+                    <label for="provider-table-viber">
+                      <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                        <use xlink:href="svg/sprite.svg#viber"></use>
+                      </svg><span class="contacts__text">Viber</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-table-telegram" value="Telegram"/>
+                    <label for="provider-table-telegram">
+                      <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                        <use xlink:href="svg/sprite.svg#telegram"></use>
+                      </svg><span class="contacts__text">Telegram</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-table-whatsapp" value="WhatsApp"/>
+                    <label for="provider-table-whatsapp">
+                      <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                        <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                      </svg><span class="contacts__text">WhatsApp</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-table-phone" value="По телефону"/>
+                    <label for="provider-table-phone">
+                      <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                        <use xlink:href="svg/sprite.svg#phone"></use>
+                      </svg><span class="contacts__text">По телефону</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="phone table__phone">
+                <p class="phone__title"></p>
+                <div class="phone__content">
+                  <div class="input phone__input  input_rounded">
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                  </div>
+                  <button class="button phone__button button_blue button_rounded" type="submit">Получить таблицу
+                  </button>
+                </div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+              </div>
+            </form>
+            <div class="table__label">
+              <svg class="icon icon-label table__icon table__icon_label">
+                <use xlink:href="svg/sprite-original.svg#label"></use>
+              </svg>
+              <div class="table__info">
+                <svg class="icon icon-xls table__icon table__icon_xls">
+                  <use xlink:href="svg/sprite-original.svg#xls"></use>
+                </svg><span>XLS</span><span>(3.4 мб)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="complex">
+      <div class="wrapper">
+        <div class="complex__inner">
+          <h2 class="complex__title"><span>Мы подготовили для Вас готовые комплекты оборудования </span><span class="blue">с быстрой окупаемостью по специальной цене</span></h2>
+          <div class="complex__slider">
+            <div class="swiper-wrapper">
+              <div class="complex__slide swiper-slide complex__slide_1">
+                <div class="complex__header">
+                  <div class="complex__image complex__image_1">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/small/machine-4.webp"/>
+                      <source type="image/png" srcset="img/equipment/small/machine-4.png"/><img src="img/equipment/small/machine-4.png"/>
+                    </picture>
+                  </div>
+                  <div class="complex__image complex__image_2">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/2/main.webp"/>
+                      <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
+                    </picture>
+                  </div>
+                </div>
+                <div class="complex__content"><span class="complex__name">Стартап</span>
+                  <ul class="complex__list complex__features">
+                    <li class="complex__item complex__feature"><b>Балансировочный стенд</b><span>IPRO BM4</span></li>
+                    <li class="complex__item complex__feature"><b>Шиномонтажный станок</b><span>TM5 220v</span></li>
+                    <li class="complex__item complex__feature"><b>Гайковерт</b><span>Chicago Pneumatic CP7748</span></li>
+                    <li class="complex__item complex__feature"><b>Подкатные домкраты (2 шт.)</b><span>Кraftwell / Nordberg</span></li>
+                  </ul>
+                  <ul class="complex__list complex__options">
+                    <li class="complex__item complex__option"><span>Резиновые накладки на домкраты и&nbspнабор ударных головок в подарок</span></li>
+                  </ul>
+                  <div class="complex__prices"><span class="complex__price complex__price_old"> <span>320 000</span><span class="currency">руб.</span></span>
+                    <p class="complex__price complex__price_new"><span>260 000</span><span class="currency">руб.</span></p>
+                  </div>
+                  <button class="button complex__button button_blue button_rounded" type="button">Скачать презентацию комплекта
+                  </button>
+                  <p class="complex__note"> <b>с подробным описанием </b><span>всего оборудования, ценами и расчетом окупаемости</span></p>
+                </div>
+              </div>
+              <div class="complex__slide swiper-slide complex__slide_2">
+                <div class="complex__header">
+                  <div class="complex__image complex__image_1">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/small/machine-4.webp"/>
+                      <source type="image/png" srcset="img/equipment/small/machine-4.png"/><img src="img/equipment/small/machine-4.png"/>
+                    </picture>
+                  </div>
+                  <div class="complex__image complex__image_2">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/2/main.webp"/>
+                      <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
+                    </picture>
+                  </div>
+                  <div class="complex__image complex__image_4">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/small/jack.webp"/>
+                      <source type="image/png" srcset="img/equipment/small/jack.png"/><img src="img/equipment/small/jack.png"/>
+                    </picture>
+                  </div>
+                </div>
+                <div class="complex__content"><span class="complex__name">Продвинутый</span>
+                  <ul class="complex__list complex__features">
+                    <li class="complex__item complex__feature"><b>Балансировочный стенд</b><span>IPRO BM4</span></li>
+                    <li class="complex__item complex__feature"><b>Шиномонтажный станок</b><span>TM5 220v</span></li>
+                    <li class="complex__item complex__feature"><b>Гайковерт</b><span>Chicago Pneumatic CP7748</span></li>
+                    <li class="complex__item complex__feature"><b>Подкатные домкраты (2 шт.)</b><span>Кraftwell / Nordberg</span></li>
+                    <li class="complex__item complex__feature"><b>Пневматическая подкачка шин с манометром</b><span></span></li>
+                    <li class="complex__item complex__feature"><b>Динамометрический ключ</b><span>licota</span></li>
+                  </ul>
+                  <ul class="complex__list complex__options">
+                    <li class="complex__item complex__option"><span>Резиновые накладки на домкраты и&nbspнабор ударных головок в подарок</span></li>
+                  </ul>
+                  <div class="complex__prices"><span class="complex__price complex__price_old"> <span>360 000</span><span class="currency">руб.</span></span>
+                    <p class="complex__price complex__price_new"><span>290 000</span><span class="currency">руб.</span></p>
+                  </div>
+                  <button class="button complex__button button_blue button_rounded" type="button">Скачать презентацию комплекта
+                  </button>
+                  <p class="complex__note"> <b>с подробным описанием </b><span>всего оборудования, ценами и расчетом окупаемости</span></p>
+                </div>
+              </div>
+              <div class="complex__slide swiper-slide complex__slide_3">
+                <div class="complex__header">
+                  <div class="complex__image complex__image_1">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/small/machine-4.webp"/>
+                      <source type="image/png" srcset="img/equipment/small/machine-4.png"/><img src="img/equipment/small/machine-4.png"/>
+                    </picture>
+                  </div>
+                  <div class="complex__image complex__image_2">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/2/main.webp"/>
+                      <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
+                    </picture>
+                  </div>
+                  <div class="complex__image complex__image_3">
+                    <picture>
+                      <source type="image/webp" srcset="img/equipment/3/main.webp"/>
+                      <source type="image/png" srcset="img/equipment/3/main.png"/><img src="img/equipment/3/main.png"/>
+                    </picture>
+                  </div>
+                </div>
+                <div class="complex__content"><span class="complex__name">Полный</span>
+                  <ul class="complex__list complex__features">
+                    <li class="complex__item complex__feature"><b>Балансировочный стенд</b><span>IPRO BM4</span></li>
+                    <li class="complex__item complex__feature"><b>Шиномонтажный станок</b><span>TM7b 220v</span></li>
+                    <li class="complex__item complex__feature"><b>Автоматическая мойка колес</b><span>Tornado</span></li>
+                    <li class="complex__item complex__feature"><b>Борторасширитель</b><span>Nordberrg</span></li>
+                    <li class="complex__item complex__feature"><b>Бустер взрывная накачка</b><span>Wieder Kraftt</span></li>
+                    <li class="complex__item complex__feature"><b>Станок для правки дисков</b><span>Kraftwell</span></li>
+                    <li class="complex__item complex__feature"><b>Подкатные домкраты (2 шт.)</b><span>Кraftwell / Nordberg</span></li>
+                    <li class="complex__item complex__feature"><b>Пневмогайковерт</b><span>Chicago Pneumatic CP7748</span></li>
+                  </ul>
+                  <ul class="complex__list complex__options">
+                    <li class="complex__item complex__option"><span>Динамометрический ключ licota</span></li>
+                    <li class="complex__item complex__option"><span>Набор шестигранников ударных licota</span></li>
+                    <li class="complex__item complex__option"><span>Машинка для нарезки протектора tech-russia</span></li>
+                    <li class="complex__item complex__option"><span>Компрессор remeza</span></li>
+                    <li class="complex__item complex__option"><span>Ванна для шиномонтажа nordberg</span></li>
+                    <li class="complex__item complex__option"><span>Экстрактор наружный для отворачивания секретных болтов 17,19, 21 мм.</span></li>
+                    <li class="complex__item complex__option"><span>Вулканизатор rossvik</span></li>
+                  </ul>
+                  <div class="complex__prices"><span class="complex__price complex__price_old"> <span>560 000</span><span class="currency">руб.</span></span>
+                    <p class="complex__price complex__price_new"><span>495 000</span><span class="currency">руб.</span></p>
+                  </div>
+                  <button class="button complex__button button_blue button_rounded" type="button">Скачать презентацию комплекта
+                  </button>
+                  <p class="complex__note"> <b>с подробным описанием </b><span>всего оборудования, ценами и расчетом окупаемости</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="complex__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="consult">
+      <div class="wrapper">
+        <div class="consult__inner">
+          <h2 class="consult__title"><span>Не знаете какое оборудование и комплектующие </span><span class="blue">подойдут для вашего шиномонтажа?</span></h2>
+          <p class="consult__subtitle"><b>За 15 минут мы поможем Вам подобрать оборудование под ваш бюджет с максимально быстрой окупаемостью. </b><span>А также подготовим чертеж с расположением оборудования в вашем автосервисе</span></p>
+          <form class="consult__form form-line" id="form-consult">
+            <div class="contacts consult__contacts">
+              <p class="contacts__title">Наш специалист свяжется с Вами, чтобы задать уточняющие вопросы. <b>Как Вам удобнее связаться?</b></p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-consult-viber" value="Viber" checked="checked"/>
+                  <label for="provider-consult-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-consult-telegram" value="Telegram"/>
+                  <label for="provider-consult-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-consult-whatsapp" value="WhatsApp"/>
+                  <label for="provider-consult-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-consult-phone" value="По телефону"/>
+                  <label for="provider-consult-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone consult__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                </div>
+                <button class="button phone__button button_blue button_rounded" type="submit">Получить консультацию
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="shipping">
+      <div class="wrapper">
+        <div class="shipping__inner">
+          <h2 class="shipping__title"><span>Доставим в любую точку России </span><span class="blue">бесплатно</span></h2>
+          <p class="shipping__subtitle">Привезем прямо к вашему объекту и занесем внутрь</p>
+          <ul class="advantages shipping__advantages">
+            <li class="advantages__item">
+              <div class="advantages__icons">
+                <svg class="icon icon-circles-1 advantages__icon_big">
+                  <use xlink:href="svg/sprite-original.svg#circles-1"></use>
+                </svg>
+                <svg class="icon icon-test advantages__icon_small">
+                  <use xlink:href="svg/sprite.svg#test"></use>
+                </svg>
+              </div>
+              <div class="advantages__description"><span class="advantages__text">Делаем проверку каждого стенда <br></span><span class="advantages__subtext">и&nbspстанка перед упаковкой и&nbspотправкой. Это гарантирует, что Вы получаете корректно работающий и точный стенд</span></div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__icons">
+                <svg class="icon icon-circles-2 advantages__icon_big">
+                  <use xlink:href="svg/sprite-original.svg#circles-2"></use>
+                </svg>
+                <svg class="icon icon-box advantages__icon_small">
+                  <use xlink:href="svg/sprite.svg#box"></use>
+                </svg>
+              </div>
+              <div class="advantages__description"><span class="advantages__text">Оборудование не повредится </span><span class="advantages__subtext">при перевозке благодаря специальным защитным палетам</span></div>
+            </li>
+            <li class="advantages__item">
+              <div class="advantages__icons">
+                <svg class="icon icon-circles-1 advantages__icon_big">
+                  <use xlink:href="svg/sprite-original.svg#circles-1"></use>
+                </svg>
+                <svg class="icon icon-file advantages__icon_small">
+                  <use xlink:href="svg/sprite.svg#file"></use>
+                </svg>
+              </div>
+              <div class="advantages__description"><span class="advantages__text">Гарантируем сроки по договору </span><span class="advantages__subtext">несем материальную ответственность</span></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mount">
+      <div class="wrapper">
+        <div class="mount__inner">
+          <div class="mount__content">
+            <h2 class="mount__title"><span>Монтаж и настройка нашими специалистами </span><span class="blue">в&nbspдень доставки</span></h2>
+            <ul class="mount__list">
+              <li class="mount__item">
+                <div class="mount__image mount__image_1">
+                  <picture>
+                    <source type="image/webp" srcset="img/mount/docs.webp"/>
+                    <source type="image/png" srcset="img/mount/docs.png"/><img src="img/mount/docs.png"/>
+                  </picture>
+                </div>
+                <p class="mount__text"><b>Готовим чертеж</b> оптимального положения, чтобы оборудование занимало мало места, а ваши сотрудники быстро и удобно им пользовались</p>
+              </li>
+              <li class="mount__item">
+                <div class="mount__image mount__image_2">
+                  <picture>
+                    <source type="image/webp" srcset="img/mount/man.webp"/>
+                    <source type="image/jpeg" srcset="img/mount/man.jpg"/><img src="img/mount/man.jpg"/>
+                  </picture>
+                </div>
+                <p class="mount__text"><b>Специалисты с опытом от 5 лет</b> монтируют оборудование согласно чертежу за 1 день</p>
+              </li>
+              <li class="mount__item">
+                <div class="mount__image mount__image_3">
+                  <picture>
+                    <source type="image/webp" srcset="img/mount/laptop.webp"/>
+                    <source type="image/jpeg" srcset="img/mount/laptop.jpg"/><img src="img/mount/laptop.jpg"/>
+                  </picture>
+                </div>
+                <p class="mount__text">Калибруем оборудование и настраиваем программное обеспечение, <b>чтобы все работало без ошибок</b></p>
+              </li>
+            </ul>
+          </div>
+          <div class="mount__expert">
+            <picture>
+              <source type="image/webp" srcset="img/mount/expert.webp"/>
+              <source type="image/jpeg" srcset="img/mount/expert.jpg"/><img src="img/mount/expert.jpg"/>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video"> 
+      <div class="wrapper">
+        <div class="video__inner">
+          <h2 class="video__title"><span class="yellow">Узнайте как выбрать стенд </span><span>перед сезоном осень 2020</span></h2>
+          <p class="video__subtitle">из 5-минутного видео</p>
+          <div class="video__content">
+            <video data-src="video/video-1.mp4" poster="img/video/poster.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banks">
+      <div class="wrapper">
+        <div class="banks__inner">
+          <h2 class="banks__title"><span>Возьмите оборудование </span><span class="blue">в кредит или лизинг</span></h2>
+          <p class="banks__subtitle">от 1% в месяц от наших банков-партнеров</p>
+          <div class="banks__list banks__list_desktop">
+            <picture>
+              <source type="image/webp" srcset="img/banks/banks.webp"/>
+              <source type="image/jpeg" srcset="img/banks/banks.jpg"/><img src="img/banks/banks.jpg"/>
+            </picture>
+          </div>
+          <div class="banks__list banks__list_mobile"></div>
+          <div class="banks__confirm">
+            <button class="button banks__button button_blue" type="button">Скачать комплект документов
+            </button><a class="banks__check">Получить предварительное одобрение</a>
+          </div>
+          <div class="banks__contract">
+            <picture>
+              <source type="image/webp" srcset="img/banks/contract.webp"/>
+              <source type="image/jpeg" srcset="img/banks/contract.jpg"/><img src="img/banks/contract.jpg"/>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tradein">
+      <div class="wrapper">
+        <div class="tradein__inner">
+          <form class="tradein__form form" id="form-tradein">
+            <p class="form__title">Рассчитайте стоимость выкупа оборудования</p>
+            <div class="form__line">
+              <select class="select2 form__select" name="brand" data-placeholder="Выберите бренд">
+                <option></option>
+                <option value="First">First</option>
+                <option value="Second">Second</option>
+              </select>
+            </div>
+            <div class="form__line">
+              <select class="select2 form__select" name="year" data-placeholder="Год выпуска">
+                <option></option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+              </select>
+            </div>
+            <div class="form__line">
+              <div class="input">
+                <input class="input__item input__item_white" type="text" placeholder="Ваш город"/>
+              </div>
+            </div>
+            <div class="contacts form__contacts">
+              <p class="contacts__title">Куда прислать ссылку на расчет?</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-tradein-viber" value="Viber" checked="checked"/>
+                  <label for="provider-tradein-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-tradein-telegram" value="Telegram"/>
+                  <label for="provider-tradein-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-tradein-whatsapp" value="WhatsApp"/>
+                  <label for="provider-tradein-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-tradein-phone" value="По телефону"/>
+                  <label for="provider-tradein-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone form__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input ">
+                  <input class="input__item input__item_white" type="tel" name="phone" placeholder="Номер телефона"/>
+                </div>
+                <button class="button phone__button button_yellow" type="submit">Рассчитать стоимость
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+            </div>
+          </form>
+          <div class="tradein__content">
+            <h2 class="tradein__title"><span>Обменяем ваш </span><span class="blue">старый стенд на новый</span></h2>
+            <p class="tradein__subtitle">Сдайте нам старое оборудование по программе Trade-in и получите скидку на покупку нового.</p>
+            <p class="tradein__subtitle">Сохраните ваши время и деньги на утилизацию старого оборудования или поиск покупателя</p>
+            <ul class="tradein__list">
+              <li class="tradein__item">
+                <svg class="icon icon-approval tradein__icon tradein__icon_approval">
+                  <use xlink:href="svg/sprite.svg#approval"></use>
+                </svg>
+                <p class="tradein__text"><b>Старое оборудование может служить </b><span>первоначальным взносом при оформлении нового оборудования в лизинг</span></p>
+              </li>
+              <li class="tradein__item">
+                <svg class="icon icon-team tradein__icon tradein__icon_team">
+                  <use xlink:href="svg/sprite.svg#team"></use>
+                </svg>
+                <p class="tradein__text"><b>По программе Trade-in принимается как наше оборудование так и других </b><span>производителей: Hunter, Nordberg, Sivik и т.д.</span></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="subscribe">
+      <div class="wrapper">   
+        <div class="subscribe__inner">
+          <div class="subscribe__content">
+            <h2 class="subscribe__title"><span>Получайте ежемесячные подборки качественного </span><span class="blue"><span class="nowrap">б/у оборудования</span> с ценами</span></h2>
+            <p class="subscribe__subtitle">Шиномонтажные станки, балансировочные стенды и&nbspавтомойки, которые мы выкупили по программе Trade-in. Все оборудование проверено на&nbspработоспособность и надежность всех узлов</p>
+            <form class="subscribe__form form-line" id="form-subscribe">
+              <div class="contacts subscribe__contacts">
+                <p class="contacts__title">Куда присылать подборки?</p>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-subscribe-viber" value="Viber" checked="checked"/>
+                    <label for="provider-subscribe-viber">
+                      <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                        <use xlink:href="svg/sprite.svg#viber"></use>
+                      </svg><span class="contacts__text">Viber</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-subscribe-telegram" value="Telegram"/>
+                    <label for="provider-subscribe-telegram">
+                      <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                        <use xlink:href="svg/sprite.svg#telegram"></use>
+                      </svg><span class="contacts__text">Telegram</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-subscribe-whatsapp" value="WhatsApp"/>
+                    <label for="provider-subscribe-whatsapp">
+                      <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                        <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                      </svg><span class="contacts__text">WhatsApp</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-subscribe-phone" value="По телефону"/>
+                    <label for="provider-subscribe-phone">
+                      <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                        <use xlink:href="svg/sprite.svg#phone"></use>
+                      </svg><span class="contacts__text">По телефону</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="phone subscribe__phone">
+                <p class="phone__title"></p>
+                <div class="phone__content">
+                  <div class="input phone__input  input_rounded">
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                  </div>
+                  <button class="button phone__button button_blue button_rounded" type="submit">Подписаться на рассылку
+                  </button>
+                </div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clients">
+      <div class="wrapper">
+        <div class="clients__inner">
+          <ul class="clients__info">
+            <li class="clients__item">
+              <div class="clients__number">8 345</div>
+              <div class="clients__text">единиц оборудования поставили заказчикам по всей России за 4 года</div>
+            </li>
+            <li class="clients__item">
+              <div class="clients__number">134</div>
+              <div class="clients__text">автосервиса укомплектовали под ключ</div>
+            </li>
+          </ul>
+          <div class="clients__list">
+            <picture>
+              <source type="image/webp" srcset="img/clients.webp"/>
+              <source type="image/jpeg" srcset="img/clients.jpg"/><img src="img/clients.jpg"/>
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="showroom">
+      <div class="wrapper">
+        <div class="showroom__inner">
+          <div class="showroom__content">
+            <h2 class="showroom__title"><span>Протестируйте оборудование </span><span class="blue">в&nbspнашем шоу-руме в&nbspМоскве</span></h2>
+            <p class="showroom__subtitle"><b>16 стендов и станков </b><span>с необходимыми расходниками готовы к тест-драйву в любое время</span></p>
+            <ul class="showroom__list">
+              <li class="showroom__item">
+                <div class="showroom__logo">
+                  <svg class="icon icon-logo showroom__icon_logo">
+                    <use xlink:href="svg/sprite.svg#logo"></use>
+                  </svg>
+                </div>
+                <p class="showroom__text"><b>Все функции оборудования доступны </b><span>без ограничений</span></p>
+              </li>
+              <li class="showroom__item">
+                <div class="showroom__logo">
+                  <svg class="icon icon-logo showroom__icon_logo">
+                    <use xlink:href="svg/sprite.svg#logo"></use>
+                  </svg>
+                </div>
+                <p class="showroom__text"><b>Бесплатная парковка </b><br><span>для гостей</span></p>
+              </li>
+            </ul>
+            <button class="button showroom__button button_blue" type="button">Записаться на тест-драйв
+            </button>
+          </div>
+          <div class="showroom__image">
+            <picture>
+              <source type="image/webp" srcset="img/showroom/showroom.webp"/>
+              <source type="image/jpeg" srcset="img/showroom/showroom.jpg"/><img src="img/showroom/showroom.jpg"/>
+            </picture>
+            <div class="showroom__phone">
+              <picture>
+                <source type="image/webp" srcset="img/showroom/phone.webp"/>
+                <source type="image/png" srcset="img/showroom/phone.png"/><img src="img/showroom/phone.png"/>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div id="map"></div>
+      <div class="wrapper">
+        <div class="map__inner">
+          <div class="map__contacts">
+            <h2 class="map__title"><span class="blue">Шоу-рум и офис </span><span>в одном месте</span></h2>
+            <p class="map__text">по адресу: г. Москва, Дмитровское шоссе, 157, бизнес-центр «Гефест»</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__content">
+            <div class="footer__col footer__col_logo">
+              <div class="footer__logo">
+                <picture>
+                  <source type="image/webp" srcset="img/header/logo.webp"/>
+                  <source type="image/png" srcset="img/header/logo.png"/><img src="img/header/logo.png"/>
+                </picture>
+              </div>
+              <p class="footer__slogan">Поставляем оборудование для шиномонтажа по всей России с 2016 года</p>
+            </div>
+            <div class="footer__col footer__col_phone">
+              <div class="footer__contacts"><a class="footer__phone" href="tel:+78005007498">8 800 500-74-98</a><a class="footer__email" href="mailto:info@technovector-shop.ru">info@technovector-shop.ru</a></div>
+              <button class="button footer__button button_yellow" type="button">Обратный звонок
+              </button>
+            </div>
+            <div class="footer__col footer__col_messenger">
+              <p class="footer__title">Мы всегда <br>на связи:</p>
+              <div class="footer__messengers">
+                <svg class="icon icon-whatsapp footer__icon footer__icon_messenger footer__icon_whatsapp">
+                  <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                </svg>
+                <svg class="icon icon-telegram footer__icon footer__icon_messenger footer__icon_telegram">
+                  <use xlink:href="svg/sprite.svg#telegram"></use>
+                </svg>
+                <svg class="icon icon-skype footer__icon footer__icon_messenger footer__icon_skype">
+                  <use xlink:href="svg/sprite.svg#skype"></use>
+                </svg>
+                <svg class="icon icon-vimeo footer__icon footer__icon_messenger footer__icon_vimeo">
+                  <use xlink:href="svg/sprite.svg#vimeo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="footer__col footer__col_social">
+              <p class="footer__title">Присоединяйтесь <br>в соцсетях:</p>
+              <div class="footer__socials"><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-vk footer__icon footer__icon_social footer__icon_vk">
+                    <use xlink:href="svg/sprite.svg#vk"></use>
+                  </svg></a><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-instagram footer__icon footer__icon_social footer__icon_instagram">
+                    <use xlink:href="svg/sprite.svg#instagram"></use>
+                  </svg></a><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-facebook footer__icon footer__icon_social footer__icon_facebook">
+                    <use xlink:href="svg/sprite.svg#facebook"></use>
+                  </svg></a><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-ok footer__icon footer__icon_social footer__icon_ok">
+                    <use xlink:href="svg/sprite.svg#ok"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottomline"><span class="footer__copy">Copyright © 2020 </span><a href="#">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
