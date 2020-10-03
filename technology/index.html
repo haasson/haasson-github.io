@@ -13,9 +13,9 @@
     <header class="header">
       <div class="wrapper">
         <div class="header__inner">
-          <div class="header__topline topline">
+          <div class="topline header__topline">
             <div class="topline__logo-block">
-              <div class="topline__logo"><a href="#" alt="Технология">
+              <div class="topline__logo"><a href="/" alt="Технология">
                   <picture>
                     <source type="image/webp" srcset="img/header/logo.webp"/>
                     <source type="image/png" srcset="img/header/logo.png"/><img src="img/header/logo.png"/>
@@ -31,7 +31,7 @@
                   <use xlink:href="svg/sprite.svg#telegram"></use>
                 </svg><a class="topline__phone" href="tel:+78005007498">8 800 500-74-98</a>
               </div>
-              <button class="button topline__button button_yellow button_rounded" type="button">Заказать звонок
+              <button class="button topline__button popup-default button_yellow button_rounded" type="button" href="#callback">Заказать звонок
               </button>
             </div>
           </div>
@@ -69,7 +69,7 @@
                 </li>
               </ul>
             </div>
-            <form class="hero__form form"> 
+            <form class="hero__form form" id="form-catalog" data-route="calc">
               <p class="form__title">Скачайте каталог оборудования с&nbspценами на август 2020</p>
               <p class="form__subtitle">+ индивидуальную скидку <span class="nowrap">5-15%</span> на&nbspвсе&nbspмодели</p>
               <div class="contacts form__contacts">
@@ -113,16 +113,19 @@
                 <p class="phone__title">За каким номером закрепить&nbspскидку?</p>
                 <div class="phone__content">
                   <div class="input phone__input ">
-                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                    <svg class="icon icon-warning input__icon_error">
+                      <use xlink:href="svg/sprite.svg#warning"></use>
+                    </svg>
                   </div>
                   <button class="button phone__button button_blue" type="submit">Скачать каталог оборудования
                     <picture class="button__image">
-                      <source type="image/webp" srcset="img/magazine.webp"/>
-                      <source type="image/png" srcset="img/magazine.png"/><img src="img/magazine.png"/>
+                      <source type="image/webp" srcset="img/equipment/1/magazine.webp"/>
+                      <source type="image/png" srcset="img/equipment/1/magazine.png"/><img src="img/equipment/1/magazine.png"/>
                     </picture>
                   </button>
                 </div>
-                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
               </div>
             </form>
           </div>
@@ -193,7 +196,7 @@
               </div>
             </div><span class="content__word">Технология</span>
           </div>
-          <form class="quiz__form form" id="form-quiz">
+          <form class="quiz__form form" id="form-quiz" data-popup="choosing">
             <div class="form__item form__item_checkbox" data-count="1">
               <div class="form__title">Какие услуги Вы планируете оказывать?</div>
               <div class="form__list form__list_service">
@@ -262,8 +265,11 @@
             </div>
             <div class="form__item form__item_text" data-count="3">
               <div class="form__title">В каком городе находитесь?</div>
-              <div class="input form__input">
-                <input class="input__item input__item_gray" type="text" name="city" placeholder="Москва"/>
+              <div class="input form__input no-validate">
+                <input class="input__item input__item_gray" type="text" name="city" placeholder="" value="Москва"/>
+                <svg class="icon icon-warning input__icon_error">
+                  <use xlink:href="svg/sprite.svg#warning"></use>
+                </svg>
               </div>
               <ul class="form__cities">
                 <li class="form__city">Москва</li>
@@ -321,7 +327,7 @@
                     <source type="image/webp" srcset="img/equipment/1/magazine.webp"/>
                     <source type="image/png" srcset="img/equipment/1/magazine.png"/><img src="img/equipment/1/magazine.png"/>
                   </picture>
-                  <button class="button machine__button machine__button_desktop button_blue button_rounded" type="button">Скачать каталог оборудования
+                  <button class="button machine__button machine__button_desktop popup-default button_blue button_rounded" type="button" href="#machine-1">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_desktop"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
                   <div class="machine__label">
                     <svg class="icon icon-label machine__icon_label">
@@ -337,7 +343,7 @@
                       <source type="image/png" srcset="img/equipment/1/main.png"/><img src="img/equipment/1/main.png"/>
                     </picture>
                   </div>
-                  <button class="button machine__button machine__button_mobile button_blue button_rounded" type="button">Скачать каталог оборудования
+                  <button class="button machine__button machine__button_mobile popup-default button_blue button_rounded" type="button" href="#machine-1">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_mobile"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
                 </div>
                 <div class="machine__video-block video-block">
@@ -430,7 +436,7 @@
                     <source type="image/webp" srcset="img/equipment/3/magazine.webp"/>
                     <source type="image/png" srcset="img/equipment/3/magazine.png"/><img src="img/equipment/3/magazine.png"/>
                   </picture>
-                  <button class="button machine__button machine__button_desktop button_blue button_rounded" type="button">Скачать каталог оборудования
+                  <button class="button machine__button machine__button_desktop popup-default button_blue button_rounded" type="button" href="#machine-2">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_desktop"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
                   <div class="machine__label">
                     <svg class="icon icon-label machine__icon_label">
@@ -446,7 +452,7 @@
                       <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
                     </picture>
                   </div>
-                  <button class="button machine__button machine__button_mobile button_blue button_rounded" type="button">Скачать каталог оборудования
+                  <button class="button machine__button machine__button_mobile popup-default button_blue button_rounded" type="button" href="#machine-2">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_mobile"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
                 </div>
                 <div class="machine__video-block video-block">
@@ -562,7 +568,7 @@
                     <source type="image/webp" srcset="img/equipment/3/magazine.webp"/>
                     <source type="image/png" srcset="img/equipment/3/magazine.png"/><img src="img/equipment/3/magazine.png"/>
                   </picture>
-                  <button class="button machine__button machine__button_desktop button_blue button_rounded" type="button">Скачать каталог оборудования
+                  <button class="button machine__button machine__button_desktop popup-default button_blue button_rounded" type="button" href="#machine-3">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_desktop"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
                   <div class="machine__label">
                     <svg class="icon icon-label machine__icon_label">
@@ -578,7 +584,7 @@
                       <source type="image/png" srcset="img/equipment/3/main.png"/><img src="img/equipment/3/main.png"/>
                     </picture>
                   </div>
-                  <button class="button machine__button machine__button_mobile button_blue button_rounded" type="button">Скачать каталог оборудования
+                  <button class="button machine__button machine__button_mobile popup-default button_blue button_rounded" type="button" href="#machine-3">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_mobile"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
                 </div>
                 <div class="machine__video-block video-block">
@@ -647,7 +653,7 @@
           <div class="table__content">
             <h2 class="table__title"> <span class="yellow">Скачайте сравнительную таблицу </span><span>оборудования разных брендов</span></h2>
             <p class="table__subtitle"> <span>Вы узнаете, чем отличаются станки и стенды разных производителей, помимо цены. </span><b>Благодаря таблице Вы сможете самостоятельно подобрать оборудования для вашего автосервиса</b></p>
-            <form class="table__form form-line" id="form-table">
+            <form class="table__form form-line" id="form-table" data-route="ty-page">
               <div class="contacts table__contacts">
                 <p class="contacts__title">Куда прислать таблицу?</p>
                 <ul class="contacts__list">
@@ -689,12 +695,15 @@
                 <p class="phone__title"></p>
                 <div class="phone__content">
                   <div class="input phone__input  input_rounded">
-                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                    <svg class="icon icon-warning input__icon_error">
+                      <use xlink:href="svg/sprite.svg#warning"></use>
+                    </svg>
                   </div>
                   <button class="button phone__button button_blue button_rounded" type="submit">Получить таблицу
                   </button>
                 </div>
-                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
               </div>
             </form>
             <div class="table__label">
@@ -745,7 +754,7 @@
                   <div class="complex__prices"><span class="complex__price complex__price_old"> <span>320 000</span><span class="currency">руб.</span></span>
                     <p class="complex__price complex__price_new"><span>260 000</span><span class="currency">руб.</span></p>
                   </div>
-                  <button class="button complex__button button_blue button_rounded" type="button">Скачать презентацию комплекта
+                  <button class="button complex__button popup-default button_blue button_rounded" type="button" href="#complex-1">Скачать презентацию комплекта
                   </button>
                   <p class="complex__note"> <b>с подробным описанием </b><span>всего оборудования, ценами и расчетом окупаемости</span></p>
                 </div>
@@ -786,7 +795,7 @@
                   <div class="complex__prices"><span class="complex__price complex__price_old"> <span>360 000</span><span class="currency">руб.</span></span>
                     <p class="complex__price complex__price_new"><span>290 000</span><span class="currency">руб.</span></p>
                   </div>
-                  <button class="button complex__button button_blue button_rounded" type="button">Скачать презентацию комплекта
+                  <button class="button complex__button popup-default button_blue button_rounded" type="button" href="#complex-2">Скачать презентацию комплекта
                   </button>
                   <p class="complex__note"> <b>с подробным описанием </b><span>всего оборудования, ценами и расчетом окупаемости</span></p>
                 </div>
@@ -835,7 +844,7 @@
                   <div class="complex__prices"><span class="complex__price complex__price_old"> <span>560 000</span><span class="currency">руб.</span></span>
                     <p class="complex__price complex__price_new"><span>495 000</span><span class="currency">руб.</span></p>
                   </div>
-                  <button class="button complex__button button_blue button_rounded" type="button">Скачать презентацию комплекта
+                  <button class="button complex__button popup-default button_blue button_rounded" type="button" href="#complex-3">Скачать презентацию комплекта
                   </button>
                   <p class="complex__note"> <b>с подробным описанием </b><span>всего оборудования, ценами и расчетом окупаемости</span></p>
                 </div>
@@ -851,7 +860,7 @@
         <div class="consult__inner">
           <h2 class="consult__title"><span>Не знаете какое оборудование и комплектующие </span><span class="blue">подойдут для вашего шиномонтажа?</span></h2>
           <p class="consult__subtitle"><b>За 15 минут мы поможем Вам подобрать оборудование под ваш бюджет с максимально быстрой окупаемостью. </b><span>А также подготовим чертеж с расположением оборудования в вашем автосервисе</span></p>
-          <form class="consult__form form-line" id="form-consult">
+          <form class="consult__form form-line" id="form-consult" data-route="ty-page">
             <div class="contacts consult__contacts">
               <p class="contacts__title">Наш специалист свяжется с Вами, чтобы задать уточняющие вопросы. <b>Как Вам удобнее связаться?</b></p>
               <ul class="contacts__list">
@@ -893,12 +902,15 @@
               <p class="phone__title"></p>
               <div class="phone__content">
                 <div class="input phone__input  input_rounded">
-                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
                 </div>
                 <button class="button phone__button button_blue button_rounded" type="submit">Получить консультацию
                 </button>
               </div>
-              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
             </div>
           </form>
         </div>
@@ -996,8 +1008,13 @@
         <div class="video__inner">
           <h2 class="video__title"><span class="yellow">Узнайте как выбрать стенд </span><span>перед сезоном осень 2020</span></h2>
           <p class="video__subtitle">из 5-минутного видео</p>
-          <div class="video__content rel rel_16-9">
-            <video class="rel-child" data-src="video/video-1.mp4" poster="img/video/poster.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+          <div class="video__content video-wrap rel rel_16-9">
+            <video class="rel-child" data-src="video/1.mp4" poster="img/video/poster.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+            <div class="video__icon-wrap play-btn">
+              <svg class="icon icon-play video__icon_play">
+                <use xlink:href="svg/sprite.svg#play"></use>
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -1026,8 +1043,8 @@
             <div class="banks__item banks__item_10"></div>
           </div>
           <div class="banks__confirm">
-            <button class="button banks__button button_blue" type="button">Скачать комплект документов
-            </button><a class="banks__check">Получить предварительное одобрение</a>
+            <button class="button banks__button popup-default button_blue" type="button" href="#leasing">Скачать комплект документов
+            </button><a class="banks__check popup-default" href="#accept">Получить предварительное одобрение</a>
           </div>
           <div class="banks__contract">
             <picture>
@@ -1041,7 +1058,7 @@
     <div class="tradein">
       <div class="wrapper">
         <div class="tradein__inner">
-          <form class="tradein__form form" id="form-tradein">
+          <form class="tradein__form form" id="form-tradein" data-route="ty-page">
             <p class="form__title">Рассчитайте стоимость выкупа оборудования</p>
             <div class="form__line">
               <select class="select2 form__select" name="brand" data-placeholder="Выберите бренд">
@@ -1063,8 +1080,11 @@
               </select>
             </div>
             <div class="form__line">
-              <div class="input">
-                <input class="input__item input__item_white" type="text" placeholder="Ваш город"/>
+              <div class="input no-validate">
+                <input class="input__item input__item_white" type="text" placeholder="Ваш город" value=""/>
+                <svg class="icon icon-warning input__icon_error">
+                  <use xlink:href="svg/sprite.svg#warning"></use>
+                </svg>
               </div>
             </div>
             <div class="contacts form__contacts">
@@ -1108,12 +1128,15 @@
               <p class="phone__title"></p>
               <div class="phone__content">
                 <div class="input phone__input ">
-                  <input class="input__item input__item_white" type="tel" name="phone" placeholder="Номер телефона"/>
+                  <input class="input__item input__item_white" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
                 </div>
                 <button class="button phone__button button_yellow" type="submit">Рассчитать стоимость
                 </button>
               </div>
-              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
             </div>
           </form>
           <div class="tradein__content">
@@ -1144,7 +1167,7 @@
           <div class="subscribe__content">
             <h2 class="subscribe__title"><span>Получайте ежемесячные подборки качественного </span><span class="blue"><span class="nowrap">б/у оборудования</span> с ценами</span></h2>
             <p class="subscribe__subtitle">Шиномонтажные станки, балансировочные стенды и&nbspавтомойки, которые мы выкупили по программе Trade-in. Все оборудование проверено на&nbspработоспособность и надежность всех узлов</p>
-            <form class="subscribe__form form-line" id="form-subscribe">
+            <form class="subscribe__form form-line" id="form-subscribe" data-route="ty-page">
               <div class="contacts subscribe__contacts">
                 <p class="contacts__title">Куда присылать подборки?</p>
                 <ul class="contacts__list">
@@ -1186,12 +1209,15 @@
                 <p class="phone__title"></p>
                 <div class="phone__content">
                   <div class="input phone__input  input_rounded">
-                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона"/>
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                    <svg class="icon icon-warning input__icon_error">
+                      <use xlink:href="svg/sprite.svg#warning"></use>
+                    </svg>
                   </div>
                   <button class="button phone__button button_blue button_rounded" type="submit">Подписаться на рассылку
                   </button>
                 </div>
-                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с политикой конфиденциальности</span></div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
               </div>
             </form>
           </div>
@@ -1244,7 +1270,7 @@
                 <p class="showroom__text"><b>Бесплатная парковка </b><br><span>для гостей</span></p>
               </li>
             </ul>
-            <button class="button showroom__button button_blue" type="button">Записаться на тест-драйв
+            <button class="button showroom__button popup-default button_blue" type="button" href="#test-drive">Записаться на тест-драйв
             </button>
           </div>
           <div class="showroom__image">
@@ -1288,7 +1314,7 @@
             </div>
             <div class="footer__col footer__col_phone">
               <div class="footer__contacts"><a class="footer__phone" href="tel:+78005007498">8 800 500-74-98</a><a class="footer__email" href="mailto:info@technovector-shop.ru">info@technovector-shop.ru</a></div>
-              <button class="button footer__button button_yellow" type="button">Обратный звонок
+              <button class="button footer__button popup-default button_yellow" type="button" href="#callback">Обратный звонок
               </button>
             </div>
             <div class="footer__col footer__col_messenger">
@@ -1326,7 +1352,766 @@
               </div>
             </div>
           </div>
-          <div class="footer__bottomline"><span class="footer__copy">Copyright © 2020 </span><a href="#">Политика конфиденциальности</a></div>
+          <div class="footer__bottomline"><span class="footer__copy">Copyright © <span class="current-year"> </span></span><a class="footer__policy popup-default" href="#policy">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="popups">
+      <div class="popup p-callback" id="callback">
+        <div class="p-close"></div>
+        <div class="p-callback__inner">
+          <div class="p-callback__sign"><span class="p-callback__name">Эдуард Марицашвили</span>
+            <p class="p-callback__status">Специалист компании "Технология"</p>
+          </div>
+          <div class="p-callback__content">
+            <h2 class="p-callback__title popup__title">Оставьте ваш телефон</h2>
+            <p class="p-callback__text">Я перезвоню в удобное для Вас время и отвечу на все интересующие вопросы.</p>
+            <p class="p-callback__text">Расскажу, чем отличаются модели оборудования, помогу подобрать оборудование под ваш бюджет.</p>
+            <form class="form form-line p-callback__form" id="form-p-callback" data-route="ty-page">
+              <div class="form__time">
+                <input type="radio" name="time" id="time-now" value="Сейчас" checked>
+                <label for="time-now">Перезвоните мне сейчас </label>
+                <input type="radio" name="time" id="time-later" value="Ко времени">
+                <input class="input form__call-time no-validate" type="text" name="call-time" placeholder="Ко времени">
+              </div>
+              <div class="phone p-callback__phone">
+                <p class="phone__title"></p>
+                <div class="phone__content">
+                  <div class="input phone__input  input_rounded">
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                    <svg class="icon icon-warning input__icon_error">
+                      <use xlink:href="svg/sprite.svg#warning"></use>
+                    </svg>
+                  </div>
+                  <button class="button phone__button button_yellow button_rounded" type="submit">Заказать звонок
+                  </button>
+                </div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-prices p-catalog" id="prices">
+        <div class="p-close"></div>
+        <h2 class="popup__title">Получите доступ к каталогу с ценами</h2>
+        <p class="popup__subtitle">+ индивидуальную скидку <span class="nowrap">5-15%</span> на все позиции в&nbspзависимости от&nbspсуммы заказа</p>
+        <div class="popup__content">
+          <div class="popup__images">
+            <div class="popup__image">
+              <picture>
+                <source type="image/webp" srcset="img/popup/catalog.webp"/>
+                <source type="image/jpeg" srcset="img/popup/catalog.jpg"/><img src="img/popup/catalog.jpg"/>
+              </picture>
+            </div>
+            <div class="popup__phone-img">
+              <picture>
+                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+              </picture>
+            </div>
+          </div>
+          <div class="popup__label"></div>
+          <form class="popup__form form-line" id="form-popup-catalog" data-route="calc">
+            <div class="contacts popup__contacts">
+              <p class="contacts__title">Куда прислать каталог?</p>
+              <p class="contacts__subtitle">За номером телефона мы закрепим скидку</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-catalog-viber" value="Viber" checked="checked"/>
+                  <label for="provider-catalog-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-catalog-telegram" value="Telegram"/>
+                  <label for="provider-catalog-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-catalog-whatsapp" value="WhatsApp"/>
+                  <label for="provider-catalog-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-catalog-phone" value="По телефону"/>
+                  <label for="provider-catalog-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone popup__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button phone__button button_yellow button_rounded" type="submit">Получить доступ к каталогу с ценами +&nbspскидку до&nbsp15%
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup p-choosing" id="choosing">
+        <div class="p-close"></div>
+        <div class="p-choosing__inner">
+          <div class="p-choosing__first">
+            <div class="p-choosing__progress progress">
+              <div class="progress__base">
+                <div class="progress__active"></div>
+                <div class="progress__point"></div>
+              </div>
+              <div class="progress__text">Готово: <span class="progress-value">0%</span></div>
+            </div>
+            <div class="p-choosing__content content">
+              <h2 class="content__title">Одну минуту!</h2>
+              <p class="content__subtitle">Подбираем шиномонтажное оборудование с высокой окупаемостью в вашем городе</p>
+              <ul class="content__list">
+                <li class="content__item">
+                  <div class="content__icon-wrap">
+                    <svg class="icon icon-check content__icon content__icon_check">
+                      <use xlink:href="svg/sprite.svg#check"></use>
+                    </svg>
+                    <svg class="icon icon-loading content__icon content__icon_loading">
+                      <use xlink:href="svg/sprite.svg#loading"></use>
+                    </svg>
+                  </div><span class="content__text">Подбор производителей</span>
+                </li>
+                <li class="content__item">
+                  <div class="content__icon-wrap">
+                    <svg class="icon icon-check content__icon content__icon_check">
+                      <use xlink:href="svg/sprite.svg#check"></use>
+                    </svg>
+                    <svg class="icon icon-loading content__icon content__icon_loading">
+                      <use xlink:href="svg/sprite.svg#loading"></use>
+                    </svg>
+                  </div><span class="content__text">Подбор моделей оборудования</span>
+                </li>
+                <li class="content__item">
+                  <div class="content__icon-wrap">
+                    <svg class="icon icon-check content__icon content__icon_check">
+                      <use xlink:href="svg/sprite.svg#check"></use>
+                    </svg>
+                    <svg class="icon icon-loading content__icon content__icon_loading">
+                      <use xlink:href="svg/sprite.svg#loading"></use>
+                    </svg>
+                  </div><span class="content__text">Сравнение цен</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-choosing__second hide">
+            <div class="p-choosing__content content">
+              <h2 class="content__title">Мы подобрали лучшие предложения для Вашего города</h2>
+              <p class="content__subtitle">Заполните поля с именем и&nbspтелефоном, чтобы посмотреть лучшие цены!</p>
+              <form class="p-choosing__form" id="form-p-choosing" data-route="ty-page">
+                <div class="input p-choosing__input no-validate input_rounded">
+                  <input class="input__item input__item_white" type="text" name="name" placeholder="Ваше имя" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <div class="input p-choosing__input input_rounded">
+                  <input class="input__item input__item_white" type="tel" name="phone" placeholder="Номер телефона " value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button p-choosing__button button_blue button_rounded" type="submit">Смотреть лучшие цены
+                </button>
+                <div class="p-choosing__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-result" id="result">
+        <div class="p-close"></div>
+        <sapn>Result popup</sapn>
+      </div>
+      <div class="popup popup-policy" id="policy">
+        <div class="p-close"></div><span>Policy popup</span>
+      </div>
+      <div class="popup popup-machine p-catalog" id="machine-1">
+        <div class="p-close"></div>
+        <h2 class="popup__title">Скачайте каталог шиномонтажных станков</h2>
+        <p class="popup__subtitle">с индивидуальной скидкой <span class="nowrap">5-15%</span> на все модели</p>
+        <div class="popup__content">
+          <div class="popup__images">
+            <div class="popup__image">
+              <picture>
+                <source type="image/webp" srcset="img/popup/machine-1.webp"/>
+                <source type="image/jpeg" srcset="img/popup/machine-1.jpg"/><img src="img/popup/machine-1.jpg"/>
+              </picture>
+            </div>
+            <div class="popup__phone-img">
+              <picture>
+                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+              </picture>
+            </div>
+          </div>
+          <div class="popup__label"></div>
+          <form class="popup__form form-line" id="form-popup-machine-1" data-route="calc">
+            <div class="contacts popup__contacts">
+              <p class="contacts__title">Куда прислать каталог?</p>
+              <p class="contacts__subtitle">За номером телефона мы закрепим скидку</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-1-viber" value="Viber" checked="checked"/>
+                  <label for="provider-machine-1-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-1-telegram" value="Telegram"/>
+                  <label for="provider-machine-1-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-1-whatsapp" value="WhatsApp"/>
+                  <label for="provider-machine-1-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-1-phone" value="По телефону"/>
+                  <label for="provider-machine-1-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone popup__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button phone__button button_yellow button_rounded" type="submit">Получить доступ к каталогу с ценами +&nbspскидку до&nbsp15%
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup-machine p-catalog" id="machine-2">
+        <div class="p-close"></div>
+        <h2 class="popup__title">Скачайте каталог балансировочных стендов</h2>
+        <p class="popup__subtitle">с индивидуальной скидкой <span class="nowrap">5-15%</span> на все модели</p>
+        <div class="popup__content">
+          <div class="popup__images">
+            <div class="popup__image">
+              <picture>
+                <source type="image/webp" srcset="img/popup/machine-2.webp"/>
+                <source type="image/jpeg" srcset="img/popup/machine-2.jpg"/><img src="img/popup/machine-2.jpg"/>
+              </picture>
+            </div>
+            <div class="popup__phone-img">
+              <picture>
+                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+              </picture>
+            </div>
+          </div>
+          <div class="popup__label"></div>
+          <form class="popup__form form-line" id="form-popup-machine-2" data-route="calc">
+            <div class="contacts popup__contacts">
+              <p class="contacts__title">Куда прислать каталог?</p>
+              <p class="contacts__subtitle">За номером телефона мы закрепим скидку</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-2-viber" value="Viber" checked="checked"/>
+                  <label for="provider-machine-2-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-2-telegram" value="Telegram"/>
+                  <label for="provider-machine-2-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-2-whatsapp" value="WhatsApp"/>
+                  <label for="provider-machine-2-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-2-phone" value="По телефону"/>
+                  <label for="provider-machine-2-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone popup__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button phone__button button_yellow button_rounded" type="submit">Получить доступ к каталогу с ценами +&nbspскидку до&nbsp15%
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup-machine p-catalog" id="machine-3">
+        <div class="p-close"></div>
+        <h2 class="popup__title">Скачайте каталог автоматических моек колес</h2>
+        <p class="popup__subtitle">с индивидуальной скидкой <span class="nowrap">5-15%</span> на все модели</p>
+        <div class="popup__content">
+          <div class="popup__images">
+            <div class="popup__image">
+              <picture>
+                <source type="image/webp" srcset="img/popup/machine-3.webp"/>
+                <source type="image/jpeg" srcset="img/popup/machine-3.jpg"/><img src="img/popup/machine-3.jpg"/>
+              </picture>
+            </div>
+            <div class="popup__phone-img">
+              <picture>
+                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+              </picture>
+            </div>
+          </div>
+          <div class="popup__label"></div>
+          <form class="popup__form form-line" id="form-popup-machine-3" data-route="calc">
+            <div class="contacts popup__contacts">
+              <p class="contacts__title">Куда прислать каталог?</p>
+              <p class="contacts__subtitle">За номером телефона мы закрепим скидку</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-3-viber" value="Viber" checked="checked"/>
+                  <label for="provider-machine-3-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-3-telegram" value="Telegram"/>
+                  <label for="provider-machine-3-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-3-whatsapp" value="WhatsApp"/>
+                  <label for="provider-machine-3-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-machine-3-phone" value="По телефону"/>
+                  <label for="provider-machine-3-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone popup__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button phone__button button_yellow button_rounded" type="submit">Получить доступ к каталогу с ценами +&nbspскидку до&nbsp15%
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup p-leasing" id="leasing">
+        <div class="p-close"></div>
+        <div class="p-leasing">
+          <div class="p-leasing__inner">
+            <div class="p-leasing__content">
+              <h2 class="p-leasing__title"><span class="yellow">Куда прислать документы </span><span>для оформления лизинга?</span></h2>
+              <form class="popup__form p-leasing__form form-line" id="form-p-leasing" data-route="ty-page">
+                <div class="contacts p-leasing__contacts">
+                  <p class="contacts__title"></p>
+                  <ul class="contacts__list">
+                    <li class="contacts__item">
+                      <input type="radio" name="provider" id="provider-p-leasing-viber" value="Viber" checked="checked"/>
+                      <label for="provider-p-leasing-viber">
+                        <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                          <use xlink:href="svg/sprite.svg#viber"></use>
+                        </svg><span class="contacts__text">Viber</span>
+                      </label>
+                    </li>
+                    <li class="contacts__item">
+                      <input type="radio" name="provider" id="provider-p-leasing-telegram" value="Telegram"/>
+                      <label for="provider-p-leasing-telegram">
+                        <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                          <use xlink:href="svg/sprite.svg#telegram"></use>
+                        </svg><span class="contacts__text">Telegram</span>
+                      </label>
+                    </li>
+                    <li class="contacts__item">
+                      <input type="radio" name="provider" id="provider-p-leasing-whatsapp" value="WhatsApp"/>
+                      <label for="provider-p-leasing-whatsapp">
+                        <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                          <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                        </svg><span class="contacts__text">WhatsApp</span>
+                      </label>
+                    </li>
+                    <li class="contacts__item">
+                      <input type="radio" name="provider" id="provider-p-leasing-phone" value="По телефону"/>
+                      <label for="provider-p-leasing-phone">
+                        <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                          <use xlink:href="svg/sprite.svg#phone"></use>
+                        </svg><span class="contacts__text">По телефону</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="phone p-leasing__phone">
+                  <p class="phone__title"></p>
+                  <div class="phone__content">
+                    <div class="input phone__input  input_rounded">
+                      <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                      <svg class="icon icon-warning input__icon_error">
+                        <use xlink:href="svg/sprite.svg#warning"></use>
+                      </svg>
+                    </div>
+                    <button class="button phone__button button_yellow button_rounded" type="submit">Получить документы
+                    </button>
+                  </div>
+                  <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup p-accept" id="accept">
+        <div class="p-close"></div>
+        <div class="p-accept__inner">
+          <div class="p-accept__content">
+            <h3 class="p-accept__title"><span class="yellow">Получите предварительное одобрение,  </span><span>указав ваши ИНН и телефон </span></h3>
+            <form class="p-accept__form" id="form-p-accept" data-route="ty-page">
+              <div class="input p-accept__input no-validate input_rounded">
+                <input class="input__item input__item_white" type="text" name="inn" placeholder="Ваш ИНН" value=""/>
+                <svg class="icon icon-warning input__icon_error">
+                  <use xlink:href="svg/sprite.svg#warning"></use>
+                </svg>
+              </div>
+              <div class="input p-accept__input input_rounded">
+                <input class="input__item input__item_white" type="tel" name="phone" placeholder="Номер телефона " value=""/>
+                <svg class="icon icon-warning input__icon_error">
+                  <use xlink:href="svg/sprite.svg#warning"></use>
+                </svg>
+              </div>
+              <button class="button p-accept__button button_yellow button_rounded" type="submit">Получить одобрение
+              </button>
+              <div class="p-accept__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup p-testdrive" id="test-drive">
+        <div class="p-close"></div>
+        <div class="p-testdrive__inner">
+          <div class="p-testdrive__content">
+            <h3 class="p-testdrive__title"><span class="yellow">Укажите удобный день и время, </span><span>чтобы мы могли Вас встретить</span></h3>
+            <form class="p-testdrive__form" id="form-p-testdrive" data-route="ty-page">
+              <div class="input p-testdrive__input no-validate input_rounded">
+                <input class="input__item input__item_white" type="text" name="inn" placeholder="Когда вам удобно подъехать" value=""/>
+                <svg class="icon icon-warning input__icon_error">
+                  <use xlink:href="svg/sprite.svg#warning"></use>
+                </svg>
+              </div>
+              <div class="input p-testdrive__input input_rounded">
+                <input class="input__item input__item_white" type="tel" name="phone" placeholder="Номер телефона " value=""/>
+                <svg class="icon icon-warning input__icon_error">
+                  <use xlink:href="svg/sprite.svg#warning"></use>
+                </svg>
+              </div>
+              <button class="button p-testdrive__button button_yellow button_rounded" type="submit">Записаться на тест-драйв
+              </button>
+              <div class="p-testdrive__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-complex p-catalog" id="complex-1">
+        <div class="p-close"></div>
+        <h2 class="popup__title">Скачайте презентацию комплекта оборудования «СТАРТАП»</h2>
+        <div class="popup__content">
+          <div class="popup__images">
+            <div class="popup__image">
+              <picture>
+                <source type="image/webp" srcset="img/popup/complex-1.webp"/>
+                <source type="image/jpeg" srcset="img/popup/complex-1.jpg"/><img src="img/popup/complex-1.jpg"/>
+              </picture>
+            </div>
+            <div class="popup__phone-img">
+              <picture>
+                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+              </picture>
+            </div>
+          </div>
+          <div class="popup__label"></div>
+          <form class="popup__form form-line" id="form-popup-complex-1" data-route="calc">
+            <div class="contacts popup__contacts">
+              <p class="contacts__title">Куда прислать презентацию?</p>
+              <p class="contacts__subtitle">За номером телефона мы закрепим скидку</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-1-viber" value="Viber" checked="checked"/>
+                  <label for="provider-complex-1-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-1-telegram" value="Telegram"/>
+                  <label for="provider-complex-1-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-1-whatsapp" value="WhatsApp"/>
+                  <label for="provider-complex-1-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-1-phone" value="По телефону"/>
+                  <label for="provider-complex-1-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone popup__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button phone__button button_yellow button_rounded" type="submit">Скачать презентацию комплекта
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup-complex p-catalog" id="complex-2">
+        <div class="p-close"></div>
+        <h2 class="popup__title">Скачайте презентацию комплекта оборудования «Продвинутый»</h2>
+        <div class="popup__content">
+          <div class="popup__images">
+            <div class="popup__image">
+              <picture>
+                <source type="image/webp" srcset="img/popup/complex-2.webp"/>
+                <source type="image/jpeg" srcset="img/popup/complex-2.jpg"/><img src="img/popup/complex-2.jpg"/>
+              </picture>
+            </div>
+            <div class="popup__phone-img">
+              <picture>
+                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+              </picture>
+            </div>
+          </div>
+          <div class="popup__label"></div>
+          <form class="popup__form form-line" id="form-popup-complex-2" data-route="calc">
+            <div class="contacts popup__contacts">
+              <p class="contacts__title">Куда прислать презентацию?</p>
+              <p class="contacts__subtitle">За номером телефона мы закрепим скидку</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-2-viber" value="Viber" checked="checked"/>
+                  <label for="provider-complex-2-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-2-telegram" value="Telegram"/>
+                  <label for="provider-complex-2-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-2-whatsapp" value="WhatsApp"/>
+                  <label for="provider-complex-2-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-2-phone" value="По телефону"/>
+                  <label for="provider-complex-2-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone popup__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button phone__button button_yellow button_rounded" type="submit">Скачать презентацию комплекта
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="popup popup-complex p-catalog" id="complex-3">
+        <div class="p-close"></div>
+        <h2 class="popup__title">Скачайте презентацию комплекта оборудования «Полный»</h2>
+        <div class="popup__content">
+          <div class="popup__images">
+            <div class="popup__image">
+              <picture>
+                <source type="image/webp" srcset="img/popup/complex-3.webp"/>
+                <source type="image/jpeg" srcset="img/popup/complex-3.jpg"/><img src="img/popup/complex-3.jpg"/>
+              </picture>
+            </div>
+            <div class="popup__phone-img">
+              <picture>
+                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+              </picture>
+            </div>
+          </div>
+          <div class="popup__label"></div>
+          <form class="popup__form form-line" id="form-popup-complex-3" data-route="calc">
+            <div class="contacts popup__contacts">
+              <p class="contacts__title">Куда прислать презентацию?</p>
+              <p class="contacts__subtitle">За номером телефона мы закрепим скидку</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-3-viber" value="Viber" checked="checked"/>
+                  <label for="provider-complex-3-viber">
+                    <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                      <use xlink:href="svg/sprite.svg#viber"></use>
+                    </svg><span class="contacts__text">Viber</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-3-telegram" value="Telegram"/>
+                  <label for="provider-complex-3-telegram">
+                    <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                      <use xlink:href="svg/sprite.svg#telegram"></use>
+                    </svg><span class="contacts__text">Telegram</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-3-whatsapp" value="WhatsApp"/>
+                  <label for="provider-complex-3-whatsapp">
+                    <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                      <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                    </svg><span class="contacts__text">WhatsApp</span>
+                  </label>
+                </li>
+                <li class="contacts__item">
+                  <input type="radio" name="provider" id="provider-complex-3-phone" value="По телефону"/>
+                  <label for="provider-complex-3-phone">
+                    <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                      <use xlink:href="svg/sprite.svg#phone"></use>
+                    </svg><span class="contacts__text">По телефону</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <div class="phone popup__phone">
+              <p class="phone__title"></p>
+              <div class="phone__content">
+                <div class="input phone__input  input_rounded">
+                  <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button phone__button button_yellow button_rounded" type="submit">Скачать презентацию комплекта
+                </button>
+              </div>
+              <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

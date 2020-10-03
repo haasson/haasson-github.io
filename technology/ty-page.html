@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technology</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+  </head>
+  <body class="loading">
+    <div class="topline-block">
+      <div class="wrapper">
+        <div class="topline-block__inner">
+          <div class="topline  topline_dark">
+            <div class="topline__logo-block">
+              <div class="topline__logo"><a href="/" alt="Технология">
+                  <picture>
+                    <source type="image/webp" srcset="img/header/logo-white.webp"/>
+                    <source type="image/png" srcset="img/header/logo-white.png"/><img src="img/header/logo-white.png"/>
+                  </picture></a></div>
+              <div class="topline__slogan">Поставляем оборудование для шиномонтажа по всей России с 2016 года</div>
+            </div>
+            <div class="topline__contacts">  
+              <div class="topline__messengers">
+                <svg class="icon icon-whatsapp topline__icon topline__icon_whatsapp">
+                  <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                </svg>
+                <svg class="icon icon-telegram topline__icon topline__icon_telegram">
+                  <use xlink:href="svg/sprite.svg#telegram"></use>
+                </svg><a class="topline__phone" href="tel:+78005007498">8 800 500-74-98</a>
+              </div>
+              <button class="button topline__button popup-default button_yellow button_rounded" type="button" href="#callback">Заказать звонок
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviews">
+      <div class="wrapper">
+        <div class="reviews__inner">
+          <div class="success reviews__success">
+            <div class="success__icon-wrap">
+              <svg class="icon icon-check success__icon_check">
+                <use xlink:href="svg/sprite.svg#check"></use>
+              </svg>
+            </div>
+            <p class="success__text">Мы получили вашу заявку и в скором времени пришлем подбор оборудования и расчет окупаемости</p><a class="success__link" href="/">Вернуться на главную страницу</a>
+          </div>
+          <div class="reviews__content content">
+            <h2 class="content__title"> <span>Пока посмотрите свежие </span><span class="blue">отзывы заказчиков</span></h2>
+            <div class="content__tabs tabs">
+              <div class="tabs__item tabs-button tabs-active" data-tabs="video">Видеоотзывы</div>
+              <div class="tabs__item tabs-button" data-tabs="letter">Письма благодарности</div>
+            </div>
+            <ul class="content__list review tabs-content" id="tab-video">
+              <li class="review__item">
+                <div class="review__video video-wrap rel rel_16-9">
+                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-1.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <div class="review__icon-wrap play-btn">
+                    <svg class="icon icon-play review__icon_play">
+                      <use xlink:href="svg/sprite.svg#play"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="review__info">
+                  <p class="review__title">За 2 дня доставили в Новосибирск оборудование на 300 тыс.</p>
+                  <p class="review__text">«Техцентр Пегас» г. Новосибирск <br>Иван Иванов, директор автосервиса</p>
+                </div>
+              </li>
+              <li class="review__item">
+                <div class="review__video video-wrap rel rel_16-9">
+                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-2.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <div class="review__icon-wrap play-btn">
+                    <svg class="icon icon-play review__icon_play">
+                      <use xlink:href="svg/sprite.svg#play"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="review__info">
+                  <p class="review__title">За неделю укомплектовали в Саратове шиномонтаж по продвинутому тарифу</p>
+                  <p class="review__text">"Колесо фортуны" г. Саратов <br>Иван Иванов, менеджер по закупкам автосервиса</p>
+                </div>
+              </li>
+              <li class="review__item">
+                <div class="review__video video-wrap rel rel_16-9">
+                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-1.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <div class="review__icon-wrap play-btn">
+                    <svg class="icon icon-play review__icon_play">
+                      <use xlink:href="svg/sprite.svg#play"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="review__info">
+                  <p class="review__title">За 2 дня доставили в Новосибирск оборудование на 300 тыс.</p>
+                  <p class="review__text">«Техцентр Пегас» г. Новосибирск <br>Иван Иванов, директор автосервиса</p>
+                </div>
+              </li>
+              <li class="review__item">
+                <div class="review__video video-wrap rel rel_16-9">
+                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-2.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <div class="review__icon-wrap play-btn">
+                    <svg class="icon icon-play review__icon_play">
+                      <use xlink:href="svg/sprite.svg#play"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="review__info">
+                  <p class="review__title">За неделю укомплектовали в Саратове шиномонтаж по продвинутому тарифу</p>
+                  <p class="review__text">"Колесо фортуны" г. Саратов <br>Иван Иванов, менеджер по закупкам автосервиса</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="content__list letters tabs-content hide" id="tab-letter"><span>There will bee letters</span></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__content">
+            <div class="footer__col footer__col_logo">
+              <div class="footer__logo">
+                <picture>
+                  <source type="image/webp" srcset="img/header/logo.webp"/>
+                  <source type="image/png" srcset="img/header/logo.png"/><img src="img/header/logo.png"/>
+                </picture>
+              </div>
+              <p class="footer__slogan">Поставляем оборудование для шиномонтажа по всей России с 2016 года</p>
+            </div>
+            <div class="footer__col footer__col_phone">
+              <div class="footer__contacts"><a class="footer__phone" href="tel:+78005007498">8 800 500-74-98</a><a class="footer__email" href="mailto:info@technovector-shop.ru">info@technovector-shop.ru</a></div>
+              <button class="button footer__button popup-default button_yellow" type="button" href="#callback">Обратный звонок
+              </button>
+            </div>
+            <div class="footer__col footer__col_messenger">
+              <p class="footer__title">Мы всегда <br>на связи:</p>
+              <div class="footer__messengers">
+                <svg class="icon icon-whatsapp footer__icon footer__icon_messenger footer__icon_whatsapp">
+                  <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                </svg>
+                <svg class="icon icon-telegram footer__icon footer__icon_messenger footer__icon_telegram">
+                  <use xlink:href="svg/sprite.svg#telegram"></use>
+                </svg>
+                <svg class="icon icon-skype footer__icon footer__icon_messenger footer__icon_skype">
+                  <use xlink:href="svg/sprite.svg#skype"></use>
+                </svg>
+                <svg class="icon icon-vimeo footer__icon footer__icon_messenger footer__icon_vimeo">
+                  <use xlink:href="svg/sprite.svg#vimeo"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="footer__col footer__col_social">
+              <p class="footer__title">Присоединяйтесь <br>в соцсетях:</p>
+              <div class="footer__socials"><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-vk footer__icon footer__icon_social footer__icon_vk">
+                    <use xlink:href="svg/sprite.svg#vk"></use>
+                  </svg></a><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-instagram footer__icon footer__icon_social footer__icon_instagram">
+                    <use xlink:href="svg/sprite.svg#instagram"></use>
+                  </svg></a><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-facebook footer__icon footer__icon_social footer__icon_facebook">
+                    <use xlink:href="svg/sprite.svg#facebook"></use>
+                  </svg></a><a class="footer__social-link" href="http://vk.com" target="_blank">
+                  <svg class="icon icon-ok footer__icon footer__icon_social footer__icon_ok">
+                    <use xlink:href="svg/sprite.svg#ok"></use>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottomline"><span class="footer__copy">Copyright © <span class="current-year"> </span></span><a class="footer__policy popup-default" href="#policy">Политика конфиденциальности</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="popups">
+      <div class="popup p-callback" id="callback">
+        <div class="p-close"></div>
+        <div class="p-callback__inner">
+          <div class="p-callback__sign"><span class="p-callback__name">Эдуард Марицашвили</span>
+            <p class="p-callback__status">Специалист компании "Технология"</p>
+          </div>
+          <div class="p-callback__content">
+            <h2 class="p-callback__title popup__title">Оставьте ваш телефон</h2>
+            <p class="p-callback__text">Я перезвоню в удобное для Вас время и отвечу на все интересующие вопросы.</p>
+            <p class="p-callback__text">Расскажу, чем отличаются модели оборудования, помогу подобрать оборудование под ваш бюджет.</p>
+            <form class="form form-line p-callback__form" id="form-p-callback" data-route="ty-page">
+              <div class="form__time">
+                <input type="radio" name="time" id="time-now" value="Сейчас" checked>
+                <label for="time-now">Перезвоните мне сейчас </label>
+                <input type="radio" name="time" id="time-later" value="Ко времени">
+                <input class="input form__call-time no-validate" type="text" name="call-time" placeholder="Ко времени">
+              </div>
+              <div class="phone p-callback__phone">
+                <p class="phone__title"></p>
+                <div class="phone__content">
+                  <div class="input phone__input  input_rounded">
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                    <svg class="icon icon-warning input__icon_error">
+                      <use xlink:href="svg/sprite.svg#warning"></use>
+                    </svg>
+                  </div>
+                  <button class="button phone__button button_yellow button_rounded" type="submit">Заказать звонок
+                  </button>
+                </div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="popup p-choosing" id="choosing">
+        <div class="p-close"></div>
+        <div class="p-choosing__inner">
+          <div class="p-choosing__first">
+            <div class="p-choosing__progress progress">
+              <div class="progress__base">
+                <div class="progress__active"></div>
+                <div class="progress__point"></div>
+              </div>
+              <div class="progress__text">Готово: <span class="progress-value">0%</span></div>
+            </div>
+            <div class="p-choosing__content content">
+              <h2 class="content__title">Одну минуту!</h2>
+              <p class="content__subtitle">Подбираем шиномонтажное оборудование с высокой окупаемостью в вашем городе</p>
+              <ul class="content__list">
+                <li class="content__item">
+                  <div class="content__icon-wrap">
+                    <svg class="icon icon-check content__icon content__icon_check">
+                      <use xlink:href="svg/sprite.svg#check"></use>
+                    </svg>
+                    <svg class="icon icon-loading content__icon content__icon_loading">
+                      <use xlink:href="svg/sprite.svg#loading"></use>
+                    </svg>
+                  </div><span class="content__text">Подбор производителей</span>
+                </li>
+                <li class="content__item">
+                  <div class="content__icon-wrap">
+                    <svg class="icon icon-check content__icon content__icon_check">
+                      <use xlink:href="svg/sprite.svg#check"></use>
+                    </svg>
+                    <svg class="icon icon-loading content__icon content__icon_loading">
+                      <use xlink:href="svg/sprite.svg#loading"></use>
+                    </svg>
+                  </div><span class="content__text">Подбор моделей оборудования</span>
+                </li>
+                <li class="content__item">
+                  <div class="content__icon-wrap">
+                    <svg class="icon icon-check content__icon content__icon_check">
+                      <use xlink:href="svg/sprite.svg#check"></use>
+                    </svg>
+                    <svg class="icon icon-loading content__icon content__icon_loading">
+                      <use xlink:href="svg/sprite.svg#loading"></use>
+                    </svg>
+                  </div><span class="content__text">Сравнение цен</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-choosing__second hide">
+            <div class="p-choosing__content content">
+              <h2 class="content__title">Мы подобрали лучшие предложения для Вашего города</h2>
+              <p class="content__subtitle">Заполните поля с именем и&nbspтелефоном, чтобы посмотреть лучшие цены!</p>
+              <form class="p-choosing__form" id="form-p-choosing" data-route="ty-page">
+                <div class="input p-choosing__input no-validate input_rounded">
+                  <input class="input__item input__item_white" type="text" name="name" placeholder="Ваше имя" value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <div class="input p-choosing__input input_rounded">
+                  <input class="input__item input__item_white" type="tel" name="phone" placeholder="Номер телефона " value=""/>
+                  <svg class="icon icon-warning input__icon_error">
+                    <use xlink:href="svg/sprite.svg#warning"></use>
+                  </svg>
+                </div>
+                <button class="button p-choosing__button button_blue button_rounded" type="submit">Смотреть лучшие цены
+                </button>
+                <div class="p-choosing__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup popup-policy" id="policy">
+        <div class="p-close"></div><span>Policy popup</span>
+      </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
