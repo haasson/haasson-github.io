@@ -61,7 +61,7 @@
             <ul class="content__list review tabs-content" id="tab-video">
               <li class="review__item">
                 <div class="review__video video-wrap rel rel_16-9">
-                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-1.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <video class="rel-child" data-src="video/1.mp4" data-poster="img/ty-page/review-1.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
                   <div class="review__icon-wrap play-btn">
                     <svg class="icon icon-play review__icon_play">
                       <use xlink:href="svg/sprite.svg#play"></use>
@@ -75,7 +75,7 @@
               </li>
               <li class="review__item">
                 <div class="review__video video-wrap rel rel_16-9">
-                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-2.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <video class="rel-child" data-src="video/1.mp4" data-poster="img/ty-page/review-2.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
                   <div class="review__icon-wrap play-btn">
                     <svg class="icon icon-play review__icon_play">
                       <use xlink:href="svg/sprite.svg#play"></use>
@@ -89,7 +89,7 @@
               </li>
               <li class="review__item">
                 <div class="review__video video-wrap rel rel_16-9">
-                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-1.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <video class="rel-child" data-src="video/1.mp4" data-poster="img/ty-page/review-1.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
                   <div class="review__icon-wrap play-btn">
                     <svg class="icon icon-play review__icon_play">
                       <use xlink:href="svg/sprite.svg#play"></use>
@@ -103,7 +103,7 @@
               </li>
               <li class="review__item">
                 <div class="review__video video-wrap rel rel_16-9">
-                  <video class="rel-child" data-src="video/1.mp4" poster="img/ty-page/review-2.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+                  <video class="rel-child" data-src="video/1.mp4" data-poster="img/ty-page/review-2.jpg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
                   <div class="review__icon-wrap play-btn">
                     <svg class="icon icon-play review__icon_play">
                       <use xlink:href="svg/sprite.svg#play"></use>
@@ -291,6 +291,96 @@
       </div>
       <div class="popup popup-policy" id="policy">
         <div class="p-close"></div><span>Policy popup</span>
+      </div>
+      <div class="popup p-exit" id="exit" data-bg="./img/decorative/laptop-2.png">
+        <div class="p-close"></div>
+        <div class="p-exit__inner">
+          <div class="p-exit__content">
+            <div class="popup__label p-exit__label">
+              <svg class="icon icon-label popup__icon popup__icon_label">
+                <use xlink:href="svg/sprite-original.svg#label"></use>
+              </svg>
+              <div class="popup__label-info">
+                <svg class="icon icon-pdf popup__icon popup__icon_pdf">
+                  <use xlink:href="svg/sprite-original.svg#pdf"></use>
+                </svg><span>PDF</span><span>(3.4 мб)</span>
+              </div>
+            </div>
+            <h2 class="p-exit__title popup__title"><span class="yellow">Узнайте как выбрать </span><span>подходящее шиномонтажное оборудование в 2020 году</span></h2>
+            <p class="p-exit__subtitle">Получите на почту 2 ценных файла:</p>
+            <ul class="p-exit__list">
+              <li class="p-exit__item"> 
+                <div class="p-exit__icon-wrap">
+                  <svg class="icon icon-check p-exit__icon_check">
+                    <use xlink:href="svg/sprite.svg#check"></use>
+                  </svg>
+                </div>
+                <p class="p-exit__text"> <b>Чек-лист: 10 шагов по выбору шиномонтажного оборудования, </b><span>которые помогут без риска приобрести оборудование с высокой окупаемость</span></p>
+              </li>
+              <li class="p-exit__item"> 
+                <div class="p-exit__icon-wrap">
+                  <svg class="icon icon-check p-exit__icon_check">
+                    <use xlink:href="svg/sprite.svg#check"></use>
+                  </svg>
+                </div>
+                <p class="p-exit__text"> <b>Сравнительную таблицу шиномонтажного оборудования с&nbspценами и преимуществами </b><span>с ценами и преимуществами</span></p>
+              </li>
+            </ul>
+            <form class="popup__form p-exit__form form-line" id="form-popup-exit" data-route="ty-page">
+              <div class="contacts popup__contacts">
+                <p class="contacts__title">Куда прислать файлы?</p>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-exit-viber" value="Viber" checked="checked"/>
+                    <label for="provider-exit-viber">
+                      <svg class="icon icon-viber contacts__icon contacts__icon_viber">
+                        <use xlink:href="svg/sprite.svg#viber"></use>
+                      </svg><span class="contacts__text">Viber</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-exit-telegram" value="Telegram"/>
+                    <label for="provider-exit-telegram">
+                      <svg class="icon icon-telegram contacts__icon contacts__icon_telegram">
+                        <use xlink:href="svg/sprite.svg#telegram"></use>
+                      </svg><span class="contacts__text">Telegram</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-exit-whatsapp" value="WhatsApp"/>
+                    <label for="provider-exit-whatsapp">
+                      <svg class="icon icon-whatsapp contacts__icon contacts__icon_whatsapp">
+                        <use xlink:href="svg/sprite.svg#whatsapp"></use>
+                      </svg><span class="contacts__text">WhatsApp</span>
+                    </label>
+                  </li>
+                  <li class="contacts__item">
+                    <input type="radio" name="provider" id="provider-exit-phone" value="По телефону"/>
+                    <label for="provider-exit-phone">
+                      <svg class="icon icon-phone contacts__icon contacts__icon_phone">
+                        <use xlink:href="svg/sprite.svg#phone"></use>
+                      </svg><span class="contacts__text">По телефону</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="phone popup__phone">
+                <p class="phone__title"></p>
+                <div class="phone__content">
+                  <div class="input phone__input  input_rounded">
+                    <input class="input__item input__item_gray" type="tel" name="phone" placeholder="Номер телефона" value=""/>
+                    <svg class="icon icon-warning input__icon_error">
+                      <use xlink:href="svg/sprite.svg#warning"></use>
+                    </svg>
+                  </div>
+                  <button class="button phone__button button_blue button_rounded" type="submit">Получить файлы
+                  </button>
+                </div>
+                <div class="phone__policy"><span>Оставляя заявку, вы соглашаетесь с </span><a class="popup-default" href="#policy">политикой конфиденциальности</a></div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/vendors.min.js"></script>
