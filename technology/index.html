@@ -7,7 +7,7 @@
     <title>Technology</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+    <script id="y-map-api" data-src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
   </head>
   <body class="loading main-page">
     <header class="header">
@@ -17,8 +17,8 @@
             <div class="topline__logo-block">
               <div class="topline__logo"><a href="/" alt="Технология">
                   <picture>
-                    <source type="image/webp" srcset="img/header/logo.webp"/>
-                    <source type="image/png" srcset="img/header/logo.png"/><img src="img/header/logo.png"/>
+                    <source type="image/webp" data-srcset="img/header/logo.webp"/>
+                    <source type="image/png" data-srcset="img/header/logo.png"/><img data-src="img/header/logo.png"/>
                   </picture></a></div>
               <div class="topline__slogan">Поставляем оборудование для шиномонтажа по всей России с 2016 года</div>
             </div>
@@ -46,8 +46,8 @@
                 <li class="equipment__item">
                   <div class="equipment__image">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/small/machine-1.webp"/>
-                      <source type="image/png" srcset="img/equipment/small/machine-1.png"/><img src="img/equipment/small/machine-1.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-1.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-1.png"/><img data-src="img/equipment/small/machine-1.png"/>
                     </picture>
                   </div>
                   <p class="equipment__text">Шиномонтажные станки</p>
@@ -55,8 +55,8 @@
                 <li class="equipment__item">
                   <div class="equipment__image">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/small/machine-2.webp"/>
-                      <source type="image/png" srcset="img/equipment/small/machine-2.png"/><img src="img/equipment/small/machine-2.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-2.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-2.png"/><img data-src="img/equipment/small/machine-2.png"/>
                     </picture>
                   </div>
                   <p class="equipment__text">Балансировочные стенды</p>
@@ -64,8 +64,8 @@
                 <li class="equipment__item">
                   <div class="equipment__image">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/small/machine-3.webp"/>
-                      <source type="image/png" srcset="img/equipment/small/machine-3.png"/><img src="img/equipment/small/machine-3.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-3.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-3.png"/><img data-src="img/equipment/small/machine-3.png"/>
                     </picture>
                   </div>
                   <p class="equipment__text">Автоматические мойки колес &quot;Торнадо&quot;</p>
@@ -73,6 +73,7 @@
               </ul>
             </div>
             <form class="hero__form form" id="form-catalog" data-route="calc">
+              <input type="hidden" name="reason" value="Запрос каталога из шапки">
               <p class="form__title">Скачайте каталог оборудования с&nbspценами на август 2020</p>
               <p class="form__subtitle">+ индивидуальную скидку <span class="nowrap">5-15%</span> на&nbspвсе&nbspмодели</p>
               <div class="contacts form__contacts">
@@ -123,8 +124,8 @@
                   </div>
                   <button class="button phone__button button_blue" type="submit">Скачать каталог оборудования
                     <picture class="button__image">
-                      <source type="image/webp" srcset="img/equipment/1/magazine.webp"/>
-                      <source type="image/png" srcset="img/equipment/1/magazine.png"/><img src="img/equipment/1/magazine.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/1/magazine.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/1/magazine.png"/><img data-src="img/equipment/1/magazine.png"/>
                     </picture>
                   </button>
                 </div>
@@ -189,12 +190,12 @@
               </ul>
               <div class="content__images images">
                 <picture class="images__laptop">
-                  <source type="image/png" srcset="img/decorative/laptop.webp" media=""/>
-                  <source type="image/png" srcset="img/decorative/laptop.png" media=""/><img src="img/decorative/laptop.png"/>
+                  <source type="image/png" data-srcset="img/decorative/laptop.webp" media=""/>
+                  <source type="image/png" data-srcset="img/decorative/laptop.png" media=""/><img data-src="img/decorative/laptop.png"/>
                 </picture>
                 <picture class="images__money">
-                  <source type="image/webp" srcset="img/decorative/money.webp"/>
-                  <source type="image/png" srcset="img/decorative/money.png"/><img src="img/decorative/money.png"/>
+                  <source type="image/webp" data-srcset="img/decorative/money.webp"/>
+                  <source type="image/png" data-srcset="img/decorative/money.png"/><img data-src="img/decorative/money.png"/>
                 </picture>
               </div>
             </div><span class="content__word">Технология</span>
@@ -327,8 +328,8 @@
                   <h3 class="machine__title">Шиномонтажные станки серии ТМ</h3>
                   <p class="machine__subtitle">для работы со стальными дисками диаметром до 26&quot;</p>
                   <picture class="machine__magazine">
-                    <source type="image/webp" srcset="img/equipment/1/magazine.webp"/>
-                    <source type="image/png" srcset="img/equipment/1/magazine.png"/><img src="img/equipment/1/magazine.png"/>
+                    <source type="image/webp" data-srcset="img/equipment/1/magazine.webp"/>
+                    <source type="image/png" data-srcset="img/equipment/1/magazine.png"/><img data-src="img/equipment/1/magazine.png"/>
                   </picture>
                   <button class="button machine__button machine__button_desktop popup-default button_blue button_rounded" type="button" href="#machine-1">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_desktop"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
@@ -342,8 +343,8 @@
                 <div class="machine__image">
                   <div class="machine__main">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/1/main.webp"/>
-                      <source type="image/png" srcset="img/equipment/1/main.png"/><img src="img/equipment/1/main.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/1/main.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/1/main.png"/><img data-src="img/equipment/1/main.png"/>
                     </picture>
                   </div>
                   <button class="button machine__button machine__button_mobile popup-default button_blue button_rounded" type="button" href="#machine-1">Скачать каталог оборудования
@@ -352,20 +353,20 @@
                 <div class="machine__video-block video-block">
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/1/video-1.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/1/video-1.jpg"/><img src="img/equipment/1/video-1.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/1/video-1.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/1/video-1.jpg"/><img data-src="img/equipment/1/video-1.jpg"/>
                     </picture>
                   </div>
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/1/video-2.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/1/video-2.jpg"/><img src="img/equipment/1/video-2.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/1/video-2.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/1/video-2.jpg"/><img data-src="img/equipment/1/video-2.jpg"/>
                     </picture>
                   </div>
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/1/video-3.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/1/video-3.jpg"/><img src="img/equipment/1/video-3.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/1/video-3.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/1/video-3.jpg"/><img data-src="img/equipment/1/video-3.jpg"/>
                     </picture>
                   </div>
                 </div>
@@ -436,8 +437,8 @@
                   <h3 class="machine__title">Балансировочные стенды серии IPRO</h3>
                   <p class="machine__subtitle">В комплекте цветной монитор 21,5 дюймов</p>
                   <picture class="machine__magazine">
-                    <source type="image/webp" srcset="img/equipment/3/magazine.webp"/>
-                    <source type="image/png" srcset="img/equipment/3/magazine.png"/><img src="img/equipment/3/magazine.png"/>
+                    <source type="image/webp" data-srcset="img/equipment/3/magazine.webp"/>
+                    <source type="image/png" data-srcset="img/equipment/3/magazine.png"/><img data-src="img/equipment/3/magazine.png"/>
                   </picture>
                   <button class="button machine__button machine__button_desktop popup-default button_blue button_rounded" type="button" href="#machine-2">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_desktop"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
@@ -451,8 +452,8 @@
                 <div class="machine__image">
                   <div class="machine__main">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/2/main.webp"/>
-                      <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/2/main.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/2/main.png"/><img data-src="img/equipment/2/main.png"/>
                     </picture>
                   </div>
                   <button class="button machine__button machine__button_mobile popup-default button_blue button_rounded" type="button" href="#machine-2">Скачать каталог оборудования
@@ -461,20 +462,20 @@
                 <div class="machine__video-block video-block">
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/2/video-1.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/2/video-1.jpg"/><img src="img/equipment/2/video-1.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/2/video-1.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/2/video-1.jpg"/><img data-src="img/equipment/2/video-1.jpg"/>
                     </picture>
                   </div>
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/2/video-2.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/2/video-2.jpg"/><img src="img/equipment/2/video-2.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/2/video-2.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/2/video-2.jpg"/><img data-src="img/equipment/2/video-2.jpg"/>
                     </picture>
                   </div>
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/2/video-3.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/2/video-3.jpg"/><img src="img/equipment/2/video-3.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/2/video-3.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/2/video-3.jpg"/><img data-src="img/equipment/2/video-3.jpg"/>
                     </picture>
                   </div>
                 </div>
@@ -568,8 +569,8 @@
                 <div class="machine__about">
                   <h3 class="machine__title">Автоматические мойки колес «Торнадо»</h3>
                   <picture class="machine__magazine">
-                    <source type="image/webp" srcset="img/equipment/3/magazine.webp"/>
-                    <source type="image/png" srcset="img/equipment/3/magazine.png"/><img src="img/equipment/3/magazine.png"/>
+                    <source type="image/webp" data-srcset="img/equipment/3/magazine.webp"/>
+                    <source type="image/png" data-srcset="img/equipment/3/magazine.png"/><img data-src="img/equipment/3/magazine.png"/>
                   </picture>
                   <button class="button machine__button machine__button_desktop popup-default button_blue button_rounded" type="button" href="#machine-3">Скачать каталог оборудования
                   </button><span class="machine__note machine__note_desktop"><span>с точными ценами и персональной</span><b> скидкой 10% на все модели</b></span>
@@ -583,8 +584,8 @@
                 <div class="machine__image">
                   <div class="machine__main">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/3/main.webp"/>
-                      <source type="image/png" srcset="img/equipment/3/main.png"/><img src="img/equipment/3/main.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/3/main.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/3/main.png"/><img data-src="img/equipment/3/main.png"/>
                     </picture>
                   </div>
                   <button class="button machine__button machine__button_mobile popup-default button_blue button_rounded" type="button" href="#machine-3">Скачать каталог оборудования
@@ -593,20 +594,20 @@
                 <div class="machine__video-block video-block">
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/3/video-1.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/3/video-1.jpg"/><img src="img/equipment/3/video-1.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/3/video-1.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/3/video-1.jpg"/><img data-src="img/equipment/3/video-1.jpg"/>
                     </picture>
                   </div>
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/3/video-2.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/3/video-2.jpg"/><img src="img/equipment/3/video-2.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/3/video-2.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/3/video-2.jpg"/><img data-src="img/equipment/3/video-2.jpg"/>
                     </picture>
                   </div>
                   <div class="video-block__item">   
                     <picture class="video-block__image">
-                      <source type="image/webp" srcset="img/equipment/3/video-3.webp"/>
-                      <source type="image/jpeg" srcset="img/equipment/3/video-3.jpg"/><img src="img/equipment/3/video-3.jpg"/>
+                      <source type="image/webp" data-srcset="img/equipment/3/video-3.webp"/>
+                      <source type="image/jpeg" data-srcset="img/equipment/3/video-3.jpg"/><img data-src="img/equipment/3/video-3.jpg"/>
                     </picture>
                   </div>
                 </div>
@@ -657,6 +658,7 @@
             <h2 class="table__title"> <span class="yellow">Скачайте сравнительную таблицу </span><span>оборудования разных брендов</span></h2>
             <p class="table__subtitle"> <span>Вы узнаете, чем отличаются станки и стенды разных производителей, помимо цены. </span><b>Благодаря таблице Вы сможете самостоятельно подобрать оборудования для вашего автосервиса</b></p>
             <form class="table__form form-line" id="form-table" data-route="ty-page">
+              <input type="hidden" name="reason" value="Запрос на сравнительную таблицу">
               <div class="contacts table__contacts">
                 <p class="contacts__title">Куда прислать таблицу?</p>
                 <ul class="contacts__list">
@@ -733,14 +735,14 @@
                 <div class="complex__header">
                   <div class="complex__image complex__image_1">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/small/machine-4.webp"/>
-                      <source type="image/png" srcset="img/equipment/small/machine-4.png"/><img src="img/equipment/small/machine-4.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-4.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-4.png"/><img data-src="img/equipment/small/machine-4.png"/>
                     </picture>
                   </div>
                   <div class="complex__image complex__image_2">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/2/main.webp"/>
-                      <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/2/main.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/2/main.png"/><img data-src="img/equipment/2/main.png"/>
                     </picture>
                   </div>
                 </div>
@@ -766,20 +768,20 @@
                 <div class="complex__header">
                   <div class="complex__image complex__image_1">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/small/machine-4.webp"/>
-                      <source type="image/png" srcset="img/equipment/small/machine-4.png"/><img src="img/equipment/small/machine-4.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-4.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-4.png"/><img data-src="img/equipment/small/machine-4.png"/>
                     </picture>
                   </div>
                   <div class="complex__image complex__image_2">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/2/main.webp"/>
-                      <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/2/main.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/2/main.png"/><img data-src="img/equipment/2/main.png"/>
                     </picture>
                   </div>
                   <div class="complex__image complex__image_4">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/small/jack.webp"/>
-                      <source type="image/png" srcset="img/equipment/small/jack.png"/><img src="img/equipment/small/jack.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/small/jack.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/jack.png"/><img data-src="img/equipment/small/jack.png"/>
                     </picture>
                   </div>
                 </div>
@@ -807,20 +809,20 @@
                 <div class="complex__header">
                   <div class="complex__image complex__image_1">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/small/machine-4.webp"/>
-                      <source type="image/png" srcset="img/equipment/small/machine-4.png"/><img src="img/equipment/small/machine-4.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-4.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-4.png"/><img data-src="img/equipment/small/machine-4.png"/>
                     </picture>
                   </div>
                   <div class="complex__image complex__image_2">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/2/main.webp"/>
-                      <source type="image/png" srcset="img/equipment/2/main.png"/><img src="img/equipment/2/main.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/2/main.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/2/main.png"/><img data-src="img/equipment/2/main.png"/>
                     </picture>
                   </div>
                   <div class="complex__image complex__image_3">
                     <picture>
-                      <source type="image/webp" srcset="img/equipment/3/main.webp"/>
-                      <source type="image/png" srcset="img/equipment/3/main.png"/><img src="img/equipment/3/main.png"/>
+                      <source type="image/webp" data-srcset="img/equipment/3/main.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/3/main.png"/><img data-src="img/equipment/3/main.png"/>
                     </picture>
                   </div>
                 </div>
@@ -864,6 +866,7 @@
           <h2 class="consult__title"><span>Не знаете какое оборудование и комплектующие </span><span class="blue">подойдут для вашего шиномонтажа?</span></h2>
           <p class="consult__subtitle"><b>За 15 минут мы поможем Вам подобрать оборудование под ваш бюджет с максимально быстрой окупаемостью. </b><span>А также подготовим чертеж с расположением оборудования в вашем автосервисе</span></p>
           <form class="consult__form form-line" id="form-consult" data-route="ty-page">
+            <input type="hidden" name="reason" value="Запрос звонка из блока консультации">
             <div class="contacts consult__contacts">
               <p class="contacts__title">Наш специалист свяжется с Вами, чтобы задать уточняющие вопросы. <b>Как Вам удобнее связаться?</b></p>
               <ul class="contacts__list">
@@ -971,8 +974,8 @@
               <li class="mount__item">
                 <div class="mount__image mount__image_1">
                   <picture>
-                    <source type="image/webp" srcset="img/mount/docs.webp"/>
-                    <source type="image/png" srcset="img/mount/docs.png"/><img src="img/mount/docs.png"/>
+                    <source type="image/webp" data-srcset="img/mount/docs.webp"/>
+                    <source type="image/png" data-srcset="img/mount/docs.png"/><img data-src="img/mount/docs.png"/>
                   </picture>
                 </div>
                 <p class="mount__text"><b>Готовим чертеж</b> оптимального положения, чтобы оборудование занимало мало места, а ваши сотрудники быстро и удобно им пользовались</p>
@@ -980,8 +983,8 @@
               <li class="mount__item">
                 <div class="mount__image mount__image_2">
                   <picture>
-                    <source type="image/webp" srcset="img/mount/man.webp"/>
-                    <source type="image/jpeg" srcset="img/mount/man.jpg"/><img src="img/mount/man.jpg"/>
+                    <source type="image/webp" data-srcset="img/mount/man.webp"/>
+                    <source type="image/jpeg" data-srcset="img/mount/man.jpg"/><img data-src="img/mount/man.jpg"/>
                   </picture>
                 </div>
                 <p class="mount__text"><b>Специалисты с опытом от 5 лет</b> монтируют оборудование согласно чертежу за 1 день</p>
@@ -989,8 +992,8 @@
               <li class="mount__item">
                 <div class="mount__image mount__image_3">
                   <picture>
-                    <source type="image/webp" srcset="img/mount/laptop.webp"/>
-                    <source type="image/jpeg" srcset="img/mount/laptop.jpg"/><img src="img/mount/laptop.jpg"/>
+                    <source type="image/webp" data-srcset="img/mount/laptop.webp"/>
+                    <source type="image/jpeg" data-srcset="img/mount/laptop.jpg"/><img data-src="img/mount/laptop.jpg"/>
                   </picture>
                 </div>
                 <p class="mount__text">Калибруем оборудование и настраиваем программное обеспечение, <b>чтобы все работало без ошибок</b></p>
@@ -999,8 +1002,8 @@
           </div>
           <div class="mount__expert">
             <picture>
-              <source type="image/webp" srcset="img/mount/expert.webp"/>
-              <source type="image/jpeg" srcset="img/mount/expert.jpg"/><img src="img/mount/expert.jpg"/>
+              <source type="image/webp" data-srcset="img/mount/expert.webp"/>
+              <source type="image/jpeg" data-srcset="img/mount/expert.jpg"/><img data-src="img/mount/expert.jpg"/>
             </picture>
           </div>
         </div>
@@ -1029,8 +1032,8 @@
           <p class="banks__subtitle">от 1% в месяц от наших банков-партнеров</p>
           <div class="banks__list banks__list_desktop">
             <picture>
-              <source type="image/webp" srcset="img/banks/banks.webp"/>
-              <source type="image/jpeg" srcset="img/banks/banks.jpg"/><img src="img/banks/banks.jpg"/>
+              <source type="image/webp" data-srcset="img/banks/banks.webp"/>
+              <source type="image/jpeg" data-srcset="img/banks/banks.jpg"/><img data-src="img/banks/banks.jpg"/>
             </picture>
           </div>
           <div class="banks__list banks__list_mobile">
@@ -1051,8 +1054,8 @@
           </div>
           <div class="banks__contract">
             <picture>
-              <source type="image/webp" srcset="img/banks/contract.webp"/>
-              <source type="image/jpeg" srcset="img/banks/contract.jpg"/><img src="img/banks/contract.jpg"/>
+              <source type="image/webp" data-srcset="img/banks/contract.webp"/>
+              <source type="image/jpeg" data-srcset="img/banks/contract.jpg"/><img data-src="img/banks/contract.jpg"/>
             </picture>
           </div>
         </div>
@@ -1062,6 +1065,7 @@
       <div class="wrapper">
         <div class="tradein__inner">
           <form class="tradein__form form" id="form-tradein" data-route="ty-page">
+            <input type="hidden" name="reason" value="Расчет из блока trade-in">
             <p class="form__title">Рассчитайте стоимость выкупа оборудования</p>
             <div class="form__line">
               <select class="select2 form__select" name="brand" data-placeholder="Выберите бренд">
@@ -1084,7 +1088,7 @@
             </div>
             <div class="form__line">
               <div class="input no-validate">
-                <input class="input__item input__item_white" type="text" placeholder="Ваш город" value=""/>
+                <input class="input__item input__item_white" type="text" name="city" placeholder="Ваш город" value=""/>
                 <svg class="icon icon-warning input__icon_error">
                   <use xlink:href="svg/sprite.svg#warning"></use>
                 </svg>
@@ -1171,6 +1175,7 @@
             <h2 class="subscribe__title"><span>Получайте ежемесячные подборки качественного </span><span class="blue"><span class="nowrap">б/у оборудования</span> с ценами</span></h2>
             <p class="subscribe__subtitle">Шиномонтажные станки, балансировочные стенды и&nbspавтомойки, которые мы выкупили по программе Trade-in. Все оборудование проверено на&nbspработоспособность и надежность всех узлов</p>
             <form class="subscribe__form form-line" id="form-subscribe" data-route="ty-page">
+              <input type="hidden" name="reason" value="Запрос на ежемесячные подборки">
               <div class="contacts subscribe__contacts">
                 <p class="contacts__title">Куда присылать подборки?</p>
                 <ul class="contacts__list">
@@ -1242,8 +1247,8 @@
           </ul>
           <div class="clients__list">
             <picture>
-              <source type="image/webp" srcset="img/clients.webp"/>
-              <source type="image/jpeg" srcset="img/clients.jpg"/><img src="img/clients.jpg"/>
+              <source type="image/webp" data-srcset="img/clients.webp"/>
+              <source type="image/jpeg" data-srcset="img/clients.jpg"/><img data-src="img/clients.jpg"/>
             </picture>
           </div>
         </div>
@@ -1278,13 +1283,13 @@
           </div>
           <div class="showroom__image">
             <picture>
-              <source type="image/webp" srcset="img/showroom/showroom.webp"/>
-              <source type="image/jpeg" srcset="img/showroom/showroom.jpg"/><img src="img/showroom/showroom.jpg"/>
+              <source type="image/webp" data-srcset="img/showroom/showroom.webp"/>
+              <source type="image/jpeg" data-srcset="img/showroom/showroom.jpg"/><img data-src="img/showroom/showroom.jpg"/>
             </picture>
             <div class="showroom__phone">
               <picture>
-                <source type="image/webp" srcset="img/showroom/phone.webp"/>
-                <source type="image/png" srcset="img/showroom/phone.png"/><img src="img/showroom/phone.png"/>
+                <source type="image/webp" data-srcset="img/showroom/phone.webp"/>
+                <source type="image/png" data-srcset="img/showroom/phone.png"/><img data-src="img/showroom/phone.png"/>
               </picture>
             </div>
           </div>
@@ -1292,7 +1297,7 @@
       </div>
     </div>
     <div class="map">
-      <div id="map"></div>
+      <div class="y-map" id="map"></div>
       <div class="wrapper">
         <div class="map__inner">
           <div class="map__contacts">
@@ -1309,8 +1314,8 @@
             <div class="footer__col footer__col_logo">
               <div class="footer__logo">
                 <picture>
-                  <source type="image/webp" srcset="img/header/logo.webp"/>
-                  <source type="image/png" srcset="img/header/logo.png"/><img src="img/header/logo.png"/>
+                  <source type="image/webp" data-srcset="img/header/logo.webp"/>
+                  <source type="image/png" data-srcset="img/header/logo.png"/><img data-src="img/header/logo.png"/>
                 </picture>
               </div>
               <p class="footer__slogan">Поставляем оборудование для шиномонтажа по всей России с 2016 года</p>
@@ -1371,6 +1376,7 @@
             <p class="p-callback__text">Я перезвоню в удобное для Вас время и отвечу на все интересующие вопросы.</p>
             <p class="p-callback__text">Расскажу, чем отличаются модели оборудования, помогу подобрать оборудование под ваш бюджет.</p>
             <form class="form form-line p-callback__form" id="form-p-callback" data-route="ty-page">
+              <input type="hidden" name="reason" value="Запрос на обратный звонок">
               <div class="form__time">
                 <input type="radio" name="time" id="time-now" value="Сейчас" checked>
                 <label for="time-now">Перезвоните мне сейчас </label>
@@ -1403,14 +1409,14 @@
           <div class="popup__images">
             <div class="popup__image">
               <picture>
-                <source type="image/webp" srcset="img/popup/catalog.webp"/>
-                <source type="image/jpeg" srcset="img/popup/catalog.jpg"/><img src="img/popup/catalog.jpg"/>
+                <source type="image/webp" data-srcset="img/popup/catalog.webp"/>
+                <source type="image/jpeg" data-srcset="img/popup/catalog.jpg"/><img data-src="img/popup/catalog.jpg"/>
               </picture>
             </div>
             <div class="popup__phone-img">
               <picture>
-                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
-                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+                <source type="image/webp" data-srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" data-srcset="img/popup/phone-popup.png"/><img data-src="img/popup/phone-popup.png"/>
               </picture>
             </div>
           </div>
@@ -1524,6 +1530,7 @@
               <h2 class="content__title">Мы подобрали лучшие предложения для Вашего города</h2>
               <p class="content__subtitle">Заполните поля с именем и&nbspтелефоном, чтобы посмотреть лучшие цены!</p>
               <form class="p-choosing__form" id="form-p-choosing" data-route="ty-page">
+                <input type="hidden" name="reason" value="Расчет оборудования">
                 <div class="input p-choosing__input no-validate input_rounded">
                   <input class="input__item input__item_white" type="text" name="name" placeholder="Ваше имя" value=""/>
                   <svg class="icon icon-warning input__icon_error">
@@ -1559,14 +1566,14 @@
           <div class="popup__images">
             <div class="popup__image">
               <picture>
-                <source type="image/webp" srcset="img/popup/machine-1.webp"/>
-                <source type="image/jpeg" srcset="img/popup/machine-1.jpg"/><img src="img/popup/machine-1.jpg"/>
+                <source type="image/webp" data-srcset="img/popup/machine-1.webp"/>
+                <source type="image/jpeg" data-srcset="img/popup/machine-1.jpg"/><img data-src="img/popup/machine-1.jpg"/>
               </picture>
             </div>
             <div class="popup__phone-img">
               <picture>
-                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
-                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+                <source type="image/webp" data-srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" data-srcset="img/popup/phone-popup.png"/><img data-src="img/popup/phone-popup.png"/>
               </picture>
             </div>
           </div>
@@ -1635,14 +1642,14 @@
           <div class="popup__images">
             <div class="popup__image">
               <picture>
-                <source type="image/webp" srcset="img/popup/machine-2.webp"/>
-                <source type="image/jpeg" srcset="img/popup/machine-2.jpg"/><img src="img/popup/machine-2.jpg"/>
+                <source type="image/webp" data-srcset="img/popup/machine-2.webp"/>
+                <source type="image/jpeg" data-srcset="img/popup/machine-2.jpg"/><img data-src="img/popup/machine-2.jpg"/>
               </picture>
             </div>
             <div class="popup__phone-img">
               <picture>
-                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
-                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+                <source type="image/webp" data-srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" data-srcset="img/popup/phone-popup.png"/><img data-src="img/popup/phone-popup.png"/>
               </picture>
             </div>
           </div>
@@ -1711,14 +1718,14 @@
           <div class="popup__images">
             <div class="popup__image">
               <picture>
-                <source type="image/webp" srcset="img/popup/machine-3.webp"/>
-                <source type="image/jpeg" srcset="img/popup/machine-3.jpg"/><img src="img/popup/machine-3.jpg"/>
+                <source type="image/webp" data-srcset="img/popup/machine-3.webp"/>
+                <source type="image/jpeg" data-srcset="img/popup/machine-3.jpg"/><img data-src="img/popup/machine-3.jpg"/>
               </picture>
             </div>
             <div class="popup__phone-img">
               <picture>
-                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
-                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+                <source type="image/webp" data-srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" data-srcset="img/popup/phone-popup.png"/><img data-src="img/popup/phone-popup.png"/>
               </picture>
             </div>
           </div>
@@ -1786,6 +1793,7 @@
             <div class="p-leasing__content">
               <h2 class="p-leasing__title"><span class="yellow">Куда прислать документы </span><span>для оформления лизинга?</span></h2>
               <form class="popup__form p-leasing__form form-line" id="form-p-leasing" data-route="ty-page">
+                <input type="hidden" name="reason" value="Запрос документов для лизинга">
                 <div class="contacts p-leasing__contacts">
                   <p class="contacts__title"></p>
                   <ul class="contacts__list">
@@ -1848,6 +1856,7 @@
           <div class="p-accept__content">
             <h3 class="p-accept__title"><span class="yellow">Получите предварительное одобрение,  </span><span>указав ваши ИНН и телефон </span></h3>
             <form class="p-accept__form" id="form-p-accept" data-route="ty-page">
+              <input type="hidden" name="reason" value="Запрос предварительного одобрения">
               <div class="input p-accept__input no-validate input_rounded">
                 <input class="input__item input__item_white" type="text" name="inn" placeholder="Ваш ИНН" value=""/>
                 <svg class="icon icon-warning input__icon_error">
@@ -1873,8 +1882,9 @@
           <div class="p-testdrive__content">
             <h3 class="p-testdrive__title"><span class="yellow">Укажите удобный день и время, </span><span>чтобы мы могли Вас встретить</span></h3>
             <form class="p-testdrive__form" id="form-p-testdrive" data-route="ty-page">
+              <input type="hidden" name="reason" value="Запрос на тест-драйв">
               <div class="input p-testdrive__input no-validate input_rounded">
-                <input class="input__item input__item_white" type="text" name="inn" placeholder="Когда вам удобно подъехать" value=""/>
+                <input class="input__item input__item_white" type="text" name="time" placeholder="Когда вам удобно подъехать" value=""/>
                 <svg class="icon icon-warning input__icon_error">
                   <use xlink:href="svg/sprite.svg#warning"></use>
                 </svg>
@@ -1899,14 +1909,14 @@
           <div class="popup__images">
             <div class="popup__image">
               <picture>
-                <source type="image/webp" srcset="img/popup/complex-1.webp"/>
-                <source type="image/jpeg" srcset="img/popup/complex-1.jpg"/><img src="img/popup/complex-1.jpg"/>
+                <source type="image/webp" data-srcset="img/popup/complex-1.webp"/>
+                <source type="image/jpeg" data-srcset="img/popup/complex-1.jpg"/><img data-src="img/popup/complex-1.jpg"/>
               </picture>
             </div>
             <div class="popup__phone-img">
               <picture>
-                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
-                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+                <source type="image/webp" data-srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" data-srcset="img/popup/phone-popup.png"/><img data-src="img/popup/phone-popup.png"/>
               </picture>
             </div>
           </div>
@@ -1974,14 +1984,14 @@
           <div class="popup__images">
             <div class="popup__image">
               <picture>
-                <source type="image/webp" srcset="img/popup/complex-2.webp"/>
-                <source type="image/jpeg" srcset="img/popup/complex-2.jpg"/><img src="img/popup/complex-2.jpg"/>
+                <source type="image/webp" data-srcset="img/popup/complex-2.webp"/>
+                <source type="image/jpeg" data-srcset="img/popup/complex-2.jpg"/><img data-src="img/popup/complex-2.jpg"/>
               </picture>
             </div>
             <div class="popup__phone-img">
               <picture>
-                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
-                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+                <source type="image/webp" data-srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" data-srcset="img/popup/phone-popup.png"/><img data-src="img/popup/phone-popup.png"/>
               </picture>
             </div>
           </div>
@@ -2049,14 +2059,14 @@
           <div class="popup__images">
             <div class="popup__image">
               <picture>
-                <source type="image/webp" srcset="img/popup/complex-3.webp"/>
-                <source type="image/jpeg" srcset="img/popup/complex-3.jpg"/><img src="img/popup/complex-3.jpg"/>
+                <source type="image/webp" data-srcset="img/popup/complex-3.webp"/>
+                <source type="image/jpeg" data-srcset="img/popup/complex-3.jpg"/><img data-src="img/popup/complex-3.jpg"/>
               </picture>
             </div>
             <div class="popup__phone-img">
               <picture>
-                <source type="image/webp" srcset="img/popup/phone-popup.webp"/>
-                <source type="image/png" srcset="img/popup/phone-popup.png"/><img src="img/popup/phone-popup.png"/>
+                <source type="image/webp" data-srcset="img/popup/phone-popup.webp"/>
+                <source type="image/png" data-srcset="img/popup/phone-popup.png"/><img data-src="img/popup/phone-popup.png"/>
               </picture>
             </div>
           </div>
