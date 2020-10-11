@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Technology</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="/fonts/Ubuntu-Light.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/Ubuntu-Regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/Ubuntu-Medium.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/Ubuntu-Bold.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/css/fonts.css" as="style">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <script id="y-map-api" data-src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
+    <link rel="preload" href="/img/header/header-bg.jpg" as="image">
+    <link rel="preload" href="/img/pattern-bg.png" as="image">
   </head>
-  <body class="loading main-page">
-    <header class="header" data-bg="./img/pattern-bg.png, ./img/header/header-bg.jpg">
+  <body class="main-page">
+    <header class="header">
       <div class="wrapper">
         <div class="header__inner">
           <div class="topline header__topline">
@@ -47,8 +55,8 @@
                 <li class="equipment__item">
                   <div class="equipment__image">
                     <picture>
-                      <source type="image/webp" data-srcset="img/equipment/small/machine-1.webp" srcset=""/>
-                      <source type="image/png" data-srcset="img/equipment/small/machine-1.png" srcset=""/><img class="lazy" data-src="img/equipment/small/machine-1.png" src=""/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-1.webp" srcset="img/equipment/small/machine-1.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-1.png" srcset="img/equipment/small/machine-1.png"/><img data-src="img/equipment/small/machine-1.png" src="img/equipment/small/machine-1.png"/>
                     </picture>
                   </div>
                   <p class="equipment__text">Шиномонтажные станки</p>
@@ -56,8 +64,8 @@
                 <li class="equipment__item">
                   <div class="equipment__image">
                     <picture>
-                      <source type="image/webp" data-srcset="img/equipment/small/machine-2.webp" srcset=""/>
-                      <source type="image/png" data-srcset="img/equipment/small/machine-2.png" srcset=""/><img class="lazy" data-src="img/equipment/small/machine-2.png" src=""/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-2.webp" srcset="img/equipment/small/machine-2.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-2.png" srcset="img/equipment/small/machine-2.png"/><img data-src="img/equipment/small/machine-2.png" src="img/equipment/small/machine-2.png"/>
                     </picture>
                   </div>
                   <p class="equipment__text">Балансировочные стенды</p>
@@ -65,8 +73,8 @@
                 <li class="equipment__item">
                   <div class="equipment__image">
                     <picture>
-                      <source type="image/webp" data-srcset="img/equipment/small/machine-3.webp" srcset=""/>
-                      <source type="image/png" data-srcset="img/equipment/small/machine-3.png" srcset=""/><img class="lazy" data-src="img/equipment/small/machine-3.png" src=""/>
+                      <source type="image/webp" data-srcset="img/equipment/small/machine-3.webp" srcset="img/equipment/small/machine-3.webp"/>
+                      <source type="image/png" data-srcset="img/equipment/small/machine-3.png" srcset="img/equipment/small/machine-3.png"/><img data-src="img/equipment/small/machine-3.png" src="img/equipment/small/machine-3.png"/>
                     </picture>
                   </div>
                   <p class="equipment__text">Автоматические мойки колес &quot;Торнадо&quot;</p>
