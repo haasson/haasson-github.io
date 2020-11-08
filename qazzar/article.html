@@ -7,7 +7,6 @@
     <title>Статья</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
   </head>
   <body>
     <header class="header">
@@ -18,13 +17,11 @@
             <svg class="icon icon-search input-search__icon">
               <use xlink:href="svg/sprite.svg#search"></use>
             </svg>
-          </div>
-          <button class="button header__button"> <span>Задать вопрос</span>
-          </button>
+          </div><a class="button header__button" href="./question-new.html"> <span>Задать вопрос</span></a>
           <div class="auth header__auth"><span class="auth__text auth__login">
               <svg class="icon icon-login auth__icon">
                 <use xlink:href="svg/sprite.svg#login"></use>
-              </svg><span>Войти</span></span><span class="auth__text auth__register">Регистрация</span>
+              </svg><a href="./login.html">Войти</a></span><a class="auth__text auth__register" href="./registration.html">Регистрация</a>
           </div>
         </div>
       </div>
@@ -56,7 +53,13 @@
           <div class="main__content content">
             <div class="article">
               <div class="userbar article__userbar">
-                <div class="userbar__avatar"><img src="img/avatars/maxidom.jpg" alt=""/></div>
+                <div class="userbar__avatar"><img src="img/avatars/maxidom.jpg" alt=""/>
+                  <div class="userbar__avatar-empty">
+                    <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                      <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                    </svg>
+                  </div>
+                </div>
                 <div class="userbar__info">
                   <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Константин Константинопольский</a><span class="userbar__login">@konstantinkonst</span></div>
                   <div class="userbar__bottom"><span class="userbar__group">Максидом</span><span class="userbar__status">, эксперт по строительной технике</span></div>
@@ -84,11 +87,7 @@
                   </div>
                 </div>
               </div>
-              <div class="tags article__tags">
-                <button class="button tags__button button_tag button_small"> <span>Инструмент</span>
-                </button>
-                <button class="button tags__button button_tag button_small"> <span>Ремонт</span>
-                </button>
+              <div class="tags article__tags"><a class="button tags__button button_tag button_small  "> <span>Инструмент</span></a><a class="button tags__button button_tag button_small  "> <span>Ремонт</span></a>
               </div>
               <h2 class="article__title">Экватор в Технопарке: защита проектов второго семестра</h2><img class="article__img" src="img/article/image-1.jpg" alt="">
               <p class="article__text">В эфире новый рассказ о выпускных проектах студентов наших учебных проектов. На этот раз мы познакомим вас с четырьмя работами, которые были представлены на совместной защите второго семестра основной программы Технопарка по дисциплинам «Фронтенд-разработка», «Разработка веб-сервисов на Go» и «Проектирование интерфейсов». Предыдущие публикации: один, два, три.</p>
@@ -100,7 +99,13 @@
               </div>
               <div class="answer answers__item">
                 <div class="userbar answer__userbar">
-                  <div class="userbar__avatar"><img src="img/avatars/maxidom.jpg" alt=""/></div>
+                  <div class="userbar__avatar"><img src="img/avatars/maxidom.jpg" alt=""/>
+                    <div class="userbar__avatar-empty">
+                      <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                        <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                      </svg>
+                    </div>
+                  </div>
                   <div class="userbar__info">
                     <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Константин Константинопольский</a><span class="userbar__login">@konstantinkonst</span></div>
                     <div class="userbar__bottom"><span class="userbar__group">Максидом</span><span class="userbar__status">, эксперт по строительной технике</span></div>
@@ -120,9 +125,7 @@
                   </div>
                 </div>
                 <p class="answer__text">Шуруповерт является сейчас одним из самых популярных инструментов, который должен быть не только у профессиональных строителей, но и у любого домашнего мастера. Огромное количество моделей, которые сейчас присутствуют в продаже, делают выбор хорошего шуруповерта достаточно непростым. На что же в первую очередь обратить внимание при покупке? Давайте рассмотрим все основные критерии выбора по порядку. Сетевой или аккумуляторный...</p>
-                <div class="answer__button-block">
-                  <button class="button answer__button button_trans button_small"> <span>Комментировать ответ</span>
-                  </button>
+                <div class="answer__button-block"><a class="button answer__button button_trans button_small"> <span>Комментировать ответ</span></a>
                   <svg class="icon icon-bell answer__icon_bell">
                     <use xlink:href="svg/sprite.svg#bell"></use>
                   </svg>
@@ -130,7 +133,13 @@
                 <div class="answer__comments">
                   <div class="answer__comment">
                     <div class="userbar answer__userbar answer__userbar_comment userbar_small">
-                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
+                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/>
+                        <div class="userbar__avatar-empty">
+                          <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                            <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                          </svg>
+                        </div>
+                      </div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkkdiynik</span></div>
                         <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
@@ -149,13 +158,17 @@
                         </div>
                       </div>
                     </div>
-                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p>
-                    <button class="button answer__button button_trans button_small"> <span>Ответить</span>
-                    </button>
+                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p><a class="button answer__button button_trans button_small"> <span>Ответить</span></a>
                   </div>
                   <div class="answer__comment">
                     <div class="userbar answer__userbar answer__userbar_comment userbar_small">
-                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
+                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/>
+                        <div class="userbar__avatar-empty">
+                          <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                            <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                          </svg>
+                        </div>
+                      </div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkkdiynik</span></div>
                         <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
@@ -174,13 +187,17 @@
                         </div>
                       </div>
                     </div>
-                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p>
-                    <button class="button answer__button button_trans button_small"> <span>Ответить</span>
-                    </button>
+                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p><a class="button answer__button button_trans button_small"> <span>Ответить</span></a>
                   </div>
                   <div class="answer__comment">
                     <div class="userbar answer__userbar answer__userbar_comment userbar_small">
-                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
+                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/>
+                        <div class="userbar__avatar-empty">
+                          <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                            <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                          </svg>
+                        </div>
+                      </div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkkdiynik</span></div>
                         <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
@@ -199,15 +216,19 @@
                         </div>
                       </div>
                     </div>
-                    <p class="answer__text answer__text_comment">Дрель-шуруповёрт – инструмент для сверления дерева, металла, пластика, иногда кирпича и мягкого бетона, а также для заворачивания шурупов. Качественный инструмент прослужит много лет и поможет переделать тысячу полезных дел. Чтобы вам было проще определиться с выбором, мы собрали рейтинги бытовых и профессиональных инструментов.</p>
-                    <button class="button answer__button button_trans button_small"> <span>Ответить</span>
-                    </button>
+                    <p class="answer__text answer__text_comment">Дрель-шуруповёрт – инструмент для сверления дерева, металла, пластика, иногда кирпича и мягкого бетона, а также для заворачивания шурупов. Качественный инструмент прослужит много лет и поможет переделать тысячу полезных дел. Чтобы вам было проще определиться с выбором, мы собрали рейтинги бытовых и профессиональных инструментов.</p><a class="button answer__button button_trans button_small"> <span>Ответить</span></a>
                   </div>
                 </div>
               </div>
               <div class="answer answers__item">
                 <div class="userbar answer__userbar">
-                  <div class="userbar__avatar"><img src="img/avatars/220.jpg" alt=""/></div>
+                  <div class="userbar__avatar"><img src="img/avatars/220.jpg" alt=""/>
+                    <div class="userbar__avatar-empty">
+                      <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                        <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                      </svg>
+                    </div>
+                  </div>
                   <div class="userbar__info">
                     <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkadu99</span></div>
                     <div class="userbar__bottom"><span class="userbar__group">220 Вольт</span><span class="userbar__status">, менеджер по продажам</span></div>
@@ -227,9 +248,7 @@
                   </div>
                 </div>
                 <p class="answer__text">Шуруповерт является сейчас одним из самых популярных инструментов, который должен быть не только у профессиональных строителей, но и у любого домашнего мастера. Огромное количество моделей, которые сейчас присутствуют в продаже, делают выбор хорошего шуруповерта достаточно непростым. На что же в первую очередь обратить внимание при покупке? Давайте рассмотрим все основные критерии выбора по порядку. Сетевой или аккумуляторный...</p>
-                <div class="answer__button-block">
-                  <button class="button answer__button button_trans button_small"> <span>Комментировать ответ</span>
-                  </button>
+                <div class="answer__button-block"><a class="button answer__button button_trans button_small"> <span>Комментировать ответ</span></a>
                   <svg class="icon icon-bell answer__icon_bell">
                     <use xlink:href="svg/sprite.svg#bell"></use>
                   </svg>

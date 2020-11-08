@@ -7,7 +7,6 @@
     <title>Страница пользователя - Информация</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
   </head>
   <body>
     <header class="header">
@@ -18,13 +17,11 @@
             <svg class="icon icon-search input-search__icon">
               <use xlink:href="svg/sprite.svg#search"></use>
             </svg>
-          </div>
-          <button class="button header__button"> <span>Задать вопрос</span>
-          </button>
+          </div><a class="button header__button" href="./question-new.html"> <span>Задать вопрос</span></a>
           <div class="auth header__auth"><span class="auth__text auth__login">
               <svg class="icon icon-login auth__icon">
                 <use xlink:href="svg/sprite.svg#login"></use>
-              </svg><span>Войти</span></span><span class="auth__text auth__register">Регистрация</span>
+              </svg><a href="./login.html">Войти</a></span><a class="auth__text auth__register" href="./registration.html">Регистрация</a>
           </div>
         </div>
       </div>
@@ -56,7 +53,13 @@
           <div class="main__content content">
             <div class="question">
               <div class="userbar question__userbar">
-                <div class="userbar__avatar"><img src="img/avatars/ivanov.jpg" alt=""/></div>
+                <div class="userbar__avatar"><img src="img/avatars/ivanov.jpg" alt=""/>
+                  <div class="userbar__avatar-empty">
+                    <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                      <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                    </svg>
+                  </div>
+                </div>
                 <div class="userbar__info">
                   <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Иван Иванов</a><span class="userbar__login">@ivanivanov88</span></div>
                   <div class="userbar__bottom"><span class="userbar__group">Пользователь</span><span class="userbar__status">, %статус пользователя%</span></div>
@@ -84,27 +87,19 @@
                   </div>
                 </div>
               </div>
-              <div class="tags question__tags">
-                <button class="button tags__button button_tag button_small"> <span>Инструмент</span>
-                </button>
-                <button class="button tags__button button_tag button_small"> <span>Ремонт</span>
-                </button>
+              <div class="tags question__tags"><a class="button tags__button button_tag button_small  "> <span>Инструмент</span></a><a class="button tags__button button_tag button_small  "> <span>Ремонт</span></a>
               </div>
               <div class="question-header question__question-header">
                 <h2 class="question-header__title">Какой шуруповерт выбрать?</h2>
                 <p class="question-header__text">Какой шуруповерт выбрать для дома, т.е. подразумевается относительно редкое использование: повесить/прикрутить что-нибудь, мелкий ремонт. Бюджет не важен.</p>
               </div>
-              <div class="reaction question__reaction">
-                <button class="button reaction__button button_trans button_with-icon"> 
+              <div class="reaction question__reaction"><a class="button reaction__button button_trans button_with-icon"> 
                   <svg class="icon icon-bell button__icon button__icon_bell">
                     <use xlink:href="svg/sprite.svg#bell"></use>
-                  </svg><span>Подписаться</span>
-                </button>
-                <button class="button reaction__button button_with-icon"> 
+                  </svg><span>Подписаться</span></a><a class="button reaction__button button_with-icon"> 
                   <svg class="icon icon-comment button__icon button__icon_comment">
                     <use xlink:href="svg/sprite.svg#comment"></use>
-                  </svg><span>Ответить</span>
-                </button>
+                  </svg><span>Ответить</span></a>
               </div>
             </div>
             <div class="answers">
@@ -112,7 +107,13 @@
               </div>
               <div class="answer answers__item">
                 <div class="userbar answer__userbar">
-                  <div class="userbar__avatar"><img src="img/avatars/maxidom.jpg" alt=""/></div>
+                  <div class="userbar__avatar"><img src="img/avatars/maxidom.jpg" alt=""/>
+                    <div class="userbar__avatar-empty">
+                      <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                        <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                      </svg>
+                    </div>
+                  </div>
                   <div class="userbar__info">
                     <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Константин Константинопольский</a><span class="userbar__login">@konstantinkonst</span></div>
                     <div class="userbar__bottom"><span class="userbar__group">Максидом</span><span class="userbar__status">, эксперт по строительной технике</span></div>
@@ -132,9 +133,7 @@
                   </div>
                 </div>
                 <p class="answer__text">Шуруповерт является сейчас одним из самых популярных инструментов, который должен быть не только у профессиональных строителей, но и у любого домашнего мастера. Огромное количество моделей, которые сейчас присутствуют в продаже, делают выбор хорошего шуруповерта достаточно непростым. На что же в первую очередь обратить внимание при покупке? Давайте рассмотрим все основные критерии выбора по порядку. Сетевой или аккумуляторный...</p>
-                <div class="answer__button-block">
-                  <button class="button answer__button button_trans button_small"> <span>Комментировать ответ</span>
-                  </button>
+                <div class="answer__button-block"><a class="button answer__button button_trans button_small"> <span>Комментировать ответ</span></a>
                   <svg class="icon icon-bell answer__icon_bell">
                     <use xlink:href="svg/sprite.svg#bell"></use>
                   </svg>
@@ -142,7 +141,13 @@
                 <div class="answer__comments">
                   <div class="answer__comment">
                     <div class="userbar answer__userbar answer__userbar_comment userbar_small">
-                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
+                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/>
+                        <div class="userbar__avatar-empty">
+                          <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                            <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                          </svg>
+                        </div>
+                      </div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkkdiynik</span></div>
                         <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
@@ -161,13 +166,17 @@
                         </div>
                       </div>
                     </div>
-                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p>
-                    <button class="button answer__button button_trans button_small"> <span>Ответить</span>
-                    </button>
+                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p><a class="button answer__button button_trans button_small"> <span>Ответить</span></a>
                   </div>
                   <div class="answer__comment">
                     <div class="userbar answer__userbar answer__userbar_comment userbar_small">
-                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
+                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/>
+                        <div class="userbar__avatar-empty">
+                          <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                            <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                          </svg>
+                        </div>
+                      </div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkkdiynik</span></div>
                         <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
@@ -186,13 +195,17 @@
                         </div>
                       </div>
                     </div>
-                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p>
-                    <button class="button answer__button button_trans button_small"> <span>Ответить</span>
-                    </button>
+                    <p class="answer__text answer__text_comment">Спасибо за развернутый ответ!</p><a class="button answer__button button_trans button_small"> <span>Ответить</span></a>
                   </div>
                   <div class="answer__comment">
                     <div class="userbar answer__userbar answer__userbar_comment userbar_small">
-                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/></div>
+                      <div class="userbar__avatar"><img src="img/avatars/nikolaev.jpg" alt=""/>
+                        <div class="userbar__avatar-empty">
+                          <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                            <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                          </svg>
+                        </div>
+                      </div>
                       <div class="userbar__info">
                         <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkkdiynik</span></div>
                         <div class="userbar__bottom"><span class="userbar__group"></span><span class="userbar__status">, undefined</span></div>
@@ -211,15 +224,19 @@
                         </div>
                       </div>
                     </div>
-                    <p class="answer__text answer__text_comment">Дрель-шуруповёрт – инструмент для сверления дерева, металла, пластика, иногда кирпича и мягкого бетона, а также для заворачивания шурупов. Качественный инструмент прослужит много лет и поможет переделать тысячу полезных дел. Чтобы вам было проще определиться с выбором, мы собрали рейтинги бытовых и профессиональных инструментов.</p>
-                    <button class="button answer__button button_trans button_small"> <span>Ответить</span>
-                    </button>
+                    <p class="answer__text answer__text_comment">Дрель-шуруповёрт – инструмент для сверления дерева, металла, пластика, иногда кирпича и мягкого бетона, а также для заворачивания шурупов. Качественный инструмент прослужит много лет и поможет переделать тысячу полезных дел. Чтобы вам было проще определиться с выбором, мы собрали рейтинги бытовых и профессиональных инструментов.</p><a class="button answer__button button_trans button_small"> <span>Ответить</span></a>
                   </div>
                 </div>
               </div>
               <div class="answer answers__item">
                 <div class="userbar answer__userbar">
-                  <div class="userbar__avatar"><img src="img/avatars/220.jpg" alt=""/></div>
+                  <div class="userbar__avatar"><img src="img/avatars/220.jpg" alt=""/>
+                    <div class="userbar__avatar-empty">
+                      <svg class="icon icon-add-avatar userbar__icon userbar__icon_add-avatar">
+                        <use xlink:href="svg/sprite.svg#add-avatar"></use>
+                      </svg>
+                    </div>
+                  </div>
                   <div class="userbar__info">
                     <div class="userbar__top"> <a class="userbar__name" href="./user-info.html">Аркадий Николаев</a><span class="userbar__login">@arkadu99</span></div>
                     <div class="userbar__bottom"><span class="userbar__group">220 Вольт</span><span class="userbar__status">, менеджер по продажам</span></div>
@@ -239,9 +256,7 @@
                   </div>
                 </div>
                 <p class="answer__text">Шуруповерт является сейчас одним из самых популярных инструментов, который должен быть не только у профессиональных строителей, но и у любого домашнего мастера. Огромное количество моделей, которые сейчас присутствуют в продаже, делают выбор хорошего шуруповерта достаточно непростым. На что же в первую очередь обратить внимание при покупке? Давайте рассмотрим все основные критерии выбора по порядку. Сетевой или аккумуляторный...</p>
-                <div class="answer__button-block">
-                  <button class="button answer__button button_trans button_small"> <span>Комментировать ответ</span>
-                  </button>
+                <div class="answer__button-block"><a class="button answer__button button_trans button_small"> <span>Комментировать ответ</span></a>
                   <svg class="icon icon-bell answer__icon_bell">
                     <use xlink:href="svg/sprite.svg#bell"></use>
                   </svg>
@@ -256,7 +271,7 @@
                 <div class="separator suggestion__separator separator_text"><span class="separator__text">Похожие вопросы</span>
                 </div>
                 <div class="suggestion__list">
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Есть ли смысл покупать дешевый инструмент?</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -271,7 +286,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Длинный вопрос, в котором текста на две с половиной страницы, текст обрезается так...</p>
                     <div class="article-link__info"><span class="article-link__time">Вчера в 15:20</span>
                       <div class="article-link__views">
@@ -286,7 +301,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
                     <div class="article-link__info"><span class="article-link__time">15 минут назад</span>
                       <div class="article-link__views">
@@ -301,7 +316,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Посоветуйте ресурсы по DIY тематике</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -316,7 +331,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Выбор бензопилы для дачи</p>
                     <div class="article-link__info"><span class="article-link__time">26 Октября 2020</span>
                       <div class="article-link__views">
@@ -337,7 +352,7 @@
                 <div class="separator suggestion__separator separator_text"><span class="separator__text">Самое читаемое</span>
                 </div>
                 <div class="suggestion__list">
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Есть ли смысл покупать дешевый инструмент?</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -352,7 +367,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Длинный вопрос, в котором текста на две с половиной страницы, текст обрезается так...</p>
                     <div class="article-link__info"><span class="article-link__time">Вчера в 15:20</span>
                       <div class="article-link__views">
@@ -367,7 +382,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
                     <div class="article-link__info"><span class="article-link__time">15 минут назад</span>
                       <div class="article-link__views">
@@ -382,7 +397,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Посоветуйте ресурсы по DIY тематике</p>
                     <div class="article-link__info"><span class="article-link__time">Сегодня в 22:10</span>
                       <div class="article-link__views">
@@ -397,7 +412,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="article-link suggestion__link article-link_small">
+                  <div class="article-link suggestion__link article-link_small ">
                     <p class="article-link__title">Выбор бензопилы для дачи</p>
                     <div class="article-link__info"><span class="article-link__time">26 Октября 2020</span>
                       <div class="article-link__views">

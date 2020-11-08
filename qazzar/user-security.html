@@ -134,9 +134,9 @@
                 <div class="sidebar">
                   <div class="sidebar__title">Настройки</div>
                   <ul class="sidebar__list user__sidebar">
-                    <li class="sidebar__item sidebar__item_active"><a href="./user-settings.html">Личные данные</a>
+                    <li class="sidebar__item"><a href="./user-settings.html">Личные данные</a>
                     </li>
-                    <li class="sidebar__item"><a href="./user-security.html">Безопасность</a>
+                    <li class="sidebar__item sidebar__item_active"><a href="./user-security.html">Безопасность</a>
                     </li>
                     <li class="sidebar__item"><a href="./user-service.html">Настройки сервиса</a>
                     </li>
@@ -152,9 +152,9 @@
                 </div>
                 <div class="user__content">
                   <div class="user__box">
-                    <h3 class="user__topline">Параметры учётной записи</h3>
+                    <h3 class="user__topline">Данные учётной записи</h3>
                     <div class="user__box-inner">
-                      <div class="settings-item settings-item_active">
+                      <div class="settings-item">
                         <div class="settings-item__current"><span class="settings-item__name col-1">Логин</span>
                           <div class="settings-item__value col-2"> <span>konstantinkonst</span>
                           </div>
@@ -178,10 +178,38 @@
                         </div>
                       </div>
                       <div class="settings-item">
-                        <div class="settings-item__current"><span class="settings-item__name col-1">Статус</span>
-                          <div class="settings-item__value col-2"> <span>Эксперт</span>
+                        <div class="settings-item__current"><span class="settings-item__name col-1">Пароль</span>
+                          <div class="settings-item__value col-2"> <span>*************</span>
                           </div>
-                          <div class="settings-item__change col-3"><span class="link"></span>
+                          <div class="settings-item__change col-3"><span class="link">Изменить</span><span class="link">Отменить</span>
+                          </div>
+                        </div>
+                        <div class="settings-item__dropdown">
+                          <form class="settings-item__form" id="form-password">
+                            <label class="col-1" for="password">Новый пароль</label>
+                            <div class="col-2 settings-item__input">
+                              <input class="input" id="password" name="password" type="password"/>
+                              <div class="settings-item__validation"></div>
+                            </div>
+                            <div class="col-3"></div>
+                          </form>
+                          <div class="settings-item__controls">
+                            <div class="col-1"></div>
+                            <div class="col-2"><a class="button settings-item__button button_small"> <span>Сохранить</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user__box">
+                    <h3 class="user__topline">Безопасность</h3>
+                    <div class="user__box-inner">
+                      <div class="settings-item">
+                        <div class="settings-item__current"><span class="settings-item__name col-1">Двухфакторная авторизация</span>
+                          <div class="settings-item__value col-2"> <span></span>
+                          </div>
+                          <div class="settings-item__change col-3"><span class="link">Включить</span>
                           </div>
                         </div>
                         <div class="settings-item__dropdown">
@@ -201,10 +229,33 @@
                         </div>
                       </div>
                       <div class="settings-item">
-                        <div class="settings-item__current"><span class="settings-item__name col-1">Тип профиля</span>
-                          <div class="settings-item__value col-2"> <span>Пользователь</span>
+                        <div class="settings-item__current"><span class="settings-item__name col-1">Последняя активность на сайте</span>
+                          <div class="settings-item__value col-2"> <span></span>
                           </div>
-                          <div class="settings-item__change col-3"><span class="link"></span>
+                          <div class="settings-item__change col-3"><span class="link">Посмотреть</span>
+                          </div>
+                        </div>
+                        <div class="settings-item__dropdown">
+                          <form class="settings-item__form" id="form-undefined">
+                            <label class="col-1"></label>
+                            <div class="col-2 settings-item__input">
+                              <input class="input" type="text"/>
+                              <div class="settings-item__validation"></div>
+                            </div>
+                            <div class="col-3"></div>
+                          </form>
+                          <div class="settings-item__controls">
+                            <div class="col-1"></div>
+                            <div class="col-2"><a class="button settings-item__button button_small"> <span>Сохранить</span></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="settings-item">
+                        <div class="settings-item__current"><span class="settings-item__name col-1">Выйти со всех устройствах</span>
+                          <div class="settings-item__value col-2"> <span></span>
+                          </div>
+                          <div class="settings-item__change col-3"><span class="link">Выйти</span>
                           </div>
                         </div>
                         <div class="settings-item__dropdown">
@@ -226,69 +277,20 @@
                     </div>
                   </div>
                   <div class="user__box">
-                    <h3 class="user__topline">Личная информация</h3>
+                    <h3 class="user__topline">Удаление аккаунта</h3>
                     <div class="user__box-inner">
                       <div class="settings-item">
-                        <div class="settings-item__current"><span class="settings-item__name col-1">Имя</span>
-                          <div class="settings-item__value col-2"> <span>Константин</span>
+                        <div class="settings-item__current"><span class="settings-item__name col-1">Удалить аккаунт</span>
+                          <div class="settings-item__value col-2"> <span></span>
                           </div>
-                          <div class="settings-item__change col-3"><span class="link">Изменить</span><span class="link">Отменить</span>
-                          </div>
-                        </div>
-                        <div class="settings-item__dropdown">
-                          <form class="settings-item__form" id="form-name">
-                            <label class="col-1" for="name">Новое имя</label>
-                            <div class="col-2 settings-item__input">
-                              <input class="input" id="name" name="name" type="text"/>
-                              <div class="settings-item__validation"></div>
-                            </div>
-                            <div class="col-3"></div>
-                          </form>
-                          <div class="settings-item__controls">
-                            <div class="col-1"></div>
-                            <div class="col-2"><a class="button settings-item__button button_small"> <span>Сохранить</span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="settings-item">
-                        <div class="settings-item__current"><span class="settings-item__name col-1">Фамилия</span>
-                          <div class="settings-item__value col-2"> <span>Константинопольский</span>
-                          </div>
-                          <div class="settings-item__change col-3"><span class="link">Изменить</span><span class="link">Отменить</span>
+                          <div class="settings-item__change col-3"><span class="link">Удалить</span>
                           </div>
                         </div>
                         <div class="settings-item__dropdown">
-                          <form class="settings-item__form" id="form-surname">
-                            <label class="col-1" for="surname">Новая фамилия</label>
+                          <form class="settings-item__form" id="form-undefined">
+                            <label class="col-1"></label>
                             <div class="col-2 settings-item__input">
-                              <input class="input" id="surname" name="surname" type="text"/>
-                              <div class="settings-item__validation"></div>
-                            </div>
-                            <div class="col-3"></div>
-                          </form>
-                          <div class="settings-item__controls">
-                            <div class="col-1"></div>
-                            <div class="col-2"><a class="button settings-item__button button_small"> <span>Сохранить</span></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="settings-item">
-                        <div class="settings-item__current"><span class="settings-item__name col-1">E-mail</span>
-                          <div class="settings-item__value col-2"> <span>konstantinkonst@mail.ru</span><span class="settings-item__icon-wrap" data-title="Адрес эл.почты подтверждён">
-                              <svg class="icon icon-label-ok settings-item__icon settings-item__icon_confirm">
-                                <use xlink:href="svg/sprite-original.svg#label-ok"></use>
-                              </svg></span>
-                          </div>
-                          <div class="settings-item__change col-3"><span class="link">Изменить</span><span class="link">Отменить</span>
-                          </div>
-                        </div>
-                        <div class="settings-item__dropdown">
-                          <form class="settings-item__form" id="form-email">
-                            <label class="col-1" for="email">Новый e-mail</label>
-                            <div class="col-2 settings-item__input">
-                              <input class="input" id="email" name="email" type="email"/>
+                              <input class="input" type="text"/>
                               <div class="settings-item__validation"></div>
                             </div>
                             <div class="col-3"></div>

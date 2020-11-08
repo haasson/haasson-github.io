@@ -154,7 +154,7 @@
                   <div class="user__box">
                     <h3 class="user__topline">Параметры учётной записи</h3>
                     <div class="user__box-inner">
-                      <div class="settings-item settings-item_active">
+                      <div class="settings-item">
                         <div class="settings-item__current"><span class="settings-item__name col-1">Логин</span>
                           <div class="settings-item__value col-2"> <span>konstantinkonst</span>
                           </div>
@@ -276,10 +276,11 @@
                       </div>
                       <div class="settings-item">
                         <div class="settings-item__current"><span class="settings-item__name col-1">E-mail</span>
-                          <div class="settings-item__value col-2"> <span>konstantinkonst@mail.ru</span><span class="settings-item__icon-wrap" data-title="Адрес эл.почты подтверждён">
-                              <svg class="icon icon-label-ok settings-item__icon settings-item__icon_confirm">
-                                <use xlink:href="svg/sprite-original.svg#label-ok"></use>
+                          <div class="settings-item__value col-2"> <span>konstantinkonst@mail.ru</span><span class="settings-item__icon-wrap" data-title="Адрес эл.почты не подтверждён">
+                              <svg class="icon icon-label-warning settings-item__icon settings-item__icon_confirm">
+                                <use xlink:href="svg/sprite-original.svg#label-warning"></use>
                               </svg></span>
+                            <div class="settings-item__validation">Пожалуйста, подтвердите свой адрес эл.почты</div>
                           </div>
                           <div class="settings-item__change col-3"><span class="link">Изменить</span><span class="link">Отменить</span>
                           </div>
@@ -289,7 +290,7 @@
                             <label class="col-1" for="email">Новый e-mail</label>
                             <div class="col-2 settings-item__input">
                               <input class="input" id="email" name="email" type="email"/>
-                              <div class="settings-item__validation"></div>
+                              <div class="settings-item__validation">Пожалуйста, подтвердите свой адрес эл.почты</div>
                             </div>
                             <div class="col-3"></div>
                           </form>

@@ -132,71 +132,54 @@
               </div>
               <div class="user__main">
                 <div class="sidebar">
+                  <div class="sidebar__title">Настройки</div>
                   <ul class="sidebar__list user__sidebar">
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item"><a href="./user-settings.html">Личные данные</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item"><a href="./user-security.html">Безопасность</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item sidebar__item_active"><a href="./user-service.html">Настройки сервиса</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item"><a href="./user-corp.html">Бизнес аккаунт</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
-                    </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
-                    </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
-                    </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <div class="sidebar__separator"></div>
+                    <li class="sidebar__item"><a href="./user-help.html">Помощь</a>
+                      <svg class="icon icon-question sidebar__icon_question">
+                        <use xlink:href="svg/sprite.svg#question"></use>
+                      </svg>
                     </li>
                   </ul>
                 </div>
                 <div class="user__content">
-                  <div class="user__questions">
-                    <div class="article-link user__link ">
-                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
-                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
-                        <div class="article-link__views">
-                          <svg class="icon icon-eye article-link__icon_eye">
-                            <use xlink:href="svg/sprite.svg#eye"></use>
-                          </svg><span>19 K</span>
+                  <div class="user__box">
+                    <h3 class="user__topline">Уведомления на электронную почту</h3>
+                    <div class="user__box-inner">
+                      <form class="user__form">
+                        <div class="settings-item">
+                          <div class="settings-item__current settings-item__current_with-checkbox">
+                            <input type="checkbox" name="checkbox-new-answer" value="Получен новый ответ" id="new-answer"/>
+                            <label class="settings-item__current_checkbox checkbox" for="new-answer">Получен новый ответ </label>
+                          </div>
                         </div>
-                        <div class="article-link__comments">
-                          <svg class="icon icon-comment article-link__icon_comment">
-                            <use xlink:href="svg/sprite.svg#comment"></use>
-                          </svg><span>75 ответов</span>
+                        <div class="settings-item">
+                          <div class="settings-item__current settings-item__current_with-checkbox">
+                            <input type="checkbox" name="checkbox-new-comment" value="Получен ответ на комментарий" id="new-comment"/>
+                            <label class="settings-item__current_checkbox checkbox" for="new-comment">Получен ответ на комментарий </label>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div class="article-link user__link ">
-                      <p class="article-link__title">Длинное название вопроса состоящие из двух и более строк и большого количества букв. вопрос обрезается...</p>
-                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
-                        <div class="article-link__views">
-                          <svg class="icon icon-eye article-link__icon_eye">
-                            <use xlink:href="svg/sprite.svg#eye"></use>
-                          </svg><span>19 K</span>
+                        <div class="settings-item">
+                          <div class="settings-item__current settings-item__current_with-checkbox">
+                            <input type="checkbox" name="checkbox-new-follower" value="Новый подписчик" id="new-follower"/>
+                            <label class="settings-item__current_checkbox checkbox" for="new-follower">Новый подписчик </label>
+                          </div>
                         </div>
-                        <div class="article-link__comments">
-                          <svg class="icon icon-comment article-link__icon_comment">
-                            <use xlink:href="svg/sprite.svg#comment"></use>
-                          </svg><span>75 ответов</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="article-link user__link ">
-                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
-                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
-                        <div class="article-link__views">
-                          <svg class="icon icon-eye article-link__icon_eye">
-                            <use xlink:href="svg/sprite.svg#eye"></use>
-                          </svg><span>19 K</span>
-                        </div>
-                        <div class="article-link__comments">
-                          <svg class="icon icon-comment article-link__icon_comment">
-                            <use xlink:href="svg/sprite.svg#comment"></use>
-                          </svg><span>75 ответов</span>
-                        </div>
-                      </div>
+                        <div class="settings-item">
+                          <div class="settings-item__current settings-item__current_with-checkbox">
+                            <input type="checkbox" name="checkbox-news" value="Новости сервиса" id="news"/>
+                            <label class="settings-item__current_checkbox checkbox" for="news">Новости сервиса </label>
+                          </div>
+                        </div><a class="button user__button"> <span>Сохранить</span></a>
+                      </form>
                     </div>
                   </div>
                 </div>

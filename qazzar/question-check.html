@@ -7,7 +7,6 @@
     <title>Публикация вопроса</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
   </head>
   <body>
     <header class="header">
@@ -18,13 +17,11 @@
             <svg class="icon icon-search input-search__icon">
               <use xlink:href="svg/sprite.svg#search"></use>
             </svg>
-          </div>
-          <button class="button header__button"> <span>Задать вопрос</span>
-          </button>
+          </div><a class="button header__button" href="./question-new.html"> <span>Задать вопрос</span></a>
           <div class="auth header__auth"><span class="auth__text auth__login">
               <svg class="icon icon-login auth__icon">
                 <use xlink:href="svg/sprite.svg#login"></use>
-              </svg><span>Войти</span></span><span class="auth__text auth__register">Регистрация</span>
+              </svg><a href="./login.html">Войти</a></span><a class="auth__text auth__register" href="./registration.html">Регистрация</a>
           </div>
         </div>
       </div>

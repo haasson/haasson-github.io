@@ -7,7 +7,6 @@
     <title>Новый вопрос</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="img/logo.png" type="image/png">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=cc4fe30f-a31a-4ad7-acb4-12fe653c8bbd" type="text/javascript"></script>
   </head>
   <body>
     <header class="header">
@@ -18,13 +17,11 @@
             <svg class="icon icon-search input-search__icon">
               <use xlink:href="svg/sprite.svg#search"></use>
             </svg>
-          </div>
-          <button class="button header__button"> <span>Задать вопрос</span>
-          </button>
+          </div><a class="button header__button" href="./question-new.html"> <span>Задать вопрос</span></a>
           <div class="auth header__auth"><span class="auth__text auth__login">
               <svg class="icon icon-login auth__icon">
                 <use xlink:href="svg/sprite.svg#login"></use>
-              </svg><span>Войти</span></span><span class="auth__text auth__register">Регистрация</span>
+              </svg><a href="./login.html">Войти</a></span><a class="auth__text auth__register" href="./registration.html">Регистрация</a>
           </div>
         </div>
       </div>
@@ -68,19 +65,11 @@
                 <p class="new__text">Укажите тему вопроса. Выберите из выпадающего списка наиболее подходящие темы </p>
                 <input class="input new__input" type="text"/>
               </div>
-              <div class="new__tags">
-                <div class="tags">
-                  <button class="button tags__button button_tag button_small"> <span>Ремонт</span>
-                    <div class="button__close"></div>
-                  </button>
-                  <button class="button tags__button button_tag button_small"> <span>Инструмент</span>
-                    <div class="button__close"></div>
-                  </button>
-                </div>
+              <div class="tags new__tags"><a class="button tags__button button_tag button_small  "> <span>Ремонт</span>
+                  <div class="button__close"></div></a><a class="button tags__button button_tag button_small  "> <span>Инструмент</span>
+                  <div class="button__close"></div></a>
               </div>
-              <div class="new__button">
-                <button class="button "> <span>Опубликовать вопрос</span>
-                </button>
+              <div class="new__button"><a class="button " href="./question-check.html"> <span>Опубликовать вопрос</span></a>
               </div>
             </form>
           </div>

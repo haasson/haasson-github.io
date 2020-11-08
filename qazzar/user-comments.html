@@ -17,71 +17,11 @@
             <svg class="icon icon-search input-search__icon">
               <use xlink:href="svg/sprite.svg#search"></use>
             </svg>
-          </div><a class="button header__button"> <span>Задать вопрос</span></a>
-          <div class="auth header__auth">
-            <div class="auth__notification-block">
-              <div class="auth__notification" data-count="2">
-                <svg class="icon icon-bell auth__icon_bell">
-                  <use xlink:href="svg/sprite.svg#bell"></use>
-                </svg>
-              </div>
-              <div class="dropdown auth__dropdown">
-                <ul class="dropdown__list">
-                  <li class="dropdown__item"><a href="#">
-                      <svg class="icon icon-reply dropdown__icon dropdown__icon_reply">
-                        <use xlink:href="svg/sprite.svg#reply"></use>
-                      </svg><span>Получен ответ на ваш вопрос</span></a></li>
-                  <li class="dropdown__item"><a href="#">
-                      <svg class="icon icon-reply dropdown__icon dropdown__icon_reply">
-                        <use xlink:href="svg/sprite.svg#reply"></use>
-                      </svg><span>Получен ответ на комментарий</span></a></li>
-                  <li class="dropdown__item"><a href="#">
-                      <svg class="icon icon-smile-pos dropdown__icon dropdown__icon_smile-pos">
-                        <use xlink:href="svg/sprite.svg#smile-pos"></use>
-                      </svg><span>Ваш вопрос прошел модерацию</span></a></li>
-                  <li class="dropdown__item"><a href="#">
-                      <svg class="icon icon-smile-sad dropdown__icon dropdown__icon_smile-sad">
-                        <use xlink:href="svg/sprite.svg#smile-sad"></use>
-                      </svg><span>Ваш вопрос не прошел модерацию</span></a></li>
-                  <li class="dropdown__item"><a href="#">
-                      <svg class="icon icon-people dropdown__icon dropdown__icon_people">
-                        <use xlink:href="svg/sprite.svg#people"></use>
-                      </svg><span>У вас новый подписчик</span></a></li>
-                  <li class="dropdown__item"><a href="#">
-                      <svg class="icon icon-medal dropdown__icon dropdown__icon_medal">
-                        <use xlink:href="svg/sprite.svg#medal"></use>
-                      </svg><span>Ваш рейтинг повышен</span></a></li>
-                </ul><a class="dropdown__text" href="#">Все уведомления</a>
-              </div>
-            </div>
-            <div class="auth__name-block auth__text">
-              <div class="auth__name"><span class="auth__name-text">Константин К.</span>
-                <svg class="icon icon-dropdown auth__icon_dropdown">
-                  <use xlink:href="svg/sprite.svg#dropdown"></use>
-                </svg>
-              </div>
-              <div class="auth__dropdown auth__dropdown_user dropdown">
-                <div class="dropdown__user">
-                  <div class="dropdown__avatar"><img src="img/avatars/user.jpg" alt=""/>
-                    <div class="dropdown__avatar-empty">
-                      <svg class="icon icon-add-avatar dropdown__icon dropdown__icon_add-avatar">
-                        <use xlink:href="svg/sprite.svg#add-avatar"></use>
-                      </svg>
-                    </div>
-                  </div><span class="dropdown__name">Константин К.</span>
-                </div>
-                <ul class="dropdown__list">
-                  <li class="dropdown__item">Уведомления</li>
-                  <li class="dropdown__item">Профиль</li>
-                  <li class="dropdown__item">Настройки</li>
-                  <li class="dropdown__item"> <span>Выйти</span>
-                    <svg class="icon icon-exit auth__icon_exit">
-                      <use xlink:href="svg/sprite.svg#exit"></use>
-                    </svg>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          </div><a class="button header__button" href="./question-new.html"> <span>Задать вопрос</span></a>
+          <div class="auth header__auth"><span class="auth__text auth__login">
+              <svg class="icon icon-login auth__icon">
+                <use xlink:href="svg/sprite.svg#login"></use>
+              </svg><a href="./login.html">Войти</a></span><a class="auth__text auth__register" href="./registration.html">Регистрация</a>
           </div>
         </div>
       </div>
@@ -133,28 +73,24 @@
               <div class="user__main">
                 <div class="sidebar">
                   <ul class="sidebar__list user__sidebar">
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item"><a href="./user-info.html">Информация</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item"><a href="./user-questions.html">Вопросы</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item"><a href="./user-answers.html">Ответы</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item sidebar__item_active"><a href="./user-comments.html">Комментарии</a>
                     </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
-                    </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
-                    </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
-                    </li>
-                    <li class="sidebar__item"><a href="undefined"></a>
+                    <li class="sidebar__item"><a href="./user-subscribes.html">Подписки</a>
                     </li>
                   </ul>
                 </div>
                 <div class="user__content">
-                  <div class="user__questions">
+                  <div class="user__box">
+                    <h3 class="user__topline">Комментарии</h3>
+                    <div class="user__questions user__box-inner"></div>
                     <div class="article-link user__link ">
-                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
+                      <p class="article-link__title">Какой шуруповерт лучше выбрать?</p>
                       <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
                         <div class="article-link__views">
                           <svg class="icon icon-eye article-link__icon_eye">
@@ -167,9 +103,10 @@
                           </svg><span>75 ответов</span>
                         </div>
                       </div>
+                      <p class="article-link__text">Шуруповерт является сейчас одним из самых популярных инструментов, который должен быть не только у профессиональных строителей, но и у любого домашнего мастера. Огромное количество моделей, которые сейчас присутствуют в продаже, делают выбор хорошего шуруповерта достаточно непростым. На что же в первую очередь обратить внимание. Пять строк обре...</p>
                     </div>
-                    <div class="article-link user__link ">
-                      <p class="article-link__title">Длинное название вопроса состоящие из двух и более строк и большого количества букв. вопрос обрезается...</p>
+                    <div class="article-link user__link article-link_visited">
+                      <p class="article-link__title">Какой шуруповерт лучше выбрать?</p>
                       <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
                         <div class="article-link__views">
                           <svg class="icon icon-eye article-link__icon_eye">
@@ -182,21 +119,7 @@
                           </svg><span>75 ответов</span>
                         </div>
                       </div>
-                    </div>
-                    <div class="article-link user__link ">
-                      <p class="article-link__title">Как правильно укладывать ламинат в прихожей?</p>
-                      <div class="article-link__info"><span class="article-link__time">10 минут назад</span>
-                        <div class="article-link__views">
-                          <svg class="icon icon-eye article-link__icon_eye">
-                            <use xlink:href="svg/sprite.svg#eye"></use>
-                          </svg><span>19 K</span>
-                        </div>
-                        <div class="article-link__comments">
-                          <svg class="icon icon-comment article-link__icon_comment">
-                            <use xlink:href="svg/sprite.svg#comment"></use>
-                          </svg><span>75 ответов</span>
-                        </div>
-                      </div>
+                      <p class="article-link__text">Шуруповерт является сейчас одним из самых популярных инструментов, который должен быть не только у профессиональных строителей, но и у любого домашнего мастера. Огромное количество моделей, которые сейчас присутствуют в продаже, делают выбор хорошего шуруповерта достаточно непростым. На что же в первую очередь обратить внимание. Пять строк обре...</p>
                     </div>
                   </div>
                 </div>
